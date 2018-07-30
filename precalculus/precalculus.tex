@@ -364,7 +364,7 @@ Os principais erros ao se resolver problemas matemáticos do nível de pré-cál
 \begin{itemize}
 \item \textbf{Álgebra}: aqui é que a maioria se perde. Não conhecer as regras de
   manipulação algébrica garante horas e horas de frustração.
-\item \textbf{Visualização}: se você não desenvar um rascunho do problema, com
+\item \textbf{Visualização}: se você não desenhar um rascunho do problema, com
   figuras e indicações do que está ocorrendo, você não conseguirá resolver o problema
   ou gastará horas a mais do que o necessário.
 \item \textbf{Definições}: se você não souber as definições matemáticas envolvidas
@@ -388,7 +388,7 @@ aí sim você começa a representá-lo simbolicamente para resolvê-lo.
     %\fbox{\includegraphics[scale=0.5]{imagens/palavras-imagens-simbolos.png}}
     \includegraphics[scale=0.5]{imagens/palavras-imagens-simbolos.png}
     
-    \footnotesize{Fonte:~Precalculus}
+    \footnotesize{Fonte:~Collingwood DH et al. Precalculus, pág.\ x}
   \end{center}
 \end{figure}
 
@@ -547,7 +547,7 @@ entre os pontos:
     %\fbox{\includegraphics[scale=0.5]{imagens/palavras-imagens-simbolos.png}}
     \includegraphics[scale=0.9]{imagens/distancia.png}
     
-    \footnotesize{Fonte:~Precalculus}
+    \footnotesize{Fonte:~Collingwood DH et al. Precalculus, pág.\ 18}
   \end{center}
 \end{figure}
 
@@ -625,7 +625,7 @@ A linha vertical $m$ é descrita pela equação:
 \label{tres-curvas-circulos}
 
 Um círculo no plano é uma curva se, e apenas se, a distância de todos os pontos
-(x, y) da curva à origem (h, k) for a mesma. Note que essa distância é o raio $r$
+$(x, y)$ da curva à origem $(h, k)$ for a mesma. Note que essa distância é o raio $r$
 do círculo.
 
 \begin{figure}[ht]
@@ -635,7 +635,7 @@ do círculo.
     %\fbox{\includegraphics[scale=0.5]{imagens/palavras-imagens-simbolos.png}}
     \includegraphics[scale=0.7]{imagens/definicao-circulo.png}
     
-    \footnotesize{Fonte:~Precalculus}
+    \footnotesize{Fonte:~Collingwood DH et al. Precalculus, pág.\ 27}
   \end{center}
 \end{figure}
 
@@ -683,7 +683,7 @@ que tem origem em $(0, 0)$ e raio igual a 1 unidade:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Cruzamento de curvas - I}
+\subsection{Cruzamento de curvas --- I}
 \label{tres-curvas-cruzamento-I}
 
 Obviamente, curvas horizontais não se cruzam (da mesma forma que
@@ -701,7 +701,7 @@ ao círculo) ou c) cruzar em 2 pontos (a curva é uma secante ao círculo).
     %\fbox{\includegraphics[scale=0.5]{imagens/palavras-imagens-simbolos.png}}
     \includegraphics[scale=0.6]{imagens/cruzamento-curvas-1.png}
     
-    \footnotesize{Fonte:~Precalculus}
+    \footnotesize{Fonte:~Collingwood DH et al. Precalculus, pág.\ 29}
   \end{center}
 \end{figure}
 
@@ -963,7 +963,7 @@ o slope de uma será o inverso negativo da outra:
 
 \begin{equation}
   \begin{split}
-    \text{Linhas Perpendiculares} \equiv m_1 & = -\frac{1}{m_2}\\
+    \text{Linhas Perpendiculares} \equiv m_1    & = -\frac{1}{m_2}\\
                                          m_1m_2 & = -1
   \end{split}
 \end{equation}
@@ -971,7 +971,7 @@ o slope de uma será o inverso negativo da outra:
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Cruzamento de curvas - II}
+\subsection{Cruzamento de curvas --- II}
 \label{modelagem-linear-cruzamento-curvas-ii}
 
 Já vimos que para resolver problemas que envolvem o cruzamento de linhas ou
@@ -984,6 +984,9 @@ solução da fórmula quadrática é dada por:
 \begin{equation}
   x = \frac{-(b) \pm \sqrt{(b)^2 - (4ac)}}{2a}
 \end{equation}
+
+As duas raízes encontradas, $x'$ e $x''$, indicam em que valores no eixo-x a
+curva do círculo se cruza com esse eixo.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1019,6 +1022,250 @@ depende do parâmetro t (tempo), com A, B, C e D constantes.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Relacionando dados, plots (traçados) e equações}
 \label{funcoes-graficos-relacionando}
+
+Existem 3 maneiras de descrevermos o relacionamento entre uma variável $y$ à
+outra variável $x$:
+
+\begin{itemize}[noitemsep]
+\item Uma tabela
+\item Um gráfico
+\item Uma equação
+\end{itemize}
+
+A partir da tabela de dados podemos plotar um gráfico em um sistema de coordenadas
+e, a partir desse gráfico (ou desses dados), podemos realizar uma \emph{modelagem}
+para obtermos uma \emph{equação} que relacione $y$ à $x$:
+
+\begin{figure}[ht]
+  \begin{center}
+    \caption{Relação entre dados, plots e equações}
+    \label{fig:relacao-dados-plots-equacoes}
+    %\fbox{\includegraphics[scale=0.5]{imagens/palavras-imagens-simbolos.png}}
+    \includegraphics[scale=0.7]{imagens/relacao_dados_plot_equacao.png}
+    
+    %\footnotesize{Fonte:~Collingwood DH et al. Precalculus, pág.\ 29}
+  \end{center}
+\end{figure}
+
+Obviamente a equação é muito mais poderosa do que somente a tabela de dados, pois
+ela nos mostra exatamente como $y$ varia \emph{em função} de $x$. Agora temos
+um outro conceito importante, o conceito de FUNÇÃO!
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{O que é uma função?}
+\label{funcoes-conceito}
+
+Uma função é uma \emph{regra} (equação) que nos informa como relacionar cada elemento
+de um conjunto de inputs aceitáveis (\emph{domínio}, D) a um, e somente um,
+elemento de um conjunto de outputs (\emph{codomínio} ou \emph{range} R).
+
+\begin{figure}[H]
+  \begin{center}
+    \caption{Esquema de uma função}
+    \label{fig:esquema-funcao}
+    %\fbox{\includegraphics[scale=0.5]{imagens/palavras-imagens-simbolos.png}}
+    \includegraphics[scale=0.5]{imagens/esquema-funcao.png}
+    
+    %\footnotesize{Fonte:~Collingwood DH et al. Precalculus, pág.\ 29}
+  \end{center}
+\end{figure}
+
+Note que cada elemento do domínio deve estar relacionado a um, e apenas um,
+elemento do range, mas o mesmo elemento do range pode estar relacionado a
+mais de um elemento do domínio. Se um elemento do domínio estiver relacionado
+a mais de um elemento do codomínio, a regra em questão não é uma função!
+
+Uma função sempre tem 3 partes:
+
+\begin{itemize}
+\item \textbf{DOMÍNIO}: é o conjunto de inputs aceitáveis:
+
+  $D = \left\{x\ |\ x\ \text{é aceitável}\right\}$
+\item \textbf{REGRA}: é a regra (geralmente na forma de uma ou mais equações)
+  que informa como relacionar os elementos do domínio aos elementos do range.
+  As regras são identificadas por letras (f, g, h, \ldots):
+
+  $f(x) = \text{equação}$
+\item \textbf{RANGE ou CODOMÍNIO}: é o conjunto de outputs:
+
+  $R = \left\{f(x)\ |\ f(x)\ \text{é único para cada }x\right\}$
+\end{itemize}
+
+Note a diferença na notação:
+
+\begin{itemize}[noitemsep]
+\item $f(x)$: refere-se à \emph{regra} da função;
+\item $y = f(x)$: refere-se à função em si, ou seja, estamos dizendo que $y$ varia
+  em função de $x$ através da regra $f$.
+\end{itemize}
+
+A \emph{especificação completa} de uma função é dada pela regra e pelo domínio
+aceitável:
+
+\begin{equation}
+    y = f(x) = ax + b \quad |\ D = \left\{x\ |\ x \in \mathbb{R}\right\}
+\end{equation}
+
+Dependendo do domínio aceitável, uma mesma regra pode definir funções diferentes.
+Nesse caso, usamos letras diferentes:
+
+\begin{equation}
+  \begin{split}
+    y & = f(x) = ax + b \quad |\ D = \left\{x\ |\ x \in \mathbb{R}\right\}\\
+    y & = g(x) = ax + b \quad |\ D = \left\{x\ |\ x \in \mathbb{R}, x \ge 0\right\}
+  \end{split}
+\end{equation}
+
+Ainda em relação ao domínio de uma função, ele pode ser:
+
+\begin{itemize}[noitemsep]
+\item Toda linha numérica
+\item Um intervalo da linha numérica, incluindo ou não os pontos extremos desse intervalo:
+  $[a,b]$, $(a,b]$, $[a,b)$, $(a,b)$
+\item Um conjunto finito de intervalos da linha linha numérica (também incluindo ou não os pontos extremos desses intervalos)
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Gráfico de uma função}
+\label{funcoes-grafico}
+
+Já vimos que para especificarmos uma função $y = f(x)$, além da regra $f$ temos que
+especificar o domínio $D$. Ao especificarmos a regra e o domínio, o gráfico de
+uma função será o conjunto de pontos $(x, f(x))$ para todo $x \in D$.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{O teste da linha vertical}
+\label{funcoes-teste-linha-vertical}
+
+Ao analisarmos o gráfico de alguma curva, podemos dizer facilmente se essa curva
+é, ou não, o gráfico de uma função.
+
+Já que uma função produz um, e apenas um, output para cada input, se uma linha
+vertical (perpendicular) ao eixo-x cruzar a curva em 2 ou mais pontos,
+essa curva NÃO é uma função (pois isso implica em dizer que há mais de um codomínio
+para cada elemento do domínio).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Funções lineares}
+\label{funcoes-lineares}
+
+A equação da linha reta não vertical, que já conhecemos, é, na verdade,
+uma função: $y = f(x) = mx + b$.
+
+Um dos principais conteúdos do pré-cálculo é o estudo de diversas funções pois
+as funções são fundamentais no cálculo.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Análise gráfica}
+\label{analise-grafica}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Análise visual de um gráfico}
+\label{analise-grafica-visual}
+
+Ao realizar a análise de um gráfico de uma função, temos que procurar pelas suas
+6 características qualitativas básicas:
+
+\begin{enumerate}
+\item \textbf{Domínio} e \textbf{Range}: qual o domínio e o range da função?
+\item \textbf{Sign Plot}: em quais segmentos $y = f(x)$ é positiva ou negativa?
+\item \textbf{Dinâmica Visual}: como $f(x)$ varia em função de $x$? Em que segmentos
+  $f(x)$ aumenta, diminui ou permanece constante em relação à $x$?
+\item \textbf{Y-intercepto}: em que valor de $x$ a função cruza o eixo-y? Note
+  que, uma função, só cruza o eixo-y em no máximo 1 único local. Assim, uma função
+  pode não ter intercepto-y, ou pode ter apenas 1 único intercepto-y.
+\item \textbf{X-intercepto}: em que locais a curva da função cruza o eixo-y? Note
+  que uma função pode não cruzar o eixo-x, ou cruzá-lo em 1 ou vários pontos. Cada
+  ponto onde a curva cruza o eixe-x são os ``zeros'' ou ``raízes'' da função $y=f(x)$.
+\item \textbf{Máximos} e \textbf{Mínimos ``locais''}: são os pontos onde a função ``pára''
+  na curva (no topo de um morro ou no fundo de uma depressão).
+\end{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Círculos e semi-círculos}
+\label{analise-grafica-circulos}
+
+Já sabemos que um círculo é uma curva onde a distância de qualquer ponto $(x,y)$
+à origem $(h,k)$ é a mesma, ou seja, é $r$ (o raio):
+
+\begin{equation}
+  \text{Círculo} = \left\{(x,y)\ |\ x,y \in \mathbb{R}, \forall x \forall y\ r^2 = (|\Delta x|)^2 + (|\Delta y|)^2 = \text{constante}\right\}
+\end{equation}
+
+Na equação do círculo, $\Delta x = x - h$ e $\Delta y = y - k$. Note que a equação do círculo não é uma função, pois
+para cada valor de $x$ existem 2 valores $f(x)$. Mas podemos obter 2 funções correspondentes
+aos semi-círculos: superior e inferior!
+
+\begin{equation}
+  \begin{split}
+    r^2 & = (|\Delta x|)^2 + (|\Delta y|)^2\\
+    r^2 & = (x - h)^2 + (y - k)^2\\
+    (y - k)^2 & = r^2 - (x - h)^2\\
+    y - k & = \pm \sqrt{r^2 - (x - h)^2}\\
+    \bm{y} & \bm{= k \pm \sqrt{r^2 - (x - h)^2}}
+  \end{split}
+\end{equation}
+
+As equações das funções que representam cada semi-círculo são, então:
+\begin{equation}
+  \begin{split}
+    y & = f(x) = k \bm{+} \sqrt{r^2 - (x - h)^2}\\
+    y & = g(x) = k \bm{-} \sqrt{r^2 - (x - h)^2}
+  \end{split}
+\end{equation}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Funções com múltiplas partes}
+\label{analise-grafica-multipart}
+
+Uma função $y=f(x)$ será uma função com múltiplas partes quando, em seu domínio,
+existirem mais de uma regra $f(x)$:
+
+\begin{equation}
+  y = f(x) =
+  \begin{cases} 
+      1                & se\ x < -1 \\
+      1 + \sqrt{1-x^2} & se\ -1 \leq x \leq 1 \\
+      1                & se\ x > 1
+  \end{cases}
+\end{equation}
+
+ATENÇÃO: em uma função com múltiplas partes temos que tera certeza de que essas
+múltiplas partes, quando tomadas em conjunto, realmente formam um função, ou seja,
+se realmente só haverá um único elemento no range para cada elemento do domínio.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Modelagem quadrática}
+\label{modelagem-quadratica}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Parábolas e Vértice}
+\label{modelagem-quadratica-parabolas}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\subsubsection{Subsubseção}
