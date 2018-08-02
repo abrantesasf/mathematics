@@ -49,7 +49,7 @@
   \usepackage[dvips]{geometry}
 \fi
 %\geometry{a4paper, left=2.6cm, right=4.0cm, top=3.0cm, bottom=3.4cm}
-\geometry{a4paper, left=2cm, right=4cm, top=3cm, bottom=3cm}
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
 
 \usepackage{setspace}
   \singlespacing
@@ -64,7 +64,7 @@
 %\setlength{\footskip}{1.5cm}
 %\renewcommand{\headrulewidth}{0.3pt}
 %\renewcommand{\footrulewidth}{0.0pt}
-\pagestyle{fancy}
+\pagestyle{plain}
 %\renewcommand{\sectionmark}[1]{%
 %  \markboth{\uppercase{#1}}{}}
 %\renewcommand{\subsectionmark}[1]{%
@@ -141,7 +141,10 @@
       pdfcreator={LaTeX with hyperref package},
       pdfproducer={pdfTeX},
       pdfnewwindow=true,
-      colorlinks=true,
+      % ATENÇÃO: este artigo usa o package menukeys, que tem uma incompatibilidade
+      % com o colorlinks aqui do hyperref. A solução é comentar a opção colorlinks aqui,
+      % e habilitar o cololink do hyperref na chamada do package menukeys.
+      %colorlinks=true,
       citecolor=green,
       linkcolor=red,
       filecolor=cyan,
@@ -244,7 +247,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Package para formatar paths de menus, diretórios e outros:
-\usepackage{menukeys}
+\usepackage[hyperrefcolorlinks]{menukeys}
 \renewmenumacro{\directory}{pathswithfolder}
 
 
@@ -297,55 +300,31 @@
 \section{Introdução}
 \label{intro}
 
-Esta é a correção do \emph{Diagnóstico Inicial} da disciplina de
+Esta é a minha correção do \emph{Diagnóstico Inicial} da disciplina de
 ``Álgebra Linear e Geometria Analítica'', do curso de
 \href{https://www.faesa.br/curso/ciencia-da-computacao/}{Ciência da Computação}\footnote{
   \url{https://www.faesa.br/curso/ciencia-da-computacao/}}
 da \href{https://www.faesa.br/}{FAESA Centro Universitário}\footnote{
-  \url{https://www.faesa.br/}, realizada no segundo semestre de 2018.
+  \url{https://www.faesa.br/}}, realizada no segundo semestre de 2018.
 
 O objetivo desta correção é ajudar os alunos que tiveram dificuldade de responder
-ao diagnóstico.
-
-Esta correção (em formato PDF e \LaTeXe\) está disponível no repositório ``matematica''\footnote{
+ao diagnóstico, e ela está disponível (em formato PDF e \LaTeXe)
+no repositório ``matematica''\footnote{
   Mais especificamente em: \directory{/matematica/linear\_algebra/Algebra\_Linear\_FAESA/diagnostico}}
 em meu \href{https://github.com/abrantesasf/matematica}{GitHub}\footnote{
   \url{https://github.com/abrantesasf/matematica}}, para que qualquer um possa melhorá-la!
+O diagnóstico inicial foi o seguinte:
 
-\begin{figure}[ht]
+\begin{figure}[H]
   \begin{center}
-    \caption{De palavras para figuras e depois para símbolos}
-    \label{fig:palavras-imagens-simbolos}
-    %\fbox{\includegraphics[scale=0.5]{imagens/palavras-imagens-simbolos.png}}
-    \includegraphics[scale=0.5]{imagens/palavras-imagens-simbolos.png}
-    
-    \footnotesize{Fonte:~Collingwood DH et al. Precalculus, pág.\ x}
+    \caption{Diagnóstico Inicial}
+    \label{fig:diagnostico-inicial}
+    %\fbox{\includegraphics[scale=1]{imagens/}}
+    \includegraphics[scale=0.3]{imagens/diag_algebra.png}
+    %
+    %\footnotesize{Fonte:}
   \end{center}
 \end{figure}
-
-
-\begin{equation}
-  Ax + By + C = 0
-\end{equation}
-
-Essa equação linear geral no plano pode ser derivada,
-a partir de 2 pontos $P=(x_0, y_0)$ e $Q=(x_1, y_1)$ da seguinte maneira:
-
-\begin{equation}
-  \begin{split}
-    m & = \frac{y_1 - y_0}{x_1 - x_0}\\
-      & \therefore\\
-    y - y_0 & = \frac{y_1 - y_0}{x_1 - x_0}(x - x_0)\\
-    (y - y_0)(x_1 - x_0) & = (y_1 - y_0)(x - x_0)\\
-    x_1y - x_0y - x_1y_0 + x_0y_0 & = xy_1 - x_0y_1 - xy_0 + x_0y_0\\
-    x_1y - x_0y - x_1y_0 + \cancel{x_0y_0} & = xy_1 - x_0y_1 - xy_0 + \cancel{x_0y_0}\\
-    xy_1 - x_0y_1 - xy_0 & = x_1y - x_0y - x_1y_0\\
-    xy_1 - x_0y_1 - xy_0 - x_1y + x_0y + x_1y_0 & = 0\\
-    xy_1 - xy_0 + x_0y - x_1y + x_1y_0 - x_0y_1 & = 0\\
-    & \therefore\\
-    \bm{(y_1 - y_0)x + (x_0 - x_1)y + (x_1y_0 - x_0y_1)} &\bm{= 0}
-  \end{split}
-\end{equation}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -353,6 +332,115 @@ a partir de 2 pontos $P=(x_0, y_0)$ e $Q=(x_1, y_1)$ da seguinte maneira:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Correção}
 \label{correcao}
+
+\paragraph{1) Qual a forma simplificada das expressões abaixo?}
+
+\begin{equation}
+  \begin{split}
+    \frac{8x^3}{10x} &= \frac{8x^{\cancel{3}}}{10\cancel{x}} = \frac{4x^2}{5}
+  \end{split}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    \frac{2x^2 - 4x}{2x^2 - 6x} &= \frac{2x(x-2)}{2x(x-3)} = \frac{\cancel{2x}(x-2)}{\cancel{2x}(x-3)} = \frac{x-2}{x-3}
+  \end{split}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    \frac{x^2 - 1}{1- x^2} &= \frac{x^2 - 1^2}{1^2 - x^2} = \frac{(x+1)(x-1)}{(1+x)(1-x)} = \frac{\cancel{(x+1)}(x-1)}{\cancel{(1+x)}(1-x)}\\
+                           &= \frac{x-1}{1-x} = \frac{x-1}{-x+1} = \frac{x-1}{-1(x-1)} = \frac{\cancel{x-1}}{-1\cancel{(x-1)}}\\
+                           &= \frac{1}{-1} = -1
+  \end{split}
+\end{equation}
+
+\paragraph{2) Qual a forma simplificada da expressão algébrica abaixo?}
+
+\begin{equation}
+  \begin{split}
+    \frac{(x^2 + 14x + 49)(x^2 - 49)}{x^2 - 14x + 49} &= \frac{(x^2 + 14x + 49)(x^2 - 7^2)}{x^2 - 14x + 49}
+    = \frac{(x^2 + 14x + 49)(x + 7)(x-7)}{x^2 - 14x + 49}\\
+    &= \frac{(x+7)^2(x + 7)(x-7)}{x^2 - 14x + 49} = \frac{(x+7)^2(x + 7)(x-7)}{(x-7)^2}\\
+    &= \frac{(x+7)^2(x + 7)\cancel{(x-7)}}{(x-7)^{\cancel{2}}} = \frac{(x+7)^3}{x-7}
+  \end{split}
+\end{equation}
+
+\paragraph{3) Qual o resultado de $A - B + C$?}
+
+\begin{equation}
+  \begin{split}
+    \begin{cases}
+      A = & -2x + 4y + 5\\
+      B = & 2x + 2y - 3\\
+      C = & 4x - y + 4\\
+    \end{cases}&\\
+    \therefore A-B+C &= -2x + 4y + 5 - (2x + 2y - 3) + 4x - y + 4\\
+    &= -2x + 4y + 5 -2x -2y +3  + 4x - y + 4\\
+    &= -4x + 4x +4y - 3y + 12\\
+    &= y + 12
+  \end{split}
+\end{equation}
+
+\paragraph{4) Resolva as expressões a seguir:}
+
+\begin{equation}
+  \begin{split}
+    [(+2)(-3/4):(-2/3)] &= \frac{2 \cdot \frac{-3}{4}}{\frac{-2}{3}} = \frac{\frac{-6}{4}}{\frac{-2}{3}} = \frac{-6}{4} \cdot \frac{3}{-2}
+    = \frac{-18}{-8} = \frac{9}{4} = 2.25
+  \end{split}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    (+2-3+1):(-2+2) &= \frac{2-3+1}{-2+2} = \frac{0}{0} = \text{indeterminado}
+  \end{split}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    (+4-9):(-5+3) &= \frac{4-9}{-5+3} = \frac{-5}{-2} = 2.5
+  \end{split}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    (2-3+1):(-7) = \frac{2-3+1}{-7} = \frac{0}{-7} = 0
+  \end{split}
+\end{equation}
+
+\begin{equation}
+  \begin{split}
+    3 \times \frac{9}{4} - \left\{ \left[ \left(\frac{2}{3}\right)^2 + 2 \right]:\sqrt{\frac{4}{9}} \right\} &=
+    \frac{27}{4} - \left\{ \frac{\left[ \frac{4}{9} + 2 \right]}{\sqrt{\frac{4}{9}}} \right\} = \frac{27}{4}-\left\{\frac{\frac{4 + 18}{9}}{\frac{2}{3}} \right\} = \frac{27}{4} - \left\{ \frac{22}{9} \cdot \frac{3}{2} \right\}\\
+    &= \frac{27}{4} - \frac{66}{18}  = \frac{9 \cdot 27 - 2 \cdot 66}{36} = \frac{243-132}{36}\\
+    &= \frac{111}{36} = \frac{37}{12} \approx 3.08
+  \end{split}
+\end{equation}
+
+\paragraph{5) Se $r$ é uma reta que corta os eixos cartesianos nos pontos $A=(2,0)$ e $B=(0,1)$,
+determine:}\ \\
+a) a equação da reta;\\
+b) o esboço do gráfico de $r$ no plano cartesiano.
+
+\begin{equation}
+  \begin{split}
+    \text{Slope}\ m &= \frac{\Delta y}{\Delta x} = \frac{1-0}{0-2} = \frac{1}{-2} = -0.5\\
+    \text{Intercepto-y} &= 1\text{, uma vez que: } B=(0,1) \implies \text{intercepto-y = 1}\\
+    \therefore r &= f(x) = -0.5x + 1
+  \end{split}
+\end{equation}
+
+\begin{figure}[H]
+  \begin{center}
+    \caption{Gráfico de $r = f(x) = -0.5x + 1$}
+    \label{fig:reta-r}
+    %\fbox{\includegraphics[scale=1]{imagens/}}
+    \includegraphics[scale=0.5]{imagens/reta_r.png}
+    %
+    %\footnotesize{Fonte:}
+  \end{center}
+\end{figure}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
