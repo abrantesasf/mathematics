@@ -280,6 +280,7 @@
 \tableofcontents
 \newpage
 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -313,6 +314,13 @@ resolvi utilizar os seguintes materiais para estudo:
   no \href{https://archive.org/details/precalculusmathe00geor}{Internet Archive} ou
   aquisição na \href{https://www.amazon.com/Precalculus-Mathematics-Nutshell-Geometry-Trigonometry/dp/1592441300/}{Amazon}.
   É um livro bem objetivo e pequeno, mas com boa avaliação pelos leitores.
+
+\item \textbf{Paul's Online Math Notes: \url{http://tutorial.math.lamar.edu/}}
+
+  Site criado e mantido pelo professor Paul Dawkins, com grande material de revisão, problemas para estudo,
+  dicas e resoluções passo a passo em diversos tópicos de matemática (em especial: álgebra, cálculo, equações
+  diferenciais, e outros assuntos). Pode ser estudado online ou através do download de arquivos PDF com todo o
+  conteúdo do site.
 \end{itemize}
 
 As seguintes ferramentas também foram importantes para o estudo (principalmente para
@@ -324,9 +332,9 @@ ajudar na álgebra):
 \item \href{https://photomath.net/}{Photomat}
 \end{itemize}
 
-ATENÇÃO: nenhum texto aqui é de minha autoria! Eu apenas resumi e retirei das fontes anteriormente
+\textbf{ATENÇÃO: nenhum texto aqui é de minha autoria! Eu apenas resumi e retirei das fontes anteriormente
 citadas os principais conceitos de pré-cálculo para meu próprio estudo. Todo o crédito pertence
-aos autores originais!
+aos autores originais!}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -346,9 +354,17 @@ para o entendimento mais avançado da matemática (cálculo, etc.).
 
 O difícil no pré-cálculo (cálculo, álgebra linear, etc.) não é nem a matemática em
 si mesma, é a \emph{interpretação} de um problema que está expresso em palavras. Você
-deve: 1) ler; 2) entender; 3) pensar; 4) relacionar conceitos; 5) esquematizar figuras;
-6) investir tempo; e, somente no fim, 7) escolher fórmulas e contas para resolver o
-problema.
+deve:
+
+\begin{enumerate}[noitemsep]
+\item Ler o problema várias vezes;
+\item Entender tudo o que o problema diz, informa e pergunta;
+\item Pensar em como resolver;
+\item Relacionar conceitos que podem ser úteis para resolver o problema;
+\item Esquematizar todo o problema em figuras, com os dados pertinentes;
+\item Investir tempo na resolução do problema; e
+\item Escolher fórmulas e contas para resolver o problema.
+\end{enumerate}
 
 Note como o grosso do processo é a \emph{interpretação} do problema, não o cálculo
 da resposta em si.
@@ -386,11 +402,173 @@ aí sim você começa a representá-lo simbolicamente para resolvê-lo.
     \caption{De palavras para figuras e depois para símbolos}
     \label{fig:palavras-imagens-simbolos}
     %\fbox{\includegraphics[scale=0.5]{imagens/palavras-imagens-simbolos.png}}
-    \includegraphics[scale=0.5]{imagens/palavras-imagens-simbolos.png}
+    \includegraphics[scale=0.4]{imagens/palavras-imagens-simbolos.png}
     
     \footnotesize{Fonte:~Collingwood DH et al. Precalculus, pág.\ x}
   \end{center}
 \end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Revisão de Álgebra}
+\label{revisao-algebra}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{O que é álgebra?}
+\label{revisao-algebra-o-que-e}
+
+A \emph{Aritmética} lida com cálculos envolvendo números particulares. Quando calculamos
+$(5+2)(5-2) = (7)(3) = 21$ temos uma resposta direta, mas é um fato sem nenhum interesse
+em particular.
+
+Já a \emph{Álgebra} lida com cálculos envolvendo números gerais, representados
+por variáveis. Assim, o cálculo $(a+b)(a-b) = a^2 - b^2$ é um fato universal de grande
+valor.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Propriedades e regras básicas}
+\label{revisao-algebra-regras-basicas}
+
+\paragraph{Conjuntos Numéricos:} os números \emph{reais}\footnote{Em oposição aos números ``imaginários'', como
+  $\sqrt{-1}$.} formam os seguintes conjuntos numéricos:
+
+\begin{itemize}
+\item $\mathbb{N}$: é o conjunto dos números \emph{naturais}, inteiros positivos sem o zero;
+\item $\mathbb{Z}$: é o conjunto dos números \emph{inteiros}, positivos, negativos e o zero;
+\item $\mathbb{Q}$: é o conjunto dos números \emph{racionais}, definidos como os números obtidos
+  pelo quociente entre 2 números inteiros ($\mathbb{Q} = \left\{h\ |\ h = \frac{a}{b}, a \in \mathbb{Z}, b \in \mathbb{Z}, b \ne 0\right\}$);
+\item $\mathbb{Q'}$: é o conjunto dos números \emph{racionais}, que são números que não podem
+  ser obtidos pelo quociente entre dois números inteiros (observação: a sigla ``Q''' não é oficial); e
+\item $\mathbb{R}$: é o conjunto dos números \emph{reais}, que engloba todos os números racionais
+  e irracionais.
+\end{itemize}
+
+\begin{figure}[ht]
+  \begin{center}
+    \caption{Conjuntos Numéricos}
+    \label{fig:conjuntos-numericos}
+    %\fbox{\includegraphics[scale=0.5]{imagens/palavras-imagens-simbolos.png}}
+    \includegraphics[scale=0.6]{imagens/conjuntos_numericos.png}
+    %
+    %\footnotesize{Fonte:~Collingwood DH et al. Precalculus, pág.\ x}
+  \end{center}
+\end{figure}
+
+\paragraph{Divisão por zero não é permitido:} a divisão por zero não é uma operação definida
+na matemática. Se $\frac{a}{0} = b$, então $a = 0 \cdot b$; e isso não é algo definido matematicamente pois:
+
+\begin{itemize}[noitemsep]
+\item Se $a \ne 0$, $a = 0 \cdot b$ não seria verdadeiro; e
+\item Se $a = 0$, $a = 0 \cdot b$ seria verdade para qualquer $b$.
+\end{itemize}
+
+\paragraph{As 5 propriedades básicas dos números reais:} os números reais têm 5 propriedades
+básicas (dependendo da operação sobre eles). São elas:
+
+\begin{itemize}[noitemsep]
+\item \emph{Comutativa} da adição e multiplicação:
+
+  \begin{equation*}
+    \begin{split}
+      a + b &= b + a\\
+      a \cdot b &= b \cdot a
+    \end{split}
+  \end{equation*}
+
+\item \emph{Associativa} da adição e multiplicação:
+
+  \begin{equation*}
+    \begin{split}
+      a + (b + c) &= (a + b) + c\\
+      a \cdot (b \cdot c) &= (a \cdot b) \cdot c
+    \end{split}
+  \end{equation*}
+
+\item \emph{Distributiva} entre a multiplicação e a adição/subtração:
+
+  \begin{equation*}
+    \begin{split}
+      a \cdot (b + c) &= ab + ac\\
+      a \cdot (b - c) &= ab - ac
+    \end{split}
+  \end{equation*}
+
+\item \emph{Identidade} da adição e multiplicação, é o número que somado ou multiplicado
+  à um determinado número $a$, resulta no mesmo número $a$:
+
+  \begin{equation*}
+    \begin{split}
+      a + 0 &= a\\
+      a \cdot 1 &= a
+    \end{split}
+  \end{equation*}
+
+\item \emph{Inverso} da adição e multiplicação, é o número que somado ou multiplicado
+  à um determinado número $a$, resulta em 0 ou 1:
+
+  \begin{equation*}
+    \begin{split}
+      a + (-a) &= 0\\
+      a \cdot \frac{1}{a} &= 1
+    \end{split}
+  \end{equation*}
+  
+\end{itemize}
+
+\paragraph{Adição e subtração de frações:} a adição e subtração de frações é feita através
+das seguintes regras básicas:
+
+\begin{itemize}[noitemsep]
+\item \emph{Mesmo denominador}, repete o denominador e soma ou subtrai os numeradores:
+
+  \begin{equation*}
+    \begin{split}
+      \frac{a}{b} + \frac{c}{b} &= \frac{a+c}{b}\\
+      \frac{a}{b} - \frac{c}{b} &= \frac{a-c}{b}
+    \end{split}
+  \end{equation*}
+
+\item \emph{Diferentes denominadores}, multiplica os denominadores (ou calcula o \emph{mínimo
+  múltiplo comum --- MMC --- dos denominadores}), usa esse resultado como o nome denominador, divide pelo denominador
+  original da fração e multiplica pelo numerador:
+
+  \begin{equation*}
+    \begin{split}
+      \frac{a}{b} + \frac{c}{d} &= \frac{\left[a \cdot \frac{MMC(b,d)}{b}\right] + \left[c \cdot \frac{MMC(b,d)}{d}\right]}{MMC(b,d)}\\
+      \frac{a}{b} - \frac{c}{d} &= \frac{\left[a \cdot \frac{MMC(b,d)}{b}\right] - \left[c \cdot \frac{MMC(b,d)}{d}\right]}{MMC(b,d)}
+    \end{split}
+  \end{equation*}
+\end{itemize}
+
+\paragraph{Multiplicação e divisão frações:} a adição e subtração de frações é feita através
+das seguintes regras básicas:
+
+\begin{itemize}[noitemsep]
+\item \emph{Na multiplicação}, multiplicar numeradores e denominadores:
+
+  \begin{equation*}
+      \frac{a}{b} \cdot \frac{c}{d} = \frac{ac}{bd}
+  \end{equation*}
+
+\item \emph{Na divisão}, inverte a segunda fração e multiplica:
+
+  \begin{equation*}
+      \frac{\frac{a}{b}}{\frac{c}{d}} = \frac{a}{b} \cdot \frac{d}{c} = \frac{ad}{bc}
+  \end{equation*}
+\end{itemize}
+
+\paragraph{Simplificação de frações:} é feita dividindo-se o numerador e o denominador pelo
+\emph{Máximo Divisor Comum (MDC)} entre eles:
+
+\begin{equation*}
+  \frac{a}{b} = \frac{a \div MDC(a,b)}{b \div MDC(a,b)} = \frac{x}{y}
+\end{equation*}
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
