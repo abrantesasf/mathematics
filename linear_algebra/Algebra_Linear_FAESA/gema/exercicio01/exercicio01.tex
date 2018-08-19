@@ -23,7 +23,7 @@
   %   fleqn com ou sem leqno (alinhamento à esquerda das fórmulas e dos números)
   %   oneside (padrão para article ou report) ou twoside (padrão para book)
   %   answers = imprime respostas para o gabarito
-  \documentclass[pdftex, brazil, 12pt, oneside, addpoints]{exam}
+  \documentclass[pdftex, brazil, 12pt, oneside, addpoints, answers]{exam}
 \else
   % Classe, língua e tamanho da fonte padrão. Outras opções a considerar:
   %   draft
@@ -350,8 +350,8 @@ Indique se a sentença é verdadeira (V) ou falsa (F):
 \begin{parts}
   \part \vf[F] Em geral, as matrizes são identificadas por letras minúsculas
   \part \vf[F] As matrizes só podem ser delimitadas por parênteses ou colchetes
-  \part \vf[V] A representação ``$A = [-3]$'' indica uma matriz chamada ``A'' que contém
-  um único elemento, -3.
+  \part \vf[V] A representação ``$A = [-3]$'' indica uma matriz chamada $A$ que contém
+  um único elemento, $-3$.
   \part \vf[V] Os números que formam a matriz são chamados de elementos.
   \part \vf[F] A seguinte matriz é uma matriz coluna: $C = [3\quad 4\quad 5]$
 \end{parts}
@@ -585,8 +585,8 @@ Indique se a sentença é verdadeira (V) ou falsa (F):
   \part \vf[V] Uma matriz diagonal pode ter a diagonal principal com todos os elementos nulos
   \part \vf[F] Uma matriz triangular de ordem $n$ é aquela onde todos os elementos que estão
   acima da diagonal principal, E MAIS todos os elementos que estão abaixo da diagonal principal, são nulos.
-  \part \vf[V] Para que uma matriz seja considerada triangular, todos os elementos que acima OU abaixo
-  da diagonal principal (e não ambos) devem ser nulos.
+  \part \vf[V] Para que uma matriz seja considerada triangular, todos os elementos que estão acima OU abaixo
+  da diagonal principal (não simultaneamente) devem ser nulos.
   \part \vf[F] Uma matriz diagonal nunca poderá ser uma matriz nula
 \end{parts}
 
@@ -617,7 +617,7 @@ O que é uma \emph{matriz transposta}? Como é representada?
 \question
 Indique se a sentença é verdadeira (V) ou falsa (F):
 \begin{parts}
-  \part \vf[F] Uma matriz nula $0$ de ordem 1 pode ser uma matriz identidade
+  \part \vf[F] Uma matriz nula $O$ de ordem 1 pode ser uma matriz identidade
   \part \vf[F] Uma matriz identidade não precisa ser quadrada
   \part \vf[F] A diagonal secundária de uma matriz identidade tem todos os seus
   elementos nulos
@@ -704,7 +704,7 @@ Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
 \end{pmatrix}$
 \begin{checkboxes}
   \CorrectChoice Matriz Diagonal
-  \choice Matriz Simétrica
+  \CorrectChoice Matriz Simétrica
   \choice Matriz Anti-Simétrica
   \choice Matriz Triangular
   \choice Matriz Identidade
@@ -790,7 +790,8 @@ da mesma ordem, então é verdade que $C = (c_{ij})_{m \times n}$ tal que
 $c_{ij} = a_{ij} + b_{ij}$\ ?
 \begin{solutionorlines}[0.50in]
   Sim, o enunciado simplesmente está descrevendo a operação de somas de matrizes
-  de mesma ordem.
+  de mesma ordem, onde cada elemento de uma matriz deve ser somado ao elemento
+  correspondente (mesmo $ij$) da outra matriz.
 \end{solutionorlines}
 
 \question
@@ -799,7 +800,8 @@ da mesma ordem, então é verdade que $E = (e_{ij})_{m \times n}$ tal que
 $e_{ij} = c_{ij} - d_{ij}$\ ?
 \begin{solutionorlines}[0.50in]
   Sim, o enunciado simplesmente está descrevendo a operação de subtração de matrizes
-  de mesma ordem.
+  de mesma ordem, onde cada elemento de uma matriz deve ser subtraído do elemento
+  correspondente (mesmo $ij$) da outra matriz.
 \end{solutionorlines}
 
 \question
@@ -817,7 +819,7 @@ Indique se a sentença é verdadeira (V) ou falsa (F):
 Como é feita a multiplicação de um valor escalar por uma matriz, por exemplo: seja $\alpha$ um
 número real qualquer, e $B$ uma matriz qualquer de ordem $m \times n$, como é feita a multiplicação $\alpha \times B$\ ?
 \begin{solutionorlines}[0.50in]
-  Basta multiplicar todos os elementos da matriz pelo escalar.
+  Basta multiplicar cada elemento da matriz pelo escalar.
 \end{solutionorlines}
 
 \question
@@ -837,7 +839,35 @@ Sejam $A$ e $B$ matrizes quadradas de mesma ordem. Para realizar a multiplicaç�
 basta que cada elemento $a_{ij}$ seja multiplicado pelo elemento correspondente $b_{ij}$\ ?
 \begin{solutionorlines}[0.50in]
   Não, pois a multiplicação de matrizes \emph{não é feita} apenas com a multiplicação
-  dos elementos correspondentes em cada matriz.
+  dos elementos correspondentes em cada matriz. É um processo mais complexo onde é feita a
+  multiplicação de cada linha de uma matriz, por todas as colunas da outra matriz, elemento a
+  elemento, e realizando a soma dessas multiplicações. Considere o seguinte:
+
+  Sejam as matrizes $A = (a_{ij})_{m \times p}$ e $B = (b_{ij})_{p \times n}$, a matriz $C = A \times B$
+  é a matriz $C = (c_{ij})_{m \times n}$ tal que $c_{ij} = a_{i1}b_{1j} + a_{i2}b_{2j} + a_{i3}b_{3j} + \cdots + a_{ip}b_{pj} = \sum_{k=1}^{p} a_{ik}b_{kj}$\ .
+
+  Exemplo: sejam as matrizes $A = (a_{ij})_{3 \times 2}$ e $B = (b_{ij})_{2 \times 3}$:
+
+  \hspace{2cm}$A = \begin{pmatrix}
+    \color{red}a_{11} & \color{red}a_{12}\\
+    \color{green}a_{21} & \color{green}a_{22}\\
+    \color{blue}a_{31} & \color{blue}a_{32}
+  \end{pmatrix}$
+  \hspace{2cm}$B = \begin{pmatrix}
+    \color{orange}b_{11} & \color{purple}b_{12} & \color{darkgray}b_{13}\\
+    \color{orange}b_{21} & \color{purple}b_{22} & \color{darkgray}b_{23}
+  \end{pmatrix}$
+
+  A matriz $C = (c_{ij})_{3 \times 3} = A \times B$ é
+  dada por:
+
+  $C = \begin{pmatrix}
+    ({\color{red}a_{11}}{\color{orange}b_{11}} + {\color{red}a_{12}}{\color{orange}b_{21}}) & ({\color{red}a_{11}}{\color{purple}b_{12}} + {\color{red}a_{12}}{\color{purple}b_{22}}) & ({\color{red}a_{11}}{\color{darkgray}b_{13}} + {\color{red}a_{12}}{\color{darkgray}b_{23}})\\
+    ({\color{green}a_{21}}{\color{orange}b_{11}} + {\color{green}a_{22}}{\color{orange}b_{21}}) & ({\color{green}a_{21}}{\color{purple}b_{12}} + {\color{green}a_{22}}{\color{purple}b_{22}}) & ({\color{green}a_{21}}{\color{darkgray}b_{13}} + {\color{green}a_{22}}{\color{darkgray}b_{23}})\\
+    ({\color{blue}a_{31}}{\color{orange}b_{11}} + {\color{blue}a_{32}}{\color{orange}b_{21}}) & ({\color{blue}a_{31}}{\color{purple}b_{12}} + {\color{blue}a_{32}}{\color{purple}b_{22}}) & ({\color{blue}a_{31}}{\color{darkgray}b_{13}} + {\color{blue}a_{32}}{\color{darkgray}b_{23}})
+\end{pmatrix}$
+
+  
 \end{solutionorlines}
 
 \question
@@ -868,12 +898,15 @@ Assinale a(s) alternativa(s) correta(s):
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifprintanswers
+\newpage
+\fi
 \fullwidth{\section{Matriz inversa}}
 
 \question
 O que é uma \emph{matriz inversa}? Como é representada?
 \begin{solutionorlines}[0.50in]
-  Uma matriz quadrada $B$, da mesma ordem da matriz quadrada $A$, é dita inversa
+  Uma matriz \emph{quadrada} $B$, da mesma ordem da matriz quadrada $A$, é dita inversa
   se $AB = BA = I_n$ (onde $I_n$ é a matriz identidade de ordem $n$).
 
   A representação é dada por: $B = A^{-1}$ ($B$ é a matriz inversa de $A$).
@@ -887,6 +920,7 @@ Indique se a sentença é verdadeira (V) ou falsa (F):
   \part \vf[F] Se $A$ e $B$ são matrizes inversíveis, então $(AB)^{-1} = \frac{1}{AB}$
   \part \vf[F] Se $A$ e $B$ são matrizes inversíveis, então $(AB)^{-1} = A^{-1} + B^{-1}$
   \part \vf[V] Se $A$ e $B$ são matrizes inversíveis, então $(AB)^{-1} = A^{-1} B^{-1}$
+  \part \vf[F] Matrizes que não são quadradas são inversíveis
 \end{parts}
 
 %% \question
