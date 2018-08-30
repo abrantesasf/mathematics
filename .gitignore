@@ -3,3 +3,7 @@
 *.log
 *.out
 *.toc
+*.mp4
+*.exc.tex
+*.fc.tex
+*.sol.tex

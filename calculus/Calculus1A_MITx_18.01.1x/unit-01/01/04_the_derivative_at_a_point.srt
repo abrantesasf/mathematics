@@ -1,0 +1,71 @@
+
+We've been thinking about average velocity
+over a period of time.
+We know that if we want the average velocity between eight
+o'clock and some other time b, then
+that's given by this formula.
+We have the change in position divided by the change in time.
+But if we want the instantaneous velocity at eight o'clock
+exactly, then this formula is a little bit problematic.
+If we try plugging in b is 8:01, then that's
+giving it as an average velocity over a period of one minute.
+That's not the same thing as the instantaneous velocity
+at eight o'clock.
+We could try b is eight o'clock and one second,
+but that's still an average velocity.
+Now, it's an OK approximation if we're talking
+about the velocity of a car.
+So the car's velocity is not going
+to change very much over that one second.
+But if we're talking about a dragonfly,
+then its velocity fluctuates all over the place.
+The issue is this other variable b.
+If we want an instantaneous velocity at eight o'clock,
+there's no good way to choose one specific value
+for b in this formula that's going
+to work in every situation and that everyone can just
+agree on.
+We know that the closer b is to 8, the better.
+But we can't plug in b equals eight,
+because we'd get 0 over 0, and that's just ridiculous.
+So our solution is to take a limit
+as b approaches eight o'clock.
+So our formula for the instantaneous velocity
+at eight o'clock is a limit as b approaches
+eight of f of b minus f of 8-- that's
+the change in f-- divided by b minus 8, the change in time.
+In other words, we're taking the limit of average velocities
+as b approaches 8, or as the time interval gets
+shorter and shorter.
+
+This is a massive concept, the idea
+that you can take the limit of a bunch of average velocities
+and get an instantaneous velocity.
+And we want to apply this not just to instantaneous velocity,
+but we want to talk about instantaneous rates of change
+of any function.
+So let me erase this.
+If we want the instantaneous rate of change of a function
+f of x, at some point, x equals a.
+We're going to give this a special name.
+So we're going to call this the derivative of f
+of x at the point x equals a.
+So this is our big idea.
+The derivative at a point is measuring
+the instantaneous rate of change of the function at that point.
+And the formula for it is exactly the same
+as what we had below.
+We've got f of b minus f of a divided by b minus a.
+So that's an average rate of change.
+And then we take the limit as b approaches a.
+And that's the derivative.
+
+So we give this a special notation.
+We're going to say that the derivative of f at a
+will be denoted by this f prime of a.
+So all of these things-- this notation,
+this formula, this idea of an instantaneous rate of change--
+all of these are wrapped up in this word "derivative."
+And that's what we're going to be
+learning about for the next several weeks.
+So let's start getting used to it.
