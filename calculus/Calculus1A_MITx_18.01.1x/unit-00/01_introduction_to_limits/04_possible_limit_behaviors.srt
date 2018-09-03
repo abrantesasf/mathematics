@@ -1,0 +1,69 @@
+
+You've now seen a variety of limits.
+In our last video, we looked at a function f
+whose limit as x approached a point a from the right
+was equal to 2.
+And so it looked something like this.
+And the limit from the left as x approached a was minus 2.
+So it looked something like this.
+So we know that the right- and the left-hand limits at a point
+don't have to agree, but they could agree.
+One of the examples that you looked at was like that.
+That was the function that we called g.
+There we had the left-hand limit equal to 1/2.
+So the graph would look like this.
+And the right-hand limit was also equal to 1/2.
+So the graph would look something like that.
+Now, of course, for the purposes of limits,
+it wouldn't have mattered what g of a itself was.
+g of a could of been down here or it
+could've been equal to the value of the limit in which case
+we would have had a dot up here.
+For the actual function, I think g of a didn't exist at all,
+but that's OK.
+That's the great thing about limits,
+which is that if you have a formula or a function that
+doesn't exist or doesn't work when you try
+to plug in some value a, you can still say something
+about how it behaves near a by taking limits.
+But sometimes the limits themselves don't exist.
+So you saw another function h where
+as x approached a point from the left,
+the limit was perfectly fine.
+And I think, it was 0, but coming in from the right
+the value of the function just kept
+getting bigger, and bigger, and bigger without bound.
+So its graph would have had this sort of vertical asymptote
+as we come in from that side towards a.
+So in this case, when h doesn't approach any particular value
+coming in from the side, we say that the limit does not exist.
+And we'll always write DNE for does not exist.
+So that's one way in which a one-sided limit might not
+exist.
+The function just kind of blows up towards infinity as we
+come in from one side.
+Of course, we could have had h going the other way.
+It could have blown up towards minus infinity
+and that would also be a limit that doesn't exist.
+But in the last function that we gave you, which we called j,
+was something that was even more bizarre.
+So there we had a function and it didn't get very big,
+either positive nor negative.
+In fact, I don't know if you noticed,
+but it was always between the values y equals 1
+and y equals minus 1, but it never settled down.
+As x was coming in towards the value,
+hopefully, you saw that j of x just
+kept bouncing back and forth, going up and down, faster
+and faster, until it just kind of goes haywire as x comes in
+really, really close to a.
+So, yeah, really weird.
+We'll try not to give you too many functions like this,
+but you should be aware that stuff like this can happen.
+And when it does we'll also say that the limit from the right
+does not exist.
+So we have some really quick review questions for you.
+And then when we come back, we'll take our right-hand limit
+and we'll take our left-hand limit
+and we'll put them together and we'll have an overall limit.
+So stay tuned for that.

@@ -1,0 +1,32 @@
+
+Calculus has two main concepts-- the derivative
+and the integral.
+But in order to understand either of them,
+you first have to understand limits.
+So let's talk limits.
+We'll start with a curve.
+Fix a point A on the curve.
+Choose a second point, B, which we're going to move.
+And draw a line through A and B. Let's look
+at what happens when B moves closer and closer to the point
+A.
+This is an example of a limit.
+In the limit, the line becomes tangent to the curve
+at the point A. The slope of this line
+is the derivative at the point A. Now let's see how limits
+are related to integrals.
+Integrals are used to measure areas of curvy regions
+like this.
+Measuring areas of curvy regions seems hard,
+but measuring areas of rectangles
+is easy, so we'll try to fill our region with rectangles.
+Each rectangle has a certain width.
+As we make the width smaller, the total area
+of the rectangles gets closer and closer
+to the area of the curvy region.
+The integral is the limit of the total area of the rectangles
+as the width tends to zero.
+So that's why we start with limits.
+They're the foundation for everything else in calculus.
+At the beginning, limits may seem abstract,
+but very quickly you'll get used to them.

@@ -1,0 +1,85 @@
+
+So far, we've discussed limits of a single function
+at a particular point.
+In this video, we'll talk about what
+you can do if you know the limit of multiple functions
+at the same point.
+So here we have the limit of f of x as x approaches a.
+And let's say that's equal to 5.
+And then, over here, we have the limit
+of g of x at the same point a.
+And let's say that we know that that limit equals 3.
+And then we can talk about combinations
+of the two functions.
+For instance, we could take f of x plus g of x.
+And we can try to find the limit of this sum at the same point,
+so as x approaches a.
+And it turns out that as x approaches a,
+the limit of the sum is equal to the sum of the two limits--
+in other words, 5 plus 3, or 8.
+Let's go ahead and justify this.
+We're looking at what happens as x approaches a.
+And we know that f of x is approaching 5.
+Now, that doesn't mean that f of x ever actually equals 5.
+But it'll be off by just some small error.
+So we can write f of x equals 5 plus this little E. And E
+stands just for small error.
+This is actually the Greek letter epsilon.
+And I'm going to call it epsilon sub 1,
+since we're going to have another one for g.
+g of x, we know, is going to be 3
+plus some small error of its own,
+which I am going to call epsilon sub 2.
+And we know that as x tends to a, these small errors,
+epsilon 1, epsilon 2, they're going
+to be getting smaller and smaller, going to 0.
+Meanwhile, f of x plus g of x, just add this and this,
+and it'll be 8 plus epsilon-1 plus epsilon-2.
+So it'll be off from 8 by epsilon-1 plus epsilon-2.
+But of course, both epsilon-1 and epsilon-2,
+those are our small errors.
+They're getting really, really, really tiny
+as x gets close to a.
+So their sum is also going to get really small.
+And that means that this error goes to 0.
+And the limit of f plus g is going
+to be 8, just as I promised.
+
+And this works in general, as well.
+So I'll erase this first.
+And then the general statement is,
+if the limit as x approaches a of f of x equals some number L,
+and the limit as x approaches a of g of x
+equals some number M, then the limit
+as x approaches a of the sum, f of x plus g of x, is L plus M.
+So the limit of the sum is the sum of the limits.
+And this will work with one-sided limits,
+as well, as long as you're coming in from the same side
+on all three limits.
+For instance, x approaches a from the right,
+a from the right, a from the right, like that.
+
+This is called the limit law for addition.
+And a similar thing will hold for subtraction of functions.
+If we have these limits of f and g,
+then the limit as x approaches a of the difference,
+f of x minus g of x, will be the difference
+of the two limits, L minus M.
+Same for multiplication.
+The limit as x approaches a of the product, f
+of x times g of x, will be the product of the two limits, L
+times M. So those are the limit laws for subtraction
+and multiplication.
+There is a limit law for division.
+But it's a bit more complicated.
+If you take the limit as x approaches
+a of the quotient, f of x over g of x,
+it will L over M if the bottom limit M is not 0.
+So far, so good.
+But if M does equal 0, then things
+become really interesting.
+I'm not going to say exactly what happens just yet.
+But it's so interesting and so important to calculus
+that we're going to save that discussion
+for a whole other section.
+So stay tuned.

@@ -1292,27 +1292,29 @@ Please print or save a copy of this form for your records.
 
 Video: \href{https://www.youtube.com/watch?v=nh5O6-2Evk8}{Introduction to Limits}
 
-Calculus has two main concepts --- the derivative
-and the integral.
+Calculus has two main concepts --- the \emph{derivative}
+and the \emph{integral}.
 But in order to understand either of them,
 you first have to understand limits.
 
 So let's talk limits.
 We'll start with a curve.
-Fix a point A on the curve.
-Choose a second point, B, which we're going to move.
-And draw a line through A and B. Let's look
-at what happens when B moves closer and closer to the point
-A.
+Fix a point $A$ on the curve.
+Choose a second point, $B$, which we're going to move.
+And draw a line through $A$ and $B$. Let's look
+at what happens when $B$ moves closer and closer to the point
+$A$.
 
 This is an example of a limit.
 In the limit, the line becomes tangent to the curve
-at the point A. The slope of this line
-is the derivative at the point A. Now let's see how limits
-are related to integrals.
+at the point $A$. The slope of this line
+is the derivative at the point $A$.
 
+Now let's see how limits
+are related to integrals.
 Integrals are used to measure areas of curvy regions
 like this.
+
 Measuring areas of curvy regions seems hard,
 but measuring areas of rectangles
 is easy, so we'll try to fill our region with rectangles.
@@ -1321,7 +1323,6 @@ Each rectangle has a certain width.
 As we make the width smaller, the total area
 of the rectangles gets closer and closer
 to the area of the curvy region.
-
 The integral is the limit of the total area of the rectangles
 as the width tends to zero.
 
@@ -1352,56 +1353,57 @@ Video: \href{https://www.youtube.com/watch?v=bANtYKLugsU}{Moving closer and clos
 
 Welcome.
 
-Calculus is all about functions. You probably know that a function f takes an input x
-and gives an output f of x. But in calculus, we're not concerned with just one input
+Calculus is all about functions. You probably know that a function $f$ takes an input $x$
+and gives an output $f(x)$. But in calculus, we're not concerned with just one input
 and finding the output for that one input. We want to consider a whole range of inputs.
-So we would want to know what happens when the input "moves" or "varies."
+So we would want to know what happens when the input ``moves'' or ``varies''.
 For instance, we could ask what happens as the input moves really close.
-Closer and closer to some point. Let's say 1.
+Closer and closer to some point. Let's say $1$.
 
-And to be even more specific, let's say that x is moving towards 1 from the left.
-So if this is a number line, and we've got the point 1 right there, then x
-could start here, and just move closer and closer and closer towards 1, from the left.
-We'll use this arrow notation to denote that x is getting really, really close to 1.
-But a warning, this does not mean that x will ever actually equal 1.
-We're only concerned with values of x that are near one.
+And to be even more specific, let's say that $x$ is moving towards $1$ from the left.
+So if this is a number line, and we've got the point $1$ right there, then $x$
+could start here, and just move closer and closer and closer towards $1$, from the left.
+We'll use this arrow notation ($x \to 1^{-}$) to denote that $x$ is getting really, really close to $1$,
+from the left.
+But a warning, this does not mean that \emph{$x$ will ever actually equal $1$}.
+We're only concerned with values of $x$ that are \emph{near} one.
 
-OK. Now that that's said, as x moves,
-we know that the output f of x is also going to move.
+OK. Now that that's said, as $x$ moves,
+we know that the output $f(x)$ is also going to move.
 And so the question that we can ask
-is as x moves closer and closer to 1 from the left,
-does f of x move closer and closer
+is as $x$ moves closer and closer to $1$ from the left,
+does $f(x)$ move closer and closer
 to some value of its own?
 
 Let's be concrete here.
-And pick a particular function f.
-I'm going to choose f of x to be the square root of 3 minus 5 x
-plus x squared, plus x cubed, all over x minus 1.
+And pick a particular function $f$.
+I'm going to choose $\displaystyle f(x) = \frac{\sqrt{3-5x+x^2+x^3}}{x-1}$.
 Kind of a complicated function, but you'll
 have to trust me that this is a good example.
+
 And what we can do in order to see what's
-happening to f as x approaches 1 from the left
-is just select certain values of x
-that are getting closer and closer to 1 from the left.
+happening to $f$ as $x \to 1^{-}$,
+is just select certain values of $x$
+that are getting closer and closer to $1$ from the left.
 So over here on the number line, we
-could start with x equals zero.
-And then they get closer, we could try x equals 0.5.
-Or even closer, maybe 0.9.
-Even 0.99.
+could start with $x$ equals zero.
+And then they get closer, we could try x equals $0.5$.
+Or even closer, maybe $0.9$.
+Even $0.99$.
 These sorts of values.
 And we want to know, what's happening to the output?
 So we can just plug these values into the function,
 and see whether the output gets closer and closer to anything.
 
 Now there are technically infinitely many values
-of x that we could have chosen here.
+of $x$ that we could have chosen here.
 But let's just start with these four.
-Remember though that one value of x
+Remember though that one value of $x$
 that we will definitely not consider
-is x equal to 1 itself.
-In fact, this function isn't even defined at x equals 1.
+is $x = 1$ itself.
+In fact, this function isn't even defined at $x = 1$.
 We'd have a zero denominator.
-It is, however, defined when x is approaching one,
+It is, however, defined when $x$ is approaching one,
 and those are the values we're considering.
 
 OK.
@@ -1410,14 +1412,16 @@ inputs and the associated outputs,
 and let's just calculate those outputs.
 So when we plug in zero we'll get a square root of 3
 on top divided by minus 1.
-So minus square root of 3, which is roughly minus 1.73.
+So minus square root of 3, which is roughly minus $1.73$.
+
 Next up is x equals 0.5.
 I'm going to have to bust out the calculator here.
 So we've got 3 minus 5 times 0.5 plus 0.5 squared
 plus 0.5 cubed, and then we need the square root,
 and then we need to divide by 0.5 minus 1.
 So 0.5 negative.
-So we get minus 1.87, roughly.
+So we get minus $1.87$, roughly.
+
 So back to our table.
 We've got f of x moving from minus 1.73 to minus 1.87.
 Well that's not really enough data
@@ -1426,39 +1430,47 @@ in particular.
 So let's take our next two values of x and plug those in.
 I'm going to fast forward through the calculations.
 You ready?
+
 x equals 0.9.
 All right?
 That's approximately minus 1.97, and finally 0.99,
 and we've got minus 1.997.
-So as we go down this table, f of x
+
+So as we go down this table, $f(x)$
 is getting really, really close to what looks like minus 2.
-So we can say that as x approaches 1 from the left,
-f of x approaches minus 2.
-Now f of x might never actually equal to minus 2,
-just as x never actually equals one,
+So we can say that as $x$ approaches $1$ from the left,
+$f(x)$ approaches minus 2.
+
+Now $f(x)$ might \emph{never actually equal to $-2$},
+just as $x$ never actually equals one,
 but it gets really, really close.
 And if it gets arbitrarily close,
 meaning as close as we could possibly want,
 then that's really all we'll care about.
+
 What I would like you to do now is
-to do this same exercise, except this time have x approach 1
-from the right.
-You might be surprised at what you find.
+to do this same exercise, except this time have $x$ approach $1$
+from the right. You might be surprised at what you find.
 We'll talk afterwards.
 
-Determine what happens to $\displaystyle f(x) = \frac{\sqrt{3-5x+x^2+x^3}}{x-1}$ as $x$ approaches $1$ from the right.
-Take values of $x$ that are greater than 1, but getting closer and closer to 1. For instance, you could try
-$x=1.1, 1.01, 1.001, 1.0001$, etc. What happens to $f(x)$ as $x$ approaches 1 from the right?
-
+\begin{exercise}
+  Determine what happens to $\displaystyle f(x) = \frac{\sqrt{3-5x+x^2+x^3}}{x-1}$
+  as $x$ approaches $1$ from the right. Take values of $x$ that are greater than 1,
+  but getting closer and closer to 1. For instance, you could try
+  $x=1.1, 1.01, 1.001, 1.0001$, etc. What happens to $f(x)$ as $x$ approaches
+  1 from the right?
 \begin{itemize}[noitemsep]
 \item[$\square$] $f(x)$ gets closer and closer to a particular number
 \item[$\square$] $f(x)$ gets bigger and bigger in the positive direction without bound
 \item[$\square$] $f(x)$ gets bigger and bigger in the negative direction without bound
 \item[$\square$] None of the above
 \end{itemize}
+\end{exercise}
 
-What value does $f(x)$ get closer to? Enter the number below;
-if there is no such value, enter capital (for "does not exist")
+\begin{exercise}
+  What value does $f(x)$ get closer to? Enter the number below;
+  if there is no such value, enter capital DNE (for "does not exist")
+\end{exercise}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{One-sided limits}
@@ -1466,69 +1478,2058 @@ if there is no such value, enter capital (for "does not exist")
 
 Video: \href{https://www.youtube.com/watch?v=fAAzAVHVKQk}{One-sided limits}
 
+Welcome back.
+We've been thinking about this function.
+And in the last video, we took some values
+of $x$ that were approaching $1$ from the left ($x \to 1^{-}$),
+and we made this table.
+And we saw that as $x$ approached $1$
+from the left, $f(x)$ approached $-2$.
+So remember, these arrows mean approaching.
+And this minus sign up here, that
+signifies that we're coming at $1$ from the left,
+or from the negative direction.
+This is not the same as $-1$.
+$x$ is actually approaching positive $1$.
+It's just that $x$ is coming from the negative direction.
+And as it does that, $f(x) \to -2$.
+
+What you were supposed to do was the same thing,
+just on the other side.
+So you should have picked out some values and made a table.
+Now, you didn't have to choose these particular values.
+But you should have chosen some similar looking ones
+and gotten a similar looking table.
+And what we see from the table is
+that as $x \to 1^{+}$,
+$f(x) \to 2$, positive $+2$, not negative $-2$.
+So we've got something different going on on the right side of $1$
+versus the left side of $1$.
+Pretty cool.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    \label{fig:one-sided-limits-1}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_001.png}}
+  \end{center}
+\end{figure}
+
+Let's see what this looks like on the graph of $f$.
+All of these data points that we have will help us get started.
+For instance, on the right here, we've got $f(2) = 2.24$.
+So the point $(2, 2.24)$ is on the graph.
+And we can do the same thing with these other three points
+that are on the right.
+And they'll look like this.
+
+Now, it seems reasonable to assume that the graph of $f$
+is going to behave pretty smoothly in between these four
+points.
+So we can just draw it like this.
+And once we've done that, then we can look and see
+what happens as $x \to 1^{+}$, what's
+happening to $f(x)$ and what's happening to these $y$ values.
+Well, like we said, they're approaching
+the level $y = 2$.
+
+What happens exactly at $x = 1$?
+Well, remember that $f(1)$ isn't defined.
+We would have had a $0$ denominator, which
+means that there is no point on the graph where
+the x-coordinate is $1$.
+So we're going to put this open circle here
+to remind us that this point, $(1,2)$
+is not actually on the graph.
+But that's OK.
+If we're just talking about $x \to 1$,
+that means we only care about values of $x$ that are \emph{near} $1$,
+\emph{not equal} to $1$.
+
+We can do the same thing on the left.
+Our table of values gives us these four points.
+And if we interpolate and assume the graph
+is smooth in between those points, then we've got this.
+And as we come in towards $1$ from the left with our $x$ values,
+then our $y$ values are approaching $y = -2$.
+And again, we'll have this open circle
+to remind us that there is no point at $x = 1$
+on the graph.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    \label{fig:one-sided-limits-2}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_002.png}}
+  \end{center}
+\end{figure}
+
+OK, let me make some space here.
+And we want to give an official name
+for this phenomenon of a \emph{function's value
+approaching something}.
+We're going to call this a \emph{limit}.
+
+So on the right here, we're going
+to say that the limit of $f(x)$ as $x \to 1^{+}$
+is $2$.
+And the notation for this is as follows:
+$\displaystyle \lim_{x \to 1^{+}} f(x) = 2$.
+This is often called the \emph{right-sided} limit
+or the right-hand limit \emph{at the point $x = 1$}.
+And we have a similar thing on the left.
+We can write $\displaystyle \lim_{x \to 1^{-}} f(x) = -2$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    \label{fig:one-sided-limits-3}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_003.png}}
+  \end{center}
+\end{figure}
+
+And there we have it.
+We've got our left-hand limit, and we've
+got our right-hand limit.
+We have the notation, we have the meaning,
+and we know what it looks like in pictures.
+So this is our left-handed limit.
+And here's our right-handed limit.
+So that's our first function.
+Kind of an interesting little function, isn't it?
+We have a couple short questions for you.
+And then we have a few more functions for you
+to play around with left- and right-hand limits.
+And maybe those will be even more interesting.
+So why don't you go and find out?
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Definitions of right-hand and left-hand limits}
 \label{u0-intro-right-left}
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    \label{fig:one-sided-limits-4}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_004.png}}
+  \end{center}
+\end{figure}
+
+Suppose $f(x)$ gets really close to $R$ for values of $x$ that get really
+close to (but are not equal to) $a$ from the right. Then we say $R$ is the
+\emph{right-hand limit} of the function $f(x)$ as $x$ approaches $a$ from the right.
+We write
+
+\begin{equation}
+  \begin{split}
+    f(x) \to R \text{ as } x \to a^{+}\\
+    \text{ or }\\
+    \lim_{x \to a^{+}} f(x) = R
+  \end{split}
+\end{equation}
+
+If $f(x)$ gets really close to $L$ for values of $x$ that get really
+close to (but are not equal to) $a$ from the left, then we say $L$ is the
+\emph{left-hand limit} of the function $f(x)$ as $x$ approaches $a$ from the left.
+We write
+
+\begin{equation}
+  \begin{split}
+    f(x) \to L \text{ as } x \to a^{-}\\
+    \text{ or }\\
+    \lim_{x \to a^{-}} f(x) = L
+  \end{split}
+\end{equation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{A few more limits}
 \label{u0-intro-more}
 
-xx
+\begin{exercise}
+  \textbf{Another function:} Let's explore the right and left hand limits of a
+  few more functions. In this problem, we'll examine the function
+  $\displaystyle g(x) = \frac{x}{\tan{(2x)}}$ as $x \to 0$.
+  Here is a table of values of $g(x)$ as $x \to 0^{+}$:
+  \begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_005.png}}
+  \end{center}
+  \end{figure}
+  Use the calculator to find the left-hand limit (calculator in radians!).
+  \begin{itemize}[noitemsep]
+  \item[$\square$] As $x \to 0^{-}$, $g(x)$ gets closer and closer to a particular number $L$
+    ($g(x) \to L$)
+  \item[$\square$] As $x \to 0^{-}$, $g(x)$ gets bigger and bigger without bound
+    ($g(x) \to +\infty$)
+\item[$\square$] As $x \to 0^{-}$, $g(x)$ gets bigger and bigger in the negative direction without bound
+    ($g(x) \to -\infty$)  
+\item[$\square$] As $x \to 0^{-}$, $g(x)$ approaches neither a finite number $L$, nor $+\infty$,
+  nor $-\infty$
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  What value does $g(x)$ get closer to as $x \to 0^{-}$? (If it approaches a finite
+  number, enter the number below; in any other case, enter capital DNE for "does not exist".)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Yet another function:} In this problem, we we'll examine the function
+  $\displaystyle h(x) = \frac{|x| + \sin{(x)}}{x^2}$, as $x \to 0$.
+  Here is a table of values of $g(x)$ as $x \to 0^{-}$:
+  \begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_006.png}}
+  \end{center}
+  \end{figure}
+  Use the calculator to find the right-hand limit (calculator in radians!).
+  \begin{itemize}[noitemsep]
+  \item[$\square$] As $x \to 0^{+}$, $h(x)$ gets closer and closer to a particular number $R$
+    ($h(x) \to R$)
+  \item[$\square$] As $x \to 0^{+}$, $h(x)$ gets bigger and bigger without bound
+    ($h(x) \to +\infty$)
+\item[$\square$] As $x \to 0^{+}$, $h(x)$ gets bigger and bigger in the negative direction without bound
+    ($h(x) \to -\infty$)  
+\item[$\square$] As $x \to 0^{+}$, $h(x)$ approaches neither a finite number $R$, nor $+\infty$,
+  nor $-\infty$
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  What value does $h(x)$ get closer to as $x \to 0^{+}$? (If it approaches a finite
+  number, enter the number below; in any other case, enter capital DNE for "does not exist".)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{One last function:} In this problem, we we'll examine the function
+  $\displaystyle j(x) = \sin{\left(\frac{13}{x}\right)}$, as $x \to 0^{+}$. Use a
+  calculator to figure out what $\displaystyle \lim_{x \to 0^{+}} j(x)$ might be.
+  Make sure your calculator is in radians!
+    \begin{itemize}[noitemsep]
+  \item[$\square$] As $x \to 0^{+}$, $j(x)$ gets closer and closer to a particular number $R$
+    ($j(x) \to R$)
+  \item[$\square$] As $x \to 0^{+}$, $j(x)$ gets bigger and bigger without bound
+    ($j(x) \to +\infty$)
+\item[$\square$] As $x \to 0^{+}$, $j(x)$ gets bigger and bigger in the negative direction without bound
+    ($j(x) \to -\infty$)  
+\item[$\square$] As $x \to 0^{+}$, $j(x)$ approaches neither a finite number $R$, nor $+\infty$,
+  nor $-\infty$
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  What value does $j(x)$ get closer to as $x \to 0^{+}$? (If it approaches a finite
+  number, enter the number below; in any other case, enter capital DNE for "does not exist".)
+\end{exercise}
+  
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Possible limits behaviors}
 \label{u0-intro-behaviors}
 
-xx
+Video: \href{https://www.youtube.com/watch?v=LCdQyNilFn8}{Possible limits behaviors}
+
+You've now seen a variety of limits.
+In our last video, we looked at a function $f$
+whose limit as $x$ approached a point a from the right
+was equal to $2$.
+And so it looked something like this.
+And the limit from the left as x approached a was minus 2.
+So it looked something like this.
+So we know that the right- and the left-hand limits at a point
+don't have to agree, but they could agree.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.4]{imagens/unit-0/limit_007.png}}
+  \end{center}
+\end{figure}
+
+One of the examples that you looked at was like that.
+That was the function that we called $g$.
+There we had the left-hand limit equal to $1/2$.
+So the graph would look like this.
+And the right-hand limit was also equal to $1/2$.
+So the graph would look something like that.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.4]{imagens/unit-0/limit_008.png}}
+  \end{center}
+\end{figure}
+
+Now, of course, for the purposes of limits,
+it wouldn't have mattered what $g(a)$ itself was.
+$g(a)$ could of been down here or it
+could've been equal to the value of the limit in which case
+we would have had a dot up here.
+For the actual function, I think $g(a)$ didn't exist at all,
+but that's OK.
+That's the great thing about limits,
+which is that if you have a formula or a function that
+doesn't exist or doesn't work when you try
+to plug in some value $a$, you can still say something
+about \emph{how it behaves near $a$ by taking limits}.
+
+But sometimes the limits themselves don't exist.
+So you saw another function $h$ where
+as $x$ approached point $a$ from the left,
+the limit was perfectly fine.
+And I think, it was 0, but coming in from the right
+the value of the function just kept
+getting bigger, and bigger, and bigger without bound.
+So its graph would have had this sort of vertical asymptote
+as we come in from that side towards $a$.
+So in this case, when $h$ doesn't approach any particular value
+coming in from the side, we say that the limit does not exist.
+And we'll always write DNE for does not exist.
+So that's one way in which a one-sided limit might not
+exist.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.4]{imagens/unit-0/limit_009.png}}
+  \end{center}
+\end{figure}
+
+The function just kind of blows up towards infinity as we
+come in from one side.
+Of course, we could have had $h$ going the other way.
+It could have blown up towards minus infinity
+and that would also be a limit that doesn't exist.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.44]{imagens/unit-0/limit_010.png}}
+  \end{center}
+\end{figure}
+
+But in the last function that we gave you, which we called $j$,
+was something that was even more bizarre.
+So there we had a function and it didn't get very big,
+either positive nor negative.
+In fact, I don't know if you noticed,
+but it was always between the values $y = 1$
+and $y = -1$, but it never settled down.
+As $x$ was coming in towards the value,
+hopefully, you saw that $j(x)$ just
+kept bouncing back and forth, going up and down, faster
+and faster, until it just kind of goes haywire as $x$ comes in
+really, really close to $a$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_011.png}}
+  \end{center}
+\end{figure}
+
+So, yeah, really weird.
+We'll try not to give you too many functions like this,
+but you should be aware that stuff like this can happen.
+And when it does we'll also say that the limit from the right
+does not exist.
+
+So we have some really quick review questions for you.
+And then when we come back, we'll take our right-hand limit
+and we'll take our left-hand limit
+and we'll put them together and we'll have an overall limit.
+So stay tuned for that.
+
+\textbf{NOTE!} There are many possible limit behaviors:
+
+\begin{itemize}
+\item The right-hand and left-hand limits may both exist and be equal.
+\item The right-hand and left-hand limits may both exist, but may fail to be equal.
+\item A right- and/or left-hand limit could fail to exist due to blowing up to $\pm \infty$
+  (Example: Consider the function $1/x$ near $x=0$.) In this case, we either say
+  the limit blows up to infinity. We also say that the limit does not exist
+  because $\infty$ is not a real number!
+\item A right- and/or left-hand limit could fail to exist because it oscillates
+  between many values and never settles down. In this case we say the limit does not exist.
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Quick limit questions}
 \label{u0-intro-questions}
 
-xx
+\begin{exercise}
+  \textbf{Left vs. right}\\
+  Suppose $\lim_{x \to a^{+}} f(x) = R$. Must
+  $\lim_{x \to a^{-}} f(x)$ exist?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] Yes
+  \item[$\square$] No
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Matching sides}\\
+  Suppose $\lim_{x \to a^{+}} f(x) = R$ and 
+  $\lim_{x \to a^{-}} f(x) = L$. Must $R = L$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] Yes
+  \item[$\square$] No
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Limit vs. function}\\
+  Suppose $\lim_{x \to a^{+}} f(x) = R$.
+  Must $f(x) =R$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] Yes
+  \item[$\square$] No
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Function vs. limit}\\
+  Suppose $f(a) = K$. Must $\lim_{x \to a^{+}} f(x) = K$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] Yes
+  \item[$\square$] No
+  \end{itemize}
+\end{exercise}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{The overall limit}
 \label{u0-intro-overall}
 
-xx
+Video: \href{https://www.youtube.com/watch?v=O2BEgM8kHoY}{The overall limit}
+
+We've learned about left- and right-hand limits.
+The left-hand limit is asking about what happens when
+$x$ approaches $a$ from the left.
+So it's concerned with values of $x$
+that are over here to the left.
+And the right-hand limit is talking
+about values of $x$ that are close to $a$,
+but on the right over here.
+
+Now a lot of times we just want to think
+about values of $x$ that are close to $a$, period,
+without restricting to one side or the other.
+And that is going to be the \emph{overall limit}.
+
+We'll denote it by $\displaystyle \lim_{x \to a}f(x) = L$.
+So notice that there's no plus or minus sign here
+and this will equal $L$, if whenever
+$x$ comes in close to $a$ from either side
+$f(x)$ gets really close to $L$.
+In other words, the overall limit
+equals $L$ exactly when the left-hand limit
+and the right-hand limit are both equal to the same number
+$L$. In pictures it has to look like this.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_012.png}}
+  \end{center}
+\end{figure}
+
+As we come in from the left, $f(x)$ is approaching $L$.
+And as we come in from the right, same thing.
+And we can denote this either with this lim notation
+or we can use arrows, $f(x) \to L$, as $x \to a$.
+But remember, limits only care about values
+of $x$ that are \emph{close} to $a$, but \emph{not equal to} $a$.
+So for the sake of the overall limit,
+it's not going to matter whether we have a dot for $f(a)$.
+We could fill in the circle or we could put a dot down here
+or we could just not have a dot if $f(a)$ doesn't exist,
+whatever, it won't affect the limit.
+
+Now \emph{the overall limit might not exist}.
+One way it might it fail to exist
+is if \emph{the limit from one side does not exist}.
+So for instance as we come in from the left, $f(x)$
+might blow up to minus infinity or something.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.3]{imagens/unit-0/limit_013.png}}
+  \end{center}
+\end{figure}
+
+But another way is if the limit from the left and the limit
+from the right both exist, but \emph{they're not equal},
+something like this.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.3]{imagens/unit-0/limit_014.png}}
+  \end{center}
+\end{figure}
+
+They have to \emph{\textbf{both exist}} AND \emph{\textbf{be equal}} in order
+to get an overall limit.
+
+So that's the overall limit.
+Down the road will stop saying overall.
+And just anytime we say the limit
+without specifying left to right,
+we'll mean this overall limit.
+And this idea of the limit is really the building block
+for all of calculus.
+So we have some problems for you to get used to it
+and then we'll start to develop quicker and more accurate
+ways of computing these limits.
+See you then.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Limit definition}
 \label{u0-intro-definition}
 
-xx
+\paragraph{The Limit in Words}
+If a function $f(x)$ approaches some value $L$ as $x$ approaches $a$ from
+\emph{both the right and the left}, then \textbf{the limit} of $f(x)$ exists and equals $L$.
 
+\paragraph{The Limit in Symbols}
+If
+\begin{equation}
+  \lim_{x \to a^{-}}f(x) = \lim_{x \to a^{+}}f(x) = L
+\end{equation}
+Then
+\begin{equation}
+  \lim_{x \to a}f(x) = L
+\end{equation}
+Alternatively
+\begin{equation}
+  f(x) \to L \text{ as } x \to a
+\end{equation}
+    
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Limits from graphs}
 \label{u0-intro-graphs}
 
-xx
+\begin{exercise}
+  \textbf{Estimate limits}\\
+  Determine the following (Type DNE if the value does not exist.)
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_015.png}}
+    \end{center}
+  \end{figure}
+  \begin{itemize}
+  \item $\displaystyle \lim_{x \to -2^{-}} f(x)=$
+  \item $\displaystyle \lim_{x \to -2^{+}} f(x)=$
+  \item $\displaystyle \lim_{x \to -2} f(x)=$
+  \item $f(-2)=$
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Estimate limits 2}\\
+  Determine the following (Type DNE if the value does
+  not exist.)
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.55]{imagens/unit-0/limit_016.png}}
+    \end{center}
+  \end{figure}
+  \begin{itemize}
+  \item $\displaystyle \lim_{x \to 1^{-}} f(x)=$
+  \item $\displaystyle \lim_{x \to 1^{+}} f(x)=$
+  \item $\displaystyle \lim_{x \to 1} f(x)=$
+  \item $f(1)=$
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Estimate limits 3}\\
+  Determine the following (Type DNE if the value does
+  not exist.)
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.55]{imagens/unit-0/limit_017.png}}
+    \end{center}
+  \end{figure}
+  \begin{itemize}
+  \item $\displaystyle \lim_{x \to 3^{-}} f(x)=$
+  \item $\displaystyle \lim_{x \to 3^{+}} f(x)=$
+  \item $\displaystyle \lim_{x \to 3} f(x)=$
+  \item $f(3)=$
+  \end{itemize}
+\end{exercise}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Review problems}
 \label{u0-intro-review}
 
-xx
+\begin{exercise}
+  \textbf{Function vs. limit 2}\\
+  True or false: If we know $f(a)$ exists, this means
+  that $\displaystyle \lim_{x \to a}f(x)$ exists.
+  \begin{itemize}[noitemsep]
+  \item[$\square$] True
+  \item[$\square$] False
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Double-sided limit}\\
+  Suppose that $\displaystyle \lim_{x \to a^-}f(x) = \lim_{x \to a^+}f(x) = 3$. Which of the following must be true?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] $\displaystyle \lim_{x \to a}f(x) = 3$
+  \item[$\square$] $f(a) = 3$
+  \item[$\square$] Both must be true
+  \item[$\square$] Neither is necessarily true
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{ Floor function}\\
+  Recall that the floor function $\lfloor{x}\rfloor$ denotes the greatest integer less than or equal to $x$.
+  (Calculate the following values, or enter DNE if a value does not exist.)
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.55]{imagens/unit-0/limit_018.png}}
+    \end{center}
+  \end{figure}  
+  \begin{itemize}
+  \item[$\square$] $\displaystyle \lim_{x \to 2^-}\lfloor x \rfloor =$
+  \item[$\square$] $\displaystyle \lim_{x \to 2^+}\lfloor x \rfloor =$
+  \item[$\square$] $\displaystyle \lim_{x \to 2}\lfloor x \rfloor =$
+  \item[$\square$] $\lfloor 2 \rfloor =$
+  \end{itemize}
+\end{exercise}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Limit laws}
 \label{u0-intro-laws}
 
-xx
+Video: \href{https://www.youtube.com/watch?v=WQF7svQblQk}{Limit Laws}
+
+So far, we've discussed limits of a single function at a particular point.
+In this video, we'll talk about what you can do if you know the limit of multiple
+functions at the same point.
+
+So here we have the limit of $f(x)$ as $x$ approaches $a$.
+And let's say that's equal to $5$.
+And then, over here, we have the limit
+of $g(x)$ at the same point $a$.
+And let's say that we know that that limit equals $3$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_019.png}}
+  \end{center}
+\end{figure}
+
+And then we can talk about combinations
+of the two functions.
+For instance, we could take $f(x) + g(x)$.
+And we can try to find the limit of this sum at the same point,
+so as $x$ approaches $a$.
+And it turns out that as $x$ approaches $a$,
+the limit of the sum is equal to the sum of the two limits ---
+in other words, $5 + 3 = 8$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_020.png}}
+  \end{center}
+\end{figure}
+
+Let's go ahead and justify this.
+We're looking at what happens as $x$ approaches $a$.
+And we know that $f(x)$ is approaching $5$.
+Now, that doesn't mean that $f(x)$ ever actually equals $5$.
+But it'll be off by just some small error.
+So we can write $f(x) = 5 + \epsilon_1 $ (this little e). And ``e'' ($\epsilon$)
+stands just for small error.
+This is actually the Greek letter epsilon.
+And I'm going to call it epsilon sub $1$,
+since we're going to have another one for $g$.
+
+$g(x)$, we know, is going to be $3 + \epsilon_2$
+plus some small error of its own,
+which I am going to call epsilon sub $2$.
+And we know that as $x$ tends to $a$, these small errors,
+$\epsilon_1$, $\epsilon_2$, they're going
+to be getting smaller and smaller, going to $0$.
+
+Meanwhile, $f(x) + g(x)$, just add this and this,
+and it'll be $8 + \epsilon_1 + \epsilon_2$.
+So it'll be off from $8$ by $\epsilon_1 + \epsilon_2$.
+But of course, both $\epsilon_1$ and $\epsilon_2$,
+those are our small errors.
+
+They're getting really, really, really tiny
+as $x$ gets close to $a$.
+So their sum is also going to get really small.
+And that means that this error goes to $0$.
+And the limit of $f$ plus $g$ is going
+to be $8$, just as I promised.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_021.png}}
+  \end{center}
+\end{figure}
+
+And this works in general, as well.
+So I'll erase this first.
+And then the general statement is,
+if the $\displaystyle \lim_{x \to a}f(x) = L$,
+and the $\displaystyle \lim_{x \to a}g(x) = M$,
+then $\displaystyle \lim_{x \to a}\left[f(x)+g(x)\right] = L+M$.
+So \emph{the limit of the sum is the sum of the limits}.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_022.png}}
+  \end{center}
+\end{figure}
+
+And this will work with one-sided limits,
+as well, as long as you're coming in from the same side
+on all three limits.
+For instance, $x$ approaches $a$ from the right,
+$a$ from the right, $a$ from the right, like that:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_023.png}}
+  \end{center}
+\end{figure}
+
+This is called \emph{the limit law for addition}.
+And a similar thing will hold for subtraction of functions.
+If we have these limits of $f$ and $g$,
+then the limit as $x$ approaches $a$ of the difference,
+$f(x) - g(x)$, will be the difference
+of the two limits, $L - M$.
+Same for multiplication.
+The limit as $x$ approaches $a$ of the product, $f(x) \times g(x)$,
+will be the product of the two limits, $L \times M$.
+So those are \emph{the limit laws for subtraction} and \emph{the limit laws for multiplication}.
+There is a limit law for division.
+But it's a bit more complicated.
+If you take the limit as $x$ approaches
+$a$ of the quotient, $f(x)/g(x)$,
+it will $L/M$ \emph{if} the bottom limit $M \ne 0$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_024.png}}
+  \end{center}
+\end{figure}
+
+So far, so good.
+But if $M = 0$, then things
+become really interesting.
+I'm not going to say exactly what happens just yet.
+But it's so interesting and so important to calculus
+that we're going to save that discussion
+for a whole other section.
+So stay tuned.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Limit laws (2)}
 \label{u0-intro-laws2}
 
-xx
+Suppose $\displaystyle \lim_{x \to a}f(x) = L$, and $\displaystyle \lim_{x \to a}g(x) = M$.
+Then we get the following Limit Laws:
+
+\textbf{Limit Law for Addition:}
+\begin{equation}
+  \lim_{x \to a}\left[f(x) + g(x)\right] = L + M
+\end{equation}
+
+\textbf{Limit Law for Subtraction:}
+\begin{equation}
+  \lim_{x \to a}\left[f(x) - g(x)\right] = L - M
+\end{equation}
+
+\textbf{Limit Law for Multiplication:}
+\begin{equation}
+  \lim_{x \to a}\left[f(x) \times g(x)\right] = L \times M
+\end{equation}
+
+We alse have part of the \textbf{Limit Law for Division (part 1):}
+\begin{equation}
+  \lim_{x \to a}\left[\frac{f(x)}{g(x)}\right] = \frac{L}{M} \quad \text{ if } M \ne 0
+\end{equation}
+
+We will discuss what happens when $M=0$ in a later section!
+
+\paragraph{Justifying the Limit Law for Multiplication} If $\displaystyle \lim_{x \to a}f(x) = L$
+and $\displaystyle \lim_{x \to a}g(x) = M$, then we can write:
+
+\begin{equation}
+  \begin{split}
+    f(x) &= L + \epsilon_1 \quad \text{ where } \epsilon_1 \to 0 \quad \text{ as } x \to a\\
+    g(x) &= M + \epsilon_2 \quad \text{ where } \epsilon_2 \to 0 \quad \text{ as } x \to a
+  \end{split}
+\end{equation}
+
+Then
+
+\begin{equation}
+  f(x)g(x) = LM + \epsilon_1M + \epsilon_2L + \epsilon_1\epsilon_2
+\end{equation}
+
+As $L$ and $M$ are constants and $\epsilon_1,\epsilon_2$ tend to zero, all three error terms
+$\epsilon_1M$, $\epsilon_2L$, and $\epsilon_1\epsilon_2$ will go to zero as $x$
+approaches $a$. Hence
+
+\begin{equation}
+  \lim_{x \to a}\left[f(x) \times g(x)\right] = L \times M
+\end{equation}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Summary}
 \label{u0-intro-summary}
 
-xx
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_004.png}}
+  \end{center}
+\end{figure}
+
+\paragraph{Definitions of right-hand and left-hand limits}  Suppose $f(x)$ gets
+really close to $R$ for values of $x$ that get really close to (but are not equal
+to) $a$ from the right. Then we say $R$ is the \emph{right-hand limit} of the function
+$f(x)$ as $x$ approaches $a$ from the right. We write
+
+\begin{equation}
+  \begin{split}
+    &f(x) \to R \quad \text{ as } x \to a^+\\
+    &\text{ or }\\
+    &\lim_{x \to a^+}f(x) = R
+  \end{split}
+\end{equation}
+
+If $f(x)$ gets really close to $L$ for values of $x$ that get really close to (but
+are not equal to) $a$ from the left, we say that $L$ is the \emph{left-hand limit}
+of the function $f(x)$ as $x$ approaches $a$ from the left. We write
+
+\begin{equation}
+  \begin{split}
+    &f(x) \to L \quad \text{ as } x \to a^-\\
+    &\text{ or }\\
+    &\lim_{x \to a^-}f(x) = L
+  \end{split}
+\end{equation}
+
+\paragraph{Possible limit behaviors} There are many possible limit behaviors:
+\begin{itemize}[noitemsep]
+\item The right-hand and left-hand limits may both exist and be equal.
+\item The right-hand and left-hand limits may both exist, but may fail to be equal.
+\item A right- and/or left-hand limit could fail to exist due to blowing up to $\pm \infty$.
+  (Example: Consider the function $1/x$ near $x=0$.) In this case, we either say the
+  limit blows up to infinity. We also say that the limit does not exist because
+  $\infty$ is not a real number!
+\item A right- and/or left-hand limit could fail to exist because it oscillates
+  between many values and never settles down. In this case we say the limit does not exist.
+\end{itemize}
+
+\paragraph{Definition of Limit: the limit in words} If a function $f(x)$ approaches
+some value $L$ as $x$ approaches $a$ from \emph{both} the \emph{right} and the \emph{left},
+then the \emph{limit} of $f(x)$ exists and equals $L$.
+
+\paragraph{Definition of Limit: the limit in symbols} If $\displaystyle \lim_{x \to a^-}f(x) = \lim_{x \to a^+}f(x) = L$,
+then $\displaystyle \lim_{x \to a}f(x) = L$. Alternatively, $f(x) \to L$ as $x \to a$.
+
+\paragraph{The Limit Laws}
+Suppose $\displaystyle \lim_{x \to a}f(x) = L$, and $\displaystyle \lim_{x \to a}g(x) = M$.
+Then we get the following Limit Laws:
+
+\textbf{Limit Law for Addition:}
+\begin{equation}
+  \lim_{x \to a}\left[f(x) + g(x)\right] = L + M
+\end{equation}
+
+\textbf{Limit Law for Subtraction:}
+\begin{equation}
+  \lim_{x \to a}\left[f(x) - g(x)\right] = L - M
+\end{equation}
+
+\textbf{Limit Law for Multiplication:}
+\begin{equation}
+  \lim_{x \to a}\left[f(x) \times g(x)\right] = L \times M
+\end{equation}
+
+We alse have part of the \textbf{Limit Law for Division (part 1):}
+\begin{equation}
+  \lim_{x \to a}\left[\frac{f(x)}{g(x)}\right] = \frac{L}{M} \quad \text{ if } M \ne 0
+\end{equation}
+
+We will discuss what happens when $M=0$ in a later section!
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Limits of quotients}
+\label{u0-lim-quo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Limits of quotients}
+\label{u0-lim-quo-lim}
+
+Video: \href{https://www.youtube.com/watch?v=KFqbk49EHFM}{Limits of quotients}
+
+Let's consider limits of quotients.
+We take a quotient, $f/g$.
+If the limit of $g$ is not zero, the limit of the quotient
+is computed as you would expect.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_025.png}}
+  \end{center}
+\end{figure}
+
+On the other hand, if the limit of $g$ is $0$,
+the formula does not work.
+Dividing by $0$ is not allowed.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_026.png}}
+  \end{center}
+\end{figure}
+
+However, if both the top and bottom tend to $0$,
+something very interesting happens.
+The numerator and denominator are
+competing against each other.
+This is exactly what happens when
+we compute the slope of the tangent line at $A$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_027.png}}
+  \end{center}
+\end{figure}
+
+The slope is the limit of the quotient of the rise
+over the run of the line through the two points
+as $B$ approaches $A$. Both the rise and the run tend to $0$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_028.png}}
+  \end{center}
+\end{figure}
+
+But the ratio is meaningful and has an honest limit.
+How does this work?
+In this section, we'll develop some tools to explore
+how this is possible.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{How do we compute limits of quotients?}
+\label{u0-lim-quo-how-compute}
+
+\paragraph{Objectives} At the end of this sequence, and after some practice, you should be able to:
+\begin{itemize}[noitemsep]
+\item Distinguish the three cases of the Division Limit Law.
+\item Compute limits of quotients of functions.
+\item Determine when a limit is $\pm \infty$
+\end{itemize}
+
+Contents: 15 pages, 6 videos (22 minutes 1x speed), 18 questions.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Limits and division}
+\label{u0-lim-quo-lim-div}
+
+Video: \href{https://www.youtube.com/watch?v=HBWjEmPpItk}{Limits and division}
+
+Let's talk some more about limits of quotients.
+Previously, we said that if the limit of the numerator
+was equal to $L$ and the limit of the denominator was equal to $M$
+and if $M \ne 0$, then the limit of the quotient
+is $L/M$. And that was \emph{part one} for \emph{Limit Law for Division}.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_029.png}}
+  \end{center}
+\end{figure}
+
+But what happens if the limit of the denominator is equal to $0$?
+The answer is, it's going to \emph{depend
+on what the numerator is doing}.
+
+If the limit of the numerator is something other than $0$,
+then if you look at $f(x)/g(x)$, then when $x$
+is approaching $a$, we're going to get
+numerators that aren't near $0$.
+So they are not small.
+But our denominators are going to be really close to $0$.
+So we're going to be dividing a number that's not small by one
+that is really small.
+And the result is going to be huge.
+And as the denominator gets smaller and smaller,
+this quotient is going to get even huger.
+For instance, if we take $5$ over $0.01$, we get $500$.
+But if we have $5$ over $0.001$, we get $5000$.
+Now we don't know the signs of these things.
+So it could be huge positive or huge negative.
+And if the denominator equals $0$ exactly,
+then this quotient might not be defined at all.
+But one thing is for certain, as $x$ approaches
+$a$ there's no way that this quotient can be approaching
+any fixed number.
+So the limit does not exist.
+So that's \emph{part two} of the \emph{Division Limit law}.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_030.png}}
+  \end{center}
+\end{figure}
+
+But that still leaves a third case.
+If the limit of the denominator equals
+$0$ and the limit of the numerator also equals $0$, then what?
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_031.png}}
+  \end{center}
+\end{figure}
+
+And you might be tempted to say that this limit won't
+exist either, but that's not necessarily so.
+A lot of interesting things can happen.
+For instance, let's say that we want the limit as $x$ approaches
+$0$ of $2x/x$.
+And here the numerator is continuous
+so as $x$ approaches $0$, we can just plug in,
+and we see that the numerator is approaching $0$ and same thing
+with the denominator.
+But we don't want to say that this limit is $0/0$.
+$0/0$ isn't defined, but this quotient, I
+mean we know it's $2$.
+Well, almost everywhere it's $2$.
+It's not equal to $2$ when $x = 0$, but when
+we're taking the limit as $x$ approaches $0$, what happens
+at $x = 0$ doesn't matter.
+So this quotient is $2$ everywhere that counts
+and so its limit is $2$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_032.png}}
+  \end{center}
+\end{figure}
+
+OK.
+You might be complaining that this
+seems like an exception, sort of a special case.
+But really this situation of a quotient where
+both the top and the bottom go to $0$, and yet
+the limit of the quotient still exists,
+that happens a lot in calculus, and it's incredibly important.
+
+So we have some questions for you
+so that you can dig in and really understand
+how this comes about.
+Talk to you later.
+
+\begin{exercise}
+  \textbf{What is going on?}\\
+  In the video we looked at $\displaystyle \lim_{x \to 0}\frac{2x}{x}$, where the
+  numerator and denominator are both approaching zero. How can a quotient such as
+  this have a limit that exists? Let's explore.
+  When taking a limit as $x \to 0$, do we consider what happens when $x = 0$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] Yes
+  \item[$\square$] No
+  \end{itemize}
+  As $x \to 0$, will the numerator $2x$ be exactly zero?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] Yes
+  \item[$\square$] No
+  \end{itemize}
+  As $x \to 0$, will the denominator $x$ be exactly zero?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] Yes
+  \item[$\square$] No
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Quotients of small numbers}
+\label{u0-lim-quo-small}
+
+Let's consider the general case of a limit $\displaystyle \lim_{x \to a}\frac{f(x)}{g(x)}$
+where both the numerator and denominator approach $0$.
+
+When $x$ is near $a$, both $f(x)$ and $g(x)$ are close to zero but --- crucially ---
+not necessarily equal to zero. So, to evaluate $\displaystyle \lim_{x \to a}\frac{f(x)}{g(x)}$,
+we need to figure out what happens when we divide one small number by another.
+
+We're going to ask you to actually divide some really small numbers by some really
+small numbers to find out for yourself!
+
+\begin{exercise}
+  \textbf{Make a guess!}\\
+  Before we get to numerical evidence, we'd like you to make a guess as to what
+  the answer is. If all we know is that $f(x)$ is small (say, between zero and $0.01$)
+  and that $g(x)$ is small (again, between zero and $0.01$), what do you think will
+  definitely be true about the quotient $f(x)/g(x)$?
+
+  Don't worry about getting this
+  wrong --- all answers will be accepted. We just want you to come up with a hypothesis!
+  \begin{itemize}[noitemsep]
+  \item[$\square$] I think it will be really close to zero
+  \item[$\square$] I think it will be really big
+  \item[$\square$] I think it will be a number that is neither big nor small
+  \item[$\square$] I think it could be any of these; it depends!
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Quotients of small numbers}\\
+  In this problem, we're going to figure out what $f(x)/g(x)$ might be close to
+  if the numerator is really small and the denominator is really small. You might
+  want a calculator!
+
+  For purposes of this question, ``really big'' means over 100,
+  and ``really close to zero'' means less than $0.01$.
+
+  If $f(x) = 0.00000013$ and $g(x) = 0.0025$, then $f(x)/g(x)$ is\ldots
+  \begin{itemize}[noitemsep]
+  \item[$\square$] Really close to zero
+  \item[$\square$] Really big
+  \item[$\square$] Not big, but not close to zero
+  \item[$\square$] Undefined
+  \end{itemize}
+
+  If $f(x) = 0.000033$ and $g(x) = 0.000029$, then $f(x)/g(x)$ is\ldots
+  \begin{itemize}[noitemsep]
+  \item[$\square$] Really close to zero
+  \item[$\square$] Really big
+  \item[$\square$] Not big, but not close to zero
+  \item[$\square$] Undefined
+  \end{itemize}
+
+  If $f(x) = 0.0094$ and $g(x) = 0.00000023$, then $f(x)/g(x)$ is\ldots
+  \begin{itemize}[noitemsep]
+  \item[$\square$] Really close to zero
+  \item[$\square$] Really big
+  \item[$\square$] Not big, but not close to zero
+  \item[$\square$] Undefined
+  \end{itemize}
+
+  If $f(x) = 0.00023$ and $g(x) = 0.000081$, then $f(x)/g(x)$ is\ldots
+  \begin{itemize}[noitemsep]
+  \item[$\square$] Really close to zero
+  \item[$\square$] Really big
+  \item[$\square$] Not big, but not close to zero
+  \item[$\square$] Undefined
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Quotient of small numbers}\\
+  So now that we have some evidence in, let's answer the question for real.
+  If all we know is that $f(x)$ is small (say, between zero and $0.01$) and that
+  $g(x)$ is small (again, between zero and $0.01$), what can we definitively say
+  about the quotient $f(x)/g(x)$? 
+  \begin{itemize}[noitemsep]
+  \item[$\square$] It will be really close to zero
+  \item[$\square$] It will be really big
+  \item[$\square$] It will be a number that is neither big nor small
+  \item[$\square$] It could be any of these; it depends!
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Small divided by small}
+\label{u0-lim-quo-small-div-small}
+
+Video: \href{https://www.youtube.com/watch?v=3VysBc12dOI}{Limit Law for Division, Part 3}
+
+All right.
+Let's finish this third part of the limit law for division.
+We're dealing with the case where
+the limit of the denominator is $0$
+and the limit of the numerator is $0$, but remember
+that we're not going to be saying that this limit equals
+$0/0$.
+When $x$ is near $a$, the numerator and denominator
+are approaching $0$, but that doesn't mean that they equal $0$.
+It's just that they're close to $0$.
+So the quotient here is going to be
+some small number over some small number when $x$ is near $a$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_033.png}}
+  \end{center}
+\end{figure}
+
+And the interesting thing about this case
+is that just knowing that the numerator and denominator are
+small doesn't tell us anything about how big this quotient is.
+What we really would need to know
+is how small the numerator and denominator
+are \emph{relative to one another}.
+For instance, the numerator could be $0.01$.
+That's pretty small, but the denominator
+could be even smaller.
+It could be $0.00001$.
+And when you divide this, you get $1000$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_034.png}}
+  \end{center}
+\end{figure}
+
+Or it could be the reverse.
+It could be that the numerator is $0.00001$ and the denominator
+is $0.01$.
+And now the quotient becomes $0.001$ or $1/1000$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_035.png}}
+  \end{center}
+\end{figure}
+
+In the example from the last video that we did,
+we were taking the limit as $x$ approaches $0$ of $2x/x$.
+Here the denominator is always exactly half the size
+of the numerator and so we always got a quotient of 2.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_036.png}}
+  \end{center}
+\end{figure}
+
+The bottom line is that \emph{if the denominator and the numerator
+are both going to $0$, the limit of the quotient
+could be anything}.
+It could be big.
+It could be small.
+It could be somewhere between any of that.
+
+Now this doesn't mean that we just give up and say,
+I don't know, but it does mean that we
+have to do more work in order to determine
+what the limit is in each case.
+We have some questions for you.
+And then in the next video, we'll
+discuss just what sort of work you can do in order
+to figure out limits like this.
+OK.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Limit law for division}
+\label{u0-lim-quo-limit-law-div}
+
+If $\displaystyle \lim_{x \to a}f(x) = L$ and $\displaystyle \lim_{x \to a}g(x) = M$,
+then:
+
+\begin{itemize}
+\item If $M \ne 0$, then $\displaystyle \lim_{x \to a}\frac{f(x)}{g(x)} = \frac{L}{M}$
+\item If $M = 0$ but $L \ne 0$, then $\displaystyle \nexists \lim_{x \to a}\frac{f(x)}{g(x)}$
+\item If both $M = 0$ and $L = 0$, then $\displaystyle \lim_{x \to a}\frac{f(x)}{g(x)}$
+  \emph{might exist}, or it \emph{might not exist}. More work is necessary to determine whether the
+  last type of limit exists, and what it is if it does exist.
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Limit laws}
+\label{u0-lim-quo-limit-laws}
+
+\begin{exercise}
+  \textbf{Limit Laws}\\
+  Suppose that $\displaystyle \lim_{x \to -1}f(x) = 0$, $\displaystyle \lim_{x \to -1}g(x) = 17$,
+  and $\displaystyle \lim_{x \to -1}h(x) = 0$. Evaluate the following limits:
+
+  $\displaystyle \lim_{x \to -1}g(x)h(x)$
+  \begin{itemize}[noitemsep]
+  \item[$\square$] 0
+  \item[$\square$] 1
+  \item[$\square$] 17
+  \item[$\square$] Something else
+  \item[$\square$] Does not exist
+  \item[$\square$] Cannot be determined based on the information given
+  \end{itemize}
+
+  $\displaystyle \lim_{x \to -1}\frac{g(x)}{f(x)}$
+  \begin{itemize}[noitemsep]
+  \item[$\square$] 0
+  \item[$\square$] 1
+  \item[$\square$] 17
+  \item[$\square$] Something else
+  \item[$\square$] Does not exist
+  \item[$\square$] Cannot be determined based on the information given
+  \end{itemize}
+
+  $\displaystyle \lim_{x \to -1}f(x) + g(x) + h(x)$
+  \begin{itemize}[noitemsep]
+  \item[$\square$] 0
+  \item[$\square$] 1
+  \item[$\square$] 17
+  \item[$\square$] Something else
+  \item[$\square$] Does not exist
+  \item[$\square$] Cannot be determined based on the information given
+  \end{itemize}
+
+  $\displaystyle \lim_{x \to -1}\frac{f(x)}{h(x)}$
+  \begin{itemize}[noitemsep]
+  \item[$\square$] 0
+  \item[$\square$] 1
+  \item[$\square$] 17
+  \item[$\square$] Something else
+  \item[$\square$] Does not exist
+  \item[$\square$] Cannot be determined based on the information given
+  \end{itemize}
+
+  $\displaystyle \lim_{x \to -1}\frac{f(x)+h(x)}{g(x)}$
+  \begin{itemize}[noitemsep]
+  \item[$\square$] 0
+  \item[$\square$] 1
+  \item[$\square$] 17
+  \item[$\square$] Something else
+  \item[$\square$] Does not exist
+  \item[$\square$] Cannot be determined based on the information given
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Using the division limit law}
+\label{u0-lim-quo-using-law}
+
+Video: \href{https://www.youtube.com/watch?v=muI7-P0aBmI}{Using the Division Limit Law}
+
+Over the last three videos we've talked about the three parts
+of the division limit law.
+So the first case was when the limit of the numerator was $L$,
+the limit of the denominator was $M$, and that was not zero.
+And in that case we got that the limit of this quotient
+was just $L/M$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_037.png}}
+  \end{center}
+\end{figure}
+
+The second case was when the denominator approached zero,
+but the numerator did not approach zero.
+In that case, the limit does not exist.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_038.png}}
+  \end{center}
+\end{figure}
+
+And then the third case was when the limit
+of the numerator and the limit of the denominator are both $0$.
+And there you have to do more work in order
+to figure out what's going on.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_039.png}}
+  \end{center}
+\end{figure}
+
+Let's do some examples.
+So we'll start with this one: $\displaystyle \lim_{x \to a}\frac{x^2+2x-3}{x^2-3x+2}$.
+We've got the limit as $x$ approaches
+zero of this quotient.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_040.png}}
+  \end{center}
+\end{figure}
+
+And then what's the denominator doing?
+If we just look at the limit of the denominator,
+well that's a polynomial, so it's continuous,
+which means as $x$ approaches $0$, the limit of this denominator
+is just what we get when we plug in zero.
+And that's $2$.
+Similarly, the numerator is a polynomial, so it's continuous.
+And its limit will be --- well when we
+plug in zero --- we get $-3$.
+So the numerator is going to $-3$,
+the denominator is going to $2$, and we're just
+in the first case of the limit law for division,
+and we're just going to go to $-3/2$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_041.png}}
+  \end{center}
+\end{figure}
+
+OK.
+So what if we took the same limit,
+but we now have $x$ approaching $1$.
+Well, here, when we take the limit of the denominator,
+we can still plug in, because it still continuous,
+and we'll see that we get $0$.
+So the denominator is going to $0$,
+and we need to check the limit of the numerator,
+and we can plug it in there as well,
+and that's also going to go to $0$.
+So the numerator and the denominator
+are both going to zero.
+We're in this third case that we just
+talked about for the limit law for division.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_042.png}}
+  \end{center}
+\end{figure}
+
+So we have to do more work.
+And most of the time when we have
+a numerator and a denominator that are polynomials
+and they're going to zero, the work that we have to do
+is \emph{factorization}.
+
+So the top is going to factor as $(x - 1)(x + 3)$.
+And the bottom is factoring as $(x - 1)(x - 2)$.
+Aha!
+Well we have a common factor here.
+So we can write $(x + 3)/(x - 2)$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_043.png}}
+  \end{center}
+\end{figure}
+
+Now one small point here --- there is a slight difference
+between this function and this function,
+which is that this function is not
+defined when $x = 1$, whereas this function is defined
+when $x = 1$.
+That's the only difference.
+But we're taking limits, so the value
+of the function at $x = 1$ isn't
+going to affect the limit as $x$ approaches $1$.
+So the two limits are going to be the same.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_044.png}}
+  \end{center}
+\end{figure}
+
+OK.
+So we've reduced the problem to this limit of this quotient.
+And now, if we look at the denominator as $x$ approaches $1$ ---
+well we can just plug in, because this denominator
+is again continuous --- so this denominator is
+going to go towards $-1$.
+And the numerator is also continuous,
+so we can plug in for its limit.
+And that's going to be $4$.
+So the denominator goes to $-1$.
+The numerator is going to $4$.
+By the first part of the division limit law,
+the limit of this quotient is going to be $4/-1$,
+which is $-4$.
+So that's the value of our original limit.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_045.png}}
+  \end{center}
+\end{figure}
+
+OK.
+Let's do one other example.
+Let's say we have the $\displaystyle \lim_{x \to -1}\frac{x+1}{x+\frac{1}{x}+2}$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_046.png}}
+  \end{center}
+\end{figure}
+
+So as $x$ is approaching $-1$, what's this denominator doing?
+Well, the $x$ term is approaching $-1$.
+The $1/x$ term is approaching $1/-1$,
+which is $-1$.
+And the $2$ is just $2$.
+So this denominator overall is approaching $-1 + -1 + 2$, which is zero.
+And the numerator, as $x$ approaches $-1$,
+is also approaching zero.
+So this is our third case of the division limit law.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_047.png}}
+  \end{center}
+\end{figure}
+
+We have to do more work in order to figure out this limit.
+Can we factor this stuff?
+Well, not as is.
+We have this ugly denominator --- and that's not so nice ---
+but we can do some algebraic cleanup first.
+So we can multiply the top and the bottom
+by $x$ and that will get rid of this fraction
+in the denominator.
+And when we do that we get $x^2 + x$ on top,
+and $x^2 + 1 + 2x$ on the bottom.
+And we're taking the limit as $x$ approaches $-1$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_048.png}}
+  \end{center}
+\end{figure}
+
+So here, when we still have both the numerator and denominator
+going to $0$ as $x$ approaches $-1$, but now we can factor.
+So the top is $x(x + 1)$.
+And the bottom is $(x + 1)^2$.
+And we're taking the limit as $x$ approaches $-1$.
+So here we can cancel now, and we're
+going to get the limit as $x$ approaches $-1$
+of $x/(x + 1)$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_049.png}}
+  \end{center}
+\end{figure}
+
+And when $x$ is approaching $-1$,
+the denominator is approaching $0$ --- again ---
+but the numerator now is approaching $-1$,
+which is not zero.
+And so we're talking about part two of our limit law
+for division.
+The denominator is going to zero,
+the numerator is not going to $0$, that means
+that this limit does not exist.
+And neither does the original limit.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_050.png}}
+  \end{center}
+\end{figure}
+
+So that's how you use the limit law for division.
+We have plenty of exercises for you, so enjoy.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Division limit questions}
+\label{u0-lim-quo-questions}
+
+\begin{exercise}
+  \textbf{Quotient limit 1}\\
+  Calculate $\displaystyle \lim_{x \to 0^+}\frac{2\cos{(x)}+1}{x^2 + x}$. (Enter DNE
+  if the limit does not exist.)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Quotient limit 2}\\
+  Calculate $\displaystyle \lim_{x \to 2}\frac{\frac{1}{x}+x^2}{x-3}$. (Enter DNE
+  if the limit does not exist.)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Quotient limit 3}\\
+  Calculate $\displaystyle \lim_{x \to 2}\frac{\frac{12}{x}-3x}{2-3x+x^2}$. (Enter DNE
+  if the limit does not exist.)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Quotient limit 4}\\
+  Calculate $\displaystyle \lim_{x \to 3}\frac{2x^2-10x+12}{x^3-6x^2+9x}$. (Enter DNE
+  if the limit does not exist.)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Quotient limit 5}\\
+  Calculate $\displaystyle \lim_{x \to 0}\frac{3x^3+x^2}{x^3+x^2+x}$. (Enter DNE
+  if the limit does not exist.)
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Review problems}
+\label{u0-lim-quo-review-prob}
+
+\begin{exercise}
+  \textbf{Basic limit stuff}\\
+  True or false: In general, if $f$ is a function, then
+  $\displaystyle \lim_{x \to a}f(x) = f(a)$.
+  \begin{itemize}[noitemsep]
+  \item[$\square$] True
+  \item[$\square$] False
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Basic limit stuff 2}\\
+  True or false: In general, if $f(x) = \sin{(x^3)}$, then
+  $\displaystyle \lim_{x \to a}f(x) = f(a)$ for all $a$.
+  \begin{itemize}[noitemsep]
+  \item[$\square$] True
+  \item[$\square$] False
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{More limits 1}\\
+  What is $\displaystyle \lim_{x \to 0}\sqrt{\cos{(x)}+3}$?
+  (Enter DNE if the limit does not exist.)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{More limits 2}\\
+  What is $\displaystyle \lim_{x \to 2}\frac{4-x^2}{2^x-3}$?
+  (Enter DNE if the limit does not exist.)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{More limits 3}\\
+  What is $\displaystyle \lim_{x \to -1}\frac{2x^2+7x+5}{x+1}$?
+  (Enter DNE if the limit does not exist.)
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Limits that don't exist}
+\label{u0-lim-quo-dont-exist}
+
+Video: \href{https://www.youtube.com/watch?v=z-4AtzDVlfE}{Infinite limits}
+
+We know that limits might not exist,
+and they might not exist in a variety of ways.
+It could blow up to infinity:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_051.png}}
+  \end{center}
+\end{figure}
+
+Or it could blow up
+to minus infinity:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_052.png}}
+  \end{center}
+\end{figure}
+
+Or there could be some other reason, like the function just
+goes crazy:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_053.png}}
+  \end{center}
+\end{figure}
+
+So far, we've lumped all of these scenarios
+under the label of DNE.
+But sometimes, like when you're graphing a function,
+you don't just want to know that a limit doesn't exist.
+You want to know \emph{in what way it doesn't exist}.
+So that's what this short section is going to be about.
+
+Let's take the function $1/x$.
+And let's suppose we want its limit as $x$ approaches $0$
+from the right.
+Now, as $x$ approaches $0$, the denominator is approaching $0$.
+And this numerator, well, that's $1$.
+So it's not approaching $0$.
+And that means the second part of the division limit law
+is going to tell us that this limit does not exist.
+But does not exist in what way?
+The limit law doesn't tell us that.
+So let's investigate.
+
+So our numerator is always $1$.
+And as $x$ approaches $0$ from the right,
+the denominator is positive and getting really, really small.
+So we're going to get things like $1/0.01$, $1/0.001$,
+$1/0.0001$, et cetera.
+And these fractions are $100$, $1000$, $10000$.
+So as $x$ is going to $0$ from the right, $1/x$ is blowing up.
+And its graph is going to be looking
+like this, with this vertical asymptote at $x = 0$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_054.png}}
+  \end{center}
+\end{figure}
+
+So that's what's going on.
+And when a function blows up like this,
+we'll write that the $\lim_{x \to a}f(x)=+\infty$
+and that just means that the \emph{limit does not
+exist} because it blows up in the positive direction, hence
+the plus infinity.
+
+If a function's limit doesn't exist because the function
+blows up in the opposite direction,
+then we'll say that the limit is minus infinity.
+So we have some problems for you so
+that you can play around and get comfortable with this.
+
+\begin{exercise}
+  \textbf{The other side}\\
+  What is $\displaystyle \lim_{x \to 0^-}\frac{1}{x}$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] It is $+\infty$
+  \item[$\square$] It is $-\infty$
+  \item[$\square$] The limit does not exist, and it is neither $+\infty$ nor $-\infty$
+  \item[$\square$] It exists
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Overall limit}\\
+  Given the results for $\displaystyle \lim_{x \to 0^-}\frac{1}{x}$ and
+  $\displaystyle \lim_{x \to 0^+}\frac{1}{x}$, what sould we say about
+  $\displaystyle \lim_{x \to 0}\frac{1}{x}$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] It is $+\infty$
+  \item[$\square$] It is $-\infty$
+  \item[$\square$] The limit does not exist, and it is neither $+\infty$ nor $-\infty$
+  \item[$\square$] It exists
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Another function}
+\label{u0-lim-quo-another}
+
+\begin{exercise}
+  \textbf{Another function}\\
+  What is $\displaystyle \lim_{x \to 0^+}\frac{1}{x^2}$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] It is $+\infty$
+  \item[$\square$] It is $-\infty$
+  \item[$\square$] The limit does not exist, and it is neither $+\infty$ nor $-\infty$
+  \item[$\square$] It exists
+  \end{itemize}
+
+  What is $\displaystyle \lim_{x \to 0^-}\frac{1}{x^2}$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] It is $+\infty$
+  \item[$\square$] It is $-\infty$
+  \item[$\square$] The limit does not exist, and it is neither $+\infty$ nor $-\infty$
+  \item[$\square$] It exists
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Overall 2}\\
+  Given the results for $\displaystyle \lim_{x \to 0^-}\frac{1}{x^2}$ and
+  $\displaystyle \lim_{x \to 0^+}\frac{1}{x^2}$, what sould we say about
+  $\displaystyle \lim_{x \to 0}\frac{1}{x^2}$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] It is $+\infty$
+  \item[$\square$] It is $-\infty$
+  \item[$\square$] The limit does not exist, and it is neither $+\infty$ nor $-\infty$
+  \item[$\square$] It exists
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Infinite limits 2}
+\label{u0-lim-quo-inf2}
+
+Video: \href{https://www.youtube.com/watch?v=VeAFeSbo7aQ}{Infinite limits 2}
+
+You've looked at the functions $1/x$
+and $1/x^2$ as $x$ approaches $0$ from either side.
+We saw that $1/x$ has a limit of plus infinity
+as you come in from the right.
+And as you come from the left towards $0$,
+the limit is minus infinity.
+So it was different on either side.
+But with $1/x^2$, hopefully
+you saw that coming in from the right
+or from the left, either way the limit is plus infinity.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_055.png}}
+  \end{center}
+\end{figure}
+
+So these limits can be kind of delicate,
+and just using the division limit law
+isn't going to tell us everything we want to know.
+
+Let's do a slightly more complicated example.
+I'm going to take the function $\displaystyle \frac{3x}{4 - x^2}$,
+and let's look at the limit as $x$ approaches $2$.
+Now as $x$ approaches $2$, the denominator is going towards $0$
+and the numerator is going towards $6$, which is not $0$.
+So the second part of the division limit law
+tells us that this limit does not exist.
+And if we graph it, we can probably
+expect a vertical asymptote here at $x$ equals $2$.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-0/limit_056.png}}
+  \end{center}
+\end{figure}
+
+But we don't know if it's going to plus infinity
+or minus infinity, and it might do something different
+on either side.
+So to figure it out, it's generally easiest
+to deal with each side separately.
+
+And let's just start with the limit
+as $x$ approaches $2$ from the left, and we'll
+need to pay very close attention to the signs of the numerator
+and denominator.
+This numerator is going to be near $6$, which is positive.
+The denominator we know is going to be close to $0$,
+but close to $0$ how?
+Well, when $x$ is approaching $2$ from the left,
+that means $x$ is going to be slightly less than $2$.
+So $x$ squared is going to be slightly less than $4$.
+So our denominator is going to be just a little bit greater
+than $0$.
+So we've got a numerator that's close to $6$
+divided by a denominator which is getting really close to $0$
+but positive.
+So these quotients then are going
+to be really large and positive.
+So our limit from the left is blowing up
+towards plus infinity, and the graph just to the left of $2$
+will look something like this:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.4]{imagens/unit-0/limit_057.png}}
+  \end{center}
+\end{figure}
+
+If we look at the limit from the right,
+well, we'll do something similar.
+Our numerator is again going to be near $6$.
+Our denominator will still be near $0$.
+But this time we're looking at $x$'s which
+are slightly greater than $2$.
+$x$ squared will be slightly bigger than $4$.
+And so $4$ minus $x$ squared is just a shade under $0$.
+So numerator near $6$.
+Got a denominator which is small but negative.
+That means the quotient is large and negative.
+And this limit from the right is then minus infinity,
+and the graph is going to look like this just
+to the right of $2$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.4]{imagens/unit-0/limit_058.png}}
+  \end{center}
+\end{figure}
+
+This is the kind of stuff that you'll
+have to do in order to figure out limits
+where the function's output is going
+to plus or minus infinity.
+Eventually we'll discuss limits where
+the input is going to plus or minus infinity,
+but that'll be a lot later in the course,
+and it's much easier to deal with those
+once you know about derivatives.
+And derivatives are what's coming up next.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{What is the limit?}
+\label{u0-lim-quo-what}
+
+\begin{exercise}
+  \textbf{What is the limit}\\
+  What is $\displaystyle \lim_{x \to 0^+}\frac{2x-1}{1-\cos{(x)}}$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] It is $+\infty$
+  \item[$\square$] It is $-\infty$
+  \item[$\square$] The limit does not exist, and it is neither $+\infty$ nor $-\infty$
+  \item[$\square$] It exists
+  \end{itemize}
+
+  What is $\displaystyle \lim_{x \to 0^-}\frac{2x-1}{1-\cos{(x)}}$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] It is $+\infty$
+  \item[$\square$] It is $-\infty$
+  \item[$\square$] The limit does not exist, and it is neither $+\infty$ nor $-\infty$
+  \item[$\square$] It exists
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Division involving infinite limits}
+\label{u0-lim-quo-div-inf}
+
+\begin{exercise}
+  \textbf{Division involving infinite limits}\\
+  Suppose that $\displaystyle \lim_{x \to 1}f(x) = -2$ and
+  $\displaystyle \lim_{x \to 1^+}g(x) = +\infty$. What is
+  $\displaystyle \lim_{x \to 1^+}\frac{f(x)}{g(x)}$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] 0
+  \item[$\square$] -2
+  \item[$\square$] It is $+\infty$
+  \item[$\square$] It is $-\infty$
+  \item[$\square$] The limit does not exist, and it is neither $+\infty$ nor $-\infty$
+  \item[$\square$] Something else
+  \item[$\square$] Cannot be determined based on the information given
+  \end{itemize}
+
+  What is
+  $\displaystyle \lim_{x \to 1^+}\frac{g(x)}{f(x)}$?
+  \begin{itemize}[noitemsep]
+  \item[$\square$] 0
+  \item[$\square$] -2
+  \item[$\square$] It is $+\infty$
+  \item[$\square$] It is $-\infty$
+  \item[$\square$] The limit does not exist, and it is neither $+\infty$ nor $-\infty$
+  \item[$\square$] Something else
+  \item[$\square$] Cannot be determined based on the information given
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Summary}
+\label{u0-lim-quo-summary}
+
+If $\displaystyle \lim_{x \to a}f(x) = L$ and $\displaystyle \lim_{x \to a}g(x) = M$,
+then:
+
+\begin{itemize}
+\item If $M \ne 0$, then $\displaystyle \lim_{x \to a}\frac{f(x)}{g(x)} = \frac{L}{M}$
+\item If $M = 0$ but $L \ne 0$, then $\displaystyle \nexists \lim_{x \to a}\frac{f(x)}{g(x)}$
+\item If both $M = 0$ and $L = 0$, then $\displaystyle \lim_{x \to a}\frac{f(x)}{g(x)}$
+  \emph{might exist}, or it \emph{might not exist}. More work is necessary to determine whether the
+  last type of limit exists, and what it is if it does exist.
+\end{itemize}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1629,108 +3630,6 @@ xx
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Limits of quotients}
-\label{u0-lim-quo}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Limits of quotients}
-\label{u0-lim-quo-lim}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{How do we compute limits of quotients?}
-\label{u0-lim-quo-how-compute}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Limits and division}
-\label{u0-lim-quo-lim-div}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Quotients of small numbers}
-\label{u0-lim-quo-small}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Small divided by small}
-\label{u0-lim-quo-small-div-small}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Limit law for division}
-\label{u0-lim-quo-limit-law-div}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Limit laws}
-\label{u0-lim-quo-limit-laws}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Using the division limit law}
-\label{u0-lim-quo-using-law}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Division limit questions}
-\label{u0-lim-quo-questions}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Review problems}
-\label{u0-lim-quo-review-prob}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Limits that don't exist}
-\label{u0-lim-quo-dont-exist}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Another function}
-\label{u0-lim-quo-another}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Infinite limits 2}
-\label{u0-lim-quo-inf2}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{What is the limit?}
-\label{u0-lim-quo-what}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Division involving infinite limits}
-\label{u0-lim-quo-div-inf}
-
-xx
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Summary}
-\label{u0-lim-quo-summary}
-
-xx
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Homework Unit 0: Part A}
 \label{u0-hw-pA}
 
@@ -1738,7 +3637,14 @@ xx
 \subsubsection{Part A Problems}
 \label{u0-hw-pA-problems}
 
-xx
+\paragraph{About Part A problems} Part A problems help you practice the mechanics
+of calculus. There are a lot of problems that continue the ideas laid out in the
+learning sequences above. Each problem is labelled by the related topic, and we
+try to make sure that each problem only tests one concept.
+
+In contrast, the part B problems ask you to apply these concepts in new ways.
+They are more challenging, but require a firm grasp of the mechanics and concepts
+covered in the part A problems.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Part A Homework}

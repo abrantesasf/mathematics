@@ -1,0 +1,57 @@
+
+We've learned about left- and right-hand limits.
+The left-hand limit is asking about what happens when
+x approaches a from the left.
+So it's concerned with values of x
+that are over here to the left.
+And the right-hand limit is talking
+about values of x that are close to a,
+but on the right over here.
+
+Now a lot of times we just want to think
+about values of x that are close to a, period,
+without restricting to one side or the other.
+And that is going to be the overall limit.
+We'll denote it by limit of f of x as x approaches a.
+So notice that there's no plus or minus sign here
+and this will equal L, if whenever
+x comes in close to a from either side
+f of x gets really close to L.
+In other words, the overall limit
+equals L exactly when the left-hand limit
+and the right-hand limit are both equal to the same number
+L. In pictures it has to look like this.
+As we come in from the left, f of x is approaching L.
+And as we come in from the right, same thing.
+And we can denote this either with this lim notation
+or we can use arrows, f of x approaches L as x approaches a.
+But remember, limits only care about values
+of x that are close to a, but not equal to a.
+So for the sake of the overall limit,
+it's not going to matter whether we have a dot for f of a.
+We could fill in the circle or we could put a dot down here
+or we could just not have a dot if f of a doesn't exist,
+whatever, it won't affect the limit.
+
+Now the overall limit might not exist.
+One way it might it fail to exist
+is if the limit from one side does not exist.
+So for instance as we come in from the left, f of x
+might blow up to minus infinity or something.
+But another way is if the limit from the left and the limit
+from the right both exist, but they're not equal,
+something like this.
+They have to both exist and be equal in order
+to get an overall limit.
+
+So that's the overall limit.
+Down the road will stop saying overall.
+And just anytime we say the limit
+without specifying left to right,
+we'll mean this overall limit.
+And this idea of the limit is really the building block
+for all of calculus.
+So we have some problems for you to get used to it
+and then we'll start to develop quicker and more accurate
+ways of computing these limits.
+See you then.

@@ -1,0 +1,74 @@
+
+You've looked at the functions 1 over x
+and 1 over x squared as x approaches 0 from either side.
+We saw that 1 over x has a limit of plus infinity
+as you come in from the right.
+And as you come from the left towards 0,
+the limit is minus infinity.
+So it was different on either side.
+But with 1 over x squared, hopefully
+you saw that coming in from the right
+or from the left, either way the limit is plus infinity.
+So these limits can be kind of delicate,
+and just using the division limit law
+isn't going to tell us everything we want to know.
+Let's do a slightly more complicated example.
+I'm going to take the function 3x over 4 minus x squared,
+and let's look at the limit as x approaches 2.
+Now as x approaches 2, the denominator is going towards 0
+and the numerator is going towards 6, which is not 0.
+So the second part of the division limit law
+tells us that this limit does not exist.
+And if we graph it, we can probably
+expect a vertical asymptote here at x equals 2.
+But we don't know if it's going to plus infinity
+or minus infinity, and it might do something different
+on either side.
+So to figure it out, it's generally easiest
+to deal with each side separately.
+And let's just start with the limit
+as x approaches 2 from the left, and we'll
+need to pay very close attention to the signs of the numerator
+and denominator.
+This numerator is going to be near 6, which is positive.
+The denominator we know is going to be close to 0,
+but close to 0 how?
+Well, when x is approaching 2 from the left,
+that means x is going to be slightly less than 2.
+So x squared is going to be slightly less than 4.
+So our denominator is going to be just a little bit greater
+than 0.
+So we've got a numerator that's close to 6
+divided by a denominator which is getting really close to 0
+but positive.
+So these quotients then are going
+to be really large and positive.
+So our limit from the left is blowing up
+towards plus infinity, and the graph just to the left of 2
+will look something like this.
+
+If we look at the limit from the right,
+well, we'll do something similar.
+Our numerator is again going to be near 6.
+Our denominator will still be near 0.
+But this time we're looking at x's which
+are slightly greater than 2.
+x squared will be slightly bigger than 4.
+And so 4 minus x squared is just a shade under 0.
+So numerator near 6.
+Got a denominator which is small but negative.
+That means the quotient is large and negative.
+And this limit from the right is then minus infinity,
+and the graph is going to look like this just
+to the right of 2.
+
+This is the kind of stuff that you'll
+have to do in order to figure out limits
+where the function's output is going
+to plus or minus infinity.
+Eventually we'll discuss limits where
+the input is going to plus or minus infinity,
+but that'll be a lot later in the course,
+and it's much easier to deal with those
+once you know about derivatives.
+And derivatives are what's coming up next.

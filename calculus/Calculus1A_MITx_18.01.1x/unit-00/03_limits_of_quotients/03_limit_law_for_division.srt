@@ -1,0 +1,47 @@
+
+All right.
+Let's finish this third part of the limit law for division.
+We're dealing with the case where
+the limit of the denominator is 0
+and the limit of the numerator is 0, but remember
+that we're not going to be saying that this limit equals
+0/0.
+When x is near a, the numerator and denominator
+are approaching 0, but that doesn't mean that they equal 0.
+It's just that they're close to 0.
+So the quotient here is going to be
+some small number over some small number when x is near a.
+And the interesting thing about this case
+is that just knowing that the numerator and denominator are
+small doesn't tell us anything about how big this quotient is.
+What we really would need to know
+is how small the numerator and denominator
+are relative to one another.
+For instance, the numerator could be 0.01.
+That's pretty small, but the denominator
+could be even smaller.
+It could be 0.00001.
+And when you divide this, you get 1,000.
+Or it could be the reverse.
+It could be that the numerator is 0.00001 and the denominator
+is 0.01.
+And now the quotient becomes 0.001 or 1/1,000.
+In the example from the last video that we did,
+we were taking the limit as x approaches 0 of 2x over x.
+Here the denominator is always exactly half the size
+of the numerator and so we always got a quotient of 2.
+The bottom line is that if the denominator and the numerator
+are both going to 0, the limit of the quotient
+could be anything.
+It could be big.
+It could be small.
+It could be somewhere between any of that.
+Now this doesn't mean that we just give up and say,
+I don't know, but it does mean that we
+have to do more work in order to determine
+what the limit is in each case.
+We have some questions for you.
+And then in the next video, we'll
+discuss just what sort of work you can do in order
+to figure out limits like this.
+OK.

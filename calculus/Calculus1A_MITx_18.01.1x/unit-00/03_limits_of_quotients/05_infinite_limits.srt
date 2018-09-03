@@ -1,0 +1,188 @@
+0
+00:00:00,000 --> 00:00:02,250
+
+
+1
+00:00:02,250 --> 00:00:05,520
+We know that limits might not exist,
+
+2
+00:00:05,520 --> 00:00:08,700
+and they might not exist in a variety of ways.
+
+3
+00:00:08,700 --> 00:00:13,000
+It could blow up to infinity or it could blow up
+
+4
+00:00:13,000 --> 00:00:14,830
+to minus infinity.
+
+5
+00:00:14,830 --> 00:00:17,680
+Or there could be some other reason, like the function just
+
+6
+00:00:17,680 --> 00:00:19,940
+goes crazy.
+
+7
+00:00:19,940 --> 00:00:22,830
+So far, we've lumped all of these scenarios
+
+8
+00:00:22,830 --> 00:00:26,790
+under the label of DNE.
+
+9
+00:00:26,790 --> 00:00:30,120
+But sometimes, like when you're graphing a function,
+
+10
+00:00:30,120 --> 00:00:33,310
+you don't just want to know that a limit doesn't exist.
+
+11
+00:00:33,310 --> 00:00:37,000
+You want to know in what way it doesn't exist.
+
+12
+00:00:37,000 --> 00:00:41,750
+So that's what this short section is going to be about.
+
+13
+00:00:41,750 --> 00:00:44,000
+Let's take the function 1 over x.
+
+14
+00:00:44,000 --> 00:00:49,080
+And let's suppose we want its limit as x approaches 0
+
+15
+00:00:49,080 --> 00:00:49,915
+from the right.
+
+16
+00:00:49,915 --> 00:00:52,530
+
+
+17
+00:00:52,530 --> 00:00:57,320
+Now, as x approaches 0, the denominator is approaching 0.
+
+18
+00:00:57,320 --> 00:00:59,710
+And this numerator, well, that's 1.
+
+19
+00:00:59,710 --> 00:01:02,630
+So it's not approaching 0.
+
+20
+00:01:02,630 --> 00:01:06,010
+And that means the second part of the division limit law
+
+21
+00:01:06,010 --> 00:01:09,490
+is going to tell us that this limit does not exist.
+
+22
+00:01:09,490 --> 00:01:13,110
+But does not exist in what way?
+
+23
+00:01:13,110 --> 00:01:15,380
+The limit law doesn't tell us that.
+
+24
+00:01:15,380 --> 00:01:18,550
+So let's investigate.
+
+25
+00:01:18,550 --> 00:01:20,360
+So our numerator is always 1.
+
+26
+00:01:20,360 --> 00:01:23,150
+And as x approaches 0 from the right,
+
+27
+00:01:23,150 --> 00:01:27,890
+the denominator is positive and getting really, really small.
+
+28
+00:01:27,890 --> 00:01:36,125
+So we're going to get things like 1 over 0.01, 1 over 0.001,
+
+29
+00:01:36,125 --> 00:01:41,200
+1 over 0.0001, et cetera.
+
+30
+00:01:41,200 --> 00:01:47,000
+And these fractions are 100, 1,000, 10,000.
+
+31
+00:01:47,000 --> 00:01:52,920
+So as x is going to 0 from the right, 1 over x is blowing up.
+
+32
+00:01:52,920 --> 00:01:55,250
+And its graph is going to be looking
+
+33
+00:01:55,250 --> 00:02:01,320
+like this, with this vertical asymptote at x equals 0.
+
+34
+00:02:01,320 --> 00:02:02,950
+So that's what's going on.
+
+35
+00:02:02,950 --> 00:02:07,510
+And when a function blows up like this,
+
+36
+00:02:07,510 --> 00:02:13,450
+we'll write that the limit is plus infinity.
+
+37
+00:02:13,450 --> 00:02:15,900
+And that just means that the limit does not
+
+38
+00:02:15,900 --> 00:02:21,100
+exist because it blows up in the positive direction, hence
+
+39
+00:02:21,100 --> 00:02:22,525
+the plus infinity.
+
+40
+00:02:22,525 --> 00:02:25,160
+
+
+41
+00:02:25,160 --> 00:02:28,370
+If a function's limit doesn't exist because the function
+
+42
+00:02:28,370 --> 00:02:31,100
+blows up in the opposite direction,
+
+43
+00:02:31,100 --> 00:02:35,350
+then we'll say that the limit is minus infinity.
+
+44
+00:02:35,350 --> 00:02:37,470
+So we have some problems for you so
+
+45
+00:02:37,470 --> 00:02:41,160
+that you can play around and get comfortable with this.
+
+46
+00:02:41,160 --> 00:02:49,529
+
+

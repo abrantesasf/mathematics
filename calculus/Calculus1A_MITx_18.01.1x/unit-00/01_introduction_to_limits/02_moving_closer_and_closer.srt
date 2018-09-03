@@ -1,0 +1,106 @@
+
+Welcome.
+Calculus is all about functions.
+You probably know that a function f takes an input x
+and gives an output f of x.
+But in calculus, we're not concerned with just one input
+and finding the output for that one input.
+We want to consider a whole range of inputs.
+So we would want to know what happens when
+the input "moves" or "varies."
+For instance, we could ask what happens as the input moves
+really close.
+Closer and closer to some point.
+Let's say 1.
+
+And to be even more specific, let's
+say that x is moving towards 1 from the left.
+So if this is a number line, and we've
+got the point 1 right there, then x
+could start here, and just move closer and closer and closer
+towards 1, from the left.
+We'll use this arrow notation to denote that x is getting
+really, really close to 1.
+But a warning, this does not mean that x will ever
+actually equal 1.
+We're only concerned with values of x that are near one.
+
+OK.
+Now that that's said, as x moves,
+we know that the output f of x is also going to move.
+And so the question that we can ask
+is as x moves closer and closer to 1 from the left,
+does f of x move closer and closer
+to some value of its own?
+Let's be concrete here.
+And pick a particular function f.
+I'm going to choose f of x to be the square root of 3 minus 5 x
+plus x squared, plus x cubed, all over x minus 1.
+Kind of a complicated function, but you'll
+have to trust me that this is a good example.
+And what we can do in order to see what's
+happening to f as x approaches 1 from the left
+is just select certain values of x
+that are getting closer and closer to 1 from the left.
+So over here on the number line, we
+could start with x equals zero.
+And then they get closer, we could try x equals 0.5.
+Or even closer, maybe 0.9.
+Even 0.99.
+These sorts of values.
+And we want to know, what's happening to the output?
+So we can just plug these values into the function,
+and see whether the output gets closer and closer to anything.
+
+Now there are technically infinitely many values
+of x that we could have chosen here.
+But let's just start with these four.
+Remember though that one value of x
+that we will definitely not consider
+is x equal to 1 itself.
+In fact, this function isn't even defined at x equals 1.
+We'd have a zero denominator.
+It is, however, defined when x is approaching one,
+and those are the values we're considering.
+
+OK.
+Well let's make a table with our chosen
+inputs and the associated outputs,
+and let's just calculate those outputs.
+So when we plug in zero we'll get a square root of 3
+on top divided by minus 1.
+So minus square root of 3, which is roughly minus 1.73.
+Next up is x equals 0.5.
+I'm going to have to bust out the calculator here.
+So we've got 3 minus 5 times 0.5 plus 0.5 squared
+plus 0.5 cubed, and then we need the square root,
+and then we need to divide by 0.5 minus 1.
+So 0.5 negative.
+So we get minus 1.87, roughly.
+So back to our table.
+We've got f of x moving from minus 1.73 to minus 1.87.
+Well that's not really enough data
+to tell if f is getting closer and closer to anything
+in particular.
+So let's take our next two values of x and plug those in.
+I'm going to fast forward through the calculations.
+You ready?
+x equals 0.9.
+All right?
+That's approximately minus 1.97, and finally 0.99,
+and we've got minus 1.997.
+So as we go down this table, f of x
+is getting really, really close to what looks like minus 2.
+So we can say that as x approaches 1 from the left,
+f of x approaches minus 2.
+Now f of x might never actually equal to minus 2,
+just as x never actually equals one,
+but it gets really, really close.
+And if it gets arbitrarily close,
+meaning as close as we could possibly want,
+then that's really all we'll care about.
+What I would like you to do now is
+to do this same exercise, except this time have x approach 1
+from the right.
+You might be surprised at what you find.
+We'll talk afterwards.

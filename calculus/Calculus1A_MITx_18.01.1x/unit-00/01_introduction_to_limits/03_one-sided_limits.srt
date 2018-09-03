@@ -1,0 +1,101 @@
+
+Welcome back.
+We've been thinking about this function.
+And in the last video, we took some values
+of x that were approaching 1 from the left,
+and we made this table.
+And we saw that as x approached 1
+from the left, f of x approached minus 2.
+So remember, these arrows mean approaching.
+And this minus sign up here, that
+signifies that we're coming at 1 from the left,
+or from the negative direction.
+This is not the same as negative 1.
+x is actually approaching positive 1.
+It's just that x is coming from the negative direction.
+
+And as it does that, f of x is approaching negative 2.
+What you were supposed to do was the same thing,
+just on the other side.
+So you should have picked out some values and made a table.
+Now, you didn't have to choose these particular values.
+But you should have chosen some similar looking ones
+and gotten a similar looking table.
+And what we see from the table is
+that as x approaches 1 from the right,
+f of x approaches 2, positive 2, not negative 2.
+So we've got something different going on on the right side of 1
+versus the left side of 1.
+Pretty cool.
+
+Let's see what this looks like on the graph of f.
+All of these data points that we have will help us get started.
+For instance, on the right here, we've got f of 2 equals 2.24.
+So the point (2, 2.24) is on the graph.
+And we can do the same thing with these other three points
+that are on the right.
+And they'll look like this.
+
+Now, it seems reasonable to assume that the graph of f
+is going to behave pretty smoothly in between these four
+points.
+So we can just draw it like this.
+And once we've done that, then we can look and see
+what happens as x approaches 1 from the right, what's
+happening to f of x and what's happening to these y values.
+Well, like we said, they're approaching
+the level y equals 2.
+What happens exactly at x equals 1?
+Well, remember that f of 1 isn't defined.
+We would have had a 0 denominator, which
+means that there is no point on the graph where
+the x-coordinate is 1.
+So we're going to put this open circle here
+to remind us that this point, (1,2)
+is not actually on the graph.
+But that's OK.
+If we're just talking about x approaching 1,
+that means we only care about values of x that are near 1,
+not equal to 1.
+
+We can do the same thing on the left.
+Our table of values gives us these four points.
+And if we interpolate and assume the graph
+is smooth in between those points, then we've got this.
+And as we come in towards 1 from the left with our x values,
+then our y values are approaching y equals minus 2.
+And again, we'll have this open circle
+to remind us that there is no point at x equals 1
+on the graph.
+
+OK, let me make some space here.
+And we want to give an official name
+for this phenomenon of a function's value
+approaching something.
+We're going to call this a limit.
+So on the right here, we're going
+to say that the limit of f of x as x approaches 1
+from the right is 2.
+And the notation for this is as follows.
+Limit of f of x as x approaches 1 from the right is 2.
+
+This is often called the right-sided limit
+or the right-hand limit at the point x equals 1.
+And we have a similar thing on the left.
+We can write the limit of f of x as x approaches 1
+from the left equals minus 2.
+
+And there we have it.
+We've got our left-hand limit, and we've
+got our right-hand limit.
+We have the notation, we have the meaning,
+and we know what it looks like in pictures.
+So this is our left-handed limit.
+And here's our right-handed limit.
+So that's our first function.
+Kind of an interesting little function, isn't it?
+We have a couple short questions for you.
+And then we have a few more functions for you
+to play around with left- and right-hand limits.
+And maybe those will be even more interesting.
+So why don't you go and find out?

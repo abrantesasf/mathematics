@@ -1,0 +1,127 @@
+
+Over the last three videos we've talked about the three parts
+of the division limit law.
+So the first case was when the limit of the numerator was L,
+the limit of the denominator was M, and that was not zero.
+And in that case we got that the limit of this quotient
+was just L over M.
+The second case was when the denominator approached zero,
+but the numerator did not approach zero.
+In that case, the limit does not exist.
+And then the third case was when the limit
+of the numerator and the limit of the denominator are both 0.
+And there you have to do more work in order
+to figure out what's going on.
+
+Let's do some examples.
+So we'll start with this one.
+We've got the limit as x approaches
+zero of this quotient.
+And then what's the denominator doing?
+If we just look at the limit of the denominator,
+well that's a polynomial, so it's continuous,
+which means as x approaches 0, the limit of this denominator
+is just what we get when we plug in zero.
+And that's 2.
+Similarly, the numerator is a polynomial, so it's continuous.
+And its limit will be-- well when we
+plug in zero-- we get minus 3.
+So the numerator is going to minus 3,
+the denominator is going to 2, and we're just
+in the first case of the limit law for division,
+and we're just going to go to minus 3 over 2.
+OK.
+So what if we took the same limit,
+but we now have x approaching 1.
+Well, here, when we take the limit of the denominator,
+we can still plug in, because it still continuous,
+and we'll see that we get 0.
+So the denominator is going to 0,
+and we need to check the limit of the numerator,
+and we can plug it in there as well,
+and that's also going to go to 0.
+So the numerator and the denominator
+are both going to zero.
+We're in this third case that we just
+talked about for the limit law for division.
+So we have to do more work.
+And most of the time when we have
+a numerator and a denominator that are polynomials
+and they're going to zero, the work that we have to do
+is factorization.
+So the top is going to factor as x minus 1 times x plus 3.
+And the bottom is factoring as x minus 1 times x minus 2.
+Aha!
+Well we have a common factor here.
+So we can write x plus 3 over x minus 2.
+Now one small point here-- there is a slight difference
+between this function and this function,
+which is that this function is not
+defined when x is 1, whereas this function is defined
+when x is 1.
+That's the only difference.
+But we're taking limits, so the value
+of the function at x equals 1 isn't
+going to affect the limit as x approaches 1.
+So the two limits are going to be the same.
+OK.
+So we've reduced the problem to this limit of this quotient.
+And now, if we look at the denominator as x approaches 1--
+well we can just plug in, because this denominator
+is again continuous-- so this denominator is
+going to go towards minus 1.
+And the numerator is also continuous,
+so we can plug in for its limit.
+And that's going to be 4.
+So the denominator goes to minus 1.
+The numerator is going to 4.
+By the first part of the division limit law,
+the limit of this quotient is going to be 4 over minus 1,
+which is minus 4.
+So that's the value of our original limit.
+
+OK.
+Let's do one other example.
+Let's say we have the limit of x plus 1 over x plus 1 over x
+plus 2 as x approaches minus 1.
+So as x is approaching minus 1, what's this denominator doing?
+Well, the x term is approaching minus 1.
+The 1 over x term is approaching 1 over minus 1,
+which is minus 1.
+And the 2 is just 2.
+So this denominator overall is approaching minus 1
+plus minus 1 plus 2, which is zero.
+And the numerator, as x approaches minus 1,
+is also approaching zero.
+So this is our third case of the division limit law.
+We have to do more work in order to figure out this limit.
+Can we factor this stuff?
+Well, not as is.
+We have this ugly denominator-- and that's not so nice--
+but we can do some algebraic cleanup first.
+So we can multiply the top and the bottom
+by x and that will get rid of this fraction
+in the denominator.
+And when we do that we get x squared plus x on top,
+and x squared plus 1 plus 2 x on the bottom.
+And we're taking the limit as x approaches minus 1.
+So here, when we still have both the numerator and denominator
+going to 0 as x approaches minus 1, but now we can factor.
+So the top is x times x plus 1.
+And the bottom is x plus 1 quantity squared.
+And we're taking the limit as x approaches minus 1.
+So here we can cancel now, and we're
+going to get the limit as x approaches minus 1
+of x over x plus 1.
+And when x is approaching minus 1,
+the denominator is approaching 0-- again--
+but the numerator now is approaching minus 1,
+which is not zero.
+And so we're talking about part two of our limit law
+for division.
+The denominator is going to zero,
+the numerator is not going to 0, that means
+that this limit does not exist.
+And neither does the original limit.
+So that's how you use the limit law for division.
+We have plenty of exercises for you, so enjoy.

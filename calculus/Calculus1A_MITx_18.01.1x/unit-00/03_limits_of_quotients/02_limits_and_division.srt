@@ -1,0 +1,64 @@
+
+Let's talk some more about limits of quotients.
+Previously, we said that if the limit of the numerator
+was equal to L and the limit of the denominator was equal to M
+and if M is not zero, then the limit of the quotient
+is L over M. And that was part one for Limit Law for Division.
+But what happens if the limit of the denominator is equal to 0?
+The answer is, it's going to depend
+on what the numerator is doing.
+If the limit of the numerator is something other than 0,
+then if you look at f of x over g of x, then when x
+is approaching a, we're going to get
+numerators that aren't near 0.
+So they are not small.
+But our denominators are going to be really close to 0.
+So we're going to be dividing a number that's not small by one
+that is really small.
+And the result is going to be huge.
+And as the denominator gets smaller and smaller,
+this quotient is going to get even huger.
+For instance, if we take 5 over 0.01, we get 500.
+But if we have 5 over 0.001, we get 5,000.
+Now we don't know the signs of these things.
+So it could be huge positive or huge negative.
+And if the denominator equals 0 exactly,
+then this quotient might not be defined at all.
+But one thing is for certain, as x approaches
+a there's no way that this quotient can be approaching
+any fixed number.
+So the limit does not exist.
+
+So that's part two of the Division Limit law.
+But that still leaves a third case.
+If the limit of the denominator equals
+0 and the limit of the numerator also equals 0, then what?
+And you might be tempted to say that this limit won't
+exist either, but that's not necessarily so.
+A lot of interesting things can happen.
+For instance, let's say that we want the limit as x approaches
+0 of 2x over x.
+And here the numerator is continuous
+so as x approaches 0, we can just plug in,
+and we see that the numerator is approaching 0 and same thing
+with the denominator.
+But we don't want to say that this limit is 0/0.
+0/0 isn't defined, but this quotient, I
+mean we know it's 2.
+Well, almost everywhere it's 2.
+It's not equal to 2 when x is 0, but when
+we're taking the limit as x approaches 0, what happens
+at x equals 0 doesn't matter.
+So this quotient is 2 everywhere that counts
+and so its limit is 2.
+OK.
+You might be complaining that this
+seems like an exception, sort of a special case.
+But really this situation of a quotient where
+both the top and the bottom go to 0, and yet
+the limit of the quotient still exists,
+that happens a lot in calculus, and it's incredibly important.
+So we have some questions for you
+so that you can dig in and really understand
+how this comes about.
+Talk to you later.
