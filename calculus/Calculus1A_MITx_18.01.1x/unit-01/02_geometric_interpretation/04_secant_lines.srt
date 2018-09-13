@@ -1,0 +1,40 @@
+
+Recall that we want to find the slope of the tangent line.
+In order to do this, we're going to introduce a new concept--
+the secant line.
+To get started, we're going to draw
+some function y equals f of x.
+And then we're going to choose two points.
+Here's the point a and here is the point b.
+We can find the point on the graph above the point a
+and we can find the point on the graph above the point b.
+Then we can draw a line through these two points.
+And this line is a secant line.
+Now a natural question that we can
+ask ourselves is what is the slope of this line?
+From your other math classes, you
+may remember that the slope is defined
+as the rise over the run.
+So let's go ahead and identify the rise and the run
+on our graph.
+This vertical distance here is the rise,
+which we write with this symbol, delta y.
+This triangle here is the Greek letter delta.
+It stands for difference because it
+is the difference in the height of these two points.
+We often read this symbol as the change in y.
+Now where is the run?
+The run is this horizontal distance here, delta x.
+Again, it stands for the different
+because it is the difference in the x values of these two
+points.
+We often read this as the change in x.
+This allows us to identify the slope
+of the secant line, the rise over the run, which
+is delta y over delta x.
+Of course, we'd like a formula that's
+a little bit more explicit in terms of our function f of x.
+But before we do that, you're going
+to go ahead and do some problems to recall
+the information about average rate of change
+that we learned before.

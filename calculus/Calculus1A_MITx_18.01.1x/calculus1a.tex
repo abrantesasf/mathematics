@@ -3687,8 +3687,8 @@ limit through the toll booths.
 
 In this lesson, you'll figure out
 why I got this speeding ticket.
-We'll learn about average velocity,
-instantaneous velocity, and explore
+We'll learn about \emph{average velocity},
+\emph{instantaneous velocity}, and explore
 the relationship between them.
 
 This relationship is crucial to the definition
@@ -3729,22 +3729,24 @@ Turnpike at 8am, and you went through a second toll booth at the 220 mile marker
 at 10am.
 
 \begin{exercise}
-  \textbf{Average rate:} On average, how fast were you traveling between 8 AM and 10 AM?
+  \textbf{Average rate}\\%
+  On average, how fast were you traveling between 8 AM and 10 AM?
 \end{exercise}
 
 \begin{exercise}
-  \textbf{Check units:} OK, you entered a number there, and hopefully you got
+  \textbf{Check units}\\%
+  OK, you entered a number there, and hopefully you got
   the right answer. But this is supposed to be measuring something real --- a velocity,
   not just a number. In what units did we just measure our speed?
 \begin{itemize}[noitemsep]
-\item[$\square$] kilometers
-\item[$\square$] miles
-\item[$\square$] hours
-\item[$\square$] kilometers per hour
-\item[$\square$] miles por hour
-\item[$\square$] hours per kilometer
-\item[$\square$] hours per mile
-\item[$\square$] something else
+\item[$\bigcirc$] kilometers
+\item[$\bigcirc$] miles
+\item[$\bigcirc$] hours
+\item[$\bigcirc$] kilometers per hour
+\item[$\bigcirc$] miles por hour
+\item[$\bigcirc$] hours per kilometer
+\item[$\bigcirc$] hours per mile
+\item[$\bigcirc$] something else
 \end{itemize}
 \end{exercise}
 
@@ -3753,22 +3755,24 @@ at 10am.
 \label{u1-what-avg-inst}
 
 \begin{exercise}
-  \textbf{Average:} We calculated a velocity of 85 miles per hour, so we were
+  \textbf{Average}\\%
+  We calculated a velocity of 85 miles per hour, so we were
   definitely speeding. Does that mean that at the exact instant of 8 AM, the speed
   of the car was exactly 85 mph?
 \begin{itemize}[noitemsep]
-\item[$\square$] yes
-\item[$\square$] no
+\item[$\bigcirc$] yes
+\item[$\bigcirc$] no
 \end{itemize}
 \end{exercise}
 
 \begin{exercise}
-  \textbf{Instantaneous approximation:} Which of the following would give us a
+  \textbf{Instantaneous approximation}\\%
+  Which of the following would give us a
   better idea of the velocity at 8am?
 \begin{itemize}[noitemsep]
-\item[$\square$] Do the same calculation, but between 8am and 12pm instead of
+\item[$\bigcirc$] Do the same calculation, but between 8am and 12pm instead of
   between 8am and 10am.
-\item[$\square$] Do the same calculation, but between 8am and 8:01am instead
+\item[$\bigcirc$] Do the same calculation, but between 8am and 8:01am instead
   of between 8am and 10am
 \end{itemize}
 \end{exercise}
@@ -3787,16 +3791,41 @@ between 8:00 and 8:01.
 All right, we're going to have a lot of numbers floating around
 here.
 So let's get some notation to organize all this.
-We know that position is a function of time.
+We know that \emph{position is a function of time}.
 So if we have $t$ as representing time,
-then we can say that $f(t)$ is position.
+then we can say that $f(t)$ is position:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-001.png}}
+  \end{center}
+\end{figure}
 
 So our initial data was that our position at 8:00 was 50 miles.
-So $f(8) = 50$. And our position at 10:00 was 220 miles.
+So $f(8) = 50$. And our position at 10:00 was 220 miles:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-002.png}}
+  \end{center}
+\end{figure}
 
 Now previously, you had used this data
 to calculate that the average velocity between 8:00 and 10:00
-was 85 miles per hour.
+was 85 miles per hour:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-003.png}}
+  \end{center}
+\end{figure}
+
 And that 85 came from 220 minus 50.
 So we traveled 170 miles.
 And then you divide by 10 minus 8.
@@ -3804,30 +3833,37 @@ That was the time, two hours, that the journey took.
 
 So in our new notation, this is $f(10) - f(8)$
 on top divided by $10 - 8$.
-So our numerator here is the change in position.
-And our denominator is the change in time.
+So our numerator here is the \emph{change in position}.
+And our denominator is the \emph{change in time}.
 And when you divide those two, we
 get our average velocity of 85 miles per hour.
 
-Now, calculus is all about variables changing, just
+Now, \textbf{calculus is all about variables changing}, just
 all over the place.
 And so we have a special notation
 that we use to denote the change in a variable.
 So here, this numerator where we're
-saying the change in position, or the change in f,
+saying the change in position, or the change in $f$,
 we often denote that by $\Delta f$.
 So Delta ($\Delta$), this Greek letter here, this triangle,
-stands for difference.
+stands for difference:
 
-And so we have the difference in f.
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-004.png}}
+  \end{center}
+\end{figure}
+
+And so we have the difference in $f$.
 This is not $\Delta \times f$.
 Delta isn't a thing in and of itself.
 It's just one quantity, $\Delta f$.
-
 And similarly, on the denominator,
 we're going to have a quantity, $\Delta t$, the change in time.
 
-So this $\frac{\Delta f}{\Delta t}$
+So this $\displaystyle \frac{\Delta f}{\Delta t}$
 is giving us our average velocity over the period
 of time from 8:00 to 10:00.
 
@@ -3837,7 +3873,7 @@ of the car at 8:01.
 And in our notation, that's going to be $f(8 + \frac{1}{60})$.
 So that's 8 and 1/60 hours.
 And let's say that the car was at mile marker 51
-at that moment.
+at that moment: $f(8 + \frac{1}{60})=51 mi$.
 
 So given that information, what would you say
 is the average velocity of the car between 8:00 and 8:01?
@@ -3845,9 +3881,10 @@ Why don't you think about that, and then
 we'll come back and discuss some more.
 
 \begin{exercise}
-  \textbf{Average velocity 2:} Given that at 8:00 our position was 50 miles,
+  \textbf{Average velocity 2}\\%
+  Given that at 8:00 our position was 50 miles,
   and at 8:01 our position was 51 miles, what was our average velocity over
-  the one minute from 8:00 to 8:01? Express your answer in miles per hour. 
+  the one minute from 8:00 to 8:01? Express your answer in miles per hour.
 \end{exercise}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3860,7 +3897,16 @@ We're looking for the average velocity of our car
 between 8 o'clock and 8:01.
 And we were told the positions of the car at those two times.
 So $f$, which is our position function, of 8 is 50 miles.
-And $f(8:01)$, or 8 plus 1/60, is 51 miles.
+And $f(8:01)$, or 8 plus 1/60, is 51 miles:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-005.png}}
+  \end{center}
+\end{figure}
+
 And from that, hopefully you are able to determine
 what the average velocity during this 1 minute was.
 
@@ -3870,7 +3916,15 @@ And if you did that, then on the top
 you would get 51 minus 50 miles.
 And on the bottom, we have the difference
 in time between 8:01 and 8 o'clock.
-And so we get 1 mile divided by 1 minute, or 1 mile per minute.
+And so we get 1 mile divided by 1 minute, or 1 mile per minute:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-006.png}}
+  \end{center}
+\end{figure}
 
 Now, we wanted this in miles per hour.
 So there are a couple ways to do that.
@@ -3883,67 +3937,114 @@ times, so $(8 + 1/60) - 8$.
 And that's in hours.
 And when you do that, you get 1 mile
 on top divided by 1/60 of an hour on the bottom,
-and that's 60 miles per hour.
+and that's 60 miles per hour:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-007.png}}
+  \end{center}
+\end{figure}
 
 A faster way might have been to just take
 this 1 mile per minute and multiply it by a conversion
 factor of 60 minutes per hour.
 And when we do that, the minutes cancel
-and we're just left with 60 miles per hour.
+and we're just left with 60 miles per hour:
 
-So this gave us our average velocity over this one minute,
-or our average rate of change of position with respect to time.
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-008.png}}
+  \end{center}
+\end{figure}
+
+So this gave us our \emph{average velocity} over this one minute,
+or our \emph{average rate of change of position with respect to time}.
+
 Now, it's important to note that, in this course \textbf{when
 we say average rate of change, it doesn't have to be with respect to time:
 It can be any sort of thing}.
-
 For instance, if you have some amount of gas, maybe
 some steam, then if you change the temperature of the gas,
 then the pressure changes.
 So pressure is a function of temperature,
 and we could talk about the average rate of change
 of pressure with respect to temperature,
-as the temperature goes from such and such to such and such.
+as the temperature goes from such and such to such and such:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-009.png}}
+  \end{center}
+\end{figure}
 
 In general, if you have any function $f$ with some input
 variable $x$, then you can talk about the average rate
 of change of $f(x)$ with respect to $x$, as $x$ goes
-from $x = a$ to $x = b$.
-And what this is, is exactly what we had above.
+from $x = a$ to $x = b$. And what this is, is exactly what we had above:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-010.png}}
+  \end{center}
+\end{figure}
 
 It's just the change in $f$, so $\Delta
 f$, divided by the change in $x$, $\Delta x$.
-And this is always going to be measured
-in units of the output divided by units of the input.
+And this is \textbf{always going to be measured
+  in units of the output divided by units of the input}:
+
+\begin{equation}
+  \text{Average rate of change} = \frac{\Delta f \quad \text{units of the output}}{\Delta x \quad \text{units of the input}}
+\end{equation}
+
 And the formula is just as follows.
 So $\Delta x$ --- $x$ is going from $a$ to $b$,
 so $\Delta x$, the change in $x$, is going to be $b - a$.
 And $\Delta f$, well, how much does $f$ change?
 $f$ is going from $f(a)$ to $f(b)$, so its change is
-$f(b) - f(a)$.
+$f(b) - f(a)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-011.png}}
+  \end{center}
+\end{figure}
 
 And so this quotient right here is our average rate
 of change of $f$ with respect to $x$ as $x$ goes from $x = a$
 to $x = b$.
 
 \begin{exercise}
-  \textbf{Pressure changes:} The pressure of a volume of gas changes as we change
+  \textbf{Pressure changes}\\%
+  The pressure of a volume of gas changes as we change
   the temperature. If we measure the pressure in units of pascals, and temperature
   in degrees Celsius, in what units would we be measuring a rate of change of
   pressure with respect to temperature?
 \begin{itemize}[noitemsep]
-\item[$\square$] pascals
-\item[$\square$] degrees Celsius
-\item[$\square$] degrees Celsius per pascal
-\item[$\square$] pascals per degree Celsius
-\item[$\square$] none of the above
+\item[$\bigcirc$] pascals
+\item[$\bigcirc$] degrees Celsius
+\item[$\bigcirc$] degrees Celsius per pascal
+\item[$\bigcirc$] pascals per degree Celsius
+\item[$\bigcirc$] none of the above
 \end{itemize}
 \end{exercise}
 
 \begin{exercise}
-  \textbf{Pressure rate of change:} If pressure is 210000 pascals at 30 degrees
+  \textbf{Pressure rate of change}\\%
+  If pressure is 210000 pascals at 30 degrees
   Celsius, and 220000 pascals at 32 degrees Celsius, what is the average rate
-  of change of pressure over this range of temperature?
+  of change of pressure over this range of temperature? (Express answer as a number
+  in the units you found in the previous problem.)
 \end{exercise}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -3951,16 +4052,17 @@ to $x = b$.
 \label{u1-what-getting-closer}
 
 \begin{exercise}
-  \textbf{Getting closer to instantaneous:}  We've calculated the average velocity
+  \textbf{Getting closer to instantaneous}\\%
+  We've calculated the average velocity
   of our car between 8:00 and 8:01. Great! But again we have the problem --- this
   is merely the average velocity over a period of one minute. We still haven't
   found the velocity at the precise instant of 8am. Which of the following expressions
-  would give us the precise velocity at exactly 8am? 
+  would give us the precise velocity at \emph{exactly} 8am? 
 \begin{itemize}
-\item[$\square$] $\displaystyle \frac{f(10)-f(8)}{10-8}$
-\item[$\square$] $\displaystyle \frac{f(8+1/60)-f(8)}{(8+1/60)-8}$
-\item[$\square$] $\displaystyle \frac{f(8+1/3600)-f(8)}{(8+1/3600)-8}$
-\item[$\square$] none of the above
+\item[$\bigcirc$] $\displaystyle \frac{f(10)-f(8)}{10-8}$
+\item[$\bigcirc$] $\displaystyle \frac{f(8+1/60)-f(8)}{(8+1/60)-8}$
+\item[$\bigcirc$] $\displaystyle \frac{f(8+1/3600)-f(8)}{(8+1/3600)-8}$
+\item[$\bigcirc$] none of the above
 \end{itemize}
 \end{exercise}
 
@@ -3969,18 +4071,19 @@ to $x = b$.
 \label{u1-what-formula}
 
 \begin{exercise}
-  \textbf{Finding a formula:} All of the choices were of the form
+  \textbf{Finding a formula}\\%
+  All of the choices were of the form
   $\displaystyle \frac{f(b)-f(8)}{b-8}$. When $b$ was 10, we know that gives us
   the average velocity over the span of time from 8:00 to 10:00, but that won't
   necessarily match the instantaneous velocity at 8:00. When we choose $b$ to be
   one minute past 8, $8 + 1/60$, we probably get a more accurate measurement,
   but it's still an average velocity over a minute, not the instantaneous velocity.
   When $b$ is only one second away, $8 + 1/3600$, even more accurate, but again,
-  not exact. So is the answer simply to plug in 8 for $b$ into the equation for
+  not exact. So is the answer simply to ``plug in'' 8 for $b$ into the equation for
   the average velocity?
 \begin{itemize}[noitemsep]
-\item[$\square$] Yes
-\item[$\square$] No
+\item[$\bigcirc$] Yes
+\item[$\bigcirc$] No
 \end{itemize}
 \end{exercise}
 
@@ -3994,15 +4097,31 @@ We've been thinking about average velocity
 over a period of time.
 We know that if we want the average velocity between eight
 o'clock and some other time $b$, then
-that's given by this formula.
-We have the change in position divided by the change in time.
+that's given by this formula (we have the change in position divided by the change
+in time):
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-012.png}}
+  \end{center}
+\end{figure}
 
 But if we want the instantaneous velocity at eight o'clock
 exactly, then this formula is a little bit problematic.
 If we try plugging in $b$ is 8:01, then that's
 giving it as an average velocity over a period of one minute.
 That's not the same thing as the instantaneous velocity
-at eight o'clock.
+at eight o'clock:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-013.png}}
+  \end{center}
+\end{figure}
 
 We could try $b$ is eight o'clock and one second,
 but that's still an average velocity.
@@ -4024,20 +4143,37 @@ We know that the closer $b$ is to 8, the better.
 But we can't plug in $b = 8$,
 because we'd get $0/0$, and that's just ridiculous.
 So our solution is to take a \emph{limit}
-as $b \to 8$ (as $b$ approaches) eight o'clock.
+as $b \to 8$ (as $b$ approaches) eight o'clock:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-014.png}}
+  \end{center}
+\end{figure}
 
 So our formula for the instantaneous velocity
 at eight o'clock is a limit as $b$ approaches
 eight of $f(b) - f(8)$ --- that's
 the change in $f$ --- divided by $b - 8$, the change in time:
-$\displaystyle \lim_{b \to 8}\frac{f(b)-f(8)}{b-8}$.
-In other words, we're taking the limit of average velocities
+$\displaystyle \lim_{b \to 8}\frac{f(b)-f(8)}{b-8}$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-015.png}}
+  \end{center}
+\end{figure}
+
+In other words, we're taking the \textbf{limit of average velocities}
 as $b$ approaches 8, or as the time interval gets
 shorter and shorter.
 
 This is a massive concept, the idea
-that you can take the limit of a bunch of average velocities
-and get an instantaneous velocity.
+that you can take the \emph{limit of a bunch of average velocities
+and get an instantaneous velocity}.
 
 And we want to apply this not just to instantaneous velocity,
 but we want to talk about \textbf{instantaneous rates of change
@@ -4048,7 +4184,15 @@ If we want the instantaneous rate of change of a function
 $f(x)$, at some point, $x = a$.
 We're going to give this a special name.
 So we're going to call this the \textbf{derivative} of $f(x)$
-at the point $x = a$: $\displaystyle \lim_{b \to a}\frac{f(b)-f(a)}{b-a}$.
+at the point $x = a$: $\displaystyle \lim_{b \to a}\frac{f(b)-f(a)}{b-a}$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-016.png}}
+  \end{center}
+\end{figure}
 
 So this is our big idea.
 The \textbf{derivative at a point is measuring
@@ -4064,7 +4208,16 @@ And that's the derivative.
 So we give this a special notation.
 We're going to say that the derivative of $f$ at $a$
 will be denoted by this $f'$ ``prime'' of $a$:
-$\displaystyle f'(a) = \lim_{b \to a}\frac{f(b)-f(a)}{b-a}$.
+$\displaystyle f'(a) = \lim_{b \to a}\frac{f(b)-f(a)}{b-a}$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-017.png}}
+  \end{center}
+\end{figure}
+
 So all of these things --- this notation,
 this formula, this idea of an instantaneous rate of change ---
 all of these are wrapped up in this word ``derivative.''
@@ -4097,12 +4250,13 @@ This alternative definition is also common:
   f'(a) = \lim_{h \to 0}\frac{f(a + h) - f(a)}{h}
 \end{equation}
 
-Note: The derivative of a function always measures an instantaneous rate of change
-of the function's output with respect to the function's input, so, just like an
-average rate of change, it would be measured in units of output per units of input.
+Note: The derivative of a function always measures an \emph{instantaneous rate of change
+of the function's output with respect to the function's input}, so, just like an
+average rate of change, it would be \emph{measured in units of output per units of input}.
 
 \begin{exercise}
-  \textbf{Review question:} Which of the following $f'(a)$ measure?
+  \textbf{Review question}\\%
+  Which of the following $f'(a)$ measure?
   (Check as many as apply.)
 \begin{itemize}[noitemsep]
 \item[$\square$] The size of $f$
@@ -4112,15 +4266,16 @@ average rate of change, it would be measured in units of output per units of inp
 \end{exercise}
 
 \begin{exercise}
-  \textbf{Units of the derivative:} If $x$ is temperature, measured in
+  \textbf{Units of the derivative}\\%
+  If $x$ is temperature, measured in
   degrees, and $f(x)$ is pressure, measured in pascals, what units would
   be $f'(30)$ measured in? 
 \begin{itemize}[noitemsep]
-\item[$\square$] Pascals
-\item[$\square$] Degrees
-\item[$\square$] Degrees per Pascal
-\item[$\square$] Pascals per degree
-\item[$\square$] None of the above 
+\item[$\bigcirc$] Pascals
+\item[$\bigcirc$] Degrees
+\item[$\bigcirc$] Degrees per Pascal
+\item[$\bigcirc$] Pascals per degree
+\item[$\bigcirc$] None of the above 
 \end{itemize}
 \end{exercise}
 
@@ -4135,10 +4290,18 @@ The height of the pumpkin is going to be a function of time.
 So maybe it's given by this function:
 $\displaystyle f(t) = 100 + 20t - 5t^2$ meters where
 $t$ is measured in seconds.
-
 Just so you know a little bit about where this function came
 from, it's a quadratic polynomial,
-because we know that objects fall in parabolic arcs.
+because we know that objects fall in parabolic arcs:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-018.png}}
+  \end{center}
+\end{figure}
+
 And the 100, that's the height of the building.
 So that's where the pumpkin starts at time 0.
 The 20 is referring to an initial velocity with which we
@@ -4161,6 +4324,14 @@ And on the bottom, we have a time of one second.
 So we've got 15 meters per second
 for our average velocity.
 Wonderful.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-019.png}}
+  \end{center}
+\end{figure}
 
 Now, instantaneous velocity is asking for a derivative.
 So we want $f'(1)$.
@@ -4233,6 +4404,14 @@ second, until at the end of that period, which
 is at t equals 1 exactly, the pumpkin's velocity is
 slower than any velocity that came before.
 
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-021.png}}
+  \end{center}
+\end{figure}
+
 So that's why the instantaneous velocity at t
 equals 1 is slower than the average velocity
 over the period from t equals 0 to t equals 1.
@@ -4287,14 +4466,15 @@ Why don't you take a moment and think about it.
 \label{u1-what-negative-derivative}
 
 \begin{exercise}
-  \textbf{Understanding the answer:} The height of the pumpkin at time $t$ is
+  \textbf{Understanding the answer}\\%
+  The height of the pumpkin at time $t$ is
   $f(t) = 100+20t-5t^2$. We got a negative number for $f'(3)$. Does this make sense?
 \begin{itemize}[noitemsep]
-\item[$\square$] Yes, because at $t=3$ the pumpkin is below the original
+\item[$\bigcirc$] Yes, because at $t=3$ the pumpkin is below the original
   height of the building.
-\item[$\square$] Yes, because at $t=3$ the pumpkin has started to go down.
-\item[$\square$] No, because velocity cannot be negative.
-\item[$\square$] No, because height cannot be negative. 
+\item[$\bigcirc$] Yes, because at $t=3$ the pumpkin has started to go down.
+\item[$\bigcirc$] No, because velocity cannot be negative.
+\item[$\bigcirc$] No, because height cannot be negative. 
 \end{itemize}
 \end{exercise}
 
@@ -4307,14 +4487,31 @@ was 10 meters per second and f prime of 3
 was minus 10 meters per second.
 So what does that mean?
 
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-023.png}}
+  \end{center}
+\end{figure}
+
 Let's think about where this pumpkin has been,
 where its position has been.
+
 So at time t equals 0, we have that f of 0 is 100 meters.
 So that's the height of the building.
 That's where the pumpkin starts.
-
 And we also calculated in the last video that f of 1
-was 115 meters and f of 3 was also equal to 115 meters.
+was 115 meters and f of 3 was also equal to 115 meters:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-024.png}}
+  \end{center}
+\end{figure}
+
 So if we think about it, we can figure out what's going on.
 If 115 meters is here, then at t equals 1 second,
 the pumpkin is at that height on its way up.
@@ -4325,7 +4522,16 @@ And eventually it goes splat.
 So f prime of 1 is positive because it's
 measuring the instantaneous velocity when
 the pumpkin is moving upwards.
-Or other words, the height f is increasing.
+Or other words, the height f is increasing:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m1-025.png}}
+  \end{center}
+\end{figure}
+
 Whereas f prime of 3 is negative because it's
 measuring an instantaneous velocity
 at a time when f is decreasing, the height is going down.
@@ -4353,11 +4559,10 @@ So why don't you calculate f prime of 2?
 And then we'll come back and discuss.
 
 \begin{exercise}
-  \textbf{Calculate derivative:} Now you calculate $f'(2)$.
+  \textbf{Calculate derivative}\\%
+  Now you calculate $f'(2)$.
   Use the same limit definition as we did above! 
 \end{exercise}
-
-Food for thought: What does an instantaneous velocity of 0 mean here?
 
 \begin{figure}[H]
   \begin{center}
@@ -4367,13 +4572,15 @@ Food for thought: What does an instantaneous velocity of 0 mean here?
   \end{center}
 \end{figure}
 
+Food for thought: What does an instantaneous velocity of 0 mean here?
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Zero derivative}
 \label{u1-what-zero-derivative}
 
 Video: \href{https://www.youtube.com/watch?v=CA56Y0HTb6c}{Zero derivative}
 
-We've calculated f prime of 2 to be 0 meters per second.
+We've calculated $f'(2) = 0\ m/s$.
 But what does that mean?
 Should we interpret it as saying that the pumpkin froze
 in midair?
@@ -4381,16 +4588,17 @@ Well, no.
 
 We know that pumpkins don't behave like that.
 Freezing in midair would require the velocity of the pumpkin
-to be 0 over a period of time.
+to be 0 \emph{over a period of time}.
 But what we have is a derivative.
 That's an instantaneous velocity.
-So it's a velocity only at the instant t equals 2 seconds.
+So it's a velocity only \emph{at the instant t equals 2 seconds}.
 
 To think about it a different way,
 we know that a positive derivative
 means that f is increasing.
 So the velocity would be upward.
 A negative derivative means that the velocity would be downward.
+
 There's an instant, however, in between.
 Right at the time the pumpkin reaches
 the top of its trajectory.
@@ -4404,13 +4612,14 @@ say that the instantaneous velocity is 0.
 \label{u1-what-units}
 
 \begin{exercise}
-  \textbf{Units of derivatives question:} A truck is going to make a trip of 500 km.
+  \textbf{Units of derivatives question}\\%
+  A truck is going to make a trip of 500 km.
   If it is loaded with $x$ pounds of cargo, its fuel efficiency on the trip will be $f(x)$
   miles per gallon. What units is $f'(5000)$ measured in?
 \end{exercise}
 
-Note: The derivative of any function is always measured in units of the output of
-the function, divided by units of the input of the function. The output here is
+Note: The derivative of any function is \emph{always measured in units of the output of
+the function, divided by units of the input of the function}. The output here is
 measured in miles per gallon ($mi/g$), and the input is measured in pounds ($p$),
 so the derivative is measured in miles per gallon per pound: $(mi/g)/p$, or
 $mi/(gp)$.
@@ -4418,14 +4627,17 @@ $mi/(gp)$.
 \begin{exercise}
   \textbf{Sign:} Do you expect $f'(5000)$ to be positive, negative, or zero? 
 \begin{itemize}[noitemsep]
-\item[$\square$] positive
-\item[$\square$] negative
-\item[$\square$] zero
+\item[$\bigcirc$] positive
+\item[$\bigcirc$] negative
+\item[$\bigcirc$] zero
 \end{itemize}
 \end{exercise}
 
 Note: If the weight of the cargo increases, the fuel efficiency of the truck will
 decrease. This means that $f'(5000)$ should be negative.
+
+Make sure that you can explain your thought process in solving this problem.
+This sort of reasoning is tested on the AP exam! 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsubsection{Summary}
@@ -4445,6 +4657,361 @@ at a point $x=a$ is defined to be
   f'(a) = \lim_{b \to a}\frac{f(b) - f(a)}{b-a}
 \end{equation}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Geometric interpretation of the derivative}
+\label{u1-geometric}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Geometric interpretation of the derivative}
+\label{u1-geometric-interpretation}
+
+Video: \href{https://www.youtube.com/watch?v=-7NSDjdaHIc}{Geometric interpretation
+  of the derivative}
+
+There are three main interpretations
+of the derivative.
+
+\begin{itemize}[noitemsep]
+\item \textbf{Physical}: as an instantaneous rate of change;
+\item \textbf{Geometric}: as the slope of the tangent line;
+\item \textbf{Sensitivity measurement}: as the sensitivity of a function to
+  small changes (important in analyzing experimental data).
+\end{itemize}
+
+Last time, we talked about the physical interpretation.
+Now we'll explore the geometric viewpoint.
+Later on, we will connect these ideas
+to sensitivity of measurements:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-001.png}}
+  \end{center}
+\end{figure}
+
+You may find one of these perspectives
+more intuitive than the others.
+But our goal is to get you comfortable with all of them.
+And able to move fluently between them.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Objectives}
+\label{u1-geometric-obj}
+
+At the end of this video, and after some practice, you should be able to:
+
+\begin{itemize}[noitemsep]
+\item Understand the correspondence between rates of change (both average and
+  instantaneous) and \textbf{slopes of secant or tangent lines}
+\item Be able to \textbf{estimate a derivative} of a function at a point, given
+  its graph
+\item Determine when a derivative does not exist
+\item Use $\Delta x$ and $\Delta y$ to denote small changes
+\end{itemize}
+
+Contents: 18 pages; 8 videos (21 minutes 1x speed); 25 questions.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Tangent lines}
+\label{u1-geometric-tangent-lines}
+
+Video: \href{https://www.youtube.com/watch?v=XvuHw1a1F6o}{Introduction to tangent lines}
+
+Today we're going to start with a geometry problem.
+So at its outset, it doesn't seem to have anything
+to do with derivatives.
+I'm just going to start with the graph of some function $y=f(x)$.
+And what I want to know is, what is this tangent line
+that I somehow intuitively know how
+to draw through my graph above a point $x = a$?
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-002.png}}
+  \end{center}
+\end{figure}
+
+Let's be more specific about what
+it is that I'm asking in this geometry problem.
+So in order to understand a tangent line, first of all this
+is a \emph{line}.
+And in order to understand a line,
+it's enough to know a \emph{point on that line}
+and the \emph{slope} of that line:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-003.png}}
+  \end{center}
+\end{figure}
+
+Now we already know a point on this line
+because we specified that it went through our graph
+above a point $x = a$.
+That means a point on this line is the point $\left(a, f(a)\right)$.
+Then we can write the equation for this tangent line
+as $y-f(a)=m(x-a)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-004.png}}
+  \end{center}
+\end{figure}
+
+Now we have a really simple problem.
+What we want to find is $m$, the \emph{slope of this line}.
+And this is exactly where calculus
+is going to come into play.
+What we're going to discover in this sequence is
+that $m = f'(a)$, the derivative of this function
+at the point $a$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-005.png}}
+  \end{center}
+\end{figure}
+
+How did this happen?
+How did our simple geometry problem
+become a calculus problem?
+Well, that is what we're going to figure out.
+So first I want you to go ahead and do a few problems,
+thinking about the tangent line and we'll be right back.
+
+\paragraph{Note:} We've seen that we can draw a tangent line. There is some sense
+that the tangent line goes through a point of a function in a way that it doesn't
+cut across the function at that point. But we have to be careful. Let's take a
+moment to think about what tangent lines are not. First, though, let's start with
+a \emph{bad} way to think about tangent lines. A lot of students learn in high
+school that a tangent line is ``a line that touches the curve in only one point.''
+This is true if your curve is a circle, but for many other curves and functions,
+this is a \emph{terrible} definition. Let's see why.
+
+\begin{exercise}
+  \textbf{Intersecting once}\\%
+  Here's a graph of a sine curve. Here's a line that intersects the graph in only
+  one point:
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-006.png}}
+    \end{center}
+  \end{figure}
+  Is this a tangent line?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Yes
+  \item[$\bigcirc$] No
+  \item[$\bigcirc$] Maybe
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Intersecting infinitely many times}\\%
+  Here's a graph of a modified sine curve, and a line that intersects the graph
+  at infinitely many points.
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-007.png}}
+    \end{center}
+  \end{figure}
+  Is this a tangent line?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Yes
+  \item[$\bigcirc$] No
+  \item[$\bigcirc$] Maybe
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Intuition for tangent lines}
+\label{u1-geometric-intuition-for-tangent}
+
+Video: \href{https://www.youtube.com/watch?v=Bon3jzROwqU}{Intuition for tangent lines}
+
+Welcome back.
+You just finished answering some questions about what a tangent
+line is not, and now we're going to focus
+on \emph{what a tangent line is}.
+
+And to help us with this, we're going
+to be using the \emph{Tangent Approximation Mathlet}:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-008.png}}
+  \end{center}
+\end{figure}
+
+This is a visualization tool that
+is designed to help us build our intuition about what a tangent
+line is.
+So what you'll notice down here is
+that I have the function set to a cubic function,
+and I want to zoom in onto this point.
+And I can use this slider to specify how zoomed in or out I
+am.
+And so as I zoom in, I move closer and closer
+and closer and closer.
+And what you notice is that this \emph{function
+begins to look more and more like a straight line}
+until I'm all the way zoomed in.
+At that point, the width of this box
+is two one hundredth of a unit, so pretty small.
+And the function definitely looks like a straight line.
+Well, this line is my tangent line:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-009.png}}
+  \end{center}
+\end{figure}
+
+What do I mean by this?
+I mean that my \emph{tangent line must point in the same direction
+as this function}.
+So now this kind of makes sense.
+When I'm zoomed in far enough, my function looks like a line,
+the tangent line is a line, and we
+want the tangent line and the function
+to have the same slope at this point,
+to point in the same direction.
+
+Now, I can use this tool to actually draw
+the tangent line by pressing the Tangent button down here.
+Then the tangent line appears and I can zoom out
+so that you can see the function and the tangent line together.
+So notice that the function is curvy
+and the tangent line is a line.
+But the tangent line is only close to the function
+in this very small neighborhood here that we're interested in.
+And that makes sense.
+
+The tangent line is only a good approximation
+for our function in this small zoomed in neighborhood.
+Other places far away from this point, the tangent line
+and the function don't agree at all.
+
+So now I'd like you to go ahead and play with this Tangent
+Approximation Mathlet yourself.
+You can go ahead and change the function using this drop
+down menu down here.
+I want you to go ahead and zoom in, draw the tangent line,
+zoom back out, and get some intuition for what this tangent
+line is, how it behaves, and how it is that you draw this.
+Then we're going to have to answer
+our original problem, which is what
+is the formula for this tangent line.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Secant lines}
+\label{u1-geometric-secant-lines}
+
+Video: \href{https://www.youtube.com/watch?v=gUsr2VuO7Ek}{Secant lines}  
+
+Recall that we want to find the slope of the tangent line.
+In order to do this, we're going to introduce a new concept--
+the \emph{secant line}.
+To get started, we're going to draw
+some function $y=f(x)$.
+And then we're going to choose two points.
+Here's the point $a$ and here is the point $b$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-010.png}}
+  \end{center}
+\end{figure}
+
+We can find the point on the graph above the point a
+and we can find the point on the graph above the point b.
+Then we can draw a line through these two points.
+And this line is a secant line:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-011.png}}
+  \end{center}
+\end{figure}
+
+Now a natural question that we can
+ask ourselves is what is the slope of this line?
+From your other math classes, you
+may remember that the slope is defined
+as the rise over the run, $m = \frac{\text{rise}}{\text{run}}$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-012.png}}
+  \end{center}
+\end{figure}
+
+So let's go ahead and identify the rise and the run
+on our graph.
+This vertical distance here is the rise,
+which we write with this symbol, $\Delta y$.
+This triangle here is the Greek letter ``delta''.
+It stands for difference because it
+is the difference in the height of these two points.
+We often read this symbol as the change in y.
+Now where is the run?
+The run is this horizontal distance here, $\Delta x$.
+Again, it stands for the different
+because it is the difference in the x values of these two
+points.
+We often read this as the change in x:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-013.png}}
+  \end{center}
+\end{figure}
+
+This allows us to identify the slope
+of the secant line, the rise over the run, which
+is $\Delta y / \Delta x$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-014.png}}
+  \end{center}
+\end{figure}
+
+Of course, we'd like a formula that's
+a little bit more explicit in terms of our function $f(x)$.
+But before we do that, you're going
+to go ahead and do some problems to recall
+the information about average rate of change
+that we learned before.
 
 
 

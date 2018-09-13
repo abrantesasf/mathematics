@@ -1,0 +1,35 @@
+
+Today we're going to start with a geometry problem.
+So at its outset, it doesn't seem to have anything
+to do with derivatives.
+I'm just going to start with the graph of some function y
+equals f of x.
+And what I want to know is, what is this tangent line
+that I somehow intuitively know how
+to draw through my graph above a point x equals a?
+Let's be more specific about what
+it is that I'm asking in this geometry problem.
+So in order to understand a tangent line, first of all this
+is a line.
+And in order to understand a line,
+it's enough to know a point on that line
+and the slope of that line.
+Now we already know a point on this line
+because we specified that it went through our graph
+above a point x equals a.
+That means a point on this line is the point a, f of a.
+Then we can write the equation for this tangent line
+as y minus f of a is equal to m times the quantity x minus a.
+Now we have a really simple problem.
+What we want to find is m, the slope of this line.
+And this is exactly where calculus
+is going to come into play.
+What we're going to discover in this sequence is
+that m is equal to f prime of a, the derivative of this function
+at the point a.
+How did this happen?
+How did our simple geometry problem
+become a calculus problem?
+Well, that is what we're going to figure out.
+So first I want you to go ahead and do a few problems,
+thinking about the tangent line and we'll be right back.

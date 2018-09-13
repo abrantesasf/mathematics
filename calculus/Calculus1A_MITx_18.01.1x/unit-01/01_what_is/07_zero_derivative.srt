@@ -1,0 +1,100 @@
+0
+00:00:00,000 --> 00:00:01,670
+
+
+1
+00:00:01,670 --> 00:00:06,160
+We've calculated f prime of 2 to be 0 meters per second.
+
+2
+00:00:06,160 --> 00:00:08,140
+But what does that mean?
+
+3
+00:00:08,140 --> 00:00:11,130
+Should we interpret it as saying that the pumpkin froze
+
+4
+00:00:11,130 --> 00:00:13,260
+in midair?
+
+5
+00:00:13,260 --> 00:00:14,950
+Well, no.
+
+6
+00:00:14,950 --> 00:00:17,270
+We know that pumpkins don't behave like that.
+
+7
+00:00:17,270 --> 00:00:20,690
+Freezing in midair would require the velocity of the pumpkin
+
+8
+00:00:20,690 --> 00:00:24,270
+to be 0 over a period of time.
+
+9
+00:00:24,270 --> 00:00:26,780
+But what we have is a derivative.
+
+10
+00:00:26,780 --> 00:00:29,490
+That's an instantaneous velocity.
+
+11
+00:00:29,490 --> 00:00:35,290
+So it's a velocity only at the instant t equals 2 seconds.
+
+12
+00:00:35,290 --> 00:00:37,170
+To think about it a different way,
+
+13
+00:00:37,170 --> 00:00:38,770
+we know that a positive derivative
+
+14
+00:00:38,770 --> 00:00:40,980
+means that f is increasing.
+
+15
+00:00:40,980 --> 00:00:43,870
+So the velocity would be upward.
+
+16
+00:00:43,870 --> 00:00:48,690
+A negative derivative means that the velocity would be downward.
+
+17
+00:00:48,690 --> 00:00:51,400
+There's an instant, however, in between.
+
+18
+00:00:51,400 --> 00:00:53,750
+Right at the time the pumpkin reaches
+
+19
+00:00:53,750 --> 00:00:56,000
+the top of its trajectory.
+
+20
+00:00:56,000 --> 00:00:58,330
+The pumpkin has stopped going up.
+
+21
+00:00:58,330 --> 00:01:00,770
+But it hasn't quite started to go down.
+
+22
+00:01:00,770 --> 00:01:02,600
+And it's right at that moment that we
+
+23
+00:01:02,600 --> 00:01:07,780
+say that the instantaneous velocity is 0.
+
+24
+00:01:07,780 --> 00:01:12,655
+
+

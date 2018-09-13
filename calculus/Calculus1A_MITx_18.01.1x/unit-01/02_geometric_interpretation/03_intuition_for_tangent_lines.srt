@@ -1,0 +1,56 @@
+
+Welcome back.
+You just finished answering some questions about what a tangent
+line is not, and now we're going to focus
+on what a tangent line is.
+And to help us with this, we're going
+to be using the Tangent Approximation Mathlet.
+This is a visualization tool that
+is designed to help us build our intuition about what a tangent
+line is.
+So what you'll notice down here is
+that I have the function set to a cubic function,
+and I want to zoom in onto this point.
+And I can use this slider to specify how zoomed in or out I
+am.
+And so as I zoom in, I move closer and closer
+and closer and closer.
+And what you notice is that this function
+begins to look more and more like a straight line
+until I'm all the way zoomed in.
+At that point, the width of this box
+is two one hundredth of a unit, so pretty small.
+And the function definitely looks like a straight line.
+Well, this line is my tangent line.
+What do I mean by this?
+I mean that my tangent line must point in the same direction
+as this function.
+So now this kind of makes sense.
+When I'm zoomed in far enough, my function looks like a line,
+the tangent line is a line, and we
+want the tangent line and the function
+to have the same slope at this point,
+to point in the same direction.
+Now, I can use this tool to actually draw
+the tangent line by pressing the Tangent button down here.
+Then the tangent line appears and I can zoom out
+so that you can see the function and the tangent line together.
+So notice that the function is curvy
+and the tangent line is a line.
+But the tangent line is only close to the function
+in this very small neighborhood here that we're interested in.
+And that makes sense.
+The tangent line is only a good approximation
+for our function in this small zoomed in neighborhood.
+Other places far away from this point, the tangent line
+and the function don't agree at all.
+So now I'd like you to go ahead and play with this Tangent
+Approximation Mathlet yourself.
+You can go ahead and change the function using this drop
+down menu down here.
+I want you to go ahead and zoom in, draw the tangent line,
+zoom back out, and get some intuition for what this tangent
+line is, how it behaves, and how it is that you draw this.
+Then we're going to have to answer
+our original problem, which is what
+is the formula for this tangent line.

@@ -1,0 +1,18 @@
+
+There are three main interpretations
+of the derivative.
+First, the physical interpretation
+as an instantaneous rate of change.
+Second, the geometric interpretation
+as the slope of the tangent line.
+And third, the interpretation is the sensitivity
+of a function to small changes.
+Which is important in analyzing experimental data.
+Last time, we talked about the physical interpretation.
+Now we'll explore the geometric viewpoint.
+Later on, we will connect these ideas
+to sensitivity of measurements.
+You may find one of these perspectives
+more intuitive than the others.
+But our goal is to get you comfortable with all of them.
+And able to move fluently between them.

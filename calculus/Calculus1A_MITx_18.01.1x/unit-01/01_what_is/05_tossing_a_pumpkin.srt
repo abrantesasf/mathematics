@@ -1,0 +1,118 @@
+
+Let's say we throw a pumpkin off of a building.
+The height of the pumpkin is going to be a function of time.
+So maybe it's given by this function f of t
+equals 100 plus 20t minus 5t squared meters where
+t is measured in seconds.
+Just so you know a little bit about where this function came
+from, it's a quadratic polynomial,
+because we know that objects fall in parabolic arcs.
+And the 100, that's the height of the building.
+So that's where the pumpkin starts at time 0.
+The 20 is referring to an initial velocity with which we
+throw the pumpkin.
+And this minus 5t squared, that's the effect of gravity.
+What we're going to do in this video is calculate
+the average velocity of the pumpkin between times
+t equals 0 and t equals 1.
+And then we're going to calculate
+the instantaneous velocity of the pumpkin at t equals 1.
+And we're going to do this and see how those things differ.
+So let's start with the average velocity.
+We know that average velocity is the change in height.
+So f of 1 minus f of 0 divided by the change
+in time, 1 minus 0.
+And we can just calculate these things. f of 1 is 115.
+f of 0 is 100.
+And that's in meters.
+And on the bottom, we have a time of one second.
+So we've got 15 meters per second
+for our average velocity.
+Wonderful.
+Now, instantaneous velocity is asking for a derivative.
+So we want f prime of 1.
+And we'll use our limit definition.
+So f prime of 1 is defined to be the limit as b
+approaches 1 of f of b minus f of 1 divided by b minus 1.
+So let's see what we can do to simplify this expression
+that we're taking the limit of.
+So f of b minus f of 1 divided by b minus 1,
+when we just plug these things in to our formula for f,
+we get f of b is 100 plus 20b minus 5b squared.
+And then we're subtracting f of 1, which is 115.
+All this is over b minus 1.
+And simplifying a little bit, on the top,
+we're going to have minus 5b squared plus 20b minus 15
+divided by b minus 1.
+Now, remember that we want the limit as b approaches 1.
+But if we leave it in this form, then our numerator
+is going to be going to 0 as b approaches 1,
+and our denominator is also going to be going to 0.
+So that's not going to be good enough.
+We need to do some more work.
+And we're going to have to factor here.
+So we're going to get on top minus 5 times
+b squared minus 4b plus 3.
+And on the bottom, we still have our b minus 1.
+And this polynomial we can factor further.
+We'll get minus 5 times b minus 1 times b
+minus 3 all over b minus 1.
+We get some cancellation here, and we're finally left
+with minus 5 times b minus 3.
+So moving back up here, we say that this limit
+is the limit as b approaches 1 of minus 5 times b minus 3.
+Now this is continuous, so we can just plug in b equals 1.
+So we're going to get minus 5 times minus 2, which is 10.
+And 10 what?
+Well, remember that the output of f is meters.
+The input that's going into f is measured in seconds,
+so the derivative of f should be measured in meters per second.
+So that's our instantaneous velocity at time t equals 1.
+It's 10 meters per second.
+Let's take a moment and think about why this answer is
+different from the 15 meters per second
+that we got for the average velocity.
+The average velocity is referring to a time interval
+from t equals 0 to t equals 1.
+And what happens during that time is-- well,
+at t equals 0, that's when we throw the pumpkin.
+So it's starting with an initial upward velocity.
+And I'll use this arrow to denote that.
+But then during the 1 second, gravity starts to take over.
+So the pumpkin is going to go slower and slower during the 1
+second, until at the end of that period, which
+is at t equals 1 exactly, the pumpkin's velocity is
+slower than any velocity that came before.
+So that's why the instantaneous velocity at t
+equals 1 is slower than the average velocity
+over the period from t equals 0 to t equals 1.
+Let's do one other calculation really quickly.
+Let's find the instantaneous velocity at t equals 3.
+So I'll erase this.
+And we want f prime of 3.
+So by definition, that's just the limit
+as b approaches 3 of f of b minus f of 3
+divided by b minus 3.
+So to calculate the limit of this thing,
+let's try to simplify it first.
+We want f of b minus f of 3 divided by b minus 3.
+And that's equal to-- well, f of b is just 100
+plus 20b minus 5b squared.
+And then we're subtracting f of 3, which is 115.
+And then all of this is over b minus 3.
+And notice that this numerator is exactly the same numerator
+as we had before in our f prime of 1 calculation.
+So it's going to factor in exactly the same way.
+So we're going to get minus 5 times b minus 1 times b
+minus 3.
+And all of this is divided by b minus 3,
+and we get cancellation.
+So we end up with minus 5 times b minus 1.
+So putting that above, we want the limit
+as b approaches 3 of minus 5 times b minus 1.
+This is continuous now.
+So we can just plug in b equals 3.
+And we're going to get minus 5 times 2, which is minus 10.
+And that's measured in meters per second.
+So what's the deal with this minus sign?
+Why don't you take a moment and think about it.
