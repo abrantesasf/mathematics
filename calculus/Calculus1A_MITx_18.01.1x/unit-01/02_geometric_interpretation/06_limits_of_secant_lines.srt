@@ -1,0 +1,73 @@
+
+I hope you had a good time playing
+with the secant approximation mathlet.
+I want to remind you what we're looking for.
+Remember that we want to find the slope of the tangent line,
+but we don't know how to do that yet.
+So we introduced the secant line,
+and we were able to find the slope of a secant line.
+So we're going to use what we know about the secant line
+to understand the slope of the tangent line better.
+Let's see how.
+The first thing I'm going to do is to pick a value,
+x equals a, using this horizontal slider.
+So I can choose any point that I want here.
+The value of this point is not special in any way.
+Any point that you choose will be fine.
+Then by clicking the Secant button down here,
+you notice that the secant line appears,
+and it goes through the function above our point a
+and through our function above a point
+b, a distance delta x away from a.
+We can change the value of delta x
+by moving this horizontal slider.
+Observe what happens.
+As the point b moves closer and closer to the point a,
+the secant line appears to become tangent
+to our function at the point a.
+Let's go ahead and hit the Tangent button down here.
+The tangent line appears, and we can go ahead and verify
+that, in fact, as the point b moves closer and closer
+to the point a, the secant line is, in fact, becoming
+the tangent line.
+
+Let's go ahead and recap what we've just seen.
+We saw that in the limit as b approaches a,
+the secant line approaches the tangent line.
+So in particular, the slope of the secant line as b
+approaches a becomes the slope of the tangent line.
+Now we've already computed a formula for the slope
+of the secant line.
+We saw that this was delta f over delta x, which
+is f of b minus f of a all over b minus a,
+and we're interested in what happens as b approaches a.
+Now I hope this looks a little bit familiar to you
+because in the limit, as b approaches a,
+this is our definition for the derivative f prime of a.
+So this is a formula for the slope of the tangent line.
+The slope of the tangent line is the derivative
+of the function at a.
+And we found an interpretation for the derivative
+as the instantaneous rate of change of our function at a.
+So just as the slope of the secant line
+is measuring the average rate of change of our function,
+as we take the limit of the secant line as b approaches a,
+we're getting the tangent line slope,
+which is measuring the instantaneous rate of change
+of our function.
+
+So what we see on this left-hand side
+are three interpretations for the same object.
+We have a geometric interpretation
+as the slope of the secant line, we
+have a symbolic interpretation which
+is a formula for that slope, and we
+have a physical interpretation in terms
+of the average rate of change.
+And then when we take the limit as b approaches a,
+we approach the object on the right-hand side.
+It's pretty amazing how all these objects are related.
+So I want you to do a quick concept check,
+and then we'll be back to look at a worked example
+where we approximate derivatives by estimating
+slopes of tangent lines.

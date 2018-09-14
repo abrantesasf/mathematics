@@ -1,0 +1,71 @@
+
+You just did some problems where there
+was no tangent line at a particular point, which
+meant that there was no derivative at that point.
+The two examples that we looked at
+were the absolute value function,
+which has a corner at the point x equals 0,
+and the Heaviside function, which
+has a jump discontinuity at the point x equals 0.
+Let's look at these functions in a little bit more detail,
+starting with the absolute value function.
+Notice that there is no tangent line at x equals 0.
+However, if we cover up the left-hand side
+of this function, then at x equals 0
+on this part of the function, there
+appears to be a limit of secant lines approaching
+from the right that is equal to this line itself.
+So what does that mean, in terms of the derivative?
+In terms of the derivative, this means
+that this limit f of x minus f of 0
+over x minus 0-- the definition of the derivative-- this limit
+exists from the right.
+As it's a right-sided limit, we call
+this a right-sided derivative at 0,
+and denote it as f prime of 0 plus,
+to show that it exists for points to the right of 0.
+What is this value?
+In this case, it's the slope of this line, which is 1.
+Now, if instead I cover the right-hand side of this graph,
+I see that the graph has a limit of secant lines approaching
+from the left.
+That is, this left-sided limit gives us
+a left-sided derivative, which is equal to negative 1.
+Now, both the right and the left-sided derivatives exist.
+They're not equal, so the derivative
+does not exist at x equals 0.
+Now, let's look at the heavy side
+function, which has a jump discontinuity at x equals 0.
+If I cover the left-hand side of this function,
+because the function is equal to 1 at x equals 0,
+this function does have a right-sided derivative,
+which is equal to 0.
+However, when we cover the right-hand side of this graph,
+what we see is that because the function is equal to 0 almost
+everywhere except at x equals 0, where the function is
+equal to 1, the limit of secant lines from the left
+approaches a vertical line.
+So the left-sided derivative is infinite.
+So once again, the right and left limits do not agree,
+and so there is no derivative at x equals 0.
+So these were two cases where the tangent line did not
+exist at a point, and so the derivative did not
+exist at that point.
+Now my question is, if the tangent line exists at a point,
+does the derivative exist there?
+
+The answer is almost always yes, except for the case
+of vertical tangent lines.
+An example of this is the function, the cube root of x.
+The graph of this function looks like so,
+and this function has a well-defined tangent
+line at x equals 0.
+However, it is a vertical line.
+The slope of a vertical line is infinite,
+so there is no derivative at x equals 0.
+Now that we've fully explored the relationship
+between the existence of tangent lines
+and the existence of derivatives,
+I want you to do some practice problems to get more practice
+estimating derivatives and determining
+where derivatives do not exist.

@@ -1,0 +1,42 @@
+
+Let's get back to thinking about the secant line,
+and what we want to do is identify
+the slope of this line in terms of our function f.
+So let's start with the rise, delta y.
+The value of delta y is given by the value
+of our function at the point b f of b
+minus the value of this function at the point a
+giving us f of b minus f of a.
+This is the difference or the change in f.
+So a good notation for this might be delta f.
+
+Keep in mind that delta f and delta y
+mean exactly the same thing.
+Both of these notations are used.
+So you're going to have to get used to it
+and understand that delta y is a quantity which
+is equal to the quantity delta f,
+and they may be used interchangeably.
+OK.
+Now, enough about delta f.
+Let's think about the run, delta x.
+What is this?
+Well, that's the change in this horizontal distance.
+That's just b minus a.
+So what is this slope?
+It is given by the ratio f of b minus f of a all
+over b minus a.
+Now, hopefully, this expression looks
+a little bit familiar to you.
+This is the expression that computes
+the average rate of change of our function
+f with respect to x.
+So what have we just done?
+We've seen that the slope of the secant line
+is measuring the average rate of change of this function f.
+Pretty cool, huh?
+Now, I want you to take a second,
+and you're going to play with the secant approximation
+mathlet to see what happens to the secant line
+if you move the point b closer and closer to the point a.
+Good luck, and we'll see you shortly.

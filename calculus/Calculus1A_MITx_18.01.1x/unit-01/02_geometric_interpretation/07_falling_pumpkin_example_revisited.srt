@@ -1,0 +1,53 @@
+
+Let's look at the pumpkin example
+we've considered before where we go up to the top of a 100 meter
+building and toss a pumpkin.
+Please do not try this at home.
+We have a formula for the height of the pumpkin measured
+in meters in terms of the time measured in seconds given
+by the polynomial f of t is equal to 100
+plus 20t minus 5t squared.
+Now, we're interested in the tangent line to this function,
+so let's draw a graph.
+The vertical axis f of t is measured
+in meters and the horizontal axis t is measured in seconds.
+Here is 100 meters.
+The height of the building.
+And each tick mark along the vertical axis
+is measured in units of 20 meters.
+Each horizontal tick mark is one second.
+Let's plot a few points.
+And here is our graph.
+We actually computed the derivative of the function
+before, and we found that f prime of 1
+is equal to 10 meters per second, f prime of 2
+is equal to 0 meters per second, and f prime of 3
+is equal to negative 10 meters per second.
+Let's go ahead and compare this to the slope
+of the tangent line at each of these points.
+At time t equals 1, this is the tangent line.
+What is the slope of this line?
+Well, the rise is about 20 meters over a run of 2 seconds.
+So the slope is 20 meters over 2 seconds or 10 meters
+per second, which definitely agrees
+with what we computed before.
+Let's erase this tangent line and draw in the tangent line
+at t equals 2.
+This is a horizontal line, so the slope
+is 0, which agrees with the computation
+of 0 meters per second that we found before.
+Let's erase this and draw in the tangent line at t equals 3.
+What is the slope?
+Well, this line has a rise of about negative 20
+meters over a run of two seconds,
+giving us negative 20 meters over 2 seconds
+or negative 10 meters per second.
+So what we've seen in this worked
+example is that by estimating the value of the slope
+of the tangent line at a point we were actually
+able to get a pretty good handle on the value of the derivative.
+So now it's your turn.
+I want you to estimate the value of the derivative
+by estimating the value of the slope of the tangent line
+at various points of a function along a graph.
+So good luck and we'll see you in a little bit.

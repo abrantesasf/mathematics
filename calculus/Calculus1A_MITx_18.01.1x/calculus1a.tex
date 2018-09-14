@@ -5013,6 +5013,820 @@ to go ahead and do some problems to recall
 the information about average rate of change
 that we learned before.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Average rate of change and secant slopes}
+\label{u1-geometric-ex-avg-rate-secant}
+
+\begin{exercise}
+  \textbf{Average rate of change}\\%
+  We want to bring in the graph of the function $f$, and connect it to derivatives
+  and rates of change. Let's recall where we were: The average rate of change of
+  a function $f$ between $x=a$ and $x=b$ is given by what formula?
+  (Enter your answer in terms of the function $f$.)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Average rate of change, geometrically}\\%
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-015.png}}
+    \end{center}
+  \end{figure}
+  On the graph of $f$, $x=a$ and $x=b$ correspond to the points $(a, f(a))$ and $(b, f(b))$.
+  The average rate of change $\frac{f(b)-f(a)}{b-a}$ then represents which of these
+  quantities?
+  \begin{itemize}
+  \item[$\bigcirc$] The vertical distance $\Delta y$ (difference in height) between the two points.
+  \item[$\bigcirc$] The horizontal distance $\Delta x$ between the two points.
+  \item[$\bigcirc$] The overall distance $\sqrt{\Delta x^2 + \Delta y^2}$ between the two points
+  \item[$\bigcirc$] The slope of the secant line connecting the two points.
+  \item[$\bigcirc$] The angle between the line connecting the two points and the $x$ axis.
+  \item[$\bigcirc$] None of these.
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Slopes of secant lines}
+\label{u1-geometric-slope-secant-lines}
+
+Video: \href{https://www.youtube.com/watch?v=\_9JlzGzki4c}{Slopes of secant lines}
+
+Let's get back to thinking about the secant line,
+and what we want to do is identify
+the slope of this line in terms of our function $f$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-016.png}}
+  \end{center}
+\end{figure}
+
+So let's start with the rise, $\Delta y$.
+The value of $\Delta y$ is given by the value
+of our function at the point b, $f(b)$,
+minus the value of this function at the point a, $f(a)$
+giving us $f(b) - f(a)$.
+This is the difference or the change in $f$.
+So a good notation for this might be $\Delta f$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-017.png}}
+  \end{center}
+\end{figure}
+
+Keep in mind that $\Delta f$ and $\Delta y$
+mean exactly the same thing.
+Both of these notations are used.
+So you're going to have to get used to it
+and understand that $\Delta y$ is a quantity which
+is equal to the quantity $\Delta f$,
+and they may be used interchangeably.
+OK.
+Now, enough about $\Delta f$.
+
+Let's think about the run, $\Delta x$.
+What is this?
+Well, that's the change in this horizontal distance.
+That's just $b -a$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-018.png}}
+  \end{center}
+\end{figure}
+
+So what is this slope?
+It is given by the ratio $\displaystyle \frac{f(b) - f(a)}{b-a}$.
+Now, hopefully, this expression looks
+a little bit familiar to you.
+This is the expression that computes
+the \emph{average rate of change} of our function
+$f$ with respect to $x$.
+So what have we just done?
+We've seen that \textbf{the slope of the secant line
+  is measuring the \emph{average rate of change} of this function $f$, with respect to $x$}.
+
+Pretty cool, huh?
+Now, I want you to take a second,
+and you're going to play with the secant approximation
+mathlet to see what happens to the secant line
+if you move the point b closer and closer to the point a.
+Good luck, and we'll see you shortly.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Secant and tangent lines}
+\label{u1-geometric-secant-tangent}
+
+Now, when we defined the derivative of $f$ at $a$, $f'(a)$, we took the limit of
+$\displaystyle \frac{f(b) - f(a)}{b - a}$ as $b$ approached $a$. We've just seen
+that this quantity is the slope of the secant line that connects the points
+$(a, f(a))$ and $(b, f(b))$.
+
+So what is \emph{the limit of the secant line as $b$
+  approaches $a$} (note that looking at $b$ approaching $a$ is the same as looking
+at what happens as $\Delta x$ approaches 0)?
+
+Use the Secant Approximation Mathlet to investigate this.
+Directions: Pick a point $a$ using the horizontal slider below the graph. Start with
+$\Delta x = 1$. Play with moving the point $\Delta x$ closer to $0$ and observe how
+the line changes. You can try changing the function with the dropdown function menu,
+and changing the fixed point $a$.
+
+\emph{Food for thought}: What happens to the secant line as $\Delta x$
+approaches $0$? How is the secant line related to the tangent line?
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-019.png}}
+  \end{center}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Limits of secante lines}
+\label{u1-geometric-limits-of-secant-lines}
+
+Video: \href{https://www.youtube.com/watch?v=alYYhzUak1o}{Limits of secant lines}
+
+I hope you had a good time playing
+with the Secant Approximation Mathlet.
+I want to remind you what we're looking for.
+Remember that we want to \emph{find the slope of the tangent line},
+but we don't know how to do that yet.
+So we introduced the secant line,
+and we were able to \emph{find the slope of a secant line}.
+So we're going to use what we know about the secant line
+to understand the slope of the tangent line better.
+Let's see how.
+
+The first thing I'm going to do is to pick a value,
+$x = a$, using this horizontal slider.
+So I can choose any point that I want here.
+The value of this point is not special in any way.
+Any point that you choose will be fine.
+Then by clicking the Secant button down here,
+you notice that the secant line appears,
+and it goes through the function above our point $a$
+and through our function above a point
+$b$, a distance $\Delta x$ away from $a$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-020.png}}
+  \end{center}
+\end{figure}
+
+We can change the value of $\Delta x$
+by moving this horizontal slider.
+Observe what happens.
+As the point $b$ moves closer and closer to the point $a$,
+\emph{the secant line appears to become tangent
+to our function at the point $a$}.
+Let's go ahead and hit the Tangent button down here.
+The tangent line appears, and we can go ahead and verify
+that, in fact, as the point $b \to a$, the \emph{secant line is becoming
+the tangent line}.
+
+Let's go ahead and recap what we've just seen.
+We saw that \emph{in the limit as $b \to a$}, $\displaystyle \lim_{b \to a}$,
+\emph{the secant line approaches the tangent line}:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-021.png}}
+  \end{center}
+\end{figure}
+
+So in particular, \emph{the slope of the secant line} as $b \to a$,
+becomes \emph{the slope of the tangent line}:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-022.png}}
+  \end{center}
+\end{figure}
+
+Now we've already computed a formula for the slope
+of the secant line.
+We saw that this was $\displaystyle \frac{\Delta f}{\Delta x}$, which
+is $\displaystyle \frac{f(b) - f(a)}{b-a}$,
+and we're interested in what happens as $b \to a$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-023.png}}
+  \end{center}
+\end{figure}
+
+Now I hope this looks a little bit familiar to you
+because in the limit, as b approaches a, $\displaystyle \lim_{b \to a}$,
+this is our definition for the derivative $f'(a)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-024.png}}
+  \end{center}
+\end{figure}
+
+So this is a formula for the slope of the tangent line.
+\textbf{The slope of the tangent line is the derivative
+of the function at $a$}.
+
+And we found an interpretation for the derivative:
+\textbf{the derivative is the instantaneous rate of change of our
+  function at $a$}:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-025.png}}
+  \end{center}
+\end{figure}
+
+So just as \textbf{the slope of the secant line
+is measuring the \emph{average rate of change} of our function},
+as we take the limit of the secant line as $b$ approaches $a$, $\displaystyle \lim_{b \to a}$,
+we're getting the tangent line slope, and \textbf{the slope of the tangent line
+is measuring the \emph{instantaneous rate of change}
+of our function}.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-026.png}}
+  \end{center}
+\end{figure}
+
+So what we see on this left-hand side
+are three interpretations for the same object:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-027.png}}
+  \end{center}
+\end{figure}
+
+We have:
+\begin{itemize}[noitemsep]
+\item \emph{geometric interpretation}: as the slope of the secant line;
+\item \emph{symbolic interpretation}: which is a formula for that slope; and
+\item \emph{physical interpretation}: in terms of the average rate of change.
+\end{itemize}
+
+And then when we take the limit as $b$ approaches $a$,
+we approach the object on the right-hand side.
+It's pretty amazing how all these objects are related.
+So I want you to do a quick concept check,
+and then we'll be back to look at a worked example
+where we approximate derivatives by estimating
+slopes of tangent lines.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Review}
+\label{u1-geometric-review}
+
+\begin{exercise}
+  \textbf{Review}\\%
+  The derivative $f'(a)$ is which of the following? (Pick all options that work.)
+  \begin{itemize}[noitemsep]
+  \item[$\square$] An average rate of change
+  \item[$\square$] An instantaneous rate of change
+  \item[$\square$] A secant line
+  \item[$\square$] A tangent line
+  \item[$\square$] The slope of a secant line
+  \item[$\square$] The slope of a tangent line
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Example}
+\label{u1-geometric-example}
+
+Video: \href{https://www.youtube.com/watch?v=hOVozgeyCD0}{Falling Pumpkin Example revisited}
+
+Let's look at the pumpkin example
+we've considered before where we go up to the top of a 100 meter
+building and toss a pumpkin.
+Please do not try this at home.
+We have a formula for the height of the pumpkin measured
+in meters in terms of the time measured in seconds given
+by the polynomial $f(t) = 100 + 20t - 5t^2$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-028.png}}
+  \end{center}
+\end{figure}
+
+Now, we're interested in the tangent line to this function,
+so let's draw a graph.
+The vertical axis $f(t)$ is measured
+in meters and the horizontal axis $t$ is measured in seconds.
+Here is 100 meters, the height of the building.
+And each tick mark along the vertical axis
+is measured in units of 20 meters.
+Each horizontal tick mark is one second.
+Let's plot a few points.
+And here is our graph:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-029.png}}
+  \end{center}
+\end{figure}
+
+We actually computed the derivative of the function
+before, and we found that $f'(1) = 10 m/s$, $f'(2) = 0 m/s$,
+and $f'(3) = -10 m/s$.
+Let's go ahead and compare this to the slope
+of the tangent line at each of these points.
+
+At time $t = 1$, this is the tangent line:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-030.png}}
+  \end{center}
+\end{figure}
+
+What is the slope of this line?
+Well, the rise is about 20 meters over a run of 2 seconds.
+So the slope is 20 meters over 2 seconds or 10 meters
+per second, which definitely agrees
+with what we computed before.
+
+Let's erase this tangent line and draw in the tangent line
+at $t=2$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-031.png}}
+  \end{center}
+\end{figure}
+
+This is a horizontal line, so the slope
+is 0, which agrees with the computation
+of 0 meters per second that we found before.
+
+Let's erase this and draw in the tangent line at $t=3$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-032.png}}
+  \end{center}
+\end{figure}
+
+What is the slope?
+Well, this line has a rise of about negative 20
+meters over a run of two seconds,
+giving us negative 20 meters over 2 seconds
+or negative 10 meters per second.
+
+So what we've seen in this worked
+example is that by estimating the value of the slope
+of the tangent line at a point we were actually
+able to get a pretty good handle on the value of the derivative.
+So now it's your turn.
+I want you to estimate the value of the derivative
+by estimating the value of the slope of the tangent line
+at various points of a function along a graph.
+So good luck and we'll see you in a little bit.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Estimating derivatives}
+\label{u1-geometric-estimating-derivatives}
+
+\begin{exercise}
+  \textbf{Estimating derivatives}\\%
+  Here is the graph of a function $y=g(x)$:
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-033.png}}
+    \end{center}
+  \end{figure}
+  Is the slope of the tangent line at $x=1$ positive, negative, or zero?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Positive
+  \item[$\bigcirc$] Negative
+  \item[$\bigcirc$] Zero
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Estimate derivatives}\\%
+  Find good estimates for the following derivatives at the prescribed points.
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-033.png}}
+    \end{center}
+  \end{figure}
+  a) $g'(-1) \approx$
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] $2$
+  \item[$\bigcirc$] $1$
+  \item[$\bigcirc$] $0.5$
+  \item[$\bigcirc$] $0$
+  \item[$\bigcirc$] $-0.5$
+  \item[$\bigcirc$] $-1$
+  \item[$\bigcirc$] $-2$
+  \end{itemize}
+
+  b) $g'(0) \approx$
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] $2$
+  \item[$\bigcirc$] $1$
+  \item[$\bigcirc$] $0.5$
+  \item[$\bigcirc$] $0$
+  \item[$\bigcirc$] $-0.5$
+  \item[$\bigcirc$] $-1$
+  \item[$\bigcirc$] $-2$
+  \end{itemize}
+
+  c) $g'(1) \approx$
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] $2$
+  \item[$\bigcirc$] $1$
+  \item[$\bigcirc$] $0.5$
+  \item[$\bigcirc$] $0$
+  \item[$\bigcirc$] $-0.5$
+  \item[$\bigcirc$] $-1$
+  \item[$\bigcirc$] $-2$
+  \end{itemize}
+
+  c) $g'(2) \approx$
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] $2$
+  \item[$\bigcirc$] $1$
+  \item[$\bigcirc$] $0.5$
+  \item[$\bigcirc$] $0$
+  \item[$\bigcirc$] $-0.5$
+  \item[$\bigcirc$] $-1$
+  \item[$\bigcirc$] $-2$
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Linear function}
+\label{u1-geometric-linear-function}
+
+\begin{exercise}
+  \textbf{Secant line for a line}\\%
+  What if the graph of $f$ is a line? For instance, here is a line with slope $1/2$
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-034.png}}
+    \end{center}
+  \end{figure}
+  a) If we take two points on this line, what will be the slope of the secant line
+  joining them?
+
+  b) What is $f'(3)$?
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{When the tangent line doesn't exist}
+\label{u1-geometric-when-tanget-doesnt-exist}
+
+The slope of the tangent line, which is known as the derivative, ONLY exists if
+the tangent line exists! Let's explore some cases when the tangent line (and hence
+the derivative) does not exist
+
+\begin{exercise}
+  \textbf{Absolute value}\\%
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-035.png}}
+    \end{center}
+  \end{figure}
+  Here's the graph of the absolute value function $f(x) = |x|$. Will the graph look
+  more and more like a line as you zoom in towards the origin?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Yes
+  \item[$\bigcirc$] No
+  \item[$\bigcirc$] Maybe
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Right and left limits}\\%
+  Determine the right and left hand limits of the slopes of secant lines at the origin.
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-035.png}}
+    \end{center}
+  \end{figure}
+  a) $\displaystyle \lim{x \to 0^+}{\frac{|x|-0}{x-0}}$
+
+  b) $\displaystyle \lim{x \to 0^-}{\frac{|x|-0}{x-0}}$
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Jump discontinuity}\\%
+  Corners aren't the only points where a function might not be differentiable.
+  Here's a graph of a function called the step function.
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-036.png}}
+    \end{center}
+  \end{figure}
+  What do you think the graph will look like if we zoom in at the point (0,1)?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] A line
+  \item[$\bigcirc$] A point
+  \item[$\bigcirc$] A ray
+  \item[$\bigcirc$] Something else
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Which is true?}\\%
+  Which of the following statements is true?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] If $f$ is not continuous at $x=a$, then $f$ is not differentiable at $a$.
+  \item[$\bigcirc$] If $f$ is continuous at $x=a$, then $f$ is differentiable at $a$.
+  \item[$\bigcirc$] Both are true
+  \item[$\bigcirc$] Neither are true
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Wrap up}
+\label{u1-geometric-existence-of-tangent-and-derivatives}
+
+Video: \href{https://www.youtube.com/watch?v=2Ms02JiZ6vQ}{The existence of tangent
+  lines and derivatives}
+
+You just did some problems where there
+was \emph{no tangent line at a particular point, which
+meant that there was no derivative at that point}.
+The two examples that we looked at
+were the \emph{absolute value function},
+which has a corner at the point $x= 0$,
+and the \emph{Heaviside function}, which
+has a jump discontinuity at the point $x = 0$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-037.png}}
+  \end{center}
+\end{figure}
+  
+Let's look at these functions in a little bit more detail,
+starting with the absolute value function.
+Notice that there is no tangent line at $x=0$.
+However, if we cover up the left-hand side
+of this function, then at $x=0$
+on this part of the function, there
+appears to be a limit of secant lines approaching
+from the right that is equal to this line itself:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-038.png}}
+  \end{center}
+\end{figure}
+
+So what does that mean, in terms of the derivative?
+In terms of the derivative, this means
+that this $\displaystyle \lim_{x \to 0^+}{\frac{f(x) - f(0)}{x-0}}$
+--- the definition of the derivative --- this limit
+exists from the right. As it's a right-sided limit, we call
+this a \textbf{right-sided derivative at 0},
+and denote it as $f'(0^+)$,
+to show that it exists for points to the right of 0:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-039.png}}
+  \end{center}
+\end{figure}
+
+What is this value?
+In this case, it's the slope of this line, which is 1.
+
+Now, if instead I cover the right-hand side of this graph,
+I see that the graph has a limit of secant lines approaching
+from the left:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-040.png}}
+  \end{center}
+\end{figure}
+
+That is, this left-sided limit gives us
+a left-sided derivative, which is equal to $-1$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-041.png}}
+  \end{center}
+\end{figure}
+
+Now, both the right and the left-sided derivatives exist.
+They're not equal, so the derivative
+does not exist at $x = 0$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-042.png}}
+  \end{center}
+\end{figure}
+
+Now, let's look at the Heaviside
+function, which has a jump discontinuity at $x = 0$.
+If I cover the left-hand side of this function,
+because the function is equal to 1 at x equals 0,
+this function does have a right-sided derivative,
+which is equal to 0:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-043.png}}
+  \end{center}
+\end{figure}
+
+However, when we cover the right-hand side of this graph,
+what we see is that because the function is equal to 0 almost
+everywhere except at $x = 0$, where the function is
+equal to 1, the limit of secant lines from the left
+approaches a vertical line.
+So the left-sided derivative is infinite:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-044.png}}
+  \end{center}
+\end{figure}
+
+So once again, the right and left limits do not agree,
+and so there is no derivative at x equals 0:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-045.png}}
+  \end{center}
+\end{figure}
+
+So these were two cases where the tangent line did not
+exist at a point, and so the derivative did not
+exist at that point.
+Now my question is, \emph{if the tangent line exists at a point,
+does the derivative exist there}?
+The answer is almost always yes, \emph{except for the case
+  of vertical tangent lines}.
+An example of this is the function, the $\sqrt[3]{x}$.
+The graph of this function looks like so,
+and this function has a well-defined tangent
+line at $x = 0$. However, it is a vertical line.
+The slope of a vertical line is infinite,
+so there is no derivative at $x = 0$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-046.png}}
+  \end{center}
+\end{figure}
+
+Now that we've fully explored the relationship
+between the existence of tangent lines
+and the existence of derivatives,
+I want you to do some practice problems to get more practice
+estimating derivatives and determining
+where derivatives do not exist.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{More estimation of derivatives}
+\label{u1-geometric-more-estimating-derivatives}
+
+\begin{exercise}
+  \textbf{More estimating derivatives}\\%
+  Each question refers to the graph of a function below. At each specified point
+  $x_0$, give an estimate of $f'(x_0)$ or say that the derivative \emph{does not exist}
+  by typing DNE.
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.5]{imagens/unit-1/u1-m2-047.png}}
+    \end{center}
+  \end{figure}
+  a) $f'(-1) \approx$
+
+  b) $f'(0) \approx$
+
+  c) $f'(1) \approx$
+
+  d) $f'(2) \approx$
+
+  e) $f'(3) \approx$
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Equation of a tangent line}
+\label{u1-geometric-equation-of-tangent}
+
+We can now answer the question that we posed at the beginning of the learning
+sequence. By using what we know about finding the derivative, we can determine
+the equation of a tangent line.
+
+\begin{exercise}
+  \textbf{Determine point on tangent line}\\%
+  Let's find the tangent line to the function $j(x) = 2x^2 + 3x$ through the point
+  $x=1$. What point do we automatically know that this tangent line goes through?
+  (Enter the point as an ordered pair: $(a, b)$.)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Find tangent line slope}\\%
+  Use the definition of the derivative to calculate the slope of the tangent line
+  to the graph of $j(x) = 2x^2 + 3x$ at the point $x=1$.
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Find the equation of the tangent line}\\%
+  Now that we have the slope of the tangent line, and a point that it goes through,
+  find the equation of the line. (Enter your equation in the form
+  $y = mx + b$.)
+\end{exercise}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
