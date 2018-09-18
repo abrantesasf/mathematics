@@ -1,0 +1,12 @@
+
+One of the main skills that you will learn in this unit
+is the ability to differentiate any function
+you will encounter, no matter how complicated.
+The simplest possible function is a line.
+One of the main features of calculus
+is that it allows us to use tangent lines
+to understand even the most complicated function.
+We think of the tangent line as a linear approximation
+to the function near a point.
+This approximation is extremely valuable,
+both computationally and conceptually.

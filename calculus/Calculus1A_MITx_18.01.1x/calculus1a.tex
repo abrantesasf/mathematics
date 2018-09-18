@@ -5819,6 +5819,158 @@ the equation of a tangent line.
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Unit 2: Differentiation (2018/09/17)}
+\label{u2}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Linear approximation}
+\label{u2-linear-approx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Motivation}
+\label{u2-linear-approx-motiv}
+
+Video: \href{https://www.youtube.com/watch?v=iJnecCE\_tlM}{Linear approximation}
+
+One of the main skills that you will learn in this unit
+is the ability to \emph{differentiate any function
+you will encounter}, no matter how complicated.
+
+The simplest possible function is a line.
+One of the main features of calculus
+is that it allows us to use tangent lines
+to understand even the most complicated function.
+
+We think of \emph{the tangent line as a linear approximation
+to the function near a point}.
+This approximation is extremely valuable,
+both computationally and conceptually.
+End of transcript. Skip to the start.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Linear approximation}
+\label{u2-linear-approx-obj}
+
+\paragraph{Approximation of functions and derivatives} main ideas:
+\begin{itemize}[noitemsep]
+\item The \textbf{tangent line} at $x=a$ is a good approximation for the \textbf{function}
+  near $x=a$.
+\item The \textbf{slope of the secant line between} $x=a$ and $x=b$ is a good
+  approximation for the \textbf{derivative} between $x=a$ and $x=b$.
+\end{itemize}
+
+\paragraph{Objectives} At the end of this sequence, and after some practice, you
+should be able to:
+\begin{itemize}[noitemsep]
+\item Understand where the \textbf{tangent line} is a good \textbf{linear approximation} to the function.
+\item Understand where the \textbf{average rate of change} is a good \textbf{linear approximation}
+  to the \textbf{instantaneous rate of change}.
+\item \textbf{Approximate values of functions} given derivatives.
+\item \textbf{Approximate values of derivatives} given function data.
+\item Understand how \textbf{convexity/concavity} of the function affects the quality
+  of the \textbf{linear approximation}, both qualitatively and quantitatively.
+\end{itemize}
+
+Contents: 9 pages, 4 videos (13 minutes 1x speed), 14 questions
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Boat in a canal}
+\label{u2-linear-approx-boat}
+
+\begin{exercise}
+  \textbf{A boat in a canal}\\%
+  Let $x=x(t)$ be the position of a boat along a canal as a function of time, where
+  $t$ is measured in seconds and $x$ in meters. Suppose that at $t=20$ , we know that
+  the boat is at the 150 meter point of the canal and is traveling in the positive
+  direction at a velocity of $0.4$ meters per second.
+  \begin{figure}[H]
+    \begin{center}
+      %\caption{}
+      %\label{fig:}
+      \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-001.png}}
+    \end{center}
+  \end{figure}
+  a) In terms of $x$, this is saying that $150$ is:
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] $x(20)$
+  \item[$\bigcirc$] $x(t)$
+  \item[$\bigcirc$] $x'(20)$
+  \item[$\bigcirc$] $x'(t)$
+  \end{itemize}
+
+  b) In terms of $x$, this is saying that $0.4$ is:
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] $x(20)$
+  \item[$\bigcirc$] $x(t)$
+  \item[$\bigcirc$] $x'(20)$
+  \item[$\bigcirc$] $x'(t)$
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Graph of function}\\%
+  From the information that we have, what can we determine about the graph of
+  $x = x(t)$? (Consider that $t$ lies along the horizontal axis, and $x(t)$
+  is the vertical axis)
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Only the slope of the tangent line to the graph of $x(t)$ at $t=20$
+  \item[$\bigcirc$] The entire tangent line to the graph of $x(t)$ at $t=20$
+  \item[$\bigcirc$] All tangent lines to the graph of $x(t)$
+  \item[$\bigcirc$] None of the above
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Extrapolation of the future position}\\%
+  Recall the given information: at $t=20$, the boat is at the $150$ meter point of
+  the canal and is traveling in the positive direction at a velocity of $0.4$ meters
+  per second. Extrapolate the position of the boat at $t=30$. (Think about the units
+  of the numbers 20, 30, 150, and 0.4. What arithmetic can you do with these numbers
+  to get your estimate?)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Underlying assumptions}\\%
+  That is just an estimate; we don't know that the boat will be exactly at the
+  extrapolated position.
+
+  a) It would be exactly correct if we were guaranteed that the:
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Position never change
+  \item[$\bigcirc$] Velocity never change
+  \item[$\bigcirc$] Acceleration never change
+  \end{itemize}
+
+  b) In other words, it would be guaranteed if the:
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Position never change
+  \item[$\bigcirc$] Velocity never change
+  \item[$\bigcirc$] Acceleration never change
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Another estimate}\\%
+  We can make a similar estimate for the position of the boat at $t=250$. Would
+  you have more confidence in your estimate for $t=30$ or for $t=250$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] $t=30$
+  \item[$\bigcirc$] $t=250$
+  \item[$\bigcirc$] equally confident
+  \end{itemize}
+\end{exercise}
+  
+
+
+
+
+
 
 
 
