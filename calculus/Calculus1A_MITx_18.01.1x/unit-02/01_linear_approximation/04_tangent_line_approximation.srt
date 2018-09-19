@@ -1,0 +1,53 @@
+
+Here's our boat.
+We had two pieces of information about it.
+We knew that its position was 150 meters at t
+equals 20 seconds, and its velocity
+was 0.4 meters per second at that same time.
+From that, we wanted to approximate the position at t
+equals 30, 10 seconds later.
+One way you might have thought about that
+would have been to make a simplifying assumption,
+that the boat kept the same velocity over the 10 seconds.
+In which case, you take the 0.4 meters per second
+and multiply it by the 10 seconds
+to get an estimate of 4 meters as the amount the boat traveled
+or the difference in position.
+So our best guess would then be 154 meters
+as the boat's position at time t equals 30.
+
+Let's see what this has to do with tangent lines.
+Our position at time t is given by the function x of t.
+And we know two things about x.
+First, we know that x of 20 is 150.
+So that means the 0.20, 150 is on the graph of x.
+And the second thing we know is that x
+prime of 20-- the velocity-- that's 0.4 meters per second.
+And that's the slope of the tangent line at this point.
+We don't know anything else about the graph.
+The graph could look like this or it could look like this.
+The only thing we know from this information
+is that it's tangent to this line at this point.
+But that's actually quite useful,
+because we know that a tangent line is
+going to be really close to the graph near this point.
+So we can approximate x of 30, whether that's
+here or here, by the height of the tangent line at t
+equals 30.
+How high is that?
+Well starting from this point, which is at height 150,
+we've gone over by 10 and the slope is 0.4.
+So we've gone up by 0.4 times 10, which
+is 4, and so we end up at 154.
+This is the exact same calculation
+that we did previously with the velocity.
+We decided to treat the boat as if it
+had constant velocity, which is the same thing as treating
+the graph as if it's a straight line with constant slope.
+Now the great thing about thinking
+of this in terms of a tangent line and not just velocity,
+is the tangent lines work in a lot more contexts.
+You don't have to have something physical moving.
+So we've got a question for you where you can try and think
+about just how this applies in a more abstract setting.
+So why don't you take a moment and think about that.

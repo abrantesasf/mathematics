@@ -1,0 +1,83 @@
+
+So we've established that making a linear approximation
+to a function means using a tangent line
+to the graph as an estimate for the actual value
+of the function.
+So this would be exactly correct if the graph of g
+was the line itself.
+If it was completely straight.
+But of course, most of the time it isn't.
+We know that most graphs are going
+to have some curviness to them.
+And that's going to create the small difference
+between the tangent line and the graph.
+What allows us to get a handle on this curviness,
+well, that's the second derivative.
+So when we estimated the square root of 104 for instance,
+we had our function being the square root function.
+And we started with this point, which was 100, 10.
+And the first derivative gave us the slope of this line.
+And our estimate then was this point on the line,
+it was 10.2, that was our estimate for g of 104.
+When you calculated the second derivative of g,
+you should have gotten something negative.
+So that means that the graph is concave down
+and it bends like this.
+So the actual value of g of 104, that's going to be around here.
+And we can see that it's going to be
+a little bit lower than the number our linear approximation
+gave us.
+So in fact, let's pull out our calculator here.
+If we take 104 square root, we're going to get 10.198.
+So very close to a 10.2, which was our approximation.
+And it's just a little bit lower than our approximation
+as we predicted.
+
+While we're on the subject, most of the time
+when you ask an computer to do this sort of calculation,
+they don't have all the values in memory.
+They actually use techniques that are very similar to this.
+They get a little bit more complicated,
+but linear approximation is really the basis for all of it.
+
+One last thing we should mention,
+so we've been saying that the tangent
+line is a good approximation to the graph
+near the point of tangency.
+But how near is near?
+Geometrically, we want to know how quickly does the graph of g
+bend away from the tangent line.
+Does it bend away slowly like this?
+Or does it bend away very quickly?
+And again, the second derivative is going to help us.
+So the larger the second derivative,
+we know the bendier the curve.
+So if you think about our boat, well we
+know our estimate of the position of our boat
+would have been exact if the velocity was always constant.
+So if the boat just putters along at a constant rate
+and is completely predictable.
+But of course, the boat doesn't have to do that.
+It can accelerate or it can decelerate.
+And acceleration, that's our second derivative again.
+So that's why the oil tanker's position is easier
+to predict then the canoe's position.
+So if you took any physics, you know that force
+is mass times acceleration.
+So the larger the mass of the boat,
+the harder it is to accelerate.
+And if you have very little acceleration,
+like for an oil tanker, than the graph of position
+can't be very curvy.
+And so our linear approximation is
+going to be more accurate for a longer period of time.
+
+So that wraps up linear approximation.
+Later in the course, we'll teach you
+how to use these second derivatives to actually
+quantify how close the linear approximation gets.
+And even to improve on the linear approximation.
+But linear approximation is really useful just by itself.
+And we're going to use it to help
+us figure out all sorts of key facts in the rest of this unit.
+So hope you enjoyed it.

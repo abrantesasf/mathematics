@@ -5965,7 +5965,560 @@ Contents: 9 pages, 4 videos (13 minutes 1x speed), 14 questions
   \item[$\bigcirc$] equally confident
   \end{itemize}
 \end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Tangent line approximating the function}
+\label{u2-linear-approximation-tangent-lines}
+
+Video: \href{https://www.youtube.com/watch?v=Okh5l8fERPk}{Approximation and Tangent Lines}
+
+Here's our boat: we had two pieces of information about it.
+We knew that its position was 150 meters at $t= 20$ seconds, and its velocity
+was $0.4$ meters per second at that same time.
+From that, we wanted to approximate the position at $t= 30$, 10 seconds later:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-002.png}}
+  \end{center}
+\end{figure}
+
+One way you might have thought about that
+would have been to make a \emph{simplifying assumption},
+that the boat kept the same velocity over the 10 seconds.
+In which case, you take the 0.4 meters per second
+and multiply it by the 10 seconds
+to get an estimate of 4 meters as the amount the boat traveled
+or the difference in position.
+So our best guess would then be 154 meters
+as the boat's position at time t equals 30:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-003.png}}
+  \end{center}
+\end{figure}
+
+Let's see what this has to do with tangent lines.
+Our position at time $t$ is given by $x(t)$.
+And we know two things about $x$.
+First, we know that $x(20) = 150$.
+So that means the 0.20, 150 is on the graph of $x$.
+And the second thing we know is that $x'(20) = 0.4$
+-- the velocity-- that's 0.4 meters per second.
+And that's the slope of the tangent line at this point:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-004.png}}
+  \end{center}
+\end{figure}
+
+We don't know anything else about the graph.
+The graph could look like this or it could look like this.
+The only thing we know from this information
+is that it's tangent to this line at this point:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-005.png}}
+  \end{center}
+\end{figure}
+
+But that's actually quite useful,
+because we know that a tangent line is
+going to be really close to the graph near this point.
+So we can \emph{approximate} $x(30)$, whether that's
+here or here, by the height of the tangent line at $t
+= 30$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-006.png}}
+  \end{center}
+\end{figure}
+
+How high is that?
+Well starting from this point, which is at height 150,
+we've gone over by 10 and the slope is 0.4.
+So we've gone up by 0.4 times 10, which
+is 4, and so we end up at 154:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-007.png}}
+  \end{center}
+\end{figure}
+
+This is the exact same calculation
+that we did previously with the velocity.
+We decided to treat the boat as if it
+had \textbf{constant velocity}, which is the same thing as treating
+the graph as if it's a \textbf{straight line with constant slope}.
+Now the great thing about thinking
+of this in terms of a tangent line and not just velocity,
+is the tangent lines work in a lot more contexts.
+You don't have to have something physical moving.
+
+So we've got a question for you where you can try and think
+about just how this applies in a more abstract setting.
+So why don't you take a moment and think about that.
+
+\begin{exercise}
+  \textbf{Square Root}\\%
+  Use the technique described in the video to estimate $\sqrt{104}$
+  \emph{without a calculator}, given that you can find $\sqrt{100}$ and also the derivative
+  of the function $g(x) = \sqrt{x}$ at $x=100$.
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Linear approximation video}
+\label{u2-linear-linear-approximation-video}
+
+Video: \href{https://www.youtube.com/watch?v=0y5VI-G3lHA}{Linear approximation}
+
+In our last video, we discussed how we can use tangent lines
+as approximations to functions.
+If you have:
+\begin{itemize}[noitemsep]
+\item \textbf{The value of a function at a point}, say $f(x_0) = a$
+\item \textbf{The value of the function's derivative at the same point}, say $f'(x_0) = w$
+\end{itemize}
+then you can find the tangent line at that point.
+And we know that the tangent line
+is going to be really close to the function near that point:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-008.png}}
+  \end{center}
+\end{figure}
+
+This is called \textbf{linear approximation},
+because we're using the tangent line.
+
+In the example we had, you think about the function
+$g(x) = \sqrt{x}$.
+And you can calculate that $g(100) = 10$,
+so that's the height of this point.
+And the derivative at the same point, $g'(100)= 0.05$.
+So that's the slope of the tangent line:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-009.png}}
+  \end{center}
+\end{figure}
+
+And we wanted to estimate $g(104)$.
+So 104, that means we've shifted our x value by 4.
+So that's our $\Delta x = 4$.
+And our tangent line has gone up by 4 times the slope.
+The slope as 0.05, so 0.2.
+And that's what we estimate the change in the function's value
+to be, or $\Delta g$.
+The initial value of the function was 10,
+it changes by roughly 0.2, so we're
+going to get an approximation of 10.2 for $g(104)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-010.png}}
+  \end{center}
+\end{figure}
+
+Let's talk about \textbf{doing this in general}.
+I'll erase some of this stuff, and let's say
+that the point where we want an estimate is
+$x$, and the point where we're starting is $x_0$.
+That means that the height here is $g(x_0)$.
+And the slope, I'm going to denoted it by $m$, but $m$,
+of course, is the derivative $g'(x_0)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-011.png}}
+  \end{center}
+\end{figure}
+
+What we've been saying is that \textbf{we can approximate
+$\Delta g$} by this vertical distance right here,
+and that's just the slope times the horizontal distance delta x:
+$\Delta g \approx m \times \Delta x$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-012.png}}
+  \end{center}
+\end{figure}
+
+Let me write that over here:
+$\Delta g \approx m \times \Delta x$.
+And let's just play with this a little bit.
+We've got, on the left, $g(x) - g(x_0) \approx g'(x_0)(x - x_0)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-013.png}}
+  \end{center}
+\end{figure}
+
+Moving some things around, we have
+$g(x) \approx g'(x_0)(x - x_0) + g(x_0)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-014.png}}
+  \end{center}
+\end{figure}
+
+So here, on the left, we have just the formula
+for the \emph{graph} of the function.
+And on the right, well, that's the formula for a line.
+What line is it?
+Well, it's our \emph{tangent} line.
+So we have that the graph is very close to the tangent line.
+And this is all true when $x$ \textbf{IS NEAR} $x_0$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-015.png}}
+  \end{center}
+\end{figure}
+
+Now, this all stems from the definition of the derivative.
+We know that our $m$, our slope, is
+defined to be the $\displaystyle \lim_{\Delta x \to 0}{\frac{\Delta g}{\Delta x}} = m$.
+And so another way of interpreting that
+is that $m$ is going to be very close to $(\Delta g)/(\Delta x)$
+when delta $x$ is small, when it's near 0.
+And just rearranging, we get $m \times \Delta x \approx \Delta g$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-016.png}}
+  \end{center}
+\end{figure}
+
+And that's this over here that we started with.
+So it all comes together.
+This is linear approximation.
+So we've got an example for you to try,
+and then we want to start thinking
+about just \emph{how good are these linear approximations anyway}?
+Are they too big?
+Are they too small?
+How can we tell?
+So take some time and think about those,
+and I'll talk to you in a little bit.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Linear approximation}
+\label{u2-linear-linear-approximation-exerc}
+
+The linear approximation for a function $f$ near a point $x=a$ is given by the
+following equivalent formulas:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-017.png}}
+  \end{center}
+\end{figure}
+
+\begin{exercise}
+  \textbf{Practice approximation}\\%
+  Use linear approximation, \emph{without a calculator}, to estimate $3.97^{2.5}$.
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Beyond Linear}
+\label{u2-linear-beyond-linear}
+
+\begin{exercise}
+  \textbf{Concavity}\\%
+  Recall from the last video that $g(x) = \sqrt{x}$. Qual é $g''(100)$?
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Concavity and the tangent line}\\%
+  Still taking $g(x)=\sqrt{x}$ as in the previous video, compare the graph of $g$
+  to the tangent line to the graph at $x=100$. Near $x=100$, is the graph of $g$
+  above or below the line? (Hint: Use your answer to the previous question.)
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] above
+  \item[$\bigcirc$] below
+  \item[$\bigcirc$] part above, part below
+  \item[$\bigcirc$] can't tell
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Overestimate or underestimate?}
+  In the previous video, for $g(x) = \sqrt{x}$ we estimated that $g(104) \approx 10.2$.
+  Is this estimate higher than the actual value or lower? (Hint: Use your answers to
+  the previous two questions.)
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] higher
+  \item[$\bigcirc$] lower
+  \item[$\bigcirc$] can't tell
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Boat type}\\%
+  Let's go back to the boat. Recall, at $t=20$, the boat was at the 150 meter point
+  of the canal and was traveling in the positive direction at a velocity of $0.4$
+  meters per second. We estimated that at $t=30$, the position of the boat would be
+  $154$ meters: $f(30) \approx 154$. Is this position estimate likely to be more
+  accurate if the boat was an oil tanker or a canoe? (Think about what this question
+  has to do with the previous ones!)
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] oil tanker
+  \item[$\bigcirc$] canoe
+  \item[$\bigcirc$] equally confident
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Concavity}
+\label{u2-linear-concavity}
+
+Video: \href{https://www.youtube.com/watch?v=IVwkNdwbFy4}{Concavity and Linear Approximation}
+
+So we've established that \textbf{making a linear approximation
+to a function means using a tangent line
+to the graph as an estimate for the actual value
+of the function}.
+So this would be exactly correct if the graph of $g$
+was the line itself.
+If it was completely straight.
+But of course, most of the time it isn't.
+We know that most graphs are going
+to have some curviness to them.
+And that's going to create the small difference
+between the tangent line and the graph:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-018.png}}
+  \end{center}
+\end{figure}
+
+What allows us to get a handle on this curviness?
+well, that's the \emph{second derivative}.
+So when we estimated $\sqrt{104}$, for instance,
+we had our function being the square root function.
+And we started with this point, which was 100, 10.
+And the first derivative gave us the slope of this line.
+And our estimate then was this point on the line,
+it was 10.2, that was our estimate for $g(104)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-019.png}}
+  \end{center}
+\end{figure}
+
+When you calculated the $g''(x)$,
+you should have gotten something negative.
+So that means that \emph{the graph is concave down}
+and it bends like this:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-020.png}}
+  \end{center}
+\end{figure}
+
+So the actual value of $g(104)$, that's going to be around here.
+And we can see that it's going to be
+a little bit lower than the number our linear approximation
+gave us:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-021.png}}
+  \end{center}
+\end{figure}
+
+So in fact, let's pull out our calculator here.
+If we take $\sqrt{104}= 10.198$.
+So very close to a $10.2$, which was our approximation.
+And it's just a little bit lower than our approximation
+as we predicted.
+
+While we're on the subject, most of the time
+when you ask an computer to do this sort of calculation,
+they don't have all the values in memory.
+They actually use techniques that are very similar to this.
+They get a little bit more complicated,
+but linear approximation is really the basis for all of it.
+
+One last thing we should mention,
+so we've been saying that the tangent
+line is a good approximation to the graph
+\emph{near the point of tangency}.
+But how near is near?
+Geometrically, \textbf{we want to know how quickly does the graph of $g$
+bend away from the tangent line}.
+Does it bend away slowly like this?
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-022.png}}
+  \end{center}
+\end{figure}
+
+Or does it bend away very quickly?
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-023.png}}
+  \end{center}
+\end{figure}
+
+And again, the second derivative is going to help us.
+So \textbf{the larger the second derivative,
+  we know the bendier the curve}.
+
+So if you think about our boat, well we
+know our estimate of the position of our boat
+would have been exact if the velocity was always constant.
+So if the boat just putters along at a constant rate
+and is completely predictable.
+But of course, the boat doesn't have to do that.
+It can accelerate or it can decelerate.
+And acceleration, that's our second derivative again.
+So that's why the oil tanker's position is easier
+to predict then the canoe's position.
+So if you took any physics, you know that force
+is mass times acceleration.
+So the larger the mass of the boat,
+the harder it is to accelerate:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-024.png}}
+  \end{center}
+\end{figure}
+
+And if you have very little acceleration,
+like for an oil tanker, than the graph of position
+can't be very curvy.
+And so our linear approximation is
+going to be more accurate for a longer period of time.
+
+So that wraps up linear approximation.
+Later in the course, we'll teach you
+how to \emph{use these second derivatives to actually
+quantify how close the linear approximation gets}.
+And even to improve on the linear approximation.
+But linear approximation is really useful just by itself.
+And we're going to use it to help
+us figure out all sorts of key facts in the rest of this unit.
+So hope you enjoyed it.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Some problems}
+\label{u2-linear-problems}
+
+\begin{exercise}
+  \textbf{Change in volume}\\%
+  A ball is supposed to be manufactured with radius 10cm. If it gets made with a
+  radius of 9.97cm instead, it would take up approximately how much less volume
+  (in cubic centimeters)? What is the percentage decreas? \emph{Do not use a calculator}.
+  (The volume of a ball is $4\pi r^3/3$, where $r$ is the radius. Keep your answer
+  in terms of by typing $\pi$ and keep your answer as a positive number. \emph{Do
+    not use a calculator}.)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Going backwards!}\\%
+  Suppose instead we told you that the sphere was manufactured with an excess
+  volume of $20\pi$ cubic centimeters. In centimeters, approximately what radius
+  would you expect this sphere to have? (\emph{Do not use a calculator}.
+  Enter answer to 2 decimal places.)
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Big clock}\\%
+  The minute hand of the clock on Elizabeth Tower in London is 14 feet long.
+  It is pointed at the first minute mark of the clock at 7:01:
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-025.png}}
+  \end{center}
+\end{figure}
+  Use linear approximation to estimate how much its tip of the minute hand moves
+  horizontally between 7:01 and 7:02. \emph{Do not use a calculator}.
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Summary}
+\label{u2-linear-summary}
+
+The linear approximation for a function $f$ near a point $x=a$ is given by the
+following equivalent formulas:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-017.png}}
+  \end{center}
+\end{figure}
   
+
+
+
 
 
 

@@ -1,0 +1,74 @@
+
+In our last video, we discussed how we can use tangent lines
+as approximations to functions.
+If you have the value of a function at a point,
+and the value of the function's derivative at the same point,
+then you can find the tangent line at that point.
+And we know that the tangent line
+is going to be really close to the function near that point.
+This is called linear approximation,
+because we're using the tangent line.
+In the example we had, you think about the function
+was the square root function.
+And you can calculate that g of 100 equals 10,
+so that's the height of this point.
+And the derivative of g at x equals 100, that was 0.05.
+So that's the slope of the tangent line.
+And we wanted to estimate g of 104.
+So 104, that means we've shifted our x value by 4.
+So that's our delta x.
+And our tangent line has gone up by 4 times the slope.
+The slope as 0.05, so 0.2.
+And that's what we estimate the change in the function's value
+to be, or delta g.
+The initial value of the function was 10,
+it changes by roughly 0.2, so we're
+going to get an approximation of 10.2 for g of 104.
+Let's talk about doing this in general.
+I'll erase some of this stuff, and let's say
+that the point where we want an estimate is
+x, and the point where we're starting is x0.
+That means that the height here is g of x0.
+And the slope, I'm going to denoted it by m, but m,
+of course, is the derivative g prime of x0.
+What we've been saying is that we can approximate
+delta g by this vertical distance right here,
+and that's just the slope, m, times the horizontal distance,
+delta x.
+Let me write that over here.
+Delta g is approximately equal to m times delta x.
+And let's just play with this a little bit.
+We've got, on the left, g of x minus g of x0,
+and that's approximately equal to-- now our m,
+we said, was g prime at x0, and delta x is x minus x0.
+Moving some things around, we have
+g of x is approximately equal to g prime of x0 times
+x minus x0 plus g of x0.
+So here, on the left, we have just the formula
+for the graph of the function.
+And on the right, well, that's the formula for a line.
+What line is it?
+Well, it's our tangent line.
+So we have that the graph is very close to the tangent line.
+And this is all true when x is near x0.
+
+Now, this all stems from the definition of the derivative.
+We know that our m, our slope, is
+defined to be the limit as delta x goes
+to 0 of delta g over delta x.
+And so another way of interpreting that
+is that m is going to be very close to delta g over delta x
+when delta x is small, when it's near 0.
+And just rearranging, we get m times delta
+x is approximately delta g.
+And that's this over here that we started with.
+So it all comes together.
+This is linear approximation.
+So we've got an example for you to try,
+and then we want to start thinking
+about just how good are these linear approximations anyway.
+Are they too big?
+Are they too small?
+How can we tell?
+So take some time and think about those,
+and I'll talk to you in a little bit.
