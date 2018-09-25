@@ -1,0 +1,39 @@
+
+Let's start with these two functions.
+They're pretty simple.
+We know their derivatives, for instance.
+Those derivatives are right here.
+And we could add these two functions.
+So if we did that, then we would get this right here,
+f of x plus g of x.
+And we could try to differentiate this sum.
+So d by dx of f of x plus g of x,
+well, we know how to do this.
+We can just put 4x cubed here and add cosine x.
+In other words, just take f prime plus g prime,
+and that would be our answer.
+So the derivative of the sum is the sum of the two derivatives.
+Great.
+What else might we do?
+I suppose we could take h of x to be
+equal to x to the fourth times sine
+x, in other words, the product of f of x with g of x.
+What would the derivative of this be?
+It would be very tempting to simply say, well, let's just
+put 4x cubed here and put cosine x there.
+In other words, take f prime of x times g prime of x.
+What's wrong with this?
+Well, what's wrong with it is that h prime of x just
+is not equal to f prime times g prime.
+Now, this comes as a surprise to a lot of students.
+And if you're surprised, that's understandable.
+But it turns out that there's a fundamental reason why it's not
+equal to f prime times g prime.
+So instead of me just telling you what the right answer is,
+we're first going to try to think through what
+that fundamental reason is why this is not just going to be
+equal to f prime times g prime.
+And in the process of doing that,
+we're actually going to discover some justification for what
+the right answer actually is.
+So that's the plan, and let's get started.

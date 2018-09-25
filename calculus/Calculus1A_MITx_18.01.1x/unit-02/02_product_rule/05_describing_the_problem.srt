@@ -1,0 +1,76 @@
+
+So this is where we are.
+We have our time variable t measured in seconds.
+And then we were saying that f of t and g of t
+were distances measured in meters, in which case
+f prime and g prime, their derivatives,
+are velocities which are measured in meters per second.
+OK.
+And then we had our h.
+h was equal to f of t times g of t.
+And so it's measured in meters squared, or it's an area.
+We can visualize that with this rectangle here.
+So f of t, we could say, is the width of this rectangle.
+And g of t could be its height, in which case h is
+the area of the rectangle.
+Now, our goal in all of this is to figure out
+what's going on with h prime.
+Now, h's output was meter squared.
+Its input is seconds.
+And so we know that h prime has to be measured
+in meters squared per second.
+However, f prime times g prime is meters per second times
+meters per second, which is meters
+squared per second squared.
+And we notice that these two things don't match.
+And what that tells us is that h prime and f prime times g prime
+can't be equal, because they measure different things.
+So this is the fundamental reason
+why the derivative of this product
+should not be the product of the two derivatives.
+But that leaves the question of, what
+is then the derivative of h?
+We know that h measures area.
+So h prime should be measuring the rate of change of area.
+Now, we can actually use our picture
+to get a handle on what this rate of change of area
+is going to be.
+So let me clean up some of this stuff.
+And let's put in some specific numbers
+for some of our variables.
+OK, so we've got maybe t is 3 seconds.
+And then I'll erase this.
+And we'll have f of 3 being 50 meters.
+So f of 3, that's the width.
+That's going to be 50 meters down here.
+And then we have an f prime.
+So let's say that f prime of 3 is 4 meters per second.
+So what that means is that this width is increasing.
+So maybe this right edge of this rectangle
+is moving to the right at this rate of 4 meters per second.
+OK?
+Now, we also have g to deal with.
+So let's say that g of 3 is 30 meters.
+So that's the height of this rectangle at time t equals 3.
+And then there's a g prime as well.
+So maybe g prime of 3 is 2 meters per second.
+So that's the rate of change of the height, which
+we can think of as maybe this top edge of the rectangle
+is moving up at this rate of 2 meters per second.
+What we're trying to figure out is
+h prime of 3, which is the rate of change of area.
+So we can look at our picture of this rectangle
+and kind of figure out how is the area changing,
+or how fast is the area changing.
+Well, we've got this region on the right.
+We know this right edge is moving outwards.
+And so we're gaining area over here.
+Similarly, we're moving the top edge up at this 2 meters
+per second.
+And so we're going to be gaining some area
+on the top as that edge moves.
+And so we've got some questions for you
+to try to quantify just how fast area
+is being added to this picture.
+So take a moment and think through those.
+And then we'll come back and wrap everything up.

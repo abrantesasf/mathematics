@@ -1,0 +1,87 @@
+
+In this video, we're going to derive the product
+rule just a bit more formally.
+We've got h of t as the product f of t times g of t,
+and for h prime of t, we're going to use delta notation.
+So remember that h prime of t is approximately
+equal to delta h over delta t.
+And then to make this exact, we're
+ultimately going to want to take the limit as delta t goes to 0.
+So let's look at this numerator.
+What is delta h?
+Well, it's the change in h, so there's a new h
+and we subtract the old h.
+But what does that mean?
+Well, h has changed because f and g have changed.
+h is always f times g, so the new h should
+be the new f-- that's our original f--
+plus the change in f, delta f, times the new g,
+so that's the original g plus the change in g.
+This product, then, is the new h.
+We subtract the old h, which is just the original f times g.
+We can visualize all of that with the rectangle picture.
+h equals f times g like this, and our new h
+is the area of a new rectangle.
+The width changes by delta f and the height changes by delta g.
+And then the new h is the area of this new rectangle,
+and that's f plus delta f times g plus delta g.
+And then in this picture, delta h, the change in area,
+that's everything in this region right here.
+But notice one thing.
+In this picture, we're assuming that all of these quantities
+are positive, so f, delta f, et cetera.
+With the algebra, there's no such assumption,
+so the algebra is more general and more formal.
+The picture is just here to help us get an intuition
+about all of these terms.
+
+Back to the algebra, then, if we multiply this out,
+we're going to get f times g plus f times delta g
+plus g times delta f plus delta f times delta g,
+and then we subtract f times g.
+So these things cancel and we're left
+with f times delta g plus g times delta f plus delta f
+times delta g.
+Now, this is supposed to be delta h.
+And in fact, we can see in the picture
+where all three of these terms come from.
+f times delta g, that's this area right here.
+g times delta f is this part of the delta h, and delta
+f times delta g, that's this section up in the corner.
+If you are worried that we missed this corner
+piece in the last video about the product rule, don't worry.
+The algebra sees it and the algebra will tell us
+that it really isn't a problem.
+
+We've got our delta h and we're supposed to divide that
+by delta t, and I'm going to write this
+in a form that's suggestive.
+When we divide this first term by delta t,
+we're going to get f times delta g over delta t.
+Then for the next term, we'll put g times delta f
+over delta t.
+And the last term, I'm going to do something funny here.
+We've got delta f over delta t, that's dividing by delta t,
+and then I'm going to put delta g over delta t again,
+and then that's an extra delta t in the denominator
+so I have to multiply by delta t.
+That's how I'm going to write that.
+Now remember, we're supposed to take the limit as delta t goes
+to 0, and we're going to do that to all of these terms.
+And in the first one, well we've got f.
+That stays the same, but what's going on
+with delta g over delta t as delta t goes to 0?
+Well, that's just the definition of the derivative.
+That's g prime.
+We're assuming that g is differentiable here.
+And in the next term, we'll get g times-- and then
+this quotient.
+Well, that approaches f prime as delta t approaches 0.
+And finally, in the last term, the first part,
+that's going to go to f prime.
+The second part goes to g prime, but the last part, well, that's
+just delta t itself, which is going to 0.
+So in the limit, this last term just disappears-- it's 0--
+and we're left with f times g prime plus g times f prime.
+Hey.
+That's our product rule.

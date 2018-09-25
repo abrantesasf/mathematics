@@ -6515,7 +6515,1015 @@ following equivalent formulas:
     \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m1-017.png}}
   \end{center}
 \end{figure}
-  
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Product rule}
+\label{u2-product-rule}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Motivation}
+\label{u2-product-rule-motivation}
+
+Video: \href{https://www.youtube.com/watch?v=6wgx9dMg7VI}{The Product Rule}
+
+You may have learned in classical mechanics
+that $F = ma$.
+A more powerful version of this formula
+is that force is the time derivative of momentum, p,
+which is, d by dt of the quantity m times v:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-001.png}}
+  \end{center}
+\end{figure}
+
+If the mass is constant, this is the familiar law, $F = ma$.
+That's because if we write the equation f
+is the derivative of m times v, we
+can factor out the constant m, and get
+m times the derivative of velocity,
+which is m times acceleration:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-002.png}}
+  \end{center}
+\end{figure}
+
+But what if the mass is not constant?
+Let's look at an example.
+Consider the NASA mission to send the rover Curiosity
+to Mars:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-003.png}}
+  \end{center}
+\end{figure}
+
+Most of the mass of the rocket is a huge supply of fuel.
+But as the fuel burns, the mass decreases.
+The mass is a function of time:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-004.png}}
+  \end{center}
+\end{figure}
+
+To understand the force, we need to know
+how to take the derivative of the product, m
+of t times v of t:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-005.png}}
+  \end{center}
+\end{figure}
+
+So let's learn how to take the derivative of products.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Product rule}
+\label{u2-product-rule-obj}
+
+\paragraph{What functions can we differentiate so far?}
+\begin{itemize}[noitemsep]
+\item powers of $x$
+\item polynomials
+\item sine and cosine
+\end{itemize}
+
+\paragraph{Objectives} At the end of this sequence, and after some practice, you
+should be able to:
+\begin{itemize}[noitemsep]
+\item Differentiate \textbf{products} of functions.
+\end{itemize}
+
+Contents: 12 pages, 6 videos (25 minutes 1x speed), 13 questions
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{What the derivative of a product is not}
+\label{u2-product-rule-what-product-is-not}
+
+Video: \href{https://www.youtube.com/watch?v=XrYdgV5YxfA}{What the derivative of a product is NOT}
+
+Let's start with these two functions.
+They're pretty simple:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-006.png}}
+  \end{center}
+\end{figure}
+
+We know their derivatives, for instance.
+Those derivatives are right here:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-007.png}}
+  \end{center}
+\end{figure}
+
+And we could add these two functions.
+So if we did that, then we would get this right here,
+$f(x)+g(x)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-008.png}}
+  \end{center}
+\end{figure}
+
+And we could try to differentiate this sum.
+So $\displaystyle \frac{d}{dx} \left(f(x)+g(x)\right)$,
+well, we know how to do this.
+We can just put $4x^3$ here and add $\cos{x}$.
+In other words, just take $f'(x) + g'(x)$,
+and that would be our answer:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-009.png}}
+  \end{center}
+\end{figure}
+
+So \emph{the derivative of the sum is the sum of the two derivatives}.
+Great.
+What else might we do?
+I suppose we could take $h(x) = x^4\sin{x} = f(x)g(x)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-010.png}}
+  \end{center}
+\end{figure}
+
+What would the derivative of this be?
+It would be very tempting to simply say, well, let's just
+put $4x^3$ here and put $\cos{x}$ there.
+In other words, take $f'(x) \times g'(x)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-011.png}}
+  \end{center}
+\end{figure}
+
+What's wrong with this?
+Well, what's wrong with it is that $h'(x)$ \textbf{IS NOT EQUAL TO}
+$f'(x) \times g'(x)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-012.png}}
+  \end{center}
+\end{figure}
+
+Now, this comes as a surprise to a lot of students.
+And if you're surprised, that's understandable.
+But it turns out that there's a fundamental reason \emph{why it's not
+equal} to $f'(x) \times g'(x)$.
+So instead of me just telling you what the right answer is,
+we're first going to try to think through \emph{what
+that fundamental reason is}, why this is not just going to be
+equal to $f'(x) \times g'(x)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-013.png}}
+  \end{center}
+\end{figure}
+
+And in the process of doing that,
+we're actually going to discover some justification for what
+the right answer actually is.
+So that's the plan, and let's get started.
+
+\begin{exercise}
+  \textbf{Product of the derivatives?}\\%
+  Is the derivative of $h(x) = x^4 \sin{(x)}$ equal to $4x^3 \cos{(x)}$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Yes
+  \item[$\bigcirc$] No
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Exploring why not}
+\label{u2-product-rule-why-not}
+
+\begin{exercise}
+  \textbf{Setting the Stage}\\%
+  Suppose that $t$ is variable measuring time in seconds $s$, and $f$ and $g$ are
+  functions of $t$ that output distances, measured in meters $m$. What units are
+  $f'(t)$ and $g'(t)$ and measured in?
+\end{exercise}
+
+\begin{exercise}
+  \textbf{The product}\\%
+  What units is $h(t) = f(t)g(t)$ measured in?
+\end{exercise}
+
+\begin{exercise}
+  \textbf{The product's derivative}\\%
+  What units is $h'(t)$ measured in?
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Do they match?}\\%
+  Do the units of $h'(t)$ match the units of $f'(t) \times g'(t)$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Yes
+  \item[$\bigcirc$] No
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Product of derivatives?}
+\label{u2-product-rule-product-of-derivatives}
+
+Video: \href{https://www.youtube.com/watch?v=IFeQuG1hxL4}{Describing the problem}
+
+So this is where we are.
+We have our time variable $t$ measured in seconds.
+And then we were saying that $f(t)$ and $g(t)$
+were distances measured in meters, in which case
+$f'(t)$ and $g'(t)$, their derivatives,
+are velocities which are measured in meters per second, $m/s$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-014.png}}
+  \end{center}
+\end{figure}
+
+OK.
+And then we had our h,
+$h(t) = f(t) \times g(t)$.
+And so it's measured in meters squared, or it's an area ($m^2$).
+We can visualize that with this rectangle here.
+So $f(t)$, we could say, is the width of this rectangle.
+And $g(t)$ could be its height, in which case $h$ is
+the area of the rectangle:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-015.png}}
+  \end{center}
+\end{figure}
+
+Now, our goal in all of this is to figure out
+what's going on with $h'(t)$.
+Now, $h'(t)$ output was meter squared, $m^2$.
+Its input is seconds.
+And so we know that $h'(t)$ has to be measured
+in meters squared per second, $m^2/s$.
+However, $f'(t) \times g'(t)$ is meters per second times
+meters per second, which is meters
+squared per second squared, $m^2/s^2$.
+And we notice that these two things don't match.
+And what that tells us is that $h'(t)$ and $f'(t) \times g'(t)$
+can't be equal, because they measure different things:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-016.png}}
+  \end{center}
+\end{figure}
+
+So this is the fundamental reason
+why \emph{the derivative of this product
+should not be the product of the two derivatives}.
+But that leaves the question of, what
+is then the derivative of $h$?
+We know that $h$ measures area.
+So $h'(t)$ should be measuring the \textbf{rate of change of area}.
+Now, we can actually use our picture
+to get a handle on what this rate of change of area
+is going to be.
+So let me clean up some of this stuff.
+And let's put in some specific numbers
+for some of our variables.
+OK, so we've got maybe $t = 3$ seconds.
+And then I'll erase this.
+And we'll have $f(3) = 50$ meters.
+So $f(3)$, that's the width.
+That's going to be 50 meters down here.
+And then we have an $f'(t)$.
+So let's say that $f'(3) = 4$ meters per second.
+So what that means is that this width is increasing.
+So maybe this right edge of this rectangle
+is moving to the right at this rate of 4 meters per second:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-017.png}}
+  \end{center}
+\end{figure}
+
+Now, we also have $g$ to deal with.
+So let's say that $g(3) = 30$ meters.
+So that's the height of this rectangle at time $t = 3$.
+And then there's a $g'(t)$ as well.
+So maybe $g'(3) = 2$ meters per second.
+So that's the rate of change of the height, which
+we can think of as maybe this top edge of the rectangle
+is moving up at this rate of 2 meters per second.
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-018.png}}
+  \end{center}
+\end{figure}
+
+What we're trying to figure out is
+$h'(3)$, which is the rate of change of area.
+So we can look at our picture of this rectangle
+and kind of figure out how is the area changing,
+or how fast is the area changing.
+Well, we've got this region on the right.
+We know this right edge is moving outwards.
+And so we're gaining area over here.
+Similarly, we're moving the top edge up at this 2 meters
+per second.
+And so we're going to be gaining some area
+on the top as that edge moves:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-019.png}}
+  \end{center}
+\end{figure}
+
+And so we've got some questions for you
+to try to quantify just how fast area
+is being added to this picture.
+So take a moment and think through those.
+And then we'll come back and wrap everything up.
+
+\begin{exercise}
+  \textbf{Growing on the top}\\%
+  At time $t=3$, we know the width of the rectangle is $f(3)=50$ meters, and we said
+  that the height is growing at $g'(3) = 2$ meters per second. How fast are we
+  gaining area on the top of the rectangle? What units is your answer in?
+  \begin{figure}
+    \begin{center}
+      \fbox{\includegraphics[scale=0.50]{imagens/unit-2/u2-m2-020.png}}
+    \end{center}
+  \end{figure}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Area growth}
+\label{u2-product-rule-area-growth}
+
+The width is 50 meters, and the top of the rectangle is moving up at 2 meters per
+second, so, on the top, we are gaining area at a rate of $50m \times 2m/s$, or $100m^2/s$.
+The units work out perfectly!
+
+\begin{exercise}
+  \textbf{Growing on the right}\\%
+  On the right, at time $t=3$, we have the height of the rectangle being $g(3) = 30$
+  meters, and we said that the width is growing at a rate of $f'(3) = 4$ meters per
+  second. How fast are we gaining area on the right of the rectangle? What units
+  is your answer in?
+  \begin{figure}
+    \begin{center}
+      \fbox{\includegraphics[scale=0.50]{imagens/unit-2/u2-m2-020.png}}
+    \end{center}
+  \end{figure}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Overall area growth}\\%
+  Combining the two answers, what is the overall rate of growth of the area of
+  the rectangle? What units is your answer in?
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Product rule}
+\label{u2-product-rule-product-rule}
+
+Video: \href{https://www.youtube.com/watch?v=es5lhhpMCkQ}{Product rule}
+
+So here we go.
+We've got our $f$ and our $g$ measuring
+our width and our height of our rectangle.
+And $f'(t)$ $g'(t)$ are telling us
+how the width and height are changing with respect to time.
+And then we're interested in $h'(3)$,
+which is the rate of change of the area of this rectangle:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-021.png}}
+  \end{center}
+\end{figure}
+
+And we noticed that there were really these two places.
+There was on top and on the right where we're gaining area,
+and so we wanted to figure out the rate of change of area
+from those two places on the top.
+Hopefully you figured out that since we have a 50 meter width
+and the top edge is moving up by 2 meters per second,
+we just multiply those two things
+and we get the rate of change of area on the top.
+And on the right, it's a similar sort of thing.
+We have 30 meters worth of height.
+This right edge is moving out by 4 meters per second.
+So if we multiply those, then we get the rate
+of increase of area on the right:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-022.png}}
+  \end{center}
+\end{figure}
+
+And so for $h'(t)$ overall, what are we going to do?
+Well, we'll just \emph{add these two things},
+and when we do that we get 220.
+And notice that the units work out perfectly.
+So meters times meters per second
+is meters squared per second, and that was our answer:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-023.png}}
+  \end{center}
+\end{figure}
+
+Now, we're going to want to \emph{generalize} this.
+So let's take a look back and make
+sure we know exactly where this 220 number came from.
+So in this calculation here, our 50 meters came from $f(3)$
+and the $2$ meters per second came from $g'(3)$.
+The next term, the 30 meters, that was $g(3)$.
+The $4$ meters per second, that was $f'(3)$.
+And so this was the calculation that we
+did in order to get our 220.
+There was $f(3) \times g'(3) + g(3) \times f'(3)$, and this is what's going
+to give us our general rule:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-024.png}}
+  \end{center}
+\end{figure}
+
+So let me erase this stuff and we'll put it up here.
+If $h(x) = f(x) \times g(x)$, then
+the derivative of $h$ is going to be equal to $h'(x) = f(x)g'(x) + g(x)f'(x)$
+--- or in other words, the first function times
+the derivative of the second function,
+plus the second function times the derivative
+of the first function.
+And this is true at all points where those derivatives exist:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-025.png}}
+  \end{center}
+\end{figure}
+
+And there we have it --- this is what
+we're going to call the \emph{product rule}.
+It's pretty useful.
+
+So let's do an example.
+Let's do the example that we started this entire sequence
+with.
+So $h(x) = x^4 \sin{(x)}$.
+So here we have a function which is
+the product of two functions --- we'll call them
+$f(x)$ and $g(x)$, and $f(x) = x^4$ while
+$g(x) = \sin{(x)}$.
+So our product rule tells us how we can differentiate $h$.
+$h'(x)$ we know is going to be
+the first function times the derivative
+of the second function, plus the second function
+times the derivative of the first function.
+And we know what the derivatives of $f$ and $g$ are,
+so we can just write all these things now:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-026.png}}
+  \end{center}
+\end{figure}
+
+So we're going to get $x^4$ for $f(x)$.
+$g'(x) = \cos{(x)}$, plus $g(x)$ we know
+is $\sin{(x)}$, and then $f'(x) = 4x^3$.
+And there's our answer.
+We're done.
+So you should take some time now and get some practice using
+the product rule on your own.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Product rule review}
+\label{u2-product-rule-product-rule-review}
+
+If $h(x) = f(x)g(x)$, then
+
+\begin{equation*}
+  h'(x) = f(x)g'(x) + g(x)f'(x)
+\end{equation*}
+
+at all points where the derivatives $f'(x)$ and $g'(x)$ are defined.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Some problems}
+\label{u2-product-rule-some-problems}
+
+\begin{exercise}
+  \textbf{Product rule example}\\%
+  Find the derivative of $j(x) = \sqrt{x} \cos{(x)}$
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Old McDonald}\\%
+  Old McDonald has a farm. This summer he's been growing a very large watermelon
+  --- right now it weighs 100 pounds and is continuing to grow at a rate of 3 pounds
+  per day. However, the market price of watermelon is currently $0.40$ dollars per
+  pound, and is decreasing at a rate of $0.01$ dollars per pound per day.
+
+  a) In dollars, what is the current value of Old McDonald's watermelon?
+
+  b) Let $w(d)$ denote the weight of the watermelon on day $d$, and $p(d)$ denote
+  the market price per pound of watermelon on day $d$. If $v(d)$ is the value of
+  Old McDonald's watermelon on day $d$, express $v(d)$ in terms of $w(d)$ and $p(d)$.
+
+  c) In dollars per day, at what rate is the market value of Old McDonald's watermelon
+  currently changing?
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Product rule, formally}
+\label{u2-product-rule-formally}
+
+Video: \href{https://www.youtube.com/watch?v=DWTj6C6PKL0}{The Product Rule, formally}
+
+In this video, we're going to \emph{derive the product
+rule} just a bit more formally.
+We've got $h(t)$ as the product $f(t) \times g(t)$,
+and for $h'(t)$, we're going to use delta notation.
+So remember that $\displaystyle h'(t) \approx \frac{\Delta h}{\Delta t}$.
+And then to make this exact, we're
+ultimately going to want to take the $\lim_{\Delta t \to 0}$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-027.png}}
+  \end{center}
+\end{figure}
+
+So let's look at this numerator.
+What is $\Delta h$?
+Well, it's the change in $h$, so there's a \emph{new $h$}
+and we subtract the \emph{old $h$}.
+But what does that mean?
+Well, $h$ has changed because $f$ AND $g$ have changed.
+$h$ is always $f \times g$, so the new $h$ should
+be the new $f$ --- that's our original $f$ ---
+plus the change in $f$, $\Delta f$, times the new $g$,
+so that's the original $g$ plus the change in $g$.
+This product, then, is the new $h$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-028.png}}
+  \end{center}
+\end{figure}
+
+We subtract the old $h$, which is just the original $f \times g$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-029.png}}
+  \end{center}
+\end{figure}
+
+We can visualize all of that with the rectangle picture.
+$h = f \times g$ like this:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-030.png}}
+  \end{center}
+\end{figure}
+
+And our new $h$
+is the area of a new rectangle.
+The width changes by $\Delta f$ and the height changes by $\Delta g$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-031.png}}
+  \end{center}
+\end{figure}
+
+And then the new $h$ is the area of this new rectangle,
+and that's $(f + \Delta f) \times (g + \Delta g)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-032.png}}
+  \end{center}
+\end{figure}
+
+And then in this picture, $\Delta h$, the change in area,
+that's everything in this region right here.
+But notice one thing.
+In this picture, we're assuming that all of these quantities
+are positive, so $f$, $\Delta f$, et cetera.
+With the algebra, there's no such assumption,
+so the algebra is more general and more formal.
+The picture is just here to help us get an intuition
+about all of these terms.
+
+Back to the algebra, then, if we multiply this out,
+we're going to get $fg + f\Delta g + g\Delta f + \Delta f \Delta g - fg$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-033.png}}
+  \end{center}
+\end{figure}
+
+So these things cancel and we're left
+with:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-034.png}}
+  \end{center}
+\end{figure}
+
+Now, this is supposed to be $\Delta h$.
+And in fact, we can see in the picture
+where all three of these terms come from.
+$f\Delta g$, that's this area right here:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-035.png}}
+  \end{center}
+\end{figure}
+
+$g\Delta f$ is this part of the $\Delta h$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-036.png}}
+  \end{center}
+\end{figure}
+
+And $\Delta f \Delta g$, that's this section up in the corner:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-037.png}}
+  \end{center}
+\end{figure}
+
+If you are worried that we missed this corner
+piece in the last video about the product rule, don't worry.
+The algebra sees it and the algebra will tell us
+that it really isn't a problem.
+
+We've got our $\Delta h$ and we're supposed to divide that
+by $\Delta t$, and I'm going to write this
+in a form that's suggestive.
+When we divide this first term by $\Delta t$,
+we're going to get $\displaystyle \frac{f\Delta g}{\Delta t}$.
+Then for the next term, we'll put $\displaystyle \frac{g\Delta f}{\Delta t}$.
+And the last term, I'm going to do something funny here.
+We've got $\displaystyle \frac{\Delta f}{\Delta t}\frac{\Delta g}{\Delta t}\Delta t$.
+That's how I'm going to write that:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-038.png}}
+  \end{center}
+\end{figure}
+
+Now remember, we're supposed to take the limit as $\Delta t$ goes
+to 0, and we're going to do that to all of these terms.
+And in the first one, well we've got $f$.
+That stays the same, but what's going on
+with $\displaystyle \frac{\Delta g}{\Delta t}$ as $\Delta t \to 0$?
+Well, that's just the definition of the derivative.
+That's $g'$.
+We're assuming that g is differentiable here:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-039.png}}
+  \end{center}
+\end{figure}
+
+And in the next term, we'll get $g$ times --- and then
+this quotient. Well, that approaches $f'$ as $\Delta t \to 0$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-040.png}}
+  \end{center}
+\end{figure}
+
+And finally, in the last term, the first part,
+that's going to go to $f'$.
+The second part goes to $g'$, but the last part, well, that's
+just $\Delta t$ itself, which is going to 0.
+So in the limit, this last term just disappears --- it's 0 ---
+and we're left with $fg' + gf'$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-041.png}}
+  \end{center}
+\end{figure}
+
+Hey. That's our product rule!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Basics}
+\label{u2-product-rule-basics}
+
+\begin{exercise}
+  \textbf{Example 1}\\%
+  Do we need to use the product rule to differentiate $j(x)=\sqrt[3]{x}\cos{(x)}$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Yes
+  \item[$\bigcirc$] No
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Example 2}\\%
+  Do we need to use the product rule to differentiate $k(x)=\pi x^5$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Yes
+  \item[$\bigcirc$] No
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Example 3}\\%
+  Do we need to use the product rule to differentiate $p(x)=\sin{(60x)}$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Yes
+  \item[$\bigcirc$] No
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{When can we use the product rule?}\\%
+  Suppose we know that $f(10)=1776$, $g(10)=\pi$, and $h(10)=1776\pi$, and
+  that all of these functions are differentiable. Can we conclude that
+  $h'(10)=1776g'(10) + \pi f'(10)$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Yes
+  \item[$\bigcirc$] No
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Practice product rule}
+\label{u2-product-rule-practice}
+
+Video: \href{https://www.youtube.com/watch?v=\_R5fOYaSk0s}{Recitation video}
+
+Welcome back to recitation.
+In this segment, we're going to talk about the product
+rule for 3 functions, and then we're going to do an example.
+And what I want to do first is remind
+you the product rule for 2 functions
+because we're going to use that to figure out the product
+rule for 3 functions.
+So throughout this segment, we are
+going to assume that u and v and w are all functions of x.
+So I'm going to drop the of x just so it's
+a little easier to write.
+This notation should be familiar with things
+you saw in the lecture.
+So for 2 functions, let me remind you--
+if you have uv, the product, and you
+take its derivative-- so prime will denote d/dx,
+then we can take the derivative of the first times
+the second function left alone, plus the derivative
+of the second function, times the first left alone.
+So this should, again, be familiar from class.
+And now what we want to do is expand that to the product of 3
+functions-- u times v times w.
+And we're going to explicitly use this rule.
+So uvw prime is what we want to look at.
+So we're just going to take advantage
+of what we know to figure out what this expression will be,
+what this product of 3 functions when I take its derivative
+will be.
+So in order to do this easily, we're
+going to do is treat v times w as a single function.
+So v times w will be our second function that essentially takes
+the place of the v up here.
+So using the product rule for 2 functions, what
+I get when I take this derivative is,
+I get u prime times vw, plus I take the derivative
+of this second thing, which is vw prime.
+And then I leave the u alone.
+We're not quite done, but you can see now--
+again, if we compare to what's above,
+you take the derivative of the first function,
+you leave the second function alone.
+You take the derivative of the second function,
+you leave the first function alone.
+But now, again, what do we do here?
+Well, we have a product rule for 2 functions, so let's use it.
+So I'll leave the first thing alone. u prime--
+oops, that does not look like a v. vw plus-- now let's
+expand this.
+Take the derivative of the first function there--
+that's v prime, I leave the w alone,
+plus the derivative of the second function-- that's
+w prime, I leave the v alone, and I keep the u there.
+I'm going to just expand, and write it in a nice order
+so we can see sort of exactly what happens.
+So u prime vw plus v prime uw plus w prime uv.
+So what you can see here is-- what happens?
+You take the derivative of the first function,
+you leave the second and third alone.
+Then you take the derivative of the second function,
+you leave the first and third alone.
+Then you take the derivative the third function,
+you leave the first and second alone.
+And you add up those three terms.
+I would imagine that at this point you anticipate a pattern.
+So if I had a fourth function, if I
+did u times v times w times z, let's say,
+and I took that derivative with respect
+to x, you could probably anticipate
+you would have four terms when you added them up.
+And that fourth term would have to include a derivative
+of the fourth function.
+So from here actually, you can probably
+tell me what the derivative of the product of n functions is.
+And you could check it using this same kind of rule.
+But what we're going to do at this point is,
+we're going to just make sure we understand this.
+We're going to compute an example.
+So since we know products-- or we know derivatives
+of powers of x, and we know derivatives of the basic trig
+functions, we'll do a product rule using those functions.
+So let me take an example.
+So we'll say f of x equals x squared sin x cos x.
+And I want you to find f prime of x.
+I'm going to give you a moment to do it.
+You should probably pause the video here.
+Make sure you can do it, and then you
+can restart the video when you want to check your answer.
+And coming up in five, four, three--
+OK, so we have a product rule for 3 functions.
+We have an example that I asked you to determine,
+and gave you a moment to do it.
+So now I will actually work out the example over here
+to the right.
+So I will determine f prime of x.
+Now what are our three functions?
+Well, we have x squared is the first, sin x is the second, cos
+x is the third.
+So we'll have three terms.
+The first term has to have the derivative of the x squared.
+That's going to give me a 2x, and I leave the other two terms
+alone.
+So I have 2x sin x cos x, plus I may
+want to just write these below.
+Now in the next term, I should take the derivative of the sin
+x, and leave the x squared and the cos x alone.
+Derivative of sin x is cos x.
+So I'm actually going to write this underneath.
+So we'll have-- going to put the plus underneath also
+so we remember it's a sum.
+Plus-- so the derivative of sin x is cos x,
+and then we have a times x squared, times--
+oops, another cos x of what--
+the third function.
+And then the third term, I take the derivative
+of the third function, and I leave the first and second
+alone.
+The derivative of cos x is negative sin x.
+So I actually have a negative sin x times x
+squared times the sin x here.
+I can do some simplifying if I want.
+But maybe if I were trying to write this nicely
+for someone who is reading mathematics,
+I would put all of the polynomials in front,
+and all of the coefficients in front.
+So to be very kind to someone, I might write it like this.
+And notice, cos x cos x is cos squared x.
+And then minus x squared sin squared x.
+And there are other ways I could rewrite this,
+and using trig identities.
+But this is a sufficient answer at this point.
+So this is actually a good way to write
+the derivative of that function f of x.
+And this is where we'll stop.
+
+
+
+    
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,74 @@
+
+So here we go.
+We've got our f and our g measuring
+our width and our height of our rectangle.
+And f prime and g prime are telling us
+how the width and height are changing with respect to time.
+And then we're interested in h prime of 3,
+which is the rate of change of the area of this rectangle.
+And we noticed that there were really these two places.
+There was on top and on the right where we're gaining area,
+and so we wanted to figure out the rate of change of area
+from those two places on the top.
+Hopefully you figured out that since we have a 50 meter width
+and the top edge is moving up by 2 meters per second,
+we just multiply those two things
+and we get the rate of change of area on the top.
+And on the right, it's a similar sort of thing.
+We have 30 meters worth of height.
+This right edge is moving out by 4 meters per second.
+So if we multiply those, then we get the rate
+of increase of area on the right.
+And so for h prime overall, what are we going to do?
+Well, we'll just add these two things,
+and when we do that we get 220.
+And notice that the units work out perfectly.
+So meters times meters per second
+is meters squared per second, and that was our answer.
+
+Now, we're going to want to generalize this.
+So let's take a look back and make
+sure we know exactly where this 220 number came from.
+So in this calculation here, our 50 meters came from f of 3
+and the 2 meters per second came from g prime of 3.
+The next term, the 30 meters, that was g of 3.
+The 4 meters per second, that was f prime of 3.
+And so this was the calculation that we
+did in order to get our 220.
+There was f of 3 times g prime of 3 plus g of 3 times
+f prime of 3, and this is what's going
+to give us our general rule.
+So let me erase this stuff and we'll put it up here.
+If h of x is the product of f of x and g of x, then
+the derivative of h is going to be equal to f of x times
+g prime of x, plus g of x times f
+prime of x-- or in other words, the first function times
+the derivative of the second function,
+plus the second function times the derivative
+of the first function.
+And this is true at all points where those derivatives exist.
+And there we have it-- this is what
+we're going to call the product rule.
+It's pretty useful.
+So let's do an example.
+Let's do the example that we started this entire sequence
+with.
+So h of x equals x to the fourth times sine x.
+So here we have a function which is
+the product of two functions-- we'll call them
+f of x and g of x, and f of x is equal to x to the fourth while
+g of x is equal to sine x.
+So our product rule tells us how we can differentiate h.
+h prime of x we know is going to be
+the first function times the derivative
+of the second function, plus the second function
+times the derivative of the first function.
+And we know what the derivatives of f and g are,
+so we can just write all these things now.
+So we're going to get x to the fourth for f of x.
+g prime we know is cosine x, plus g of x we know
+is sine x, and then f prime is just 4x cubed.
+And there's our answer.
+We're done.
+So you should take some time now and get some practice using
+the product rule on your own.

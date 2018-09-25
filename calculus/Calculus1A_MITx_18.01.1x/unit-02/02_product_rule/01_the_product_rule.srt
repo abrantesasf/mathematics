@@ -1,0 +1,23 @@
+
+You may have learned in classical mechanics
+that f equals ma.
+A more powerful version of this formula
+is that force is the time derivative of momentum, p,
+which is, d by dt of the quantity m times v.
+If the mass is constant, this is the familiar law, f equals ma.
+That's because if we write the equation f
+is the derivative of m times v, we
+can factor out the constant m, and get
+m times the derivative of velocity,
+which is m times acceleration.
+But what if the mass is not constant?
+Let's look at an example.
+Consider the NASA mission to send the rover Curiosity
+to Mars.
+Most of the mass of the rocket is a huge supply of fuel.
+But as the fuel burns, the mass decreases.
+The mass is a function of time.
+To understand the force, we need to know
+how to take the derivative of the product, m
+of t times v of t.
+So let's learn how to take the derivative of products.
