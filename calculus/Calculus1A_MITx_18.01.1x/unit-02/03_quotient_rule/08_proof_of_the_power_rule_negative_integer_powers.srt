@@ -1,0 +1,59 @@
+
+I'm going to give a proof of the power rule
+for negative integer powers using the quotient rule.
+So to do this, I'm going to take the derivative of h
+of x equal to x to the negative n
+where n is a positive integer.
+Because I want to use the quotient rule,
+I'm going to rewrite this as a fraction,
+so this is equal to 1 over x to the n and this is of the form
+f of x over g of x where I'm letting f of x equal 1
+and g of x equal x to the n.
+Because I want to give a proof, I
+can only use facts that I've already proven
+and so that means that I can only
+use the power rule on a function x
+to the n for n, a positive integer,
+and that's exactly what I have here with g.
+So let's go ahead and find the derivative of h.
+The quotient rule tells us that h prime
+is equal to f prime times g minus g prime times f all
+over g squared, which is equal to f prime, which
+is 0 the derivative of 1, times g, which is x to the n,
+minus the derivative of g and this
+is where we're invoking the power
+rule for positive integers.
+This is n times x to the n minus 1 times
+f, which is 1, all over x to the n quantity
+squared, which is x to the 2n.
+Simplifying this, I get that this
+is equal to negative n times x to the n minus 1 minus 2n and n
+minus 2n is negative n, so this is equal to negative n times
+x to the negative n minus 1.
+So let's just go ahead and rewrite that.
+That means that we have just shown using the quotient rule
+that the derivative with respect to x of x to the negative n
+is equal to negative n times x to the negative n minus 1
+and we've just said that this holds
+for n, a positive integer, because that makes
+this power a negative integer.
+But let's go ahead and compare this
+to the formula we had for the power
+rule for positive integers.
+This said that the derivative with respect to x of x to the n
+is equal to n times x to the n minus 1.
+This formula is exactly equal to the formula we just found if we
+let n be a negative integer.
+That means that this formula holds for n a positive integer
+and a negative integer and in fact
+it even holds when n is equal to 0, because x to the 0 is 1
+and we know that the derivative of a constant is going to be 0.
+So we've now proven that this formula holds for n equal to 0
+plus or minus 1, plus or minus 2 for n, any integer.
+We aren't done.
+
+As we develop more rules and more techniques
+for finding derivatives, we'll be
+able to prove the power rule in more and more general forms
+until we can actually give you the proof of the power rule
+where n is any real number.

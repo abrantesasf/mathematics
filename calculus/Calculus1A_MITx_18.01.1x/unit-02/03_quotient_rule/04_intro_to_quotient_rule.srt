@@ -1,0 +1,42 @@
+
+So we're considering an example where
+we're letting the function h of t
+be a quotient of two functions.
+So quotient f of t divided by g of t.
+And we're interested in finding the derivative h prime of t.
+It's going to take a little while to figure out
+what this is, but we've already figured out what it can't be.
+We know that h prime of t is not equal to f prime over g prime,
+because the units do not agree.
+So we're now going to outline the approach
+for finding the derivative of the quotient, which
+is going to be the same approach that we used in the product
+rule, but this time, we're going to ask you to carry
+these steps out on your own.
+The approach is to use a linear approximation.
+So what I'm going to do is I'm going
+to say I know that h prime of t is very close to being
+the same thing as delta h over delta t when delta t is small.
+So that's the first step.
+The second step is to go ahead and identify delta h in terms
+of f, delta f, g, and delta g.
+And the third and final step is to take
+the limit of this expression that we
+get in terms of just f, g, and t as delta t approaches 0.
+And this is going to give us a formula for the derivative
+of a quotient.
+
+This procedure that we worked through with the product rule,
+and we've just outlined here is extremely general,
+and that's why we want you to work
+through these steps on your own exactly because this
+is a valuable problem solving technique.
+In fact, we are going to use it repeatedly in this unit.
+And it's used all over science, mathematics, and engineering
+in both continuum modeling and discrete numerical modeling
+no matter how complicated the system.
+
+So why don't you get started.
+And we'll help out with some of the trickier algebraic
+manipulations.
+And we'll see you on the other side.

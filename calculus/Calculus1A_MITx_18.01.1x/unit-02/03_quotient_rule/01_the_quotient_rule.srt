@@ -1,0 +1,10 @@
+
+At this point, we know how to take
+derivatives of a lot of functions-- x
+to the fourth, sine x.
+We can take derivative of sums-- x to the fourth plus sine x.
+We can even take derivative of product-- x
+to the fourth times sine x.
+But so far, we cannot take the derivative of tangent x,
+which is the quotient function, sine x over cosine x.
+So let's figure out how to differentiate quotients.

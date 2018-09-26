@@ -7375,7 +7375,7 @@ Hey. That's our product rule!
 \end{exercise}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Practice product rule}
+\subsubsection{Practice: product rule for 3 functions}
 \label{u2-product-rule-practice}
 
 Video: \href{https://www.youtube.com/watch?v=\_R5fOYaSk0s}{Recitation video}
@@ -7388,151 +7388,972 @@ you the product rule for 2 functions
 because we're going to use that to figure out the product
 rule for 3 functions.
 So throughout this segment, we are
-going to assume that u and v and w are all functions of x.
-So I'm going to drop the of x just so it's
+going to assume that $u$ and $v$ and $w$ are all functions of $x$.
+So I'm going to drop the of $x$ just so it's
 a little easier to write.
 This notation should be familiar with things
 you saw in the lecture.
-So for 2 functions, let me remind you--
-if you have uv, the product, and you
-take its derivative-- so prime will denote d/dx,
+
+So for 2 functions, let me remind you ---
+if you have $uv$, the product, and you
+take its derivative --- so prime will denote $d/dx$,
 then we can take the derivative of the first times
 the second function left alone, plus the derivative
 of the second function, times the first left alone.
-So this should, again, be familiar from class.
+So this should, again, be familiar from class:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-042.png}}
+  \end{center}
+\end{figure}
+
 And now what we want to do is expand that to the product of 3
-functions-- u times v times w.
+functions -- $u$ times $v$ times $w$.
 And we're going to explicitly use this rule.
-So uvw prime is what we want to look at.
+So $(uvw)'$ is what we want to look at:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-043.png}}
+  \end{center}
+\end{figure}
+
 So we're just going to take advantage
 of what we know to figure out what this expression will be,
 what this product of 3 functions when I take its derivative
 will be.
 So in order to do this easily, we're
-going to do is treat v times w as a single function.
-So v times w will be our second function that essentially takes
-the place of the v up here.
+going to do is \emph{treat $v$ times $w$ as a single function}.
+So $vw$ will be our second function that essentially takes
+the place of the $v$ up here.
 So using the product rule for 2 functions, what
 I get when I take this derivative is,
-I get u prime times vw, plus I take the derivative
-of this second thing, which is vw prime.
-And then I leave the u alone.
-We're not quite done, but you can see now--
+I get $u'$ times $vw$, plus I take the derivative
+of this second thing, which is $(vw)'$.
+And then I leave the $u$ alone:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-044.png}}
+  \end{center}
+\end{figure}
+
+We're not quite done, but you can see now ---
 again, if we compare to what's above,
 you take the derivative of the first function,
 you leave the second function alone.
 You take the derivative of the second function,
 you leave the first function alone.
+
 But now, again, what do we do here?
 Well, we have a product rule for 2 functions, so let's use it.
-So I'll leave the first thing alone. u prime--
-oops, that does not look like a v. vw plus-- now let's
+So I'll leave the first thing alone. $u'$ ---
+oops, that does not look like a $v$. $vw$ plus --- now let's
 expand this.
-Take the derivative of the first function there--
-that's v prime, I leave the w alone,
-plus the derivative of the second function-- that's
-w prime, I leave the v alone, and I keep the u there.
+Take the derivative of the first function there ---
+that's $v'$, I leave the $w$ alone,
+plus the derivative of the second function --- that's
+$w'$, I leave the $v$ alone, and I keep the $u$ there:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-045.png}}
+  \end{center}
+\end{figure}
+
 I'm going to just expand, and write it in a nice order
 so we can see sort of exactly what happens.
-So u prime vw plus v prime uw plus w prime uv.
-So what you can see here is-- what happens?
+So $u'vw$ plus $v'uw$ plus $w'uv$.
+So what you can see here is --- what happens?
 You take the derivative of the first function,
 you leave the second and third alone.
 Then you take the derivative of the second function,
 you leave the first and third alone.
 Then you take the derivative the third function,
 you leave the first and second alone.
-And you add up those three terms.
+And you add up those three terms:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-046.png}}
+  \end{center}
+\end{figure}
+
 I would imagine that at this point you anticipate a pattern.
 So if I had a fourth function, if I
-did u times v times w times z, let's say,
+did $u$ times $v$ times $w$ times $z$, let's say,
 and I took that derivative with respect
-to x, you could probably anticipate
+to $x$, you could probably anticipate
 you would have four terms when you added them up.
 And that fourth term would have to include a derivative
 of the fourth function.
+
 So from here actually, you can probably
 tell me what the derivative of the product of n functions is.
 And you could check it using this same kind of rule.
 But what we're going to do at this point is,
 we're going to just make sure we understand this.
 We're going to compute an example.
-So since we know products-- or we know derivatives
-of powers of x, and we know derivatives of the basic trig
+
+So since we know products --- or we know derivatives
+of powers of $x$, and we know derivatives of the basic trig
 functions, we'll do a product rule using those functions.
 So let me take an example.
-So we'll say f of x equals x squared sin x cos x.
-And I want you to find f prime of x.
+So we'll say $f(x) = x^2 \sin{x} \cos{x}$.
+And I want you to find $f'(x)$.
 I'm going to give you a moment to do it.
 You should probably pause the video here.
 Make sure you can do it, and then you
-can restart the video when you want to check your answer.
-And coming up in five, four, three--
+can restart the video when you want to check your answer:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-047.png}}
+  \end{center}
+\end{figure}
+
+And coming up in five, four, three ---
 OK, so we have a product rule for 3 functions.
 We have an example that I asked you to determine,
 and gave you a moment to do it.
 So now I will actually work out the example over here
 to the right.
-So I will determine f prime of x.
+So I will determine $f'(x)$.
 Now what are our three functions?
-Well, we have x squared is the first, sin x is the second, cos
-x is the third.
+Well, we have $x^2$ is the first, $\sin{x}$ is the second, $\cos{x}$
+is the third.
 So we'll have three terms.
-The first term has to have the derivative of the x squared.
-That's going to give me a 2x, and I leave the other two terms
-alone.
-So I have 2x sin x cos x, plus I may
-want to just write these below.
-Now in the next term, I should take the derivative of the sin
-x, and leave the x squared and the cos x alone.
-Derivative of sin x is cos x.
+The first term has to have the derivative of the $x^2$.
+That's going to give me a $2x$, and I leave the other two terms
+alone. So I have $2x \sin{x} \cos{x}$, plus I may
+want to just write these below:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-048.png}}
+  \end{center}
+\end{figure}
+
+Now in the next term, I should take the derivative of the $\sin{x}$,
+and leave the $x^2$ and the $\cos{x}$ alone.
+Derivative of $\sin{x}$ is $\cos{x}$.
 So I'm actually going to write this underneath.
-So we'll have-- going to put the plus underneath also
+So we'll have --- going to put the plus underneath also
 so we remember it's a sum.
-Plus-- so the derivative of sin x is cos x,
-and then we have a times x squared, times--
-oops, another cos x of what--
-the third function.
+Plus --- so the derivative of $\sin{x}$ is $\cos{x}$,
+and then we have a times $x^2 \times \cos{x}$ of what ---
+the third function:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-049.png}}
+  \end{center}
+\end{figure}
+
 And then the third term, I take the derivative
 of the third function, and I leave the first and second
 alone.
-The derivative of cos x is negative sin x.
-So I actually have a negative sin x times x
-squared times the sin x here.
+The derivative of $\cos{x}$ is $-\sin{x}$.
+So I actually have a $-\sin{x} \times x^2 \times \sin{x}$ here:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-050.png}}
+  \end{center}
+\end{figure}
+
 I can do some simplifying if I want.
 But maybe if I were trying to write this nicely
 for someone who is reading mathematics,
 I would put all of the polynomials in front,
 and all of the coefficients in front.
-So to be very kind to someone, I might write it like this.
-And notice, cos x cos x is cos squared x.
-And then minus x squared sin squared x.
+So to be very kind to someone, I might write it like this:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m2-051.png}}
+  \end{center}
+\end{figure}
+
 And there are other ways I could rewrite this,
 and using trig identities.
 But this is a sufficient answer at this point.
 So this is actually a good way to write
-the derivative of that function f of x.
+the derivative of that function $f(x)$.
 And this is where we'll stop.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Summary}
+\label{u2-product-rule-summary}
+
+\paragraph{The produc rule}
+If $h(x) = f(x)g(x)$, then
+
+\begin{equation*}
+  h'(x) = f(x)g'(x) + g(x)f'(x)
+\end{equation*}
+
+at all points where the derivatives $f'(x)$ and $g'(x)$ are defined.
 
 
-    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Quotient rule}
+\label{u2-quotient-rule}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Motivation}
+\label{u2-quotient-rule-motivation}
 
+Video: \href{https://www.youtube.com/watch?v=n70KPd7LjUU}{The Quotient Rule}
 
+At this point, we know how to take
+derivatives of a lot of functions --- $x^4$,
+$\sin{x}$.
+We can take derivative of sums --- $x^4 + \sin{x}$.
+We can even take derivative of product --- $x^4 \sin{x}$.
 
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-001.png}}
+  \end{center}
+\end{figure}
 
+But so far, we cannot take the derivative of $\displaystyle \tan{x} = \frac{\sin{x}}{\cos{x}}$:
 
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-002.png}}
+  \end{center}
+\end{figure}
 
+So \emph{let's figure out how to differentiate quotients}!
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{The quotient rule}
+\label{u2-quotient-rule-objs}
 
+\paragraph{What functions can we differentiate so far?}
+\begin{itemize}[noitemsep]
+\item powers of $x$
+\item polynomials
+\item sine and cosine
+\item products of basic functions
+\end{itemize}
 
+\paragraph{Objectives}
+At the end of this sequence, and after some practice, you should be able to:
+\begin{itemize}[noitemsep]
+\item Differentiate \textbf{quotients of functions}
+\item Find derivatives of \textbf{all trigonometric functions}, including secant and tangent
+\item Derive the power rule for negative integer powers
+\end{itemize}
 
+Contents: 11 pages, 5 videos (12 minutes 1x speed), 13 questions
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Setting the stage}
+\label{u2-quotient-rule-stage}
 
+\begin{exercise}
+  \textbf{Setting the stage}\\%
+  a) Let $f(t)$ ang $g(t)$ be functions, and let $h(t) = f(t)g(t)$. Is $h'(t) = f'(t)g'(t)$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Yes
+  \item[$\bigcirc$] No
+  \end{itemize}
 
+  b) Let $f(t)$ ang $g(t)$ be functions, and let $h(t) = f(t)/g(t)$. Do you expect
+  thar $h'(t) = f'(t)/g'(t)$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Yes
+  \item[$\bigcirc$] No
+  \end{itemize}
+\end{exercise}
 
+\begin{exercise}
+  \textbf{Units}\\%
+  Say $t$ is measured in seconds, $f(t)$ in volts, and $g(t)$ in meters.
 
+  a) What are
+  the units of $h(t)=\frac{f(t)}{g(t)}$?
+
+  b) What are the units of $dh/dt$?
+
+  c) What are the units of $\displaystyle \frac{df/dt}{dg/dt}$?
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Intro to quotient rule}
+\label{u2-quotient-rule-intro}
+
+Video: \href{https://www.youtube.com/watch?v=OedPIjJfe-U}{Approach to finding the
+  quotient rule}
+
+So we're considering an example where
+we're letting the function $h(t)$
+be a quotient of two functions.
+So quotient $f(t) / g(t)$.
+And we're interested in finding the derivative $h'(t)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-003.png}}
+  \end{center}
+\end{figure}
+
+It's going to take a little while to figure out
+what this is, but we've already figured out what it can't be.
+We know that $h'(t) \ne f'(t)/g'(t)$,
+because the units do not agree:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-004.png}}
+  \end{center}
+\end{figure}
+
+So we're now going to outline the \emph{approach
+for finding the derivative of the quotient}, which
+is going to be the same approach that we used in the product
+rule, but this time, we're going to ask you to carry
+these steps out on your own.
+The approach is to use a linear approximation.
+So what I'm going to do is I'm going
+to say I know that $h'(t)$ is very close to being
+the same thing as $\Delta h / \Delta t$ when $\Delta t$ is small.
+So that's the first step.
+The second step is to go ahead and identify $\Delta h$ in terms
+of $f$, $\Delta f$, $g$, and $\Delta g$.
+And the third and final step is to take
+the limit of this expression that we
+get in terms of just $f$, $g$, and $t$ as $\Delta t$ approaches $0$.
+And this is going to give us a formula for the derivative
+of a quotient:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-005.png}}
+  \end{center}
+\end{figure}
+
+This procedure that we worked through with the product rule,
+and we've just outlined here is extremely general,
+and that's why \emph{we want you to work
+through these steps on your own} exactly because this
+is a valuable problem solving technique.
+In fact, we are going to use it repeatedly in this unit.
+And it's used all over science, mathematics, and engineering
+in both continuum modeling and discrete numerical modeling
+no matter how complicated the system.
+So why don't you get started.
+And we'll help out with some of the trickier algebraic
+manipulations. And we'll see you on the other side.
+
+\begin{exercise}
+  \textbf{Identify the change in h}\\%
+  Let $h(t) = f(t)/g(t)$. In terms of $f$, $g$, $\Delta f$ and $\Delta g$,
+  what is $\Delta h$?
+  \begin{itemize}
+  \item[$\bigcirc$] $\Delta f / \Delta g$
+  \item[$\bigcirc$] $\Delta f / g$
+  \item[$\bigcirc$] $\frac{f}{g} + \frac{\Delta f}{\Delta g}$
+  \item[$\bigcirc$] $\frac{f + \Delta f}{g}$
+  \item[$\bigcirc$] $\frac{f + \Delta f}{g + \Delta g}$
+  \item[$\bigcirc$] $\frac{f + \Delta f}{g + \Delta g} + \frac{f}{g}$
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Next steps}
+\label{u2-quotient-rule-next-steps}
+
+\begin{exercise}
+  \textbf{Identifying the Limit 1}\\%
+  We'll find a common denominator to simplify the expression you found into a single term:
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-006.png}}
+  \end{center}
+\end{figure}
+Of course we still need to divide by $\Delta t$ and then take a limit as
+$\Delta t$ goes to zero. Here's what we get when we divide by $\Delta t$:
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-007.png}}
+  \end{center}
+\end{figure}
+
+What is the $\displaystyle \lim_{\Delta t \to 0}{\frac{\Delta f \cdot g - f \cdot \Delta g}{\Delta t}}$?
+\begin{itemize}
+\item[$\bigcirc$] $g'f'$
+\item[$\bigcirc$] $g' - f'$
+\item[$\bigcirc$] $f' - g'$
+\item[$\bigcirc$] $fg - f'g'$
+\item[$\bigcirc$] $gf' - f'g$
+\item[$\bigcirc$] $fg' - gf'$
+\item[$\bigcirc$] 0
+\item[$\bigcirc$] None of the above
+\end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Identifying the Limit 2}\\%
+  What is the $\displaystyle \lim_{\Delta t \to 0}{g^2 + g \cdot \Delta g}$?
+\begin{itemize}
+\item[$\bigcirc$] $g$
+\item[$\bigcirc$] $g'$
+\item[$\bigcirc$] $g^2$
+\item[$\bigcirc$] $2g^2$
+\item[$\bigcirc$] $g \cdot g'$
+\item[$\bigcirc$] $g^2 + g'$
+\item[$\bigcirc$] $g^2 + g \cdot g'$
+\item[$\bigcirc$] $0$
+\item[$\bigcirc$] None of the above
+\end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Identifying the quotient rule}\\%
+  What is the quotient rule?
+
+  $\displaystyle \frac{d}{dt} \frac{f(t)}{g(t)} =$
+\end{exercise}
+
+Video: \href{https://www.youtube.com/watch?v=3qBxKpSApAU}{The Quotient Rule and Worked Example}
+
+Putting all the algebra together that you've just worked out,
+you took the $\displaystyle \lim_){\Delta t \to 0}{\frac{\Delta h}{\Delta t}}$
+and what we found was that if $h(t) = f(t)/g(t)$, then the derivative
+$h'(t)$ is given by this formula:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-008.png}}
+  \end{center}
+\end{figure}
+
+So it's the derivative of the top
+times the bottom minus the top times the derivative
+of the bottom all over the bottom function squared.
+And this formula is going to hold wherever
+$f'(t)$ and $g'(t)$ both exist and the denominator $g(t) \ne 0$.
+Remember this is only valid if everything in this formula
+make sense and this formula is exactly what we're
+going to call the quotient rule for derivatives.
+
+Let's go ahead and use this in an example,
+and one of my favorite examples is the tangent function:
+$\tan x = \frac{\sin x}{\cos x}$.
+The derivative with respect to $x$ of the tangent function
+is going to be equal to the derivative of the top function,
+so the derivative of sine is cosine
+times the bottom function, which is cosine again
+minus the top function sine of $x$ times the derivative
+of the bottom function and the derivative of cosine
+is negative sine --- don't forget that negative --- and all
+over the denominator squared, so cosine squared on the bottom:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-009.png}}
+  \end{center}
+\end{figure}
+
+This numerator is cosine squared plus sine squared, which
+is equal to 1, so we can simplify this to 1
+over cosine squared:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-010.png}}
+  \end{center}
+\end{figure}
+
+and I hope you remember this
+if not you should probably review
+your trig functions a little bit, but another name for this
+would be the secant squared of $x$ because the secant is defined
+as 1 over cosine:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-011.png}}
+  \end{center}
+\end{figure}
+
+This is pretty exciting and there are a whole lot
+more examples of quotient functions
+that now you can solve, so I want
+you to go ahead and get some practice and then we'll be back
+and we'll work through some more examples together.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{The quotient rule}
+\label{u2-quotient-rule-ex}
+
+If $\displaystyle h(x) = \frac{f(x)}{g(x)}$ for all $x$, then
+\begin{equation*}
+  h'(x) = \frac{f'(x)g(x) - g'(x)f(x)}{g(x)^2}
+\end{equation*}
+
+at all points where $f$ and $g$ are differentiable and $g(x) \ne 0$.
+
+\begin{exercise}
+  \textbf{Quotient rule practice}\\%
+  Let $\displaystyle f(x) = \frac{2 + \cos x}{x^2 + 1}$. Calculate $f'(x)$.
+  (Do not try to simplify! Answer is messy.)
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Making sense of the quotient rule}
+\label{u2-quotient-rule-making-sense}
+
+The numerator of the quotient rule looks like the product rule, except one of
+the terms is subtracted from the other. This makes it important to remember which
+term comes first! The next few questions will help you develop an intuition about
+which term is subtracted and why.
+
+\begin{exercise}
+  \textbf{Changing the numerator}\\%
+  Assume that both $f(x)$ and $g(x)$ are positive.
+
+  a) If $f(x)$ is increasing, holding $g$ fixed, would that increase the quotient
+  $h(x) = f(x)/g(x)$ or decrease it?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Increase
+  \item[$\bigcirc$] Decrease
+  \item[$\bigcirc$] Neither
+  \end{itemize}
+
+  b) Based on your answer, and still holding $g$ fixed, should the sign of
+  $f'(x)'$ be the same as the sign of $h'(x)$, or opposite?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Same sign
+  \item[$\bigcirc$] Opposite sign
+  \item[$\bigcirc$] Neither
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Changing the denominator}\\%
+  Assume that both $f(x)$ and $g(x)$ are positive.
+
+  a) If $g(x)$ is increasing, holding $f$ fixed, would that increase the quotient
+  $h(x) = f(x)/g(x)$ or decrease it?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Increase
+  \item[$\bigcirc$] Decrease
+  \item[$\bigcirc$] Neither
+  \end{itemize}
+
+  b) Based on your answer, and still holding $f$ fixed, should the sign of
+  $g'(x)'$ be the same as the sign of $h'(x)$, or opposite?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Same sign
+  \item[$\bigcirc$] Opposite sign
+  \item[$\bigcirc$] Neither
+  \end{itemize}
+\end{exercise}
+
+\paragraph{Remembering the quotient rule} You may want to find a mnemonic for
+remembering the quotient rule. One way to remember it is to put the following
+rhyme to song:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-012.png}}
+  \end{center}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Power rule revisited}
+\label{u2-quotient-rule-power-revisited}
+
+\begin{exercise}
+  \textbf{Concept check}\\%
+  If $f(x)$ is non-zero and differentiable, then the derivative of the function
+  $1/f(x)$ is $1/f'(x)$.
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] True
+  \item[$\bigcirc$] False
+  \end{itemize}
+\end{exercise}
+
+Video: \href{https://www.youtube.com/watch?v=39Of1mh59iw}{Proof of the power rule for negative integer powers}
+
+I'm going to give a proof of the power rule
+for negative integer powers using the quotient rule.
+So to do this, I'm going to take the derivative of $h(x) =  x^{-n}$,
+where $n$ is a positive integer.
+Because I want to use the quotient rule,
+I'm going to rewrite this as a fraction,
+so this is equal to $1/x^n$ and this is of the form
+$f(x)/g(x)$ where I'm letting $f(x) = 1$
+and $g(x) = x^n$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-013.png}}
+  \end{center}
+\end{figure}
+
+Because I want to give a proof, I
+can \emph{only use facts that I've already proven}
+and so that means that I can only
+use the power rule on a function $x^n$ for $n$, a positive integer,
+and that's exactly what I have here with $g$.
+So let's go ahead and find the derivative of $h$.
+The quotient rule tells us that $\displaystyle h'(x) = \frac{f'(x) \cdot g(x) - g'(x) \cdot f(x)}{g(x)^2}$,
+which is equal to $f'$, which
+is $0$ the derivative of 1, times $g$, which is $x^n$,
+minus the derivative of $g$ and this
+is where we're invoking the power
+rule for positive integers.
+This is $n$ times $x^{n-1}$ times
+$f$, which is 1, all over $x^n$ quantity
+squared, which is $x^{2n}$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-014.png}}
+  \end{center}
+\end{figure}
+
+Simplifying this, I get that this
+is equal to $-n \cdot x^{n - 1 - 2n}$ and $n - 2n = -n$,
+so this is equal to $-n \cdot x^{-n - 1}$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-015.png}}
+  \end{center}
+\end{figure}
+
+So let's just go ahead and rewrite that.
+That means that we have just shown using the quotient rule
+that the derivative with respect to $x$ of $x^{-n}$
+is equal to $-n \cdot x^{-n -1}$
+and we've just said that this holds
+for $n$, a positive integer, because that makes
+this power a negative integer:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-016.png}}
+  \end{center}
+\end{figure}
+
+But let's go ahead and compare this
+to the formula we had for the power
+rule for positive integers.
+This said that the derivative with respect to $x$ of $x^n$
+is equal to $n \cdot x^{n-1}$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-017.png}}
+  \end{center}
+\end{figure}
+
+This formula is exactly equal to the formula we just found if we
+let $n$ be a negative integer.
+That means that this formula holds for $n$ a positive integer
+and a negative integer and in fact
+it even holds when $n = 0$, because $x^0 = 1$
+and we know that the derivative of a constant is going to be $0$.
+So we've now proven that this formula holds for $n$ equal to 0
+plus or minus $1$, plus or minus $2$ for $n$, any integer.
+We aren't done.
+As we develop more rules and more techniques
+for finding derivatives, we'll be
+able to prove the power rule in more and more general forms
+until we can actually give you the proof of the power rule
+where $n$ is any real number.
+
+\begin{exercise}
+  \textbf{Quotient rule practice 2}\\%
+  Recall that $\sec{x} = 1/\cos{x}$. Find the derivative of $\sec{x}$.
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Practice the quotient rule}
+\label{u2-quotient-rule-practice}
+
+Video: \href{https://www.youtube.com/watch?v=wq3jF3COTQU}{Recitation video: derivative of $tan(x)$}
+
+Welcome back to recitation.
+In this segment, I'm going to actually show ---
+well, you're actually going to show the derivative of tangent
+$x$ and quotient rule.
+So what I'd like you to do ---
+I wanted to remind you of what the quotient is.
+So $u$ and $v$ are functions of $x$.
+We want to take the derivative of $u$ divided
+by $v$. I've written the formula that you
+were given in class for this.
+And I'm asking for you to take $d/dx$ of tangent $x$
+using the quotient rule.
+And the hint I will give you is the reason we can obviously
+use the quotient rule is because tangent $x$ is
+equal to a quotient of two functions of $x$.
+It's sine $x$ divided by cosine of $x$.
+So I'm going to give you a minute
+to work this out for yourself:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-018.png}}
+  \end{center}
+\end{figure}
+
+OK, so we want to find the derivative of tangent $x$.
+So let me let me work on the side of the board.
+So I'm actually going to take $d/dx$ of sine $x$ divided
+by cosine of $x$.
+So in this case, sine $x$ is $u$.
+Cosine $x$ as $v$.
+So using my quotient rule, I know
+that first I have to take the derivative of sine $x$.
+That's cosine $x$, and then I multiply it
+by the denominator, the $v$, which is cosine $x$.
+So my first term in the numerator is cosine squared $x$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-019.png}}
+  \end{center}
+\end{figure}
+
+Again, one cosine $x$ comes from the derivative of sine $x$;
+one cosine $x$ is the $v$. It's the cosine $x$ in the denominator.
+
+Then I have to subtract $v$ prime $u$.
+The derivative of cosine $x$ is negative sine $x$.
+I'll actually just write that one down.
+And then I bring the $u$ along for the ride.
+So I multiply by sine $x$ here.
+And then I take $v$ squared and the denominator
+from the formula. $v$ again is cosine $x$.
+So I take cosine squared $x$ in the denominator:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-020.png}}
+  \end{center}
+\end{figure}
+
+Now this, at this point, is a little bit messy,
+but the nice thing is that we can
+use some \emph{trigonometric identities} to simplify this.
+So let me first write out what it is a little more clearly.
+Minus a negative gives you a positive.
+And then here I get sine $x$ times sine $x$.
+So I get sine squared $x$, and then I
+keep dividing by cosine squared $x$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-021.png}}
+  \end{center}
+\end{figure}
+
+Now at this point some of you might
+have divided by cosine squared $x$ here
+and gotten 1 and divided by cosine squared $x$ here
+and gotten tangent squared $x$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-022.png}}
+  \end{center}
+\end{figure}
+
+And then from there, you could simplify
+to another trigonometric function.
+I'm going to go a different way to show you
+what that actually also equals.
+So at this point, I want to stress
+there are sort of two ways you can get to the same place.
+But I'm going to use the fact that the numerator is
+a very nice trigonometric identity that we know.
+We know cosine squared $x$ plus sine squared $x$ always equals 1.
+So this is quite lovely the numerator simplifies to 1.
+The denominator stays cosine squared $x$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-023.png}}
+  \end{center}
+\end{figure}
+
+What is this function?
+1 over cosine $x$ is actually secant $x$.
+So if you need at this point to rewrite the whole thing
+like this, 1 squared is 1.
+And in the denominator, we still get cosine squared $x$.
+This tells you that 1 over cosine
+squared $x$ is actually just equal to secant squared $x$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-024.png}}
+  \end{center}
+\end{figure}
+
+So again, what I want to point out
+is we've now taken the derivative of tangent $x$
+and we got that secant squared $x$.
+Now using this quotient rule, you
+can do the same kind of thing with cotangent $x$,
+with cosecant $x$, with secant $x$.
+You can find all these derivatives
+of these trigonometric functions using the quotient rule.
+So if you want to know what the derivative of secant $x$ is,
+you should take $d/dx$ of 1 divided by cosine $x$
+and use the quotient rule, or in fact the chain rule
+would work well there also to find that derivative.
+So we are building up the number of derivatives
+we can find using these different rules.
+So we'll stop there.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Derivatives of all trigonometric functions}
+\label{u2-quotient-rule-derivatives-trig-functions}
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-025.png}}
+  \end{center}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Fundamentals}
+\label{u2-quotient-rule-fundamentals}
+
+\begin{exercise}
+  \textbf{What rule should we use?}\\%
+  What is the most convenient rule to use:
+
+  a) to differentiate $5/x^4$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Power rule
+  \item[$\bigcirc$] Quotient rule
+  \end{itemize}
+
+  b) to differentiate $\frac{x^2}{x^3 + 1}$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Power rule
+  \item[$\bigcirc$] Quotient rule
+  \end{itemize}
+
+  c) to differentiate $\frac{x + \sqrt{x}}{\cos{(1)}}$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Power rule
+  \item[$\bigcirc$] Quotient rule
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{One more function}\\%
+  Can we use the quotient rule to differentiate $\sin{(1/x)}$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] Yes
+  \item[$\bigcirc$] No
+  \end{itemize}
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Summary}
+\label{u2-quotient-rule-summary}
+
+\textbf{The quotient rule:}
+If $\displaystyle h(x) = \frac{f(x)}{g(x)}$ for all $x$, then
+\begin{equation*}
+  h'(x) = \frac{f'(x)g(x) - g'(x)f(x)}{g(x)^2}
+\end{equation*}
+at all points where $f$ and $g$ are differentiable and $g(x) \ne 0$.
+
+\textbf{Derivatives of all trigonometric functions:}
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m3-025.png}}
+  \end{center}
+\end{figure}
 
 
 

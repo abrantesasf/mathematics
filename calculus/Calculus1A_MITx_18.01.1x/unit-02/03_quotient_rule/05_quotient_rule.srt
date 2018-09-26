@@ -1,0 +1,38 @@
+
+Putting all the algebra together that you've just worked out,
+you took the limit of delta h over delta t
+as delta t went to 0 and what we found was that if h of t
+is equal to f of t over g of t, then the derivative h prime
+of t is given by this formula.
+So it's the derivative of the top
+times the bottom minus the top times the derivative
+of the bottom all over the bottom function squared.
+And this formula is going to hold wherever
+f prime and g prime both exist and the denominator g of t
+is not 0.
+Remember this is only valid if everything in this formula
+make sense and this formula is exactly what we're
+going to call the quotient rule for derivatives.
+Let's go ahead and use this in an example,
+and one of my favorite examples is the tangent function.
+Tangent of x is equal to sine x over cosine x.
+The derivative with respect to x of the tangent function
+is going to be equal to the derivative of the top function,
+so the derivative of sine is cosine
+times the bottom function, which is cosine again
+minus the top function sine of x times the derivative
+of the bottom function and the derivative of cosine
+is negative sine-- don't forget that negative-- and all
+over the denominator squared, so cosine squared on the bottom.
+This numerator is cosine squared plus sine squared, which
+is equal to 1, so we can simplify this to 1
+over cosine squared and I hope you remember this
+if not you should probably review
+your trig functions a little bit, but another name for this
+would be the secant squared of x because the secant is defined
+as 1 over cosine.
+This is pretty exciting and there are a whole lot
+more examples of quotient functions
+that now you can solve, so I want
+you to go ahead and get some practice and then we'll be back
+and we'll work through some more examples together.
