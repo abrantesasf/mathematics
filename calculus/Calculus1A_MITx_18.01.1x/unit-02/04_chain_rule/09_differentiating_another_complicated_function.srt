@@ -1,0 +1,62 @@
+
+In our previous video, we talked about this function f.
+And then in the problems, we gave you this function g.
+And they look very similar.
+But the ways in which you differentiate them
+are different.
+So for f, if you remember, we made this flowchart,
+and we determined that the last thing
+you would do when calculating the function is multiply.
+So we started differentiating f using the product rule.
+Now we're not going to make a flowchart for g.
+That's a little bit too much work.
+And we don't normally do that.
+But we can still think about what
+it would take to calculate g.
+So you could take the tangent of your x.
+And then you'd multiply by x.
+And then the last thing that you do
+is apply the square root function
+or compose with the square root function.
+And so that tells us that we can write g of x as u to the 1/2,
+where u is just what's inside the square root.
+It's x tangent x.
+And so we're going to be using the chain rule to start off.
+
+So our g prime is going to be what we need to differentiate
+this 1/2 power on the u.
+So using the power rule that's just 1/2 u to the minus 1/2.
+But then we also need the derivative of u tagging along.
+That's our chain rule second factor.
+So putting everything back in terms of x, this
+is 1/2 times the quantity x tangent x to the minus 1/2.
+And then we need the derivative of x tangent x.
+And for that, well, that we need the product rule
+to differentiate.
+So we're going to get our 1/2 times
+x tangent x to the minus 1/2 times--
+and then for the derivative of this,
+we need the first function that's
+x-- times the derivative of the second function.
+So the derivative of tangent is secant
+squared x plus the second function times the derivative
+of the first function.
+The first function is x, so it's derivative is 1.
+And there we go.
+We're done.
+That's our derivative of g.
+Now down the road you might encounter
+some functions that are even more complicated than these.
+But the thing to realize is that there's always
+going to be a last step in computing any function.
+And so either that last step will be arithmetic,
+like taking a product or a quotient-- in which case,
+you have a rule to work with that--
+or you'll just be composing with some basic function.
+And in that case, you have the chain rule.
+So no matter what, you can always figure out how to get
+started.
+It's sort of like peeling an onion.
+You just go one layer at a time.
+So there's never any reason to be intimidated by a function.
+So just get out there and take some derivatives.

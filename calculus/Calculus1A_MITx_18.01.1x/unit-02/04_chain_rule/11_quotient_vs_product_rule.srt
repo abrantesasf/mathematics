@@ -1,0 +1,57 @@
+
+So here's our function, and we want to take its derivative.
+Now, you could use the quotient rule, of course.
+There's nothing wrong with that, but there
+are some people who can't remember or don't want
+to remember the quotient rule.
+And the good news for such people
+is that they don't have to.
+You can always differentiate a quotient using the chain rule
+instead.
+So the way that that works is by thinking
+of this using the reciprocal function, which I'll call r.
+So r of t is just 1 over t or t to the minus 1.
+And then our h becomes not r of x, but r of u,
+where u is this expression, x squared plus x.
+Now, to take the derivative, we need the chain rule.
+So we take the derivative of the outer function r applied
+to u times the derivative of u.
+And the derivative of r is just using the power rule minus 1
+over t squared.
+And so when we apply that to u that's minus 1 over u squared.
+And then we need the derivative of u, so that's 2x plus 1.
+And putting everything in terms of x, we get minus 1
+over quantity x squared plus x squared times 2x plus 1.
+So that's it.
+No quotient rule needed.
+Now, if you want to avoid the quotient rule in general,
+you're going to need not just the chain rule,
+but also the product rule.
+So let's erase this, and let's suppose that h of x
+is the quotient f of x over g of x.
+But if we don't want to use the quotient rule,
+then we should rewrite this as f of x
+times the reciprocal of g of x.
+And now we can see that we can start differentiating
+this using the product rule.
+So we want the first function, so that's
+f of x times the derivative of the second function.
+So that's r of g of x prime plus the second function
+times the derivative of the first function.
+So we get f of x times, and then for this derivative
+we need the chain rule here, so we
+need the derivative of r applied to the inner function g of x.
+So that's minus 1 over g of x squared times the derivative
+of the inner function.
+
+And then over here, I'm going to rewrite r of g of x as 1
+over g of x times f prime of x.
+And so now if we put everything over the common denominator,
+which is g of x squared then on top we're going to get minus f
+of x times g prime of x.
+And then the term on the right is now
+f prime of x times g of x.
+And this is exactly the quotient rule.
+So if you ever forget it, now you
+know how to work without it.
+Sound good?

@@ -1,0 +1,96 @@
+
+Let's walk through what you just thought about.
+And we're going to add in some pictures
+to hopefully give you a better sense of what it all means.
+
+Okay.
+So we know that h of x is f of g of x,
+and we're interested in h prime of 2.
+And we were told that g of 2 equals 9.
+So I'm going to draw some number lines here.
+g is taking 2 to 9.
+And we know that the 2 was measured in seconds
+and the 9 was in meters.
+And then, we had f of 9 was five kilograms.
+So we have an arrow here for f sending 9 to 5.
+Now, h is the composition of these two things,
+so h is starting at the top with two seconds and h of 2
+is five kilograms.
+So that was the picture before we started
+changing some of these numbers.
+But then, we got derivative involved.
+So we know about g prime and f prime, so there they are.
+We have g prime of 2 and f prime of 9,
+which are the derivatives at the relevant points.
+And we used them to think about what happens when our input up
+at the top changes.
+So we had x changing from 2 to 2.01.
+So that's a delta x of 0.01, and we
+want to know what happens when we apply g and then
+f to this new x.
+Well, this is exactly the sort of thing
+that derivatives are meant to deal with.
+So through linear approximation, we
+know that if we take our delta x of 0.01 seconds
+and we multiply it by the derivative of g at 2,
+which is three meters per second,
+we'll be getting 0.03 meters, which will be approximately
+the change in g of x.
+Now, of course, we can do the same thing for f.
+So our 0.03 meters is the change in f's input.
+And f prime at this point is four kilograms per meter,
+so linear approximation for the change in the output
+would be 0.03 meters times four kilograms per meter,
+which is 0.12 kilograms.
+And so that's what we estimate to be delta f.
+But that's also delta h.
+So as h's input changed by this 0.01 seconds,
+its output changed by this 0.12 kilograms.
+So we have a delta h and we have a delta x,
+and that means that we can get a handle on the derivative of h.
+h prime of 2 is going to be roughly this delta h divided
+by this delta x, which is 0.12 kilograms
+divided by 0.01 seconds, or 12 kilograms per second.
+
+Let's take a step back and think about where
+this 12 number came from.
+So it came from this 3 up here and this 4 right here.
+So we multiplied delta x by 3 to get delta g.
+We multiplied that by 4 to get delta h.
+So our h prime of 2 is really our f prime
+of 9 times g prime of 2.
+And notice that the units work out perfectly.
+f prime is kilograms per meter.
+g prime is meters per second.
+Multiply those, and you're getting kilograms per second
+for our derivative of h.
+
+So this is really our complete answer.
+The derivative of this composition
+is equal to the product of the derivatives
+of the functions that are the parts of the composition.
+So h prime of 2 is f prime of 9 times g prime of 2.
+Now, you could ask why it's f prime of 9, not f prime of 2.
+But if you go back to our diagram,
+you can see that the relevant input for f is this 9 meters.
+That's what g is feeding into f.
+So that's where we should be applying f prime, as well.
+What we've just done here is a particular instance
+of what we call the chain rule, and the reason
+it's called the chain rule is the following.
+We've got our function h that we've been discussing,
+and it's the composition of these functions g and f.
+So you can think of this as f and g forming two links
+in this chain of functions.
+And what we discovered is that when
+you take the derivative of h, then you just take
+the derivatives of the two links and you
+multiply those together.
+And that gives you the derivative
+of the overall composition.
+So what you can think about next is
+what happens if h is not the composition of two functions,
+but perhaps the composition of three functions,
+so something like this where we have h equaling j of f of g.
+And once you've done that, we'll come back
+and talk about the chain rule in general.

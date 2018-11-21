@@ -1,0 +1,99 @@
+
+Let's say we have a function like this.
+If we want to do stuff with this function,
+like take its derivative, where would we even begin?
+There's a lot of ingredients to this function.
+So there's a square root, there's a trig function.
+You're multiplying them.
+There's an x squared in there somewhere.
+It's pretty complicated.
+How should we organize our thoughts about this function?
+Something that I find helpful is to just think
+about what you would do in order to compute f.
+And so notice, I'm not talking about computing f prime right
+now.
+I'm just talking about computing the function itself.
+So if you have a specific value for x
+and you want to calculate f of x, what steps would you take?
+So you might start by calculating the square root.
+And I'll write that as x to the 1/2
+since we're going to use the power rule on it down the road.
+What else would you do?
+You might calculate x squared.
+That's something that we're going to need.
+That's another power.
+And then you're going to have to take
+the tangent of the x squared.
+So that's composing with the tangent function.
+We're taking tangent of the result of x squared.
+And so once we have these two parts,
+we can just put them together, and we'll
+get x to the 1/2 times tangent of x squared.
+And that's our final function f of x.
+So this last step, we're just multiplying these two things
+together.
+
+So that's our flow chart for how we would calculate f of x.
+How does that help us?
+Well, notice the last thing that we ever
+do in computing f is we multiply these two parts.
+So that's going to tell was that we
+can write f of x as a product g of x times h of x, where g of x
+is this x to the 1/2, and h of x is this tangent of x squared
+over here.
+So now if we want to differentiate f,
+we know how to start because we have
+f written as the product of two simpler functions.
+So we can use the product rule.
+f prime is just going to be the first function
+times the derivative of the second
+plus the second function times the derivative of the first.
+Now, we're still going to have some work
+to do to calculate h prime and g prime.
+And it might not be straightforward to do that.
+But the point is that h and g are simpler functions than f.
+And so by analyzing f and realizing that, hey,
+it takes this product form, that allows
+us to reduce the problem to the simpler functions
+h and g that come together in this way using the product
+rule.
+So let's keep going.
+We have g of x being x to the 1/2.
+And then h prime, that means we have
+to take the derivative of tangent of x squared.
+Next up is h of x, and that's tangent of x squared, times
+the derivative of g.
+So that's x to the 1/2 prime.
+So here we've got x to the 1/2 times--
+and then we need the derivative of this tangent of x squared.
+Now if it was tangent of x, we'd know
+exactly what to do because that's
+one of our basic functions.
+But instead, it's tangent of x squared.
+So we can substitute a u for the x squared.
+And we're using the chain rule here.
+So we need the derivative of the tangent function,
+and that's secant squared, applied to our u.
+And then we need the derivative of u tagging along.
+So that's 2x.
+And then for our next term we have the tangent of x squared.
+And then for the derivative of x to the 1/2,
+that is just the power rule.
+So we're going to get 1/2 times x to the 1/2 minus 1.
+And we're done with all of our derivatives.
+The rest is just algebra.
+So we're going to get 2-- and then putting
+all of the powers of x together, x to the 3/2 times
+the secant squared of x squared.
+And then for the next term, I'm going to put everything
+into a fraction.
+So we have tangent of x squared over 2 times x to the 1/2.
+
+And we're done, that as our derivative.
+So next up, we're going to differentiate a function that
+looks very similar to this one.
+But first we want you to think about how
+we ought to start it in basically the same way
+that we thought about this function.
+So take a moment and look at that
+and we'll come back very soon.

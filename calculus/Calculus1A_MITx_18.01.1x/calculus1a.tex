@@ -8356,6 +8356,750 @@ at all points where $f$ and $g$ are differentiable and $g(x) \ne 0$.
 \end{figure}
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Chain rule}
+\label{u2-chain-rule}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Motivation}
+\label{u2-chain-rule-motivation}
+
+Video: \href{https://www.youtube.com/watch?v=Xv1Uh4-ysc4}{The Chain Rule}
+
+Imagine that we want to send a probe close to the sun.
+Not only will we have to make sure it doesn't get too hot,
+but we'll also have to pay attention
+to the rate of change of temperature.
+If the probe heats or cools too quickly, it can crack.
+
+The temperature is a function of the distance from the sun,
+and the distance from the sun is a function of time.
+That means that, to find temperature
+as a function of time, we need to take the composition
+of these two functions:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-001.png}}
+  \end{center}
+\end{figure}
+
+To get the rate of change of the temperature,
+we'll want the \emph{derivative of this composition}:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-002.png}}
+  \end{center}
+\end{figure}
+
+\textbf{Differentiating the composition of functions
+requires the chain rule}, and that's
+what you'll learn about in this section.
+So let's get to work.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{The chain rule}
+\label{u2-chain-rule-objs}
+
+\paragraph{What functions can we differentiate so far?}
+\begin{itemize}[noitemsep]
+\item powers of $x$
+\item trigonometric functions
+\item sums of basic functions
+\item products of basic functions
+\item quotients of basic functions
+\end{itemize}
+
+\paragraph{Objectives} At the end of this sequence, and after some practice, you
+should be able to:
+\begin{itemize}[noitemsep]
+\item Differentiate \textbf{compositions of functions}
+\end{itemize}
+
+Contents: 13 pages, 9 videos (42 minutes 1x speed), 20 questions
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Changing Units}
+\label{u2-chain-rule-changing-units}
+
+We often want to adjust a function by changing the units on the function's inputs
+or outputs. For instance, we might want to measure time in minutes as opposed to
+seconds. In these next few problems, we'll see how that affects derivatives.
+
+\begin{exercise}
+  \textbf{Changing Units}\\%
+  Suppose that the variable $x$ measures the position of a bicycle along a road,
+  in meters, and that $t$ measures the amount of time since the start of the journey
+  in minutes and $u$ measures that same time in seconds. What is the relationship
+  between $u$ and $t$?
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Derivatives}\\%
+  The position $x$ is a function of time. We can write it as a function of either
+  $u$ or $t$, since both are time variables. To distinguish, let's say that
+  $x = f(u)$ and that $x = g(t)$.
+
+  a) Suppose that $f(u) = 2u + 100$. What is $\displaystyle \frac{dx}{du}$?
+
+  b) What units is $\displaystyle \frac{dx}{du}$ measured in?
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Scaling factor}\\%
+  Given our formula for $x$ in terms of $u$:
+
+  a) what is the formula for $x$ in terms of $t$?
+
+  b) What is $\displaystyle \frac{dx}{dt}$?
+
+  c) What units is $\displaystyle \frac{dx}{dt}$ measured in?
+\end{exercise}
+
+Video: \href{https://www.youtube.com/watch?v=d-tiVU6k-YA}{Changing Variables, Changing Units}
+
+So we've been thinking about these variables ---
+$x$ measured in meters, $u$ and $t$ being time variables measured
+in seconds and minutes respectively.
+And we had that $x$ was a function of $u$.
+Specifically, it was $2u + 100$.
+And so we have that the derivative is just $2$.
+Now, that's meters per second:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-003.png}}
+  \end{center}
+\end{figure}
+
+What if we really want $t$ as our time variable?
+Well, we discovered that $u$ can just be written as $60t$,
+and the $60$ represents $60$ seconds per minute.
+So it's a conversion factor just between minutes and seconds,
+and you can call that $\displaystyle \frac{du}{dt}$ if you want:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-004.png}}
+  \end{center}
+\end{figure}
+
+Now, if you plug in $60t$ for $u$, then we
+get $x$ written as a function of $t$.
+So it's $120t + 100$.
+And so this derivative is $120$, and that's
+in meters per minute:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-005.png}}
+  \end{center}
+\end{figure}
+
+Why are we doing this?
+So it seems pretty simple.
+What I want to point out is the following.
+So we have $x=g(t)=f(u)$. OK.
+So far, so good.
+But note $g'(t) = 120$ and $f'(u)=2$.
+So those aren't the same number.
+What's going on?
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-006.png}}
+  \end{center}
+\end{figure}
+
+Well, it's not so hard to explain using Leibniz notation.
+So $\displaystyle g' = \frac{dx}{dt}$, whereas
+$\displaystyle f' = \frac{dx}{du}$.
+And we know that $\displaystyle \frac{dx}{dt}$ and
+$\displaystyle \frac{dx}{du}$ aren't
+measuring the same things:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-007.png}}
+  \end{center}
+\end{figure}
+
+So we've switched our input variable from $t$ to $u$,
+and when you do that your derivatives have
+to adjust as well.
+Now, we've mentioned this before.
+This is one of the nice things about Leibniz notation
+is that it alerts us to things like this.
+But what we want to do today is \emph{identify exactly how we need
+to adjust our derivatives when we switch our input
+variable} from $t$ to $u$.
+
+So $\displaystyle \frac{dx}{dt} = 120$ m/min.
+$\displaystyle \frac{dx}{du} = 2$ m/s.
+And the relationship between them
+is exactly our conversion factor.
+We can just multiply $2$ meters per second
+by $60$ seconds per minute:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-008.png}}
+  \end{center}
+\end{figure}
+
+So we can write $\displaystyle \frac{dx}{dt} = \frac{dx}{du} \times \frac{du}{dt}$.
+We can think of $x$ depending on $t$ and get this derivative $\displaystyle \frac{dx}{dt}$,
+or we can think of $x$ as depending on $u$
+and get this derivative $\displaystyle \frac{dx}{du}$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-009.png}}
+  \end{center}
+\end{figure}
+
+And they differ by exactly this conversion factor,
+which is how fast $u$ changes with respect to $t$.
+Now, all of these here were linear functions.
+$x$ was a linear function of $u$.
+$u$ was a linear function of $t$.
+You might ask if this still works when our functions are
+not linear, when they're curvy.
+But one great thing about derivatives
+is that they allow us to do linear approximation.
+That is, near a point, we can approximate a curvy function
+using a linear function.
+And so this basic principle of conversion
+is actually going to hold much more generally,
+and we have some exercises to help
+you explore just how that works.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Another viewpoint}
+\label{u2-chain-rule-another-view}
+
+Let's see another way to think about this. Suppose we have a function which is a
+composition of two other functions, $h(x)=f(g(x))$, and we want to think about
+$h'(2)$. Suppose that
+
+\begin{itemize}[noitemsep]
+\item $g(2) = 9$ and
+\item $f(9) = 5$, so
+\item $h(2) = 5$.
+\end{itemize}
+
+Furthermore, we'll say that the 2 refers to 2 seconds, the 9 refers to 9 meters,
+and the 5 refers to 5 kilograms.
+
+\begin{exercise}
+  \textbf{Changing the input}\\%
+  Let's suppose that $g'(2) = 3$ meters per second. What is your best estimate for
+  $g(2.01)$?
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Changing the input 2}\\%
+  Let's suppose that $f'(9) = 4$ kilograms per meter. What is your best estimate for
+  $f(g(2.01))$?
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Putting it together}\\%
+  Note that you just estimated $f(g(2.01))$, which is the same as $h(2.01)$. We
+  know that $h(2) = 5$, so we know approximately how much $h$ has changed as our
+  input moved from $2$ to $2.01$. Given this, what do you think $h'(2)$ should be?
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Compositions and Chaining}
+\label{u2-chain-rule-compositions}
+
+Video: \href{https://www.youtube.com/watch?v=FL1swgyrsus}{Introducing
+  the Chain Rule}
+
+Let's walk through what you just thought about.
+And we're going to add in some pictures
+to hopefully give you a better sense of what it all means.
+
+Okay.
+So we know that $h(x) = f(g(x))$,
+and we're interested in $h'(2)$.
+And we were told that $g(2)=9$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-010.png}}
+  \end{center}
+\end{figure}
+
+So I'm going to draw some number lines here.
+$g$ is taking $2$ to $9$.
+And we know that the $2$ was measured in seconds
+and the $9$ was in meters.
+And then, we had $f(9)=5$ kilograms.
+So we have an arrow here for $f$ sending $9$ to $5$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-011.png}}
+  \end{center}
+\end{figure}
+
+Now, $h$ is the composition of these two things,
+so $h$ is starting at the top with two seconds and $h(2)=5$
+kilograms:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-012.png}}
+  \end{center}
+\end{figure}
+
+So that was the picture before we started
+changing some of these numbers.
+But then, we got derivative involved.
+So we know about $g$ prime and $f$ prime, so there they are.
+We have $g'(2)$ and $f'(9)$,
+which are the derivatives at the relevant points.
+And we used them to think about what happens when our input up
+at the top changes.
+So we had $x$ changing from $2$ to $2.01$.
+So that's a $\Delta x = 0.01$, and we
+want to know what happens when we apply $g$ and then
+$f$ to this new $x$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-013.png}}
+  \end{center}
+\end{figure}
+
+Well, this is exactly the sort of thing
+that derivatives are meant to deal with.
+So through linear approximation, we
+know that if we take our $\Delta x = 0.01$ seconds
+and we multiply it by the derivative $g'(2) = 3$ meters per second,
+we'll be getting $0.03$ meters, which will be approximately
+the change in $g(x)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-014.png}}
+  \end{center}
+\end{figure}
+
+Now, of course, we can do the same thing for $f$.
+So our $0.03$ meters is the change in $f$ input.
+And $f'$ at this point is four kilograms per meter,
+so linear approximation for the change in the output
+would be $0.03$ meters times four kilograms per meter,
+which is $0.12$ kilograms.
+And so that's what we estimate to be $\Delta f$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-015.png}}
+  \end{center}
+\end{figure}
+
+But that's also $\Delta h$!
+So as $h$ input changed by this $0.01$ seconds,
+its output changed by this $0.12$ kilograms:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-016.png}}
+  \end{center}
+\end{figure}
+
+So we have a $\Delta h$ and we have a $\Delta x$,
+and that means that we can get a handle on the derivative of $h$.
+$h'(2)$ is going to be roughly this $\Delta h$ divided
+by this $\Delta x$, which is $0.12$ kilograms
+divided by $0.01$ seconds, or $12$ kilograms per second:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-017.png}}
+  \end{center}
+\end{figure}
+
+Let's take a step back and think about where
+this $12$ number came from.
+So it came from this $3$ up here and this $4$ right here.
+So we multiplied $\Delta x$ by $3$ to get $\Delta g$.
+We multiplied that by $4$ to get $\Delta h$.
+So our $h'(2)$ is really our $f'(9) \times g'(2)$.
+And notice that the units work out perfectly.
+$f'$ is kilograms per meter.
+$g'$ is meters per second.
+Multiply those, and you're getting kilograms per second
+for our derivative of $h$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-018.png}}
+  \end{center}
+\end{figure}
+
+So this is really our complete answer.
+The derivative of this composition
+is equal to the product of the derivatives
+of the functions that are the parts of the composition.
+So $h'(2)=f'(9) \times g'(2)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-019.png}}
+  \end{center}
+\end{figure}
+
+Now, you could ask why it's $f'(9)$, not $f'(2)$.
+But if you go back to our diagram,
+you can see that the relevant input for $f$ is this $9$ meters.
+That's what $g$ is feeding into $f$.
+So that's where we should be applying $f$ prime, as well.
+
+What we've just done here is a particular instance
+of what we call the chain rule, and the reason
+it's called the chain rule is the following.
+We've got our function $h$ that we've been discussing,
+and it's the composition of these functions $g$ and $f$.
+So you can think of this as $f$ and $g$ forming two links
+in this chain of functions.
+
+And what we discovered is that when
+you take the derivative of $h$, then you just take
+the derivatives of the two links and you
+multiply those together.
+And that gives you the derivative
+of the overall composition.
+
+So what you can think about next is
+what happens if $h$ is not the composition of two functions,
+but perhaps the composition of three functions,
+so something like this where we have $h(x)= j(f(g(x)))$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-2/u2-m4-020.png}}
+  \end{center}
+\end{figure}
+
+And once you've done that, we'll come back
+and talk about the chain rule in general.
+
+\begin{exercise}
+  \textbf{Three link chain setup}\\%
+  Now suppose that $h(x)= j(f(g(x)))$, and we want to think about
+  $h'(2)$. Let's say that $g(2)=9$, $f(9)=5$, and $j(5)=7$. What value of
+  $j'$ is most relevant in determining $h'(2)$?
+  \begin{itemize}[noitemsep]
+  \item[$\bigcirc$] $j'(2)$
+  \item[$\bigcirc$] $j'(5)$
+  \item[$\bigcirc$] $j'(7)$
+  \item[$\bigcirc$] $j'(9)$
+  \end{itemize}
+\end{exercise}
+
+\begin{exercise}
+  \textbf{Three link chain}\\%
+  Take $h$, $j$, $f$ and $g$ from the previous question. Suppose that
+  $g'(2) = 3$ and $f'(9)=4$. If $j'(z)=2z$ for all values of $z$, what is
+  $h'(2)$?
+\end{exercise}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Deriving the Chain Rule}
+\label{u2-chain-rule-deriving-chain-rule}
+
+Video: \href{https://www.youtube.com/watch?v=kbYVRmQdX9E}{Deriving the Chain Rule}
+
+In this video, we're going to justify the chain rule
+a little bit more formally.
+But you'll see that the key idea is something that we
+discussed in the last video.
+And it's \emph{thinking about derivatives
+  as ratios of deltas}.
+
+So we have our function $h(x) = f(g(x))$.
+And as before, we'll draw this using some number lines.
+So $g$ is taking an input here and giving an output on this line.
+And $f$ takes that as its input.
+And it spits out an output on this bottom line.
+And so when we have that, then $h$ is this composition of the two.
+And I want to assign variables to these number lines.
+So the input we're calling x.
+The final output let's denote as y.
+And then the intermediate variable
+is traditionally called u.
+So u is really g of x.
+And we can write h of x as f of u, if we wish.
+Now, our goal is the derivative of h.
+So in Leibniz's notation, that's dy dx.
+And, by definition, this is delta y
+over delta x taken as a limit.
+It's as delta x goes to 0.
+So let me draw delta x here.
+We've got a change in x.
+And that causes a change in u down on this line.
+So we have a delta u.
+We've got then a change in y based on that, once we apply f.
+So we're looking for delta y over delta x.
+That's the ratio of this change to this one.
+But we know that we can write that
+as the product of the intermediate ratios,
+just like we did in the last video.
+So in other words, delta y over delta u times delta
+u over delta x.
+And we need to take the limits of both of them
+as delta x goes to 0.
+Now, this delta u over delta x as delta x goes
+to zero, that's just du dx.
+And for this part, what we know as delta x goes to 0,
+delta u is also going to go to 0.
+So we can replace this limit with delta u
+going to 0 instead of delta x.
+And now this term is exactly dy du.
+So that's pretty much it.
+We've got dy dx on the left equaling dy du times du dx.
+It's a very suggestive notation, isn't it?
+So it almost looks like the du's cancel.
+They don't.
+The du by itself isn't actually a thing.
+It's got to be part of this entire Leibniz notation.
+But this reminds us that this is true, essentially,
+because the delta u's do cancel.
+So one bit of business that we have to take care of,
+we need to say where these derivatives are being taken,
+where they're being located.
+So if this initial point up here is a,
+then dy dx is being taken at x equals a.
+And the same thing for du dx, also taken at x equals a.
+But the input variable for dy du is u.
+So where is u?
+Well, u is here.
+And that's g of a.
+So that's where we're going to be taking its derivative.
+If you want to use prime notation, dy dx is h prime.
+And that's at a.
+dy du is f prime.
+That's being taken at g of a.
+And, finally, du dx-- that's g prime at a.
+So this is our chain rule.
+It's fabulous.
+We're going to do plenty of examples.
+So stay tuned.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newpage
+\section{Unit 4: Applications (2018/xx/xx)}
+\label{u4}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Graphing and critical points: 1st and 2nd derivative tests}
+\label{u4-graphing-1st-2st}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Motivation}
+\label{u4-graphing-1st-2st-motiv}
+
+Video: \href{https://www.youtube.com/watch?v=XbbsSxWq9Ws}{Graphing and critical points}
+
+At this point you can recognize properties
+of a function's derivative and second derivative
+by looking at its graph:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-4/u4-m1-001.png}}
+  \end{center}
+\end{figure}
+
+In this section we are doing the reverse: using information about the function and
+its derivatives, we can sketch a graph that captures all the salient features:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-4/u4-m1-002.png}}
+  \end{center}
+\end{figure}
+
+This sketch might \emph{not be to scale}, but that is OK.
+We just want to \emph{get the general idea of the function}, thinking
+of it as a curve, without getting
+stuck on the actual values.
+Warning: your common sense is going to be the main ingredient.
+So don't forget your pre-calculus skills.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Objectives}
+\label{u4-graphing-1st-2st-obj}
+
+At the end of this sequence, and after some practice, you should be able to:
+
+\begin{itemize}[noitemsep]
+\item Determine the shape of a function's graph based on information from its derivatives;
+\item Classify critical points using the First and Second Derivative Tests. 
+\end{itemize}
+
+Contents: 17 pages; 8 videos (29 minutes 1x speed); 23 questions.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Preliminaries}
+\label{u4-graphing-1st-2st-pre}
+
+Video: \href{https://www.youtube.com/watch?v=7ZXsaWp5spE}{Graphing and the Derivative}
+
+In this sequence, we'll be developing ways
+to \emph{use the derivative of a function}, $f'(x)$,
+  to \emph{get information about the shape of the graph} of $f(x)$.
+
+For instance, we know that if $f'(x) > 0$
+(is positive) on interval $(a, b)$,
+then $f(x)$ is going to be increasing on that interval.
+And if $f'(x) < 0$ (is negative) between $(a, b)$,
+then $f(x)$ is decreasing on that interval.
+We've seen this before:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-4/u4-m1-003.png}}
+  \end{center}
+\end{figure}
+
+But let's use this to figure out some things about the graph.
+So for instance, maybe $\displaystyle f(x) =  1 + 4x - \frac{x^3}{3}$.
+And here, $f'(x) = 4 - x^2$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-4/u4-m1-004.png}}
+  \end{center}
+\end{figure}
+
+And we can tell when this is positive
+and when it's negative.
+The derivative is positive when $x^2 < 4$,
+And that happens when $-2 < x < 2$,
+so on the interval $(-2, 2)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-4/u4-m1-005.png}}
+  \end{center}
+\end{figure}
+
+And the derivative is negative when
+$x^2 > 4$.
+So that's on the intervals from $(-\infty, -2)$
+and from $(2, \infty)$:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.5]{imagens/unit-4/u4-m1-006.png}}
+  \end{center}
+\end{figure}
+
+So between $x = -2$ and $x = 2$,
+$f(x)$ is going to be increasing. So it's graph will look something like this:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.4]{imagens/unit-4/u4-m1-007.png}}
+  \end{center}
+\end{figure}
+
+Whereas, to the left of $-2$, the graph will be decreasing,
+and also to the right of $2$. So there we have it:
+
+\begin{figure}[H]
+  \begin{center}
+    %\caption{}
+    %\label{fig:}
+    \fbox{\includegraphics[scale=0.4]{imagens/unit-4/u4-m1-008.png}}
+  \end{center}
+\end{figure}
+
+Now, this doesn't tell us everything
+we might want to know about the graph.
+We don't know where it crosses the x-axis.
+We don't know how high this point is,
+or this point where the graph turns around, in other words.
+But those things we can get with algebra.
+The calculus does give us a good sense of the overall shape
+of the graph.
+And that's definitely useful.
+
+As we go forward, we're going to develop more and more language
+which we can use to describe various features of graphs.
+And for each of them, we'll see how calculus
+can be used to find them.
+Sound good?
+
 
 
 

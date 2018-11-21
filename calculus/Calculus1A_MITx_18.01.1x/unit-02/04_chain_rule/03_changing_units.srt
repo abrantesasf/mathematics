@@ -1,0 +1,68 @@
+
+So we've been thinking about these variables--
+x measured in meters, u and t being time variables measured
+in seconds and minutes respectively.
+And we had that x was a function of u.
+Specifically, it was 2u plus 100.
+And so we have that the derivative is just 2.
+Now, that's meters per second.
+What if we really want t as our time variable?
+Well, we discovered that u can just be written as 60 times t,
+and the 60 represents 60 seconds per minute.
+So it's a conversion factor just between minutes and seconds,
+and you can call that du dt if you want.
+Now, if you plug in 60t for u, then we
+get x written as a function of t.
+So it's 120t plus 100.
+And so this derivative is 120, and that's
+in meters per minute.
+
+Why are we doing this?
+So it seems pretty simple.
+What I want to point out is the following.
+So we have x equaling g of t, but it also equals f of u.
+OK.
+So far, so good.
+But note g prime of t, we said that that was 120,
+and f prime of u was 2.
+So those aren't the same number.
+What's going on?
+Well, it's not so hard to explain using Leibniz notation.
+So g prime is dx dt, whereas f prime is dx du.
+And we know that dx dt and dx du aren't
+measuring the same things.
+So we've switched our input variable from t to u,
+and when you do that your derivatives have
+to adjust as well.
+Now, we've mentioned this before.
+This is one of the nice things about Leibniz notation
+is that it alerts us to things like this.
+But what we want to do today is identify exactly how we need
+to adjust our derivatives when we switch our input
+variable from t to u.
+So dx dt, we said, was 120 meters per minute.
+dx du was 2 meters per second.
+And the relationship between them
+is exactly our conversion factor.
+We can just multiply 2 meters per second
+by 60 seconds per minute.
+So we can write dx dt as equal to dx du times the conversion
+factor, which is du dt.
+We can think of x depending on t and get this derivative dx dt,
+or we can think of x as depending on u
+and get this derivative dx du.
+And they differ by exactly this conversion factor,
+which is how fast u changes with respect to t.
+Now, all of these here were linear functions.
+x was a linear function of u.
+u was a linear function of t.
+You might ask if this still works when our functions are
+not linear, when they're curvy.
+But one great thing about derivatives
+is that they allow us to do linear approximation.
+That is, near a point, we can approximate a curvy function
+using a linear function.
+And so this basic principle of conversion
+is actually going to hold much more generally,
+and we have some exercises to help
+you explore just how that works.

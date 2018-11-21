@@ -1,0 +1,60 @@
+0
+00:00:00,000 --> 00:00:00,580
+
+
+1
+00:00:00,580 --> 00:00:03,440
+At this point you can recognize properties
+
+2
+00:00:03,440 --> 00:00:06,590
+of a function's derivative and second derivative
+
+3
+00:00:06,590 --> 00:00:09,120
+by looking at its graph.
+
+4
+00:00:09,120 --> 00:00:11,720
+In this section we are doing the reverse.
+
+5
+00:00:11,720 --> 00:00:15,450
+Using information about the function and its derivatives,
+
+6
+00:00:15,450 --> 00:00:17,840
+we can sketch a graph that captures
+
+7
+00:00:17,840 --> 00:00:20,880
+all the salient features.
+
+8
+00:00:20,880 --> 00:00:24,190
+This sketch might not be to scale, but that is OK.
+
+9
+00:00:24,190 --> 00:00:27,690
+We just want to get the general idea of the function, thinking
+
+10
+00:00:27,690 --> 00:00:29,580
+of it as a curve, without getting
+
+11
+00:00:29,580 --> 00:00:32,729
+stuck on the actual values.
+
+12
+00:00:32,729 --> 00:00:33,770
+Warning.
+
+13
+00:00:33,770 --> 00:00:37,270
+Your common sense is going to be the main ingredient.
+
+14
+00:00:37,270 --> 00:00:40,590
+So don't forget your pre-calculus skills.
+

@@ -1,0 +1,76 @@
+
+In this video, we're going to justify the chain rule
+a little bit more formally.
+But you'll see that the key idea is something that we
+discussed in the last video.
+And it's thinking about derivatives
+as ratios of deltas.
+So we have our function h as the composition f of g of x.
+And as before, we'll draw this using some number lines.
+So g is taking an input here and giving an output on this line.
+And f takes that as its input.
+And it spits out an output on this bottom line.
+And so when we have that, then h is this composition of the two.
+And I want to assign variables to these number lines.
+So the input we're calling x.
+The final output let's denote as y.
+And then the intermediate variable
+is traditionally called u.
+So u is really g of x.
+And we can write h of x as f of u, if we wish.
+Now, our goal is the derivative of h.
+So in Leibniz's notation, that's dy dx.
+And, by definition, this is delta y
+over delta x taken as a limit.
+It's as delta x goes to 0.
+So let me draw delta x here.
+We've got a change in x.
+And that causes a change in u down on this line.
+So we have a delta u.
+We've got then a change in y based on that, once we apply f.
+So we're looking for delta y over delta x.
+That's the ratio of this change to this one.
+But we know that we can write that
+as the product of the intermediate ratios,
+just like we did in the last video.
+So in other words, delta y over delta u times delta
+u over delta x.
+And we need to take the limits of both of them
+as delta x goes to 0.
+
+Now, this delta u over delta x as delta x goes
+to zero, that's just du dx.
+And for this part, what we know as delta x goes to 0,
+delta u is also going to go to 0.
+So we can replace this limit with delta u
+going to 0 instead of delta x.
+And now this term is exactly dy du.
+So that's pretty much it.
+We've got dy dx on the left equaling dy du times du dx.
+It's a very suggestive notation, isn't it?
+So it almost looks like the du's cancel.
+They don't.
+The du by itself isn't actually a thing.
+It's got to be part of this entire Leibniz notation.
+But this reminds us that this is true, essentially,
+because the delta u's do cancel.
+So one bit of business that we have to take care of,
+we need to say where these derivatives are being taken,
+where they're being located.
+So if this initial point up here is a,
+then dy dx is being taken at x equals a.
+And the same thing for du dx, also taken at x equals a.
+But the input variable for dy du is u.
+So where is u?
+Well, u is here.
+And that's g of a.
+So that's where we're going to be taking its derivative.
+If you want to use prime notation, dy dx is h prime.
+And that's at a.
+dy du is f prime.
+That's being taken at g of a.
+And, finally, du dx-- that's g prime at a.
+So this is our chain rule.
+It's fabulous.
+We're going to do plenty of examples.
+So stay tuned.

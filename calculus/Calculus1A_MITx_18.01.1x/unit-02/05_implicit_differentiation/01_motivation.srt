@@ -1,0 +1,12 @@
+
+We can use the derivative to find
+the slope of the tangent line to a graph of a function.
+But what happens when we have a curve that
+is not the graph of a function?
+We can still ask for the slope of the tangent line.
+So how do we find the formula?
+In the case of a circle radius 5,
+we can describe the curve with the implicit function x squared
+plus y squared equals 25.
+In this section, we learn how to differentiate
+implicit functions by applying the chain rule.

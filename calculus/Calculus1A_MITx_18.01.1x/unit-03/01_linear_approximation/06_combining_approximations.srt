@@ -1,0 +1,111 @@
+
+You've just computed some linear approximations
+near x equals 0 for all of these basic functions
+that we know how to differentiate,
+and we want to determine how to use these basic approximations
+to easily find approximations of more complicated functions.
+So for my first example, I'm going to call Example 0,
+we are just going to consider some linear approximations
+near the point x equals 0.
+For example, suppose I'm interested in the sum
+sine of x plus log of 1 plus x near x equals 0.
+To find the linear approximation of this sum
+I just take the sum of the linear approximations.
+From this table we see that sine x is approximately x near 0,
+and log of 1 plus x it is also approximately equal to x
+near 0, so the sum is approximately
+equal to 2x near x equals 0.
+Similarly, I could multiply any of these basic functions
+by a constant.
+For example, 3 times e to the x, this
+is going to multiply the linear approximation by a constant.
+So near x equals 0, 3 times e to the x
+is approximately equal to 3 times the quantity 1 plus x.
+
+In the next examples, I want to consider
+how we can build more complicated functions out
+of these basic functions using composition.
+You've actually already seen this used in practice when
+we did the zip line example.
+There we had a function of the form of 1 plus ax to the 1/2,
+and we substituted ax by another variable u,
+and we noted that when x is near 0, u is also near 0.
+So we can take the standard approximation,
+and we get that this is approximately
+equal to 1 plus u/2.
+Then we just substituted back in for x,
+and we saw that this was 1 plus ax/2.
+
+In this example, the composed function
+was just a linear scaling factor,
+but this approach actually works in general.
+So let's work through a couple examples.
+Example 1-- let's find a linear approximation for a log
+u near the point u equals 1.
+
+So I'm going to make a substitution,
+and I'm going to set u equal to 1 plus x.
+Then log of u is equal to log of 1 plus x.
+Notice that when u is near 1, x is near 0,
+so I can use the basic approximation log of 1 plus x
+is approximately x near 0.
+Substituting back in u for for x,
+we get that this is approximately equal
+to u minus 1.
+Of course, we could have computed this approximation
+directly.
+To find that log of u is approximately equal
+to log of 1 plus log prime of 1 times u minus 1 near u
+equals 1.
+Log of is equal to 0, and log prime of 1
+is 1 over u evaluated at 1, which is 1.
+So we get u minus 1, which is the same thing.
+
+Let's consider another example.
+This is Example 2.
+We'll look at the function 4 plus sine x to the 3/2 power.
+First, we need to get this in standard form,
+so I'm going to pull out the 4 to get 4
+to the 3/2 times the quantity 1 plus 1/4 sine
+x raised to the 3/2 power.
+Now I'm going to substitute u equal to sine x/4,
+and we can see that when x is near 0, u is also near 0,
+so we can apply a basic approximation here.
+So 4 plus sine x to the 3/2 is equal to 8 times 1 plus u
+to the 3/2, which is approximately equal to 8
+times the quantity 1 plus 3/2u.
+
+Substituting sine x/4 for u, we see
+that this is equal to 8 times the quantity 1
+plus 3/2 sine x/4.
+
+And now I'm going to just take a linear approximation
+for sine x here, which is just x near x equals 0.
+So this is approximately equal to 8 times the quantity 1
+plus 3/8 x.
+
+I just want to do one more example.
+Because in all the examples that I've done so far,
+I've used a linear approximation,
+and I've ended up with a linear function.
+Consider the function 1 plus x squared to the negative 1.
+So I can make a substitution u is equal to x squared,
+because when x is near 0, u is also near 0.
+So I can just plug in a basic approximation here.
+1 plus x squared to the negative 1
+is equal to 1 plus u to the negative 1,
+which is approximately equal to 1 minus u.
+Substituting back in for x, this is equal to 1 minus x squared.
+So the key tool here was a linear approximation,
+but the function that I get is not actually linear.
+That's because a linear approximation for x squared
+is the zero function, the constant function at 0.
+But we don't want to lose that much information
+when we take our approximation.
+So we take approximations where appropriate, but when
+we can't take an approximation of a function
+without getting 0, that's as far as we'll go.
+After you get some practice taking approximations
+of composed functions, we'll see another real world example,
+where we're interested in finding an approximation
+of a composed function.

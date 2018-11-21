@@ -1,0 +1,17 @@
+
+Imagine that we want to send a probe close to the sun.
+Not only will we have to make sure it doesn't get too hot,
+but we'll also have to pay attention
+to the rate of change of temperature.
+If the probe heats or cools too quickly, it can crack.
+The temperature is a function of the distance from the sun,
+and the distance from the sun is a function of time.
+That means that, to find temperature
+as a function of time, we need to take the composition
+of these two functions.
+To get the rate of change of the temperature,
+we'll want the derivative of this composition.
+Differentiating the composition of functions
+requires the chain rule, and that's
+what you'll learn about in this section.
+So let's get to work.

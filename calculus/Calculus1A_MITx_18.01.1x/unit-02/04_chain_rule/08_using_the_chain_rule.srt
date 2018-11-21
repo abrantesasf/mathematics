@@ -1,0 +1,109 @@
+
+We're looking at this function p of x.
+It's a composition of the cosine function and the cubing
+function-- but in what order?
+Which one is the inner function and which
+is the outer function?
+Well, in order to figure that out,
+we should think about what we would
+do in order to calculate p.
+If we want p of x, we'd first take the cosine of x,
+and then we cube the result. So the cubing
+is being applied to the cosine.
+That tells us that the cubing is the outer function.
+And the cosine is the inner function.
+OK, great.
+Now, if we want to take the derivative of this composition,
+we need the chain rule.
+So here it is to remind you.
+If h is f of g of x-- so here f is the outer function,
+and g is the inner function-- then, for h prime,
+we need to take f prime, the derivative
+of the outer function, applied to the inner function.
+And then we multiply by g prime, which
+is the derivative of the inner function.
+Sometimes what people do to make the notation a little easier
+is to introduce a new variable to represent
+the inner function.
+And this is exactly the intermediate variable u
+that we used in the last video.
+So I'll write it up here.
+u is equal to g of x, the inner function.
+And so h of x equals f of g of x.
+And that's now f of u.
+And our derivative h prime of x becomes f prime of u times
+g prime of x.
+
+So for our function here, p of x is u cubed,
+where u is this inner function cosine x.
+And the first part of the chain rule
+tells us to take the derivative of this outer function applied
+to u.
+So we just differentiate the cubing function as normal,
+as if u was our original variable.
+So we're going to get 3u squared.
+But-- but, but, but, but, but, we're not done.
+The chain rule says that we also need the derivative
+of this inner function.
+So we have to have a u prime tagging along.
+In Leibniz notation, the u prime is du dx.
+And if we set y to be equal to this p of x,
+then the 3u squared is dy du.
+And the overall derivative that we're going for is dy dx.
+And that's our chain rule in the Leibniz form.
+OK, well, now we can put everything
+in terms of our original variable x.
+So, 3u squared is just 3 times cosine x squared.
+And the derivative of u, well, that's
+the derivative of cosine x.
+And that's going to be minus sine x.
+And so that's our answer.
+We're done.
+
+Let's do another quick example.
+So let's say that this time, instead of cosine cubed x,
+we have cosine of x cubed.
+So you might look at this function
+and say, gosh, if only this were cosine of x,
+it would be really, really easy.
+But it's not.
+It's cosine of some stuff.
+And whenever you see that, that's
+an indication that you might replace the stuff with u.
+And so when we do that, this becomes cosine of u,
+where u equals x cubed.
+And writing it like this tells us
+exactly how the chain rule is going to play out.
+We have an outer function of u.
+And, generally, you want the outer function
+to be something pretty basic.
+And then we have our inner function, which is u itself.
+So the chain rule tells us to take
+the derivative of the outer function applied
+to u-- so in this case, the derivative of cosine
+is minus sign, and we're applying that to u--
+and then we need the derivative of u, which is 3x squared.
+So putting everything back in terms of x,
+we end up with minus sine of x cubed times 3x squared.
+And that is our derivative.
+
+So something I want to point out, both in this derivation
+and in the previous one, we took into account
+both the derivative of the cubing
+function and the derivative of the cosine function.
+In general, if you have some complicated function
+that you want to differentiate, every piece of it
+will need to be differentiated at some point in the process.
+So if you look back at your original function--
+and maybe it has some junk floating around here
+but there's a tangent in the middle of it--
+and you say to yourself, hey, I don't
+remember thinking about the derivative of tangent
+at any point in the process, then
+unless it's just the tangent of a constant,
+you've probably messed up the chain rule
+somewhere along the way.
+Of course, everyone messes up the chain rule
+when they first start using it.
+But at least now you know a way of catching some mistakes.
+Why don't you go play around with some examples on your own?

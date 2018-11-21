@@ -1,0 +1,184 @@
+0
+00:00:00,000 --> 00:00:02,850
+
+
+1
+00:00:02,850 --> 00:00:04,910
+In this sequence, we'll be developing ways
+
+2
+00:00:04,910 --> 00:00:07,780
+to use the derivative of a function, f,
+
+3
+00:00:07,780 --> 00:00:12,770
+to get information about the shape of the graph of f.
+
+4
+00:00:12,770 --> 00:00:15,580
+For instance, we know that if f prime
+
+5
+00:00:15,580 --> 00:00:19,430
+is positive on interval a comma b,
+
+6
+00:00:19,430 --> 00:00:22,600
+then f is going to be increasing on that interval.
+
+7
+00:00:22,600 --> 00:00:25,430
+And if f prime is negative between a and b,
+
+8
+00:00:25,430 --> 00:00:29,960
+then f is decreasing on that interval.
+
+9
+00:00:29,960 --> 00:00:31,280
+We've seen this before.
+
+10
+00:00:31,280 --> 00:00:36,120
+But let's use this to figure out some things about the graph.
+
+11
+00:00:36,120 --> 00:00:40,520
+So for instance, maybe f of x is the function 1 plus
+
+12
+00:00:40,520 --> 00:00:44,870
+4x minus x cubed over 3.
+
+13
+00:00:44,870 --> 00:00:50,640
+And here, f prime of x is 4 minus x squared.
+
+14
+00:00:50,640 --> 00:00:52,640
+And we can tell when this is positive
+
+15
+00:00:52,640 --> 00:00:54,110
+and when it's negative.
+
+16
+00:00:54,110 --> 00:00:59,170
+The derivative is positive when x squared is less than 4.
+
+17
+00:00:59,170 --> 00:01:04,730
+And that happens when x is between 2 and minus 2,
+
+18
+00:01:04,730 --> 00:01:09,170
+so on the interval minus 2 to 2.
+
+19
+00:01:09,170 --> 00:01:11,140
+And the derivative is negative when
+
+20
+00:01:11,140 --> 00:01:12,810
+x squared is greater than 4.
+
+21
+00:01:12,810 --> 00:01:17,520
+So that's on the intervals from minus infinity to minus 2
+
+22
+00:01:17,520 --> 00:01:19,535
+and from 2 to infinity.
+
+23
+00:01:19,535 --> 00:01:22,260
+
+
+24
+00:01:22,260 --> 00:01:27,450
+So between x equals minus 2 and x equals plus 2,
+
+25
+00:01:27,450 --> 00:01:29,280
+f is going to be increasing.
+
+26
+00:01:29,280 --> 00:01:32,640
+So its graph will look something like this.
+
+27
+00:01:32,640 --> 00:01:37,150
+Whereas, to the left of minus 2, the graph will be decreasing,
+
+28
+00:01:37,150 --> 00:01:41,890
+and also to the right of plus 2.
+
+29
+00:01:41,890 --> 00:01:42,900
+So there we have it.
+
+30
+00:01:42,900 --> 00:01:45,420
+
+
+31
+00:01:45,420 --> 00:01:47,730
+Now, this doesn't tell us everything
+
+32
+00:01:47,730 --> 00:01:49,650
+we might want to know about the graph.
+
+33
+00:01:49,650 --> 00:01:52,430
+We don't know where it crosses the x-axis.
+
+34
+00:01:52,430 --> 00:01:54,580
+We don't know how high this point is,
+
+35
+00:01:54,580 --> 00:01:59,100
+or this point where the graph turns around, in other words.
+
+36
+00:01:59,100 --> 00:02:01,470
+But those things we can get with algebra.
+
+37
+00:02:01,470 --> 00:02:04,549
+The calculus does give us a good sense of the overall shape
+
+38
+00:02:04,549 --> 00:02:05,090
+of the graph.
+
+39
+00:02:05,090 --> 00:02:07,370
+And that's definitely useful.
+
+40
+00:02:07,370 --> 00:02:10,550
+As we go forward, we're going to develop more and more language
+
+41
+00:02:10,550 --> 00:02:14,000
+which we can use to describe various features of graphs.
+
+42
+00:02:14,000 --> 00:02:16,110
+And for each of them, we'll see how calculus
+
+43
+00:02:16,110 --> 00:02:18,220
+can be used to find them.
+
+44
+00:02:18,220 --> 00:02:19,950
+Sound good?
+
+45
+00:02:19,950 --> 00:02:20,921
+
+

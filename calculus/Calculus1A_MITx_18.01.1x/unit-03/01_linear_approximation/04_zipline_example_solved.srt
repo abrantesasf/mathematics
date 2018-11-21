@@ -1,0 +1,90 @@
+
+You just worked out that the maximum velocity given a fixed
+zip line height is V equal to 2 e over m, raised
+to the one half power.
+But we're interested in how this maximum velocity changes
+when we change the height by some small amount, delta h.
+So to do this, we need to find an expression
+for the new maximum velocity.
+In coming up with this expression,
+we're going to need to take a linear approximation
+of a function of the form 1 plus u to the r.
+That's right, we're going to use the linear approximation
+that you've just found.
+So now, let's think about what happens to the velocity
+if I change the total height by some small amount delta h.
+Well, this is going to change the total energy in my system
+because I'm going to add or subtract
+some small amount of potential energy.
+So the new system energy is given by e plus mg delta h.
+Notice that this expression e plus mg delta
+h is a linear expression in delta
+h because the total energy e, this is constant,
+m, the mass of the rider, is constant,
+and g is the gravitational constant.
+So we can use this formula to find the new velocity
+by plugging in v plus delta v here, and then new energy here.
+So solving for v plus delta v, I get
+that this is equal to 2 times e plus mg delta h, all over m,
+all raised to the one half power.
+So I'm going to pull out this constant term, two e over m
+to the one half power, and this is
+going to simplify the expression v plus delta v is equal to 2
+e over m to the one half power, times the quantity 1
+plus mg delta h over e, raised to the one half power.
+Notice that this term in parentheses has no units.
+The one is unitless, mg delta h has units of energy,
+and of course, e has units of energy.
+So this summand is unitless.
+And this term out in front, this multiplier,
+has units of velocity.
+In fact, this is the expression for the maximum velocity, V,
+that you just found.
+And this expression here in parentheses,
+this is complicated because it's a non-linear expression
+in delta h.
+But this is something that we could
+take a linear approximation of.
+And we are interested in finding an approximation when
+delta h is small.
+That is, delta h is close to 0.
+And when delta h is small, this entire summand
+is close to zero.
+And this expression looks an awful lot like 1
+plus u to the r.
+So we can apply the approximation that you found.
+And what you saw was that 1 plus u to the r
+is approximately equal to 1 plus ru, when u is close to 0.
+So if we substitute one half for r, and mg delta h over e for u,
+we get that 1 plus mg over e delta h to the one half power
+is approximately equal to 1 plus one half times mg delta
+h over e.
+So the new maximum velocity, v plus delta v
+is approximately equal to v times 1
+plus m over 2 e, g times delta h.
+Remember we're interested in delta v, how much
+the maximum velocity changed.
+So delta v is equal to v times m over 2 e, g times delta h.
+Of course, if we remember that m over 2 e is 1 over v squared,
+this is the same as g over v times delta h.
+Now, I have a really easy way of estimating
+how small changes in the height will change the velocity.
+For example, if the maximum velocity of a rider
+is 12 meters per second, and then I
+change the total height of the ride
+by 10 centimeters, or 0.1 meters,
+then the change in the maximum velocity
+is going to be approximately equal to 10
+divided by 12 times 0.1.
+Or 1/12 meters per second, which is approximately equal to 0.08
+meters per second.
+So that's not going to be a lot of change
+in the maximum velocity, but it might
+be just enough to make sure that a rider makes
+it all the way to the platform on the other side of the ride.
+Next, you are going to find linear approximations near x
+equals 0 for all of the basic functions
+that you know how to differentiate.
+And then, I will show you how to use those linear approximations
+of these basic functions to find approximations of much
+more complicated functions.
