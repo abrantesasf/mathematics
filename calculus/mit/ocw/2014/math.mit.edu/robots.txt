@@ -1,4 +1,0 @@
-User-Agent: *
-Crawl-Delay: 300
-Disallow: /~numericalmath/nmc
-
