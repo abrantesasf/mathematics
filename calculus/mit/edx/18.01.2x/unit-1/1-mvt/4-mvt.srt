@@ -1,0 +1,436 @@
+0
+00:00:00,000 --> 00:00:01,810
+
+
+1
+00:00:01,810 --> 00:00:04,770
+Here is the conclusion of the mean value theorem
+
+2
+00:00:04,770 --> 00:00:07,630
+that we have already seen.
+
+3
+00:00:07,630 --> 00:00:12,070
+There is some point c, between and b, at which the tangent is
+
+4
+00:00:12,070 --> 00:00:15,710
+parallel to the secant.
+
+5
+00:00:15,710 --> 00:00:17,900
+You have just seen that this statement
+
+6
+00:00:17,900 --> 00:00:22,100
+holds for some functions, but doesn't for some others.
+
+7
+00:00:22,100 --> 00:00:24,720
+So what are conditions that will guarantee
+
+8
+00:00:24,720 --> 00:00:27,110
+that the MVT conclusion holds?
+
+9
+00:00:27,110 --> 00:00:30,620
+
+
+10
+00:00:30,620 --> 00:00:34,120
+Let us investigate the examples from the problem you just
+
+11
+00:00:34,120 --> 00:00:37,070
+solved.
+
+12
+00:00:37,070 --> 00:00:39,890
+We have collected the successful functions,
+
+13
+00:00:39,890 --> 00:00:43,350
+the ones for which the MVT conclusion hold,
+
+14
+00:00:43,350 --> 00:00:45,930
+on the top row, and the failures,
+
+15
+00:00:45,930 --> 00:00:47,273
+on the bottom two rows.
+
+16
+00:00:47,273 --> 00:00:50,810
+
+
+17
+00:00:50,810 --> 00:00:54,379
+We will start by discussing why the functions in the middle row
+
+18
+00:00:54,379 --> 00:00:54,878
+fail.
+
+19
+00:00:54,878 --> 00:00:59,000
+
+
+20
+00:00:59,000 --> 00:01:00,842
+Let us look at the first graph.
+
+21
+00:01:00,842 --> 00:01:04,940
+
+
+22
+00:01:04,940 --> 00:01:08,610
+For the first graph, we can shift the secant line
+
+23
+00:01:08,610 --> 00:01:13,060
+to approach a point where it is tangent to our graph.
+
+24
+00:01:13,060 --> 00:01:17,160
+But we find that the exact point that this would have happened
+
+25
+00:01:17,160 --> 00:01:20,101
+is a point where the function is undefined.
+
+26
+00:01:20,101 --> 00:01:22,870
+
+
+27
+00:01:22,870 --> 00:01:24,240
+So there is no c.
+
+28
+00:01:24,240 --> 00:01:27,830
+
+
+29
+00:01:27,830 --> 00:01:33,270
+Next, let's look at the second graph in the middle row.
+
+30
+00:01:33,270 --> 00:01:35,930
+It has a jump discontinuity at an endpoint.
+
+31
+00:01:35,930 --> 00:01:40,480
+
+
+32
+00:01:40,480 --> 00:01:47,460
+The secant line slants down, but all the tangent lines slant up,
+
+33
+00:01:47,460 --> 00:01:48,950
+so there is no c.
+
+34
+00:01:48,950 --> 00:01:51,650
+
+
+35
+00:01:51,650 --> 00:01:54,390
+Because of the discontinuity, there
+
+36
+00:01:54,390 --> 00:01:58,020
+is no relationship between the slope of the secant
+
+37
+00:01:58,020 --> 00:01:59,436
+and the slope of the tangents.
+
+38
+00:01:59,436 --> 00:02:02,820
+
+
+39
+00:02:02,820 --> 00:02:07,030
+Similarly, for the rest of the graphs in this row,
+
+40
+00:02:07,030 --> 00:02:10,340
+the reason that the MVT conclusion fails
+
+41
+00:02:10,340 --> 00:02:16,480
+is a discontinuity either at an endpoint
+
+42
+00:02:16,480 --> 00:02:17,910
+or within the interval.
+
+43
+00:02:17,910 --> 00:02:25,470
+
+
+44
+00:02:25,470 --> 00:02:28,300
+Let's look at the bottom row now.
+
+45
+00:02:28,300 --> 00:02:33,540
+Each of these two graphs is continuous
+
+46
+00:02:33,540 --> 00:02:36,350
+but has a point within the interval where
+
+47
+00:02:36,350 --> 00:02:40,020
+the derivative does not exist.
+
+48
+00:02:40,020 --> 00:02:46,780
+In the first, there is a corner, and in the second,
+
+49
+00:02:46,780 --> 00:02:47,774
+there is a cusp.
+
+50
+00:02:47,774 --> 00:02:52,920
+
+
+51
+00:02:52,920 --> 00:02:54,760
+You can check that the reason there
+
+52
+00:02:54,760 --> 00:02:57,790
+is no tangent parallel to the secant
+
+53
+00:02:57,790 --> 00:03:00,496
+is because of the point where the function is not
+
+54
+00:03:00,496 --> 00:03:01,121
+differentiable.
+
+55
+00:03:01,121 --> 00:03:06,740
+
+
+56
+00:03:06,740 --> 00:03:11,020
+Let us now look at the successful functions.
+
+57
+00:03:11,020 --> 00:03:13,400
+We can use the same method as before
+
+58
+00:03:13,400 --> 00:03:16,367
+to find a point at which the tangent is parallel
+
+59
+00:03:16,367 --> 00:03:16,950
+to the secant.
+
+60
+00:03:16,950 --> 00:03:20,060
+
+
+61
+00:03:20,060 --> 00:03:23,280
+We see that the first four graphs on this row
+
+62
+00:03:23,280 --> 00:03:26,858
+have hump shapes at whose peaks the c's appear.
+
+63
+00:03:26,858 --> 00:03:30,630
+
+
+64
+00:03:30,630 --> 00:03:34,580
+On the other hand, the last function on this row
+
+65
+00:03:34,580 --> 00:03:39,090
+is equal to the secant line, so at every point,
+
+66
+00:03:39,090 --> 00:03:43,210
+the tangent is also equal to the secant line.
+
+67
+00:03:43,210 --> 00:03:47,248
+In other words, every point within the interval is a c.
+
+68
+00:03:47,248 --> 00:03:51,920
+
+
+69
+00:03:51,920 --> 00:03:56,080
+What do all these graphs have in common?
+
+70
+00:03:56,080 --> 00:04:00,146
+Well, all of these graphs are continuous and differentiable.
+
+71
+00:04:00,146 --> 00:04:06,500
+
+
+72
+00:04:06,500 --> 00:04:12,330
+Let's return to our question, what condition on a function
+
+73
+00:04:12,330 --> 00:04:15,289
+will guarantee that the MVT conclusion holds?
+
+74
+00:04:15,289 --> 00:04:18,640
+
+
+75
+00:04:18,640 --> 00:04:23,180
+We already see that continuity and differentiability
+
+76
+00:04:23,180 --> 00:04:25,680
+are conditions that will include all
+
+77
+00:04:25,680 --> 00:04:29,420
+of our examples of successes, and exclude
+
+78
+00:04:29,420 --> 00:04:33,390
+all of our cases of failures.
+
+79
+00:04:33,390 --> 00:04:36,800
+It turns out that continuity and differentiability are
+
+80
+00:04:36,800 --> 00:04:38,410
+enough to guarantee success.
+
+81
+00:04:38,410 --> 00:04:42,250
+
+
+82
+00:04:42,250 --> 00:04:44,891
+So let us state the mean value theorem precisely.
+
+83
+00:04:44,891 --> 00:04:48,640
+
+
+84
+00:04:48,640 --> 00:04:53,030
+If a function x of t is continuous
+
+85
+00:04:53,030 --> 00:04:56,850
+on the closed interval a to b, and
+
+86
+00:04:56,850 --> 00:05:03,120
+differentiable on the open interval a to b,
+
+87
+00:05:03,120 --> 00:05:07,450
+then there is some point c in the open interval
+
+88
+00:05:07,450 --> 00:05:14,260
+a to b such that the average rate of change from a to b
+
+89
+00:05:14,260 --> 00:05:18,301
+is equal to the instantaneous rate of change at c.
+
+90
+00:05:18,301 --> 00:05:23,020
+
+
+91
+00:05:23,020 --> 00:05:25,640
+Let's write this conclusion in terms of formulas
+
+92
+00:05:25,640 --> 00:05:27,220
+now rather than words.
+
+93
+00:05:27,220 --> 00:05:31,180
+
+
+94
+00:05:31,180 --> 00:05:33,650
+The average rate of change from a to b
+
+95
+00:05:33,650 --> 00:05:40,384
+is equal to x of b minus x of a, divided by b minus a.
+
+96
+00:05:40,384 --> 00:05:43,060
+And the instantaneous rate of change
+
+97
+00:05:43,060 --> 00:05:47,054
+at c is equal to x prime of c.
+
+98
+00:05:47,054 --> 00:05:51,440
+
+
+99
+00:05:51,440 --> 00:05:53,990
+Notice in the hypothesis the function
+
+100
+00:05:53,990 --> 00:05:57,815
+needs to be continuous on the closed interval, including
+
+101
+00:05:57,815 --> 00:06:02,210
+the endpoints, but needs to be differentiable only
+
+102
+00:06:02,210 --> 00:06:05,190
+on the open interval.
+
+103
+00:06:05,190 --> 00:06:08,364
+So the derivative does not have to exist for the endpoints.
+
+104
+00:06:08,364 --> 00:06:11,210
+
+
+105
+00:06:11,210 --> 00:06:13,530
+Let us now do some exercises.
+
+106
+00:06:13,530 --> 00:06:16,830
+And we will continue with some immediate consequences
+
+107
+00:06:16,830 --> 00:06:18,610
+of the MVT.
+
+108
+00:06:18,610 --> 00:06:26,959
+
+

@@ -1,0 +1,244 @@
+0
+00:00:00,000 --> 00:00:05,140
+
+
+1
+00:00:05,140 --> 00:00:10,510
+Welcome to the second part of our calculus class.
+
+2
+00:00:10,510 --> 00:00:13,230
+We will start with the mean value theorem,
+
+3
+00:00:13,230 --> 00:00:15,720
+and may call it the MVT from now on.
+
+4
+00:00:15,720 --> 00:00:18,620
+
+
+5
+00:00:18,620 --> 00:00:22,160
+The mean value theorem relates the average rate of change
+
+6
+00:00:22,160 --> 00:00:24,920
+and the instantaneous rate of change of a function.
+
+7
+00:00:24,920 --> 00:00:27,990
+
+
+8
+00:00:27,990 --> 00:00:31,450
+In more detail, consider a function
+
+9
+00:00:31,450 --> 00:00:37,190
+x of t, over an interval a to b, so that the endpoints are
+
+10
+00:00:37,190 --> 00:00:43,030
+a, x of a and b, x of b.
+
+11
+00:00:43,030 --> 00:00:46,090
+Recall the average rate of change of the function
+
+12
+00:00:46,090 --> 00:00:51,070
+x of t over the interval a to b is geometrically
+
+13
+00:00:51,070 --> 00:00:54,160
+the slope of the secant line through the two endpoints.
+
+14
+00:00:54,160 --> 00:00:59,070
+
+
+15
+00:00:59,070 --> 00:01:02,620
+Recall also that the instantaneous rate
+
+16
+00:01:02,620 --> 00:01:05,319
+of change of the function x of t,
+
+17
+00:01:05,319 --> 00:01:09,790
+at a point t1 between a and b, is geometrically
+
+18
+00:01:09,790 --> 00:01:12,100
+the slope of the tangent line at t1.
+
+19
+00:01:12,100 --> 00:01:16,480
+
+
+20
+00:01:16,480 --> 00:01:20,375
+Notice the average rate of change is only one number,
+
+21
+00:01:20,375 --> 00:01:22,730
+but the instantaneous rate of change
+
+22
+00:01:22,730 --> 00:01:25,380
+can take different values at different points
+
+23
+00:01:25,380 --> 00:01:26,235
+within the interval.
+
+24
+00:01:26,235 --> 00:01:29,800
+
+
+25
+00:01:29,800 --> 00:01:35,390
+So how does the mean value theorem relate to these two?
+
+26
+00:01:35,390 --> 00:01:38,920
+Well, as you will see on our graph,
+
+27
+00:01:38,920 --> 00:01:41,420
+there is a point at which the tangent
+
+28
+00:01:41,420 --> 00:01:45,120
+is parallel, in other words, has the same slope
+
+29
+00:01:45,120 --> 00:01:48,630
+as the secant line.
+
+30
+00:01:48,630 --> 00:01:52,630
+Let us find such a point now.
+
+31
+00:01:52,630 --> 00:01:56,340
+We can shift the secant line without changing its slope
+
+32
+00:01:56,340 --> 00:01:59,910
+until it is tangent to our graph.
+
+33
+00:01:59,910 --> 00:02:04,540
+And here it is at a point at which the tangent is parallel
+
+34
+00:02:04,540 --> 00:02:06,200
+to the secant.
+
+35
+00:02:06,200 --> 00:02:07,960
+And we will call this point c.
+
+36
+00:02:07,960 --> 00:02:11,020
+
+
+37
+00:02:11,020 --> 00:02:13,730
+So the following is the conclusion
+
+38
+00:02:13,730 --> 00:02:15,400
+of the mean value theorem.
+
+39
+00:02:15,400 --> 00:02:18,520
+
+
+40
+00:02:18,520 --> 00:02:22,870
+There is some point c, in between the endpoints a
+
+41
+00:02:22,870 --> 00:02:29,470
+and b, such that the average rate of change from a to b
+
+42
+00:02:29,470 --> 00:02:33,325
+is equal to the instantaneous rate of change at c.
+
+43
+00:02:33,325 --> 00:02:36,540
+
+
+44
+00:02:36,540 --> 00:02:41,850
+Or again, geometrically, there is some point c, in between a
+
+45
+00:02:41,850 --> 00:02:46,740
+and b, such that the slope of the secant line through the two
+
+46
+00:02:46,740 --> 00:02:51,255
+endpoints is equal to the slope of the tangent line at c.
+
+47
+00:02:51,255 --> 00:02:55,130
+
+
+48
+00:02:55,130 --> 00:02:58,740
+Notice the MVT says that such a c is strictly
+
+49
+00:02:58,740 --> 00:03:01,920
+in between the endpoints, but it does not
+
+50
+00:03:01,920 --> 00:03:05,500
+say where exactly such a c is, or even
+
+51
+00:03:05,500 --> 00:03:09,330
+how many such c's there are.
+
+52
+00:03:09,330 --> 00:03:12,210
+In fact, there are two such c's in our example.
+
+53
+00:03:12,210 --> 00:03:16,620
+
+
+54
+00:03:16,620 --> 00:03:19,870
+We have only talked about the conclusion of the mean value
+
+55
+00:03:19,870 --> 00:03:21,160
+theorem.
+
+56
+00:03:21,160 --> 00:03:23,760
+But what about the hypothesis?
+
+57
+00:03:23,760 --> 00:03:28,010
+In other words, when does it hold?
+
+58
+00:03:28,010 --> 00:03:31,130
+To find out when the theorem holds,
+
+59
+00:03:31,130 --> 00:03:34,500
+let us now explore when it fails.
+
+60
+00:03:34,500 --> 00:03:43,421
+
+
