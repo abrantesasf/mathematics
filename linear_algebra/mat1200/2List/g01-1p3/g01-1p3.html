@@ -1,0 +1,1026 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="g01-1p3">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="g01-1p3.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="http://www.mat.puc-rio.br/usr/mat/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="http://www.mat.puc-rio.br/usr/mat/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="http://www.mat.puc-rio.br/usr/mat/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<P>
+<DIV ALIGN="CENTER"><FONT SIZE="+2">
+P3  de &#193;lgebra Linear I - 2001.1</FONT></DIV>
+<P>
+<DIV ALIGN="CENTER"><FONT SIZE="+2">
+Data: 20 de junho de 2001.</FONT></DIV>
+
+<P>
+<P>
+
+<B>1)</B>
+Considere as matrizes
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+A= \left( \begin{array}{cc}
+4 & 1 \\
+          -1 & 2
+          \end{array}\right),
+\quad 
+B= \left( \begin{array}{cc}
+          5 & -3 \\
+          -1 & 3 
+          \end{array}\right).
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="318" HEIGHT="53"
+ SRC="img1.gif"
+ ALT="\begin{displaymath}A= \left( \begin{array}{cc}
+4 & 1 \\
+-1 & 2
+\end{array}\...
+...t( \begin{array}{cc}
+5 & -3 \\
+-1 & 3
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P><DL>
+<DT><DD><B>a)</B>
+Determine os autovalores e autovetores das matrizes <I>A</I> e <I>B</I>.
+(0.5+0.5). 
+<DT><DD><B>b)</B>
+Estude se estas matrizes s&#227;o diagonaliz&#225;veis. (0.5). 
+<DT><DD><B>c)</B>
+Escreva as matrizes diagonaliz&#225;veis do item anterior na forma
+
+<!-- MATH: $R D R^{-1}$ -->
+<I>R D R</I><SUP>-1</SUP> onde <I>D</I> &#233; uma matriz diagonal. (0.5+0.5). 
+</DL>
+<P>
+<P>
+
+<B>Resposta:</B>
+Para calcular os autovalores calcularemos primeiro os polin&#244;mios
+caracter&#237;sticos:
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+|A-\lambda I|= \left| \begin{array}{cc}
+4-\lambda  & 1 \\
+          -1 & 2-\lambda
+          \end{array}\right|
+=
+\lambda^2- 6 \lambda +9 =(\lambda^2-3).
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="438" HEIGHT="53"
+ SRC="img2.gif"
+ ALT="\begin{displaymath}\vert A-\lambda I\vert= \left\vert \begin{array}{cc}
+4-\lamb...
+...nd{array}\right\vert
+=
+\lambda^2- 6 \lambda +9 =(\lambda^2-3).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Logo <IMG
+ WIDTH="50" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\lambda=3$">
+&#233; um autovalor duplo.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+|B-\lambda I|= \left| \begin{array}{cc}
+5-\lambda  & -3 \\
+          -1 & 3-\lambda
+          \end{array}\right|
+=
+\lambda^2- 8 \lambda +12 =(\lambda-2)(\lambda-6).
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="499" HEIGHT="53"
+ SRC="img4.gif"
+ ALT="\begin{displaymath}\vert B-\lambda I\vert= \left\vert \begin{array}{cc}
+5-\lamb...
+...right\vert
+=
+\lambda^2- 8 \lambda +12 =(\lambda-2)(\lambda-6).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Logo <IMG
+ WIDTH="50" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\lambda=2$">
+e <IMG
+ WIDTH="50" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img6.gif"
+ ALT="$\lambda=6$">
+s&#227;o  autovalores simples.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+Para calcular os autovetores de 3, 2 e 6 devemos calcular, respectivamente,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+(A-3I)X=0,
+\quad
+(B-2I)X=0,
+\quad
+(B-6I)X=0.
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="427" HEIGHT="33"
+ SRC="img7.gif"
+ ALT="\begin{displaymath}(A-3I)X=0,
+\quad
+(B-2I)X=0,
+\quad
+(B-6I)X=0.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P> 
+
+<P>
+No primeiro caso obtemos o sistema:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x+y=0, \quad -x-y=0.
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="202" HEIGHT="32"
+ SRC="img8.gif"
+ ALT="\begin{displaymath}x+y=0, \quad -x-y=0.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Ou seja, <I>x</I>=-<I>y</I>. Os autovetores s&#227;o da forma (<I>t</I>,-<I>t</I>),
+
+<!-- MATH: $t\in \mathbb{R}$ -->
+<IMG
+ WIDTH="49" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$t\in \mathbb{R} $">
+e <IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$t\ne 0$">.
+
+<P>
+No segundo caso obtemos o sistema:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+3x-3y=0, \quad -x+y=0.
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="221" HEIGHT="32"
+ SRC="img11.gif"
+ ALT="\begin{displaymath}3x-3y=0, \quad -x+y=0.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Ou seja, <I>x</I>=<I>y</I>. Os autovetores s&#227;o da forma (<I>t</I>,<I>t</I>),
+
+<!-- MATH: $t\in \mathbb{R}$ -->
+<IMG
+ WIDTH="49" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$t\in \mathbb{R} $">
+e <IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$t\ne 0$">.
+
+<P>
+No &#250;ltimo caso obtemos o sistema:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+-x-3y=0, \quad -x-3y=0.
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="235" HEIGHT="32"
+ SRC="img12.gif"
+ ALT="\begin{displaymath}-x-3y=0, \quad -x-3y=0.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Ou seja, <I>x</I>=-3<I>y</I>. Os autovetores s&#227;o da forma (-3<I>t</I>,<I>t</I>),
+
+<!-- MATH: $t\in \mathbb{R}$ -->
+<IMG
+ WIDTH="49" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$t\in \mathbb{R} $">
+e <IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$t\ne 0$">.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+A matriz <I>A</I> n&#227;o &#233; diagonaliz&#225;vel, pois n&#227;o &#233; poss&#237;vel 
+encontrar uma base de autovetores (no m&#225;ximo &#233; poss&#237;vel encontrar
+um autovetor l.i.).
+
+<P>
+A matriz <I>B</I> &#233; diagonaliz&#225;vel, pois existe uma base de autovetores:
+
+<!-- MATH: $\{(1,1), (-3,1)\}$ -->
+<IMG
+ WIDTH="130" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="$\{(1,1), (-3,1)\}$">.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+Usando a base de autovetores 
+<!-- MATH: $\{(1,1), (-3,1)\}$ -->
+<IMG
+ WIDTH="130" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="$\{(1,1), (-3,1)\}$">
+de <I>B</I> temos,
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\left( \begin{array}{cc}
+4 & 1 \\
+          -1 & 2
+          \end{array}\right)=
+\left( \begin{array}{cc}
+          -3 & 1 \\
+          1 & 1 
+          \end{array}\right)
+\left( \begin{array}{cc}
+          6 & 0 \\
+          0 & 2 
+          \end{array}\right)
+\left( \begin{array}{cc}
+          -1/4 & 1/4 \\
+          1/4 & 3/4 
+          \end{array}\right).
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="432" HEIGHT="53"
+ SRC="img14.gif"
+ ALT="\begin{displaymath}\left( \begin{array}{cc}
+4 & 1 \\
+-1 & 2
+\end{array}\rig...
+...in{array}{cc}
+-1/4 & 1/4 \\
+1/4 & 3/4
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<P>
+
+<B>2)</B> Considere a matriz
+ <BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+F = \left(
+\begin{array}{lll}
+1 & 0  & 1 \\
+ 0 & 5 & 0 \\
+ 1 & 0 & 1
+\end{array}
+\right)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="144" HEIGHT="76"
+ SRC="img15.gif"
+ ALT="\begin{displaymath}F = \left(
+\begin{array}{lll}
+1 & 0 & 1 \\
+0 & 5 & 0 \\
+1 & 0 & 1
+\end{array}\right) \end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR>
+<BR>
+
+<P>
+
+<B>2.a)</B> Encontre todos os autovalores de <I>F</I> e todos os autovetores de <I>F</I>.
+(0.5+0.5). 
+<BR>
+<BR>
+
+<P>
+
+<B>2.b)</B> Encontre uma matriz <I>R</I> invers&#237;vel, sua inversa <I>R</I><SUP>-1</SUP> e uma matriz <I>D</I> diagonal tais que  
+<!-- MATH: $F = RDR^{-1}$ -->
+<I>F</I> = <I>RDR</I><SUP>-1</SUP>.
+(
+<!-- MATH: $0.5+0.5+0.5$ -->
+0.5+0.5+0.5). 
+<P>
+
+<B>Resposta:</B>
+O polin&#244;mio caracter&#237;stico de <I>F</I> &#233;
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\left|
+\begin{array}{ccc}
+1-\lambda & 0  & 1 \\
+ 0 & 5-\lambda & 0 \\
+ 1 & 0 & 1-\lambda
+\end{array}
+\right|
+=(5-\lambda)(1-\lambda^2) - (5-\lambda)=
+\lambda (5-\lambda) (2-\lambda).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="576" HEIGHT="76"
+ SRC="img16.gif"
+ ALT="\begin{displaymath}\left\vert
+\begin{array}{ccc}
+1-\lambda & 0 & 1 \\
+0 & 5-\...
+...(1-\lambda^2) - (5-\lambda)=
+\lambda (5-\lambda) (2-\lambda).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Logo os autovalores s&#227;o 5, 2 e 0 todos simples.
+(Observe que a soma dos  autovalore &#233; 7, 
+igual ao tra&#231;o da matriz,
+como deve ser).
+
+<P>
+Os autovetores correspondentes s&#227;o obtidos resolvendo os
+sistemas:
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+(F-5 I)(X)=0, \quad
+(F-2 I)(X)=0,\quad
+F(X)=0.
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="413" HEIGHT="33"
+ SRC="img17.gif"
+ ALT="\begin{displaymath}(F-5 I)(X)=0, \quad
+(F-2 I)(X)=0,\quad
+F(X)=0.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Obtemos os sistemas
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+-4x +z=0,\quad
+x-4z=0,
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="219" HEIGHT="32"
+ SRC="img18.gif"
+ ALT="\begin{displaymath}-4x +z=0,\quad
+x-4z=0,
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+com solu&#231;&#227;o (0,<I>t</I>,0). Logo os autovetores s&#227;o da
+forma (0,<I>t</I>,0), 
+<!-- MATH: $t\in \mathbb{R}$ -->
+<IMG
+ WIDTH="49" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$t\in \mathbb{R} $">
+e <IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$t\ne 0$">.
+
+<P>
+O segundo sistema &#233;, 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+-x +z=0,\quad 3y=0, \quad
+x-z=0,
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="281" HEIGHT="32"
+ SRC="img19.gif"
+ ALT="\begin{displaymath}-x +z=0,\quad 3y=0, \quad
+x-z=0,
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+com solu&#231;&#227;o (<I>t</I>,0,<I>t</I>). Logo os autovetores s&#227;o da
+forma (<I>t</I>,0,<I>t</I>), 
+<!-- MATH: $t\in \mathbb{R}$ -->
+<IMG
+ WIDTH="49" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$t\in \mathbb{R} $">
+e <IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$t\ne 0$">.
+
+<P>
+O &#250;ltimo sistema &#233;,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+x +z=0,\quad 5y=0, \quad
+x+z=0,
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="267" HEIGHT="32"
+ SRC="img20.gif"
+ ALT="\begin{displaymath}x +z=0,\quad 5y=0, \quad
+x+z=0,
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+com solu&#231;&#227;o (<I>t</I>,0,-<I>t</I>). Logo os autovetores s&#227;o da
+forma (<I>t</I>,0,-<I>t</I>), 
+<!-- MATH: $t\in \mathbb{R}$ -->
+<IMG
+ WIDTH="49" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$t\in \mathbb{R} $">
+e <IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$t\ne 0$">.
+(Observe que os autovetores s&#227;o ortogonais, como &#233; de
+esperar numa matriz sim&#233;trica).
+
+<P>
+Temos, normalizando a base,  o seguinte 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\left(
+\begin{array}{ccc}
+1 & 0  & 1 \\
+ 0 & 5 & 0 \\
+ 1 & 0 & 1
+\end{array}
+\right) =
+\left(
+\begin{array}{ccc}
+ 1/\sqrt{2} & 0  &  1/\sqrt{2} \\
+ 0 & 1 & 0 \\
+ - 1/\sqrt{2} & 0 &  1/\sqrt{2}
+\end{array}
+\right)
+\left(
+\begin{array}{ccc}
+ 0 & 0  & 0 \\
+ 0 & 5 & 0 \\
+ 0 & 0 & 2
+\end{array}
+\right) 
+\left(
+\begin{array}{ccc}
+ 1/\sqrt{2} & 0  &  -1/\sqrt{2} \\
+ 0 & 1 & 0 \\
+  1/\sqrt{2} & 0 &  1/\sqrt{2}
+\end{array}
+\right), 
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="639" HEIGHT="78"
+ SRC="img21.gif"
+ ALT="\begin{displaymath}\left(
+\begin{array}{ccc}
+1 & 0 & 1 \\
+0 & 5 & 0 \\
+1 & ...
+... & 1 & 0 \\
+1/\sqrt{2} & 0 & 1/\sqrt{2}
+\end{array}\right),
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+onde a inversa de <I>R</I> &#233; sua trasposta, pois &#233; uma
+matriz ortogonal.
+
+<P>
+<P>
+
+<B>3)</B>
+Considere a proje&#231;&#227;o ortogonal <I>P</I> no plano 2<I>x</I>+2<I>y</I>+<I>z</I>=0.
+
+<P>
+Escreva a matriz de <I>P</I> da forma
+
+<!-- MATH: $B D B^{-1}$ -->
+<I>B D B</I><SUP>-1</SUP>, onde <I>D</I> &#233; uma matriz diagonal.
+Ache  <I>B</I>, <I>D</I> e <I>B</I><SUP>-1</SUP> explicitamente.
+(<I>B</I>=1.0, <I>D</I>=1 e 
+<!-- MATH: $B^{-1}=0.5$ -->
+<I>B</I><SUP>-1</SUP>=0.5).
+<P>
+
+<B>Resposta:</B>
+O vetor normal ao plano de proje&#231;&#227;o (2,2,1),
+que &#233; um autovetor
+de autovalor 0. Consideraremos agora dois vetores do plano ortogonais.
+Obteremos assim dois autovetores l.i. de autovalor 1. 
+Tomando (1,-1,0) e 
+<!-- MATH: $(1,-1,0)\times (2,2,1)=
+(-1,-1,4)$ -->
+<IMG
+ WIDTH="276" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img22.gif"
+ ALT="$(1,-1,0)\times (2,2,1)=
+(-1,-1,4)$">obtemos estes vetores.
+Temos que 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\beta=
+\{(2/3, 2/3,1/3), (1/\sqrt{2}, -1/\sqrt{2},0),
+(1/\sqrt{18},1/\sqrt{18},-4/\sqrt{18}\}
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="529" HEIGHT="33"
+ SRC="img23.gif"
+ ALT="\begin{displaymath}\beta=
+\{(2/3, 2/3,1/3), (1/\sqrt{2}, -1/\sqrt{2},0),
+(1/\sqrt{18},1/\sqrt{18},-4/\sqrt{18}\}
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>&#233; uma base de autovetores.
+
+<P>
+A express&#227;o de <I>P</I> na base <IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img24.gif"
+ ALT="$\beta$">
+&#233; 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\left(
+\begin{array}{ccc}
+0 & 0  & 0 \\
+ 0 & 1 & 0 \\
+ 0 & 0 & 1
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="111" HEIGHT="76"
+ SRC="img25.gif"
+ ALT="\begin{displaymath}\left(
+\begin{array}{ccc}
+0 & 0 & 0 \\
+0 & 1 & 0 \\
+0 & 0 & 1
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Portanto
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+P=
+\left(
+\begin{array}{ccc}
+2/3 & 1/\sqrt{2}  & 1/\sqrt{18} \\
+ 2/3 &  -1/\sqrt{2} & 1/\sqrt{18} \\
+ 1/3 & 0 & -4/\sqrt{18}
+\end{array}
+\right)
+\left(
+\begin{array}{ccc}
+ 0 & 0  & 0 \\
+ 0 & 1 & 0 \\
+ 0 & 0 & 1
+\end{array}
+\right)
+\left(
+\begin{array}{ccc}
+ 2/3 & 2/3  & 1/3\\
+1/\sqrt{2} &  -1/\sqrt{2} &0 \\
+ 1/\sqrt{18} & 1/\sqrt{18} & -4/\sqrt{18}
+\end{array}
+\right),
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="660" HEIGHT="80"
+ SRC="img26.gif"
+ ALT="\begin{displaymath}P=
+\left(
+\begin{array}{ccc}
+2/3 & 1/\sqrt{2} & 1/\sqrt{18} ...
+...
+1/\sqrt{18} & 1/\sqrt{18} & -4/\sqrt{18}
+\end{array}\right),
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+onde 
+<!-- MATH: $B^{-1}=B^t$ -->
+<I>B</I><SUP>-1</SUP>=<I>B</I><SUP><I>t</I></SUP> pois <I>B</I> &#233; ortogonal.
+
+<P>
+<P>
+
+<B>4)</B>
+Para cada uma das matrizes abaixo, verifique se
+&#233;  uma rota&#231;&#227;o ou  uma proje&#231;&#227;o ortogonal, ou nem uma coisa
+nem outra.
+Para a rota&#231;&#227;o  identifique o eixo, e para a  
+proje&#231;&#227;o o plano ou a reta onde &#233; feita a proje&#231;&#227;o.
+
+<P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+A = \left(
+\begin{array}{ccc}
+1 & 6  & 1 \\
+ 6 & 5 & 7 \\
+ 1 & 7 & 1
+\end{array}
+\right),
+\quad
+B = \left( 
+\begin{array}{ccc}
+ 1/3 & 1/3  & 1/3 \\
+ 1/3 & 1/3 & 1/3 \\
+ 1/3 & 1/3 & 1/3
+\end{array}
+\right),
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="391" HEIGHT="76"
+ SRC="img27.gif"
+ ALT="\begin{displaymath}A = \left(
+\begin{array}{ccc}
+1 & 6 & 1 \\
+6 & 5 & 7 \\
+...
+... \\
+1/3 & 1/3 & 1/3 \\
+1/3 & 1/3 & 1/3
+\end{array}\right),
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+C = \left(
+\begin{array}{ccc}
+1 & 1  & 1 \\
+ 0 & 1 & 1 \\
+ 0 & 0 & 1
+\end{array}
+\right),
+\quad
+D = \left( 
+\begin{array}{ccc}
+ 0 & \frac{\sqrt{2}}{2}  & -\frac{\sqrt{2}}{2} \\
+ -1 & 0 & 0 \\
+ 0 & \frac{\sqrt{2}}{2}  & \frac{\sqrt{2}}{2} 
+\end{array}
+\right).
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="392" HEIGHT="82"
+ SRC="img28.gif"
+ ALT="\begin{displaymath}C = \left(
+\begin{array}{ccc}
+1 & 1 & 1 \\
+0 & 1 & 1 \\
+...
+...& \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2}
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+(Cada identifica&#231;&#227;o 0.5, o plano ou reta de proje&#231;&#227;o 0.5,
+e o eixo de rota&#231;&#227;o 0.5).
+
+<P>
+<P>
+
+<B>Resposta:</B>
+Observamos que uma proje&#231;&#227;o ortogonal &#233; uma matriz sim&#233;trica
+e uma rota&#231;&#227;o &#233; ortogonal.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+Como a matriz <I>A</I> n&#227;o &#233; ortogonal n&#227;o pode ser uma rota&#231;&#227;o.
+Como uma proje&#231;&#227;o tem tra&#231;o 1 e a matriz <I>A</I> tem tra&#231;o 7n&#227;o &#233; proje&#231;&#227;o.  O de outra forma. Uma proje&#231;&#227;o tem determinante
+0, como a matriz <I>A</I> tem determinante -1, n&#227;o &#233; proje&#231;&#227;o.
+Ou de outra forma. Uma proje&#231;&#227;o <I>P</I> verifica <I>P</I><SUP>2</SUP>=<I>P</I>, e <IMG
+ WIDTH="66" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img29.gif"
+ ALT="$A^2\ne A$">.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+Como a matriz <I>C</I> n&#227;o &#233; ortogonal n&#227;o pode ser uma rota&#231;&#227;o.
+Como a matriz <I>C</I> n&#227;o &#233; sim&#233;trica n&#227;o pode ser uma proje&#231;&#227;o.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+A matriz <I>B</I> &#233; sim&#233;trica e n&#227;o &#233; ortogonal. Logo a &#250;nica
+possibilidade &#233; que seja uma proje&#231;&#227;o.
+A matriz <I>B</I> tem todas as linhas iguais. Logo seu determinante &#233; zero.
+Portanto, 0 &#233; um autovalor. 
+Os autovetores de 0 est&#227;o no plano
+<I>x</I>+<I>y</I>+<I>z</I>=0 (resolva o sistema correspondente). 
+Logo 0 &#233; um autovetor duplo (no m&#237;nimo &#233; duplo, 
+e como n&#227;o pode ter
+multiplicidade 3, pois ent&#227;o a matriz seria nula ou teria
+tra&#231;o zero, como preferir). O outro autovetor verifica
+
+<!-- MATH: $0+\lambda =1/3+1/3+1/3=1$ -->
+<IMG
+ WIDTH="238" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.gif"
+ ALT="$0+\lambda =1/3+1/3+1/3=1$">
+(o tra&#231;o da matriz). 
+Logo <I>B</I> tem autovalor 0 duplo e 1 simples. Logo,
+como &#233; sim&#233;trica,  &#233; uma proje&#231;&#227;o na reta de vetor diretor
+o autovalor correspondente. Este autovetor &#233; (1,1,1) (resolva o 
+sistema ou veja que o vetor (1,1,1) pertence a reta de proje&#231;&#227;o).
+
+<P>
+
+<P>
+<BR>
+
+<P>
+A matriz <I>D</I> &#233; ortogonal e n&#227;o &#233; sim&#233;trica. 
+Logo a &#250;nica possibilidade
+&#233; que seja uma proje&#231;&#227;o. Como &#233; ortogonal e estamos em dimens&#227;o
+tr&#234;s tem um autovalor <IMG
+ WIDTH="29" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$\pm 1$">.
+
+<P>
+Se <I>D</I> fosse uma rota&#231;&#227;o 1seria um autovalor. Se um fosse autovalor o sistema 
+a seguir teria solu&#231;&#227;o n&#227;o trivial (resolvendo este sistema
+tamb&#233;m obteremos o eixo de rota&#231;&#227;o):
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+-x +\sqrt{2}/2 y -\sqrt{2}/2 z=0,
+\quad
+-x-y=0,
+\quad
+\sqrt{2}/2 y +(\sqrt{2}/2-1)z=0.
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="576" HEIGHT="33"
+ SRC="img32.gif"
+ ALT="\begin{displaymath}-x +\sqrt{2}/2 y -\sqrt{2}/2 z=0,
+\quad
+-x-y=0,
+\quad
+\sqrt{2}/2 y +(\sqrt{2}/2-1)z=0.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Temos <I>x</I>=-<I>y</I>. Substituindo
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+(\sqrt{2}/2+1)y +\sqrt{2}/2 z=0,
+\quad
+\sqrt{2}/2 +y(\sqrt{2}/2-1)z=0.
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="454" HEIGHT="33"
+ SRC="img33.gif"
+ ALT="\begin{displaymath}(\sqrt{2}/2+1)y +\sqrt{2}/2 z=0,
+\quad
+\sqrt{2}/2 +y(\sqrt{2}/2-1)z=0.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Temos
+
+<!-- MATH: $y+(1-\sqrt{2})z=$ -->
+<IMG
+ WIDTH="140" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.gif"
+ ALT="$y+(1-\sqrt{2})z=$">.
+Logo um autovetor &#233;
+
+<!-- MATH: $(1-\sqrt{2}, \sqrt{2}-1,1)$ -->
+<IMG
+ WIDTH="161" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.gif"
+ ALT="$(1-\sqrt{2}, \sqrt{2}-1,1)$">.
+
+<P>
+Observe que, como a matriz &#233; ortogonal,  o plano de vetor normal
+
+<!-- MATH: $(1-\sqrt{2}, \sqrt{2}-1,1)$ -->
+<IMG
+ WIDTH="161" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img35.gif"
+ ALT="$(1-\sqrt{2}, \sqrt{2}-1,1)$">
+&#233; transformado nele pr&#243;prio.
+Temos as seguintes possibilidades:
+ou a restri&#231;&#227;o de <I>D</I> a este plano &#233; uma rota&#231;&#227;o ou n&#227;o.
+No &#250;ltimo caso haveria algum autovetor. Como <I>D</I> &#233; ortogonal
+e estamos em um plano o
+vetor perpendicular tamb&#233;m seria um autovetor. Logo <I>D</I> teria uma
+base ortogonal de autovetores, e em tal caso, seria sim&#233;trica. Como
+isto n&#227;o ocorre, temos que <I>D</I> &#233; uma rota&#231;&#227;o.
+
+<P>
+Dos racioc&#237;nios anteriores obtemos  que se 
+trata de uma rota&#231;&#227;o de eixo a reta 
+<!-- MATH: $((1-\sqrt{2})t,
+(\sqrt{2}-1)t,t)$ -->
+<IMG
+ WIDTH="201" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img36.gif"
+ ALT="$((1-\sqrt{2})t,
+(\sqrt{2}-1)t,t)$">,
+
+<!-- MATH: $t\in\mathbb{R}$ -->
+<IMG
+ WIDTH="49" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img9.gif"
+ ALT="$t\in \mathbb{R} $">.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html3"
+ HREF="node1.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="http://www.mat.puc-rio.br/usr/mat/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="http://www.mat.puc-rio.br/usr/mat/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="http://www.mat.puc-rio.br/usr/mat/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Lorenzo J. Diaz</I>
+<BR><I>2001-06-21</I>
+</ADDRESS>
+</BODY>
+</HTML>

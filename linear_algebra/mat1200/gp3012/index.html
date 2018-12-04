@@ -1,0 +1,1565 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!--Converted with LaTeX2HTML 98.1p1 release (March 2nd, 1998)
+originally by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>No Title</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="gp3012">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<LINK REL="STYLESHEET" HREF="gp3012.css">
+<LINK REL="next" HREF="node1.html">
+</HEAD>
+<BODY >
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="http://www.mat.puc-rio.br/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="http://www.mat.puc-rio.br/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="http://www.mat.puc-rio.br/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<BR>
+<BR>
+<!--End of Navigation Panel-->
+
+<P>
+<DIV ALIGN="CENTER"><FONT SIZE="+2">
+P3  de &#193;lgebra Linear I - 2001.2</FONT></DIV>
+
+<P>
+<DIV ALIGN="CENTER"><FONT SIZE="+2">
+Data: S&#225;bado, 24 de novembro de 2001.</FONT></DIV>
+
+<P>
+<DIV ALIGN="CENTER"><FONT SIZE="+2">
+Gabarito</FONT></DIV>
+
+<P>
+<P>
+<B>1)</B>
+Seja 
+<!-- MATH: $T\colon \mathbb{R} ^3 \to \mathbb{R} ^3$ -->
+<IMG
+ WIDTH="105" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img1.gif"
+ ALT="$T\colon \mathbb{R} ^3 \to \mathbb{R} ^3$">
+uma 
+transforma&#231;&#227;o linear ortogonal.
+Suponha que o determinante da matriz de <I>T</I> na base can&#244;nica &#233;
+-1 e que
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+T(1/\sqrt{3}, 1/\sqrt{3}, 1/\sqrt{3})=
+(-1/\sqrt{2}, 0, 1/\sqrt{2}),
+\quad
+T(-1/\sqrt{2}, 0, 1/\sqrt{2})=
+(1/\sqrt{6}, -2/\sqrt{6}, 1/\sqrt{6}).
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="737" HEIGHT="33"
+ SRC="img2.gif"
+ ALT="\begin{displaymath}T(1/\sqrt{3}, 1/\sqrt{3}, 1/\sqrt{3})=
+(-1/\sqrt{2}, 0, 1/\sq...
+...qrt{2}, 0, 1/\sqrt{2})=
+(1/\sqrt{6}, -2/\sqrt{6}, 1/\sqrt{6}).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<DL>
+<DT><DD><B>a)</B>
+Determine um autovalor de <I>T</I>.
+<DT><DD><B>b)</B>
+Determine <I>T</I>(1,-2,1).
+<DT><DD><B>c)</B>
+Determine <I>T</I>(1,0,0).
+<DT><DD><B>d)</B>
+Determine a matriz de <I>T</I> em uma base ortonormal
+(v. escolhe a base e deve  especifica-la).
+</DL>
+<P>
+
+<P><P>
+<BR>
+
+<P>
+
+<B>Resposta:</B>
+Afirmamos que
+(sem necessitar  saber quem &#233; <I>T</I>) um autovalor de <I>T</I> &#233; -1. 
+Observe que, como <I>T</I> &#233; uma transforma&#231;&#227;o
+de 
+<!-- MATH: $\mathbb{R} ^3$ -->
+<IMG
+ WIDTH="26" HEIGHT="19" ALIGN="BOTTOM" BORDER="0"
+ SRC="img3.gif"
+ ALT="$\mathbb{R} ^3$">,
+seu polin&#244;mio caracter&#237;stico tem grau 3.
+Portanto, tem uma raiz real (correspondendo a um autovalor de <I>T</I>).
+Como <I>T</I> &#233; ortogonal, os autovalores t&#234;m m&#243;dulo 1.
+Logo existe um autovalor real igual a 1 ou -1. Se &#233; -1 n&#227;o temos
+mais nada que ver. Caso contr&#225;rio as possibilidades
+s&#227;o: um autovalor 1 com multiplicidade tr&#234;s, ou um 
+autovalor 1 e dois autovalores complexos
+(n&#227;o reais) conjugados de m&#243;dulo 1,
+digamos <IMG
+ WIDTH="16" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img4.gif"
+ ALT="$\lambda$">
+e 
+<!-- MATH: $\bar \lambda$ -->
+<IMG
+ WIDTH="16" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img5.gif"
+ ALT="$\bar \lambda$">.
+Como o determinante de <I>T</I> &#233;
+o produto dos autovalores (contados com multiplicidade), 
+no primeiro caso o determinante &#233; 1,
+o que &#233; absurdo. No segundo caso o determinante vale 
+<!-- MATH: $1 \lambda \bar\lambda=
+|\lambda|^2=1$ -->
+<IMG
+ WIDTH="125" HEIGHT="40" ALIGN="MIDDLE" BORDER="0"
+ SRC="img6.gif"
+ ALT="$1 \lambda \bar\lambda=
+\vert\lambda\vert^2=1$">,
+o que tamb&#233;m &#233;  absurdo.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+Observe que 
+(1,1,1), (-1,0,1) e (1,-2,1) s&#227;o vetores ortogonais.
+Portanto, 
+como <I>T</I> &#233; ortogonal,
+<I>T</I>(1,1,1) e <I>T</I>(1,-2,1) s&#227;o ortogonais. Analogamente, 
+<I>T</I>(-1,0,1) e <I>T</I>(1,-2,1) tamb&#233;m s&#227;o ortogonais. Logo 
+<I>T</I>(1,-2,1) &#233; paralelo a 
+
+<!-- MATH: $T(1,1,1)\times T(-1,0,1)$ -->
+<IMG
+ WIDTH="189" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img7.gif"
+ ALT="$T(1,1,1)\times T(-1,0,1)$">.
+Logo  <I>T</I>(1,-2,1) &#233; paralelo a 
+<!-- MATH: $(-1,0,1)\times (1,-2,1)=(2,2,2)$ -->
+<IMG
+ WIDTH="261" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img8.gif"
+ ALT="$(-1,0,1)\times (1,-2,1)=(2,2,2)$">.
+Isto &#233;, <I>T</I>(1,-2,1) &#233; paralelo a (1,1,1).
+Portanto, como <I>T</I> &#233; ortogonal, conserva m&#243;dulos, e temos que
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+T(1/\sqrt{6},-2/\sqrt{6},1/\sqrt{6})=
+\pm (1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3}).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="399" HEIGHT="33"
+ SRC="img9.gif"
+ ALT="\begin{displaymath}T(1/\sqrt{6},-2/\sqrt{6},1/\sqrt{6})=
+\pm (1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3}).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Devemos decidir o sinal <IMG
+ WIDTH="20" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img10.gif"
+ ALT="$\pm$">
+(um sinal correspondera a determinante igual a 
+1e o utro a determinante igual a -1).
+
+<P>
+Para isto 
+considere a base ortonormal
+
+<!-- MATH: $\beta=\{u,v,w\}$ -->
+<IMG
+ WIDTH="112" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img11.gif"
+ ALT="$\beta=\{u,v,w\}$">
+onde
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\beta=
+\{(1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3}),
+(-1/\sqrt{2},0,1/\sqrt{2}),
+(1/\sqrt{6},-2/\sqrt{6},1/\sqrt{6})\}.
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="561" HEIGHT="33"
+ SRC="img12.gif"
+ ALT="\begin{displaymath}\beta=
+\{(1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3}),
+(-1/\sqrt{2},0,1/\sqrt{2}),
+(1/\sqrt{6},-2/\sqrt{6},1/\sqrt{6})\}.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Observe que <I>T</I>(<I>u</I>)=<I>v</I> e <I>T</I>(<I>v</I>)=<I>w</I>.
+Se <I>T</I>(<I>w</I>)=<I>u</I> (isto &#233;, tomamos o sinal positivo)
+ a matriz de <I>T</I> na base <IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="$\beta$">
+&#233;
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+[T]_\beta
+=\left(
+\begin{array}{ccc}
+0 &0 & 1\\
+1 &0 & 0\\
+0 &1 & 0\\
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="173" HEIGHT="76"
+ SRC="img14.gif"
+ ALT="\begin{displaymath}[T]_\beta
+=\left(
+\begin{array}{ccc}
+0 &0 & 1\\
+1 &0 & 0\\
+0 &1 & 0\\
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Observe que o determinante da matriz anterior &#233; 1.
+Observe que a matriz de <I>T</I> na base can&#244;nica &#233; semelhante a
+<IMG
+ WIDTH="38" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img15.gif"
+ ALT="$[T]_\beta$">,
+portanto estas matrizes t&#234;m o mesmo determinante. 
+Logo em tal caso 
+o determinante de <I>T</I> &#233; 1. 
+O que &#233; absurdo.
+Logo a matriz de <I>T</I> na base <IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="$\beta$">
+&#233; 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+[T]_\beta
+=\left(
+\begin{array}{ccc}
+0 &0 & -1\\
+1 &0 & 0\\
+0 &1 & 0
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="188" HEIGHT="76"
+ SRC="img16.gif"
+ ALT="\begin{displaymath}[T]_\beta
+=\left(
+\begin{array}{ccc}
+0 &0 & -1\\
+1 &0 & 0\\
+0 &1 & 0
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Ou seja, 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+T(1/\sqrt{6},-2/\sqrt{6},1/\sqrt{6})=
+- (1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3}).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="399" HEIGHT="33"
+ SRC="img17.gif"
+ ALT="\begin{displaymath}T(1/\sqrt{6},-2/\sqrt{6},1/\sqrt{6})=
+- (1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3}).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Isto &#233;, 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+T(1,-2,1)=
+-\sqrt{6} (1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3}),
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="320" HEIGHT="33"
+ SRC="img18.gif"
+ ALT="\begin{displaymath}T(1,-2,1)=
+-\sqrt{6} (1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3}),
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+pois 
+<!-- MATH: $||T(1,-2,1)||=||(1,-2,1)||=\sqrt{6}$ -->
+<IMG
+ WIDTH="285" HEIGHT="42" ALIGN="MIDDLE" BORDER="0"
+ SRC="img19.gif"
+ ALT="$\vert\vert T(1,-2,1)\vert\vert=\vert\vert(1,-2,1)\vert\vert=\sqrt{6}$">.
+
+<P>
+<BR>
+
+<P>
+Observe que tamb&#233;m resolvemos o item (d).
+
+<P>
+
+<P>
+<BR>
+
+<P>
+Finalmente, para determinar <I>T</I>(1,0,0),
+escreva,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+(1,0,0)=
+x
+(1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3})+ y
+(-1/\sqrt{2},0,1/\sqrt{2})+ z
+(1/\sqrt{6},-2/\sqrt{6},1/\sqrt{6}).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="648" HEIGHT="33"
+ SRC="img20.gif"
+ ALT="\begin{displaymath}(1,0,0)=
+x
+(1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3})+ y
+(-1/\sqrt{2},0,1/\sqrt{2})+ z
+(1/\sqrt{6},-2/\sqrt{6},1/\sqrt{6}).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Como a base &#233; ortonormal,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\begin{array}{ll}
+x&= (1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3})\cdot (1,0,0)= 1/\sqrt{3},\\
+y&= (-1/\sqrt{2},0,1/\sqrt{2})\cdot (1,0,0)=-1/\sqrt{2},\\
+z&=(1/\sqrt{6},-2/\sqrt{6},1/\sqrt{6})\cdot (1,0,0)=1/\sqrt{6}.
+\end{array}
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="371" HEIGHT="80"
+ SRC="img21.gif"
+ ALT="\begin{displaymath}\begin{array}{ll}
+x&= (1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3})\cdo...
+...6},-2/\sqrt{6},1/\sqrt{6})\cdot (1,0,0)=1/\sqrt{6}.
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Logo
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\begin{array}{ll}
+T(1,0,0)&=
+(1/\sqrt{3})\,
+T(1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3})+\\
+&+ (-1/\sqrt{2})\,
+T(-1/\sqrt{2},0,1/\sqrt{2})- 
+(1/\sqrt{6})\, T(1/\sqrt{6},-2/\sqrt{6},1/\sqrt{6}).
+\end{array}
+
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="617" HEIGHT="55"
+ SRC="img22.gif"
+ ALT="\begin{displaymath}\begin{array}{ll}
+T(1,0,0)&=
+(1/\sqrt{3})\,
+T(1/\sqrt{3},1/\...
+...1/\sqrt{6})\, T(1/\sqrt{6},-2/\sqrt{6},1/\sqrt{6}).
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Ou seja
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\begin{array}{ll}
+T(1,0,0)=&
+(1/\sqrt{3}) \,(-1/\sqrt{2},0,1/\sqrt{2})+\\
+&+(-1/\sqrt{2})\,
+(1/\sqrt{6},-2/\sqrt{6},1/\sqrt{6})-
+(1/\sqrt{6})\,
+(1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3}).
+\end{array}
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="630" HEIGHT="55"
+ SRC="img23.gif"
+ ALT="\begin{displaymath}\begin{array}{ll}
+T(1,0,0)=&
+(1/\sqrt{3}) \,(-1/\sqrt{2},0,1/...
+...(1/\sqrt{6})\,
+(1/\sqrt{3},1/\sqrt{3}, 1/\sqrt{3}).
+\end{array}\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Portanto,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+T(1,0,0)=
+\frac{1}{\sqrt{36}}\,
+(-\sqrt{6}-\sqrt{3}-\sqrt{2},,-\sqrt{2}+2\sqrt{3},
+\sqrt{6}-\sqrt{3} -\sqrt{2}).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="541" HEIGHT="50"
+ SRC="img24.gif"
+ ALT="\begin{displaymath}T(1,0,0)=
+\frac{1}{\sqrt{36}}\,
+(-\sqrt{6}-\sqrt{3}-\sqrt{2},,-\sqrt{2}+2\sqrt{3},
+\sqrt{6}-\sqrt{3} -\sqrt{2}).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<P>
+<P>
+<B>2)</B>
+Seja <I>A</I> uma matriz <IMG
+ WIDTH="47" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$3\times 3$">.
+Suponha que 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\det (A-\lambda I)=
+-(\lambda-3)^2(\lambda-2).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="266" HEIGHT="33"
+ SRC="img26.gif"
+ ALT="\begin{displaymath}\det (A-\lambda I)=
+-(\lambda-3)^2(\lambda-2).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P><DL>
+<DT><DD><B>a)</B>
+Estude se <I>A</I> &#233; invers&#237;vel.
+<DT><DD><B>b)</B>
+Estude se <I>A</I> pode ser encontrada de maneira que <I>A</I> seja semelhante &#224;
+matriz diagonal
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+D=
+\left(
+\begin{array}{ccc}
+2 & 0 &0\\
+0 &2& 0\\
+0 & 0& 3
+\end{array}
+\right),
+\end{displaymath} -->
+
+<IMG
+ WIDTH="158" HEIGHT="76"
+ SRC="img27.gif"
+ ALT="\begin{displaymath}D=
+\left(
+\begin{array}{ccc}
+2 & 0 &0\\
+0 &2& 0\\
+0 & 0& 3
+\end{array}\right),
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+isto &#233;,
+
+<!-- MATH: $A=P D P^{-1}$ -->
+<I>A</I>=<I>P D P</I><SUP>-1</SUP>.
+<DT><DD><B>c)</B>
+Estude se <I>A</I> pode ser encontrada de maneira que <I>A</I> seja semelhante &#224;
+matriz
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+D=
+\left(
+\begin{array}{ccc}
+3 & 1 &0\\
+1 &3& 0\\
+0 & 0& 2
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="158" HEIGHT="76"
+ SRC="img28.gif"
+ ALT="\begin{displaymath}D=
+\left(
+\begin{array}{ccc}
+3 & 1 &0\\
+1 &3& 0\\
+0 & 0& 2
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P><DT><DD><B>d)</B>
+Suponha  agora que <I>A</I> &#233; sim&#233;trica. 
+Estude se <I>A</I> pode ser encontrada de maneira que  seja semelhante &#224;
+matriz
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+D=
+\left(
+\begin{array}{ccc}
+3 & 1 &0\\
+0 &3& 0\\
+0 & 0& 2
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="158" HEIGHT="76"
+ SRC="img29.gif"
+ ALT="\begin{displaymath}D=
+\left(
+\begin{array}{ccc}
+3 & 1 &0\\
+0 &3& 0\\
+0 & 0& 2
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P></DL>
+<P>
+
+<P><P>
+<BR>
+
+<P>
+
+<B>Resposta:</B>
+A matriz <I>A</I> sim &#233; invers&#237;vel.
+Os autovalores de <I>A</I> s&#227;o as raizes do polin&#244;mio caracter&#237;stico.
+Ou seja 2 e 3 (com multiplicidade dois).
+ Podemos ver que <I>A</I> &#233; invers&#237;vel de duas formas:
+primeiro, como <I>A</I> n&#227;o tem autovalor zero &#233; invers&#237;'vel. Ou de outra forma, como o determinante
+de <I>A</I> &#233; o produto dos autovalores contados com multiplicicade, no caso
+18. Como o determinante &#233; n&#227;o nulo &#233; invers&#237;vel.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+A resposta ao item (b) &#233; negativa. Podemos ver isto de duas formas.
+Duas matrizes semelhantes t&#234;m o mesmo determinante. O determinante de
+<I>A</I> &#233; 18, como vimos, o de <I>D</I> &#233; 12. Logo n&#227;o s&#227;o semelhantes.
+
+<P>
+De outra forma, as
+matrizes semelhantes  t&#234;m os mesmos autovalores com a mesma multiplicidade.
+Mas a matriz <I>D</I> tem o autovalor 2 com multiplicidade 2 e 3com multiplicidade 1.
+Logo n&#227;o s&#227;o semelhantes.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+Para o item (c)
+a resposta &#233; novamente negativa. Um m&#233;todo &#233; calcular os
+determinantes. Veja que o determinante de <I>D</I> &#233; <IMG
+ WIDTH="67" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img30.gif"
+ ALT="$16\ne 18$">.
+
+<P>
+Outra forma, veja que <I>D</I> tem polin&#244;mio
+caracter&#237;stico 
+<!-- MATH: $(\lambda-2) ((\lambda-3)^2-1)=
+(\lambda-2)^2(\lambda-4)$ -->
+<IMG
+ WIDTH="325" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img31.gif"
+ ALT="$(\lambda-2) ((\lambda-3)^2-1)=
+(\lambda-2)^2(\lambda-4)$">.
+Logo seus autovalores s&#227;o 4 e 2, que s&#227;o diferentes dos autovalores de <I>A</I>. Portanto, as matrizes n&#227;o s&#227;o semelhantes.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+Finalmente, a resposta ao item (d) &#233; negativa. 
+Toda matriz sim&#233;trica &#233; diagonaliz&#225;vel. 
+Portanto, <I>A</I> somente pode ser semelhante a matrizes diagonaliz&#225;veis.
+Mas a matriz <I>D</I> do item (d) n&#227;o &#233; diagonaliz&#225;vel. Seus autovalores
+s&#227;o 3 (multiplicidade 2) e 2 (para ver isto observe que
+<I>D</I> &#233; triangular). Mas para 3 somente podemos encontrar um autovetor 
+linearmente independente:
+Os autovetores de autovalor 3 verificam 
+
+<!-- MATH: $(D-3I)(v)=(0,0,0)$ -->
+(<I>D</I>-3<I>I</I>)(<I>v</I>)=(0,0,0), ou seja
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+y=0, \quad -z=0,
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="134" HEIGHT="32"
+ SRC="img32.gif"
+ ALT="\begin{displaymath}y=0, \quad -z=0,
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+ou seja, os autovalores s&#227;o da forma (<I>t</I>,0,0), 
+<!-- MATH: $t\in \mathbb{R}$ -->
+<IMG
+ WIDTH="49" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.gif"
+ ALT="$t\in \mathbb{R} $">,
+<IMG
+ WIDTH="46" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img34.gif"
+ ALT="$t\ne 0$">,
+isto &#233;, somente &#233; poss&#237;vel encontrar dois autovetores
+l.i. de <I>D</I>, logo n&#227;o &#233; diagonaliz&#225;vel.
+
+<P>
+<P>
+<B>3)</B>
+Estude  que tipo de transforma&#231;&#245;es representam as matrizes.
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+A=
+\left(
+\begin{array}{ccc}
+1/\sqrt{2} & 1/\sqrt{6} &1/\sqrt{3}\\
+1/\sqrt{2} & -1/\sqrt{6}& -1/\sqrt{3}\\
+0 & -2/\sqrt{6}& 1/\sqrt{3}
+\end{array}
+\right)
+\left(
+\begin{array}{ccc}
+\sqrt{2}/2 & -\sqrt{2}/2 &0\\
+\sqrt{2}/2 & \sqrt{2}/2& 0\\
+0 & 0& 1
+\end{array}
+\right)
+\left(
+\begin{array}{ccc}
+1/\sqrt{2} & 1/\sqrt{2} &0\\
+1/\sqrt{6} & -1/\sqrt{6}& -2/\sqrt{6}\\
+1/\sqrt{3} & -1/\sqrt{3}& 1/\sqrt{3}
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="732" HEIGHT="80"
+ SRC="img35.gif"
+ ALT="\begin{displaymath}A=
+\left(
+\begin{array}{ccc}
+1/\sqrt{2} & 1/\sqrt{6} &1/\sqrt...
+...6}\\
+1/\sqrt{3} & -1/\sqrt{3}& 1/\sqrt{3}
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+B=\left(
+\begin{array}{ccc}
+-1/\sqrt{2} & -1/\sqrt{6} &-1/\sqrt{3}\\
+1/\sqrt{2} & -1/\sqrt{6}& -1/\sqrt{3}\\
+0 & -2/\sqrt{6}& 1/\sqrt{3}
+\end{array}
+\right)
+\left(
+\begin{array}{ccc}
+\sqrt{2}/2 & -\sqrt{2}/2 &0\\
+\sqrt{2}/2 & \sqrt{2}/2& 0\\
+0 & 0& 1
+\end{array}
+\right)
+\left(
+\begin{array}{ccc}
+1/\sqrt{2} & 1/\sqrt{2} &0\\
+1/\sqrt{6} & -1/\sqrt{6}& -2/\sqrt{6}\\
+1/\sqrt{3} & -1/\sqrt{3}& 1/\sqrt{3}
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="748" HEIGHT="80"
+ SRC="img36.gif"
+ ALT="\begin{displaymath}B=\left(
+\begin{array}{ccc}
+-1/\sqrt{2} & -1/\sqrt{6} &-1/\sq...
+...6}\\
+1/\sqrt{3} & -1/\sqrt{3}& 1/\sqrt{3}
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+C=
+\frac{1}{3}
+\left(
+\begin{array}{ccc}
+2 & -1 &-1\\
+-1&2& -1\\
+-1 & -1& 2
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="217" HEIGHT="76"
+ SRC="img37.gif"
+ ALT="\begin{displaymath}C=
+\frac{1}{3}
+\left(
+\begin{array}{ccc}
+2 & -1 &-1\\
+-1&2& -1\\
+-1 & -1& 2
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+No casos envolvendo
+ proje&#231;&#245;es determine a reta ou plano de proje&#231;&#227;o,
+nos casos envolvendo  espelhamentos determine
+o plano ou reta de espelhamento,
+e nos casos envolvendo  rota&#231;&#245;es determine o 
+&#226;ngulo e o eixo de rota&#231;&#227;o.
+
+<P>
+
+<P><P>
+<BR>
+
+<P>
+
+<B>Resposta:</B>
+Observe que a matriz 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+E=
+\left(
+\begin{array}{ccc}
+\sqrt{2}/2 & -\sqrt{2}/2 &0\\
+\sqrt{2}/2 & \sqrt{2}/2& 0\\
+0 & 0& 1
+\end{array}
+\right)=
+\left(
+\begin{array}{ccc}
+\cos \pi/4& -\mbox{sen}\, \pi/4 &0\\
+\mbox{sen}\,\pi/4  & \cos \pi/4& 0\\
+0 & 0& 1
+\end{array}
+\right)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="477" HEIGHT="78"
+ SRC="img38.gif"
+ ALT="\begin{displaymath}E=
+\left(
+\begin{array}{ccc}
+\sqrt{2}/2 & -\sqrt{2}/2 &0\\
+\...
+...box{sen}\,\pi/4 & \cos \pi/4& 0\\
+0 & 0& 1
+\end{array}\right)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+representa, na base can&#244;nica uma rota&#231;&#227;o de &#226;ngulo <IMG
+ WIDTH="35" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.gif"
+ ALT="$\pi/4$">
+em torno do eixo 
+<!-- MATH: $\mathbb{Z}$ -->
+<IMG
+ WIDTH="17" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img40.gif"
+ ALT="$\mathbb{Z} $">.
+Analogamente, dada uma base ortonormal
+
+<!-- MATH: $\{e_1,e_2,e_3\}$ -->
+<IMG
+ WIDTH="89" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img41.gif"
+ ALT="$\{e_1,e_2,e_3\}$">,
+a matriz <I>E</I> (na base <IMG
+ WIDTH="16" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img13.gif"
+ ALT="$\beta$">)
+representa uma rota&#231;&#227;o de &#226;ngulo <IMG
+ WIDTH="35" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.gif"
+ ALT="$\pi/4$">
+e eixo paralelo ao vetor
+<I>e</I><SUB>3</SUB>.
+
+<P>
+Considere agora  a base can&#244;nica <IMG
+ WIDTH="17" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img42.gif"
+ ALT="$\cal{E}$">
+e a base
+ortonormal <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.gif"
+ ALT="$\gamma$">
+dada por 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\gamma=\{
+(1/\sqrt{2},1/\sqrt{2},0),
+(1/\sqrt{6}, -1/\sqrt{6},-2/\sqrt{6}),
+(1/\sqrt{3}, -1/\sqrt{3}, 1/\sqrt{3}).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="566" HEIGHT="33"
+ SRC="img44.gif"
+ ALT="\begin{displaymath}\gamma=\{
+(1/\sqrt{2},1/\sqrt{2},0),
+(1/\sqrt{6}, -1/\sqrt{6},-2/\sqrt{6}),
+(1/\sqrt{3}, -1/\sqrt{3}, 1/\sqrt{3}).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Observe que a matriz ortogonal
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+P=
+\left(
+\begin{array}{ccc}
+1/\sqrt{2} & 1/\sqrt{2} &0\\
+1/\sqrt{6} & -1/\sqrt{6}& -2/\sqrt{6}\\
+1/\sqrt{3} & -1/\sqrt{3}& 1/\sqrt{3}
+\end{array}
+\right)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="276" HEIGHT="80"
+ SRC="img45.gif"
+ ALT="\begin{displaymath}P=
+\left(
+\begin{array}{ccc}
+1/\sqrt{2} & 1/\sqrt{2} &0\\
+1/...
+...{6}\\
+1/\sqrt{3} & -1/\sqrt{3}& 1/\sqrt{3}
+\end{array}\right)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+representa a matriz de mudan&#231;a de base da base can&#244;nica &#224; base <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.gif"
+ ALT="$\gamma$">.
+
+<P>
+Observe que 
+<!-- MATH: $P^{-1}=P^t$ -->
+<I>P</I><SUP>-1</SUP>=<I>P</I><SUP><I>t</I></SUP>e que
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+P^{-1}=
+\left(
+\begin{array}{ccc}
+1/\sqrt{2} & 1/\sqrt{6} &1/\sqrt{3}\\
+1/\sqrt{2} & -1/\sqrt{6}& -1/\sqrt{3}\\
+0 & -2/\sqrt{6}& 1/\sqrt{3}
+\end{array}
+\right)
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="294" HEIGHT="80"
+ SRC="img46.gif"
+ ALT="\begin{displaymath}P^{-1}=
+\left(
+\begin{array}{ccc}
+1/\sqrt{2} & 1/\sqrt{6} &1/...
+... -1/\sqrt{3}\\
+0 & -2/\sqrt{6}& 1/\sqrt{3}
+\end{array}\right)
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+representa a mudan&#231;a de base da base <IMG
+ WIDTH="16" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img43.gif"
+ ALT="$\gamma$">
+&#224; base can&#244;nica.
+Logo
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+A=P^{-1} E P
+\end{displaymath} -->
+
+
+<I>A</I>=<I>P</I><SUP>-1</SUP> <I>E P</I>
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+representa uma rota&#231;&#227;o de &#226;ngulo <IMG
+ WIDTH="35" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.gif"
+ ALT="$\pi/4$">e eixo a reta (<I>t</I>,-<I>t</I>,<I>t</I>), 
+<!-- MATH: $t\in \mathbb{R}$ -->
+<IMG
+ WIDTH="49" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.gif"
+ ALT="$t\in \mathbb{R} $">.
+
+<P>
+
+<P>
+<BR>
+Para a segunda matriz
+observe que
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+B= T \,
+A,
+\quad
+T=
+\left(
+\begin{array}{ccc}
+-1& 0&0\\
+0& 1& 0\\
+0 & 0& 1
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="268" HEIGHT="76"
+ SRC="img47.gif"
+ ALT="\begin{displaymath}B= T \,
+A,
+\quad
+T=
+\left(
+\begin{array}{ccc}
+-1& 0&0\\
+0& 1& 0\\
+0 & 0& 1
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Claramente <I>T</I> representa o espelhamento no plano <I>x</I>=0.
+Logo <I>B</I> representa 
+uma rota&#231;&#227;o de &#226;ngulo <IMG
+ WIDTH="35" HEIGHT="37" ALIGN="MIDDLE" BORDER="0"
+ SRC="img39.gif"
+ ALT="$\pi/4$">e eixo a reta (<I>t</I>,-<I>t</I>,<I>t</I>), 
+<!-- MATH: $t\in \mathbb{R}$ -->
+<IMG
+ WIDTH="49" HEIGHT="34" ALIGN="MIDDLE" BORDER="0"
+ SRC="img33.gif"
+ ALT="$t\in \mathbb{R} $">
+seguida de um
+espelhamento no plano <I>x</I>=0.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+Finalmente, observe que
+a matriz <I>C</I>,  &#233; sim&#233;trica, n&#227;o ortogonal
+(o produto escalar das duas primeiras colunas &#233; n&#227;o nulo)
+e tem tra&#231;o 
+<!-- MATH: $1/3(2+2+2)=6/3=2$ -->
+1/3(2+2+2)=6/3=2.
+Logo a matriz <I>C</I> &#233; candidata a representar uma proje&#231;&#227;o 
+em um plano (espelhamentos e rota&#231;&#245;es correspondem a matrizes ortogonais,
+e proje&#231;&#245;es ortogonais em um plano t&#234;m tra&#231;o 1). 
+Em tal caso,
+<I>C</I>(1,0,0) e <I>C</I>(0,1,0) pertencem ao plano de proje&#231;&#227;o,
+logo (2,-1,-1) e (-1,2,-1) seriam dois vetores paralelos ao plano.
+Verifiquemos que 
+<!-- MATH: $C(2,-1,-1)=(2,-1,-1)$ -->
+<I>C</I>(2,-1,-1)=(2,-1,-1) e 
+<!-- MATH: $C(-1,2,-1)=(-1,2,-1)$ -->
+<I>C</I>(-1,2,-1)=(-1,2,-1):
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\frac{1}{3}
+\left(
+\begin{array}{ccc}
+2 & -1 &-1\\
+-1&2& -1\\
+-1 & -1& 2
+\end{array}
+\right)
+\left(
+\begin{array}{ccc}
+2\\
+-1\\
+-1
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc}
+(4+1+1)/3\\
+(-2-2+1)/3\\
+(-2+1-2)/3
+\end{array}
+\right)=
+\left(
+\begin{array}{ccc}
+2\\
+-1\\
+-1
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="548" HEIGHT="76"
+ SRC="img48.gif"
+ ALT="\begin{displaymath}\frac{1}{3}
+\left(
+\begin{array}{ccc}
+2 & -1 &-1\\
+-1&2& -1\...
+...)=
+\left(
+\begin{array}{ccc}
+2\\
+-1\\
+-1
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Analogamente,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+\frac{1}{3}
+\left(
+\begin{array}{ccc}
+2 & -1 &-1\\
+-1&2& -1\\
+-1 & -1& 2
+\end{array}
+\right)
+\left(
+\begin{array}{ccc}
+-1\\
+2\\
+-1
+\end{array}
+\right)
+=
+\left(
+\begin{array}{ccc}
+(-2+-2+1)/3\\
+(1+4+1)/3\\
+(1-2-2)/3
+\end{array}
+\right)=
+\left(
+\begin{array}{ccc}
+-1\\
+2\\
+-1
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="562" HEIGHT="76"
+ SRC="img49.gif"
+ ALT="\begin{displaymath}\frac{1}{3}
+\left(
+\begin{array}{ccc}
+2 & -1 &-1\\
+-1&2& -1\...
+...)=
+\left(
+\begin{array}{ccc}
+-1\\
+2\\
+-1
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Portanto, o outro autovalor de <I>C</I> &#233;  zero (<IMG
+ WIDTH="50" HEIGHT="18" ALIGN="BOTTOM" BORDER="0"
+ SRC="img50.gif"
+ ALT="$\lambda=1$">
+tem multiplicidade
+dois e o tra&#231;o &#233; 2) e o vetor normal ao plano <IMG
+ WIDTH="16" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img51.gif"
+ ALT="$\pi$">paralelo aos vetores acima &#233; um autovetor (lembre
+que <I>A</I> &#233; sim&#233;trica), este vetor &#233; 
+ (1,1,1). Logo <I>C</I> representa uma proje&#231;&#227;o.
+ortogonal no plano <I>x</I>+<I>y</I>+<I>z</I>=0.
+
+<P>
+<P>
+<B>4)</B>
+<IMG
+ WIDTH="8" HEIGHT="17" ALIGN="BOTTOM" BORDER="0"
+ SRC="img52.gif"
+ ALT="$\,$"><DL>
+<DT><DD><B>a)</B>
+Seja <I>A</I> uma matriz sim&#233;trica <IMG
+ WIDTH="47" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$3\times 3$">.
+Sabendo que 
+<!-- MATH: $A^{2001}=-I$ -->
+<I>A</I><SUP>2001</SUP>=-<I>I</I>(<I>I</I> &#233; a matriz identidade), determine <I>A</I>. 
+<DT><DD><B>b)</B>
+Estude se existe uma matriz sim&#233;trica <IMG
+ WIDTH="47" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$3\times 3$">,
+<I>B</I>,
+tal que 
+<!-- MATH: $B^{2000}=-I$ -->
+<I>B</I><SUP>2000</SUP>=-<I>I</I>.
+<DT><DD><B>c)</B>
+Estude se &#233; verdadeira a afirma&#231;&#227;o seguinte:
+Seja <I>C</I> uma matriz <IMG
+ WIDTH="47" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$3\times 3$">
+tal que <I>C</I><SUP>5</SUP>=0. Ent&#227;o <I>C</I>&#233; a matriz zero.
+</DL>
+<P>
+
+<P><P>
+<BR>
+
+<P>
+
+<B>Resposta:</B>
+Para o item (b) a resposta &#233; negativa:
+
+<!-- MATH: $\det(B^{2000})=(\det(B))^{2000}$ -->
+<IMG
+ WIDTH="211" HEIGHT="38" ALIGN="MIDDLE" BORDER="0"
+ SRC="img53.gif"
+ ALT="$\det(B^{2000})=(\det(B))^{2000}$">,
+que &#233; um n&#250;mero n&#227;o negativo
+(2000 &#233; par!). Mas se a matriz menos identidade <IMG
+ WIDTH="47" HEIGHT="33" ALIGN="MIDDLE" BORDER="0"
+ SRC="img25.gif"
+ ALT="$3\times 3$">
+tem determinante -1. Logo n&#227;o existe nenhuma matriz <I>B</I> tal que
+
+<!-- MATH: $B^{2000}=-I$ -->
+<I>B</I><SUP>2000</SUP>=-<I>I</I>.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+Para o item (a) argumentamos como segue. 
+Como a matriz <I>A</I> &#233; sim&#233;trica &#233; diagonaliz&#225;vel.
+Seja <I>D</I> uma forma diagonal de <I>A</I>,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+D=
+\left(
+\begin{array}{ccc}
+a &0  &0\\
+0&b& 0\\
+0 & 0& c
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="158" HEIGHT="76"
+ SRC="img54.gif"
+ ALT="\begin{displaymath}D=
+\left(
+\begin{array}{ccc}
+a &0 &0\\
+0&b& 0\\
+0 & 0& c
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Como vimos em sala de aula, 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+D^m=
+\left(
+\begin{array}{ccc}
+a^m &0  &0\\
+0&b^m& 0\\
+0 & 0& c^m
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="206" HEIGHT="76"
+ SRC="img55.gif"
+ ALT="\begin{displaymath}D^m=
+\left(
+\begin{array}{ccc}
+a^m &0 &0\\
+0&b^m& 0\\
+0 & 0& c^m
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Escreva
+
+<!-- MATH: $A=P D P^{-1}$ -->
+<I>A</I>=<I>P D P</I><SUP>-1</SUP>. Observe que 
+
+<!-- MATH: $A^m=P D^m P^{-1}$ -->
+<I>A</I><SUP><I>m</I></SUP>=<I>P D</I><SUP><I>m</I></SUP> <I>P</I><SUP>-1</SUP>(como tamb&#233;m vimos na aula).
+Fa&#231;a <I>m</I>=2001.
+Logo 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+-I = A^{2001}= P \, D^{2001} \, P^{-1},
+\quad
+-I = P \, D^{2001} \, P^{-1}.
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="392" HEIGHT="32"
+ SRC="img56.gif"
+ ALT="\begin{displaymath}-I = A^{2001}= P \, D^{2001} \, P^{-1},
+\quad
+-I = P \, D^{2001} \, P^{-1}.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Multiplicando as duas expressoes
+ &#225; esquerda por <I>P</I><SUP>-1</SUP> e &#224; direita por <I>P</I>,
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+-(P^{-1}\, I \, P) =( P^{-1} \,  P) \,  D^{2001}\, ( P^{-1} \, P),
+\quad
+-I =D^{2001}.
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="422" HEIGHT="33"
+ SRC="img57.gif"
+ ALT="\begin{displaymath}-(P^{-1}\, I \, P) =( P^{-1} \, P) \, D^{2001}\, ( P^{-1} \, P),
+\quad
+-I =D^{2001}.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Logo
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+-1=a^{2001},
+\quad
+-1= b^{2001},
+\quad
+-1 =c^{2001}.
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="315" HEIGHT="32"
+ SRC="img58.gif"
+ ALT="\begin{displaymath}-1=a^{2001},
+\quad
+-1= b^{2001},
+\quad
+-1 =c^{2001}.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+A &#250;nica solu&#231;&#227;o &#233;  <I>a</I>=<I>b</I>=<I>c</I>=-1.
+Ou seja <I>D</I>=-<I>I</I> e
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+A=P\,  D \, P^{-1}= P \, (-I) \,  P^{-1}=- (P \, P^{-1})=-I.
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="386" HEIGHT="33"
+ SRC="img59.gif"
+ ALT="\begin{displaymath}A=P\, D \, P^{-1}= P \, (-I) \, P^{-1}=- (P \, P^{-1})=-I.
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Logo <I>A</I> &#233; menos a identidade.
+
+<P>
+
+<P>
+<BR>
+
+<P>
+A resposta para o item (c) &#233; negativa, considere
+por exemplo a matriz
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+C=
+\left(
+\begin{array}{ccc}
+0 &0  &0\\
+0&0& 0\\
+1 & 0& 0
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="156" HEIGHT="76"
+ SRC="img60.gif"
+ ALT="\begin{displaymath}C=
+\left(
+\begin{array}{ccc}
+0 &0 &0\\
+0&0& 0\\
+1 & 0& 0
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Observe que 
+<BR><P></P>
+<DIV ALIGN="CENTER">
+<!-- MATH: \begin{displaymath}
+C^2 =C \, C =
+\left(
+\begin{array}{ccc}
+0 &0  &0\\
+0&0& 0\\
+1 & 0& 0
+\end{array}
+\right)
+\,
+\left(
+\begin{array}{ccc}
+0 &0  &0\\
+0&0& 0\\
+1 & 0& 0
+\end{array}
+\right)=
+\left(
+\begin{array}{ccc}
+0 &0  &0\\
+0&0& 0\\
+0 & 0& 0
+\end{array}
+\right).
+\end{displaymath} -->
+
+
+<IMG
+ WIDTH="472" HEIGHT="76"
+ SRC="img61.gif"
+ ALT="\begin{displaymath}C^2 =C \, C =
+\left(
+\begin{array}{ccc}
+0 &0 &0\\
+0&0& 0\\
+...
+...{array}{ccc}
+0 &0 &0\\
+0&0& 0\\
+0 & 0& 0
+\end{array}\right).
+\end{displaymath}">
+</DIV>
+<BR CLEAR="ALL">
+<P></P>
+Logo 
+<!-- MATH: $C^3=C^2\,  C=0\,  C=0$ -->
+<IMG
+ WIDTH="179" HEIGHT="20" ALIGN="BOTTOM" BORDER="0"
+ SRC="img62.gif"
+ ALT="$C^3=C^2\, C=0\, C=0$">.
+Analogamente, <I>C</I><SUP>4</SUP>=<I>C</I><SUP>5</SUP>=0 e <I>C</I> &#233; n&#227;o nula.
+
+<P>
+<BR><HR>
+<!--Table of Child-Links-->
+<A NAME="CHILD_LINKS">&#160;</A>
+<UL>
+<LI><A NAME="tex2html3"
+ HREF="node1.html">About this document ... </A>
+</UL>
+<!--End of Table of Child-Links-->
+<HR>
+<!--Navigation Panel-->
+<A NAME="tex2html1"
+ HREF="node1.html">
+<IMG WIDTH="37" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="next"
+ SRC="http://www.mat.puc-rio.br/latex2html/icons.gif/next_motif.gif"></A> 
+<IMG WIDTH="26" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="up"
+ SRC="http://www.mat.puc-rio.br/latex2html/icons.gif/up_motif_gr.gif"> 
+<IMG WIDTH="63" HEIGHT="24" ALIGN="BOTTOM" BORDER="0" ALT="previous"
+ SRC="http://www.mat.puc-rio.br/latex2html/icons.gif/previous_motif_gr.gif">   
+<BR>
+<B> Next:</B> <A NAME="tex2html2"
+ HREF="node1.html">About this document ...</A>
+<!--End of Navigation Panel-->
+<ADDRESS>
+<I>Lorenzo J. Diaz</I>
+<BR><I>2001-11-26</I>
+</ADDRESS>
+</BODY>
+</HTML>
