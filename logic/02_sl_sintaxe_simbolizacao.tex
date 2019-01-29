@@ -1,0 +1,651 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Arquivo LaTeX geral para a classe Article
+%
+% Abrantes Araújo Silva Filho
+% abrantesasf@gmail.com
+% 2018-02-25
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Configura tipo de documento e load de packages:
+\RequirePackage{ifpdf}
+\ifpdf
+  \documentclass[pdftex,a4paper,12pt,brazil]{article} % Se tem draft é rascunho
+  %\usepackage{ae}
+  \usepackage[pdftex]{geometry}
+  \geometry{a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm}
+  \usepackage[pdftex]{graphicx}
+  \usepackage{setspace}
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage[brazil]{babel}
+  \usepackage[brazil]{varioref}
+  \usepackage[pdftex,pdfpagemode=UseOutlines,bookmarks=true,%
+   bookmarksopen=true,bookmarksopenlevel=5,bookmarksnumbered=true,%
+   pdfstartview=FitH,hyperfootnotes=true]{hyperref}
+   \hypersetup{pdfinfo={
+   Author={Abrantes Ara\'{u}jo Silva Filho},
+   Title={Respostas de exerc\'{i}cios selecionados de lógica matem\'{a}tica},
+   Creator={pdfLaTeX},
+   Producer={pdfTeX},
+   CreationDate={},
+   ModDate={},
+   Subject={Estudo sobre l\'{o}gica matem\'{a}tica},
+   Keywords={l\'{o}gica, logic, respostas, solutions},
+   }}
+  %\usepackage{thumbpdf}
+  \hypersetup{colorlinks,%
+    debug=false,%
+    linkcolor=blue,%
+    citecolor=blue,%
+    urlcolor=blue}
+  \usepackage{cleveref}
+  \mathchardef\period=\mathcode`.
+\else
+  \documentclass[a4paper,12pt]{article}
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[brazil]{babel}
+  \usepackage[dvips]{geometry}
+  \usepackage[dvips]{graphicx}
+  \geometry{a4paper,left=2cm,right=2cm,top=2cm,bottom=2cm}
+  \usepackage{setspace}
+  \usepackage{varioref}
+  \usepackage{hyperref}
+  \usepackage{cleveref}
+\fi
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Configura lingua portuguesa:
+%\usepackage[brazil]{babel}
+%\usepackage[utf8]{inputenc}
+%\usepackage[T1]{fontenc}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Altera fonte padrão
+% phv=Helvetica ptm=Times ppl=Palatino pbk=bookman
+% pag=AdobeAvantGarde pnc=Adobe NewCenturySchoolbook
+\renewcommand{\familydefault}{ppl}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Configura símbolos e bibliotecas matemáticas:
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{array}
+\usepackage[ruled]{algorithm}
+%\usepackage{physics}
+\usepackage{syllogism}
+\usepackage{mathpartir}
+\usepackage{siunitx}
+\sisetup{group-separator = {.}}
+\sisetup{group-digits = {false}}
+\sisetup{output-decimal-marker = {,}}
+
+\usepackage{listings}
+\lstset{literate=
+  {á}{{\'a}}1 {é}{{\'e}}1 {í}{{\'i}}1 {ó}{{\'o}}1 {ú}{{\'u}}1
+  {Á}{{\'A}}1 {É}{{\'E}}1 {Í}{{\'I}}1 {Ó}{{\'O}}1 {Ú}{{\'U}}1
+  {à}{{\`a}}1 {è}{{\`e}}1 {ì}{{\`i}}1 {ò}{{\`o}}1 {ù}{{\`u}}1
+  {À}{{\`A}}1 {È}{{\'E}}1 {Ì}{{\`I}}1 {Ò}{{\`O}}1 {Ù}{{\`U}}1
+  {ä}{{\"a}}1 {ë}{{\"e}}1 {ï}{{\"i}}1 {ö}{{\"o}}1 {ü}{{\"u}}1
+  {Ä}{{\"A}}1 {Ë}{{\"E}}1 {Ï}{{\"I}}1 {Ö}{{\"O}}1 {Ü}{{\"U}}1
+  {â}{{\^a}}1 {ê}{{\^e}}1 {î}{{\^i}}1 {ô}{{\^o}}1 {û}{{\^u}}1
+  {Â}{{\^A}}1 {Ê}{{\^E}}1 {Î}{{\^I}}1 {Ô}{{\^O}}1 {Û}{{\^U}}1
+  {œ}{{\oe}}1 {Œ}{{\OE}}1 {æ}{{\ae}}1 {Æ}{{\AE}}1 {ß}{{\ss}}1
+  {ű}{{\H{u}}}1 {Ű}{{\H{U}}}1 {ő}{{\H{o}}}1 {Ő}{{\H{O}}}1
+  {ç}{{\c c}}1 {Ç}{{\c C}}1 {ø}{{\o}}1 {å}{{\r a}}1 {Å}{{\r A}}1
+  {€}{{\euro}}1 {£}{{\pounds}}1 {«}{{\guillemotleft}}1
+  {»}{{\guillemotright}}1 {ñ}{{\~n}}1 {Ñ}{{\~N}}1 {¿}{{?`}}1
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Configura fontes e outros símbolos
+\usepackage{wasysym}
+\usepackage{pifont}
+\usepackage{marvosym}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa pacote ifthen, necessário para alguns comandos
+\usepackage{ifthen}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa suporte a cores:
+\usepackage{color}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{xparse}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa figuras e tabelas
+\usepackage{float}
+\usepackage{wrapfig}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa suporte ao TikZ Code
+\usepackage{tikz}
+\usetikzlibrary{positioning,shapes,shadows}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa pacote para tabelas longas e em landscape
+\usepackage{array,longtable}
+\usepackage{lscape}
+\usepackage{array}
+\usepackage{colortbl}
+\newcolumntype{M}[1]{>{\centering\arraybackslash}m{#1}}
+%\newcolumntype{ML}[1]{>{$}l<{$}}
+%\newcolumntype{MR}[1]{>{R}r<{R}}
+\newcolumntype{L}[1]{>{\arraybackslash}m{#1}}
+\newcolumntype{N}{@{}m{0pt}@{}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa pacote para URLs, e-mails e pathmanes:
+\usepackage{url}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Commando para ``italizar´´ palavras em inglês (e outras línguas!)
+\newcommand{\ingles}[1]{\textit{#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Commando para colocar o espaço correto entre um número e sua unidade
+\newcommand{\unidade}[2]{\ensuremath{#1\,\mathrm{#2}}}
+\newcommand{\unidado}[2]{{#1}\,{#2}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% produz ordinal masculino ou feminino dependendo do segundo
+%% argumento.  Por exemplo:
+%% \ordinal{1}{a} Semana
+%% \ordinal{1}{o} Encontro
+\newcommand{\ordinal}[2]{%
+#1%
+\ifthenelse{\equal{a}{#2}}%
+{\textordfeminine}%
+{\textordmasculine}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa suporte a sublinhado:
+% A opção normalem indica que ênfase será dada por itálico
+% e não por sublinhado.
+\usepackage[normalem]{ulem}
+% O código a seguir define mais comandos para o pacote ulem, e foi retirado
+% do "LaTeX demo: exemplos com LaTeXe", de Klauss Steding Jessen:
+\def\dotuline{\bgroup
+  \ifdim\ULdepth=\maxdimen  % Set depth based on font, if not set already
+  \settodepth\ULdepth{(j}\advance\ULdepth.4pt\fi
+  \markoverwith{\begingroup
+  \advance\ULdepth0.08ex
+  \lower\ULdepth\hbox{\kern.15em .\kern.1em}%
+  \endgroup}\ULon}
+\def\dashuline{\bgroup
+  \ifdim\ULdepth=\maxdimen  % Set depth based on font, if not set already
+  \settodepth\ULdepth{(j}\advance\ULdepth.4pt\fi
+  \markoverwith{\kern.15em
+  \vtop{\kern\ULdepth \hrule width .3em}%
+  \kern.15em}\ULon}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa pacote para indentação da primeira linha de parágrafos
+%\usepackage{indentfirst}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa pacote enumerate, extensão ao environment enumerate:
+\usepackage{enumerate}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% environment ``Description'', similar ao environment
+%%% ``description'', mas com maior controle sobre a tabulação das
+%%% entradas e de suas descrições.
+%%% Adaptado de um exemplo do LaTeX Companion, pg. 64.
+\newlength{\myentrylen}
+\newenvironment{Description}[1]%
+{\list{}
+  {\settowidth{\labelwidth}{\textbf{#1}}%
+    \leftmargin\labelwidth\advance\leftmargin\labelsep%
+    \renewcommand{\makelabel}[1]{%
+      \settowidth{\myentrylen}{\textbf{##1}}%
+      \ifthenelse{\lengthtest{\myentrylen > \labelwidth}}%
+      {\parbox[b]{\labelwidth}%
+        {\makebox[0pt][l]{\textbf{##1}}\\\mbox{}}}
+      {\textbf{##1}}%
+      \hfill\relax%
+      }
+}}
+{\endlist}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Comando para epígrafe em capítulos/seções (não confundir com a epígrafe geral
+% da tese, definida em página isolada nos elementos pré-textuais.
+\newcommand{\epigrafe}[2]{
+   \vspace{-6ex}%
+     {\footnotesize%
+     \begin{flushright}%
+     \begin{minipage}{.6\textwidth}%
+     #1
+     \end{minipage}\\
+     \textit{#2}%
+     \end{flushright}}%
+   \vspace{-3ex}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa pacote para controle de cabeçalhos e rodapés e configura;
+% Ativa pacote:
+\usepackage{fancyhdr}
+% Configura estilo padrão das páginas
+\pagestyle{headings}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa pacote para formatar os captions:
+\usepackage[normal,bf]{caption}
+\captionsetup[table]{font=small,skip=0pt}
+\captionsetup[figure]{skip=0pt}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa o MakeIndex para fazer índices remissivos:
+\usepackage{makeidx}
+%\makeindex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa pacote para fazer glossário, conforme
+% "LaTeX demo: exemplos com LaTeXe", de Klauss Steding Jessen.
+\usepackage{makeglo}
+%\makeglossary
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ativa o pacote havard de referências bibliográficas e
+% define um novo comando para colocar as citações em slanted:
+% As opções do pacote determinam como as citações aparecem no texto.
+% As seguinte opções existem:
+%      default: lista a primeira completa e as subsequentes abreviadas;
+%	  full: lista todas as citações completas;
+%         abbr: lista todas as citações abreviadas.
+% A qualquer momento o modo de citaçõa pode ser alterado com o uso do
+% comando: \citationmode{}, cujo argumento é uma das opções da lista anterior.
+\usepackage[default]{harvard}
+% Cria comando para colocar as citações em slanted:
+\newcommand{\refbib}[1]{\textsl{#1}}
+% O seguinte comando configura como as referências bibliográficas serão
+% formatadas. O estilo agsm é o padrão do pacote havard. Ver manual de instrução
+% do pacote para maiores informações.
+\bibliographystyle{agsm}
+% Configura como as citações das referências apareceram no texto. O estilo agsm
+% é o padrão do pacote havard. Ver manual de instrução do pacote para maiores
+% informações.
+\citationstyle{agsm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Comandos específicos para este documento
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Determina forma de hifenização de palavras quando a hifenização
+%%% padrão não estiver correta
+%\hyphenation{ne-nhu-ma}
+\babelhyphenation[brazil]{ne-nhu-ma Git-Hub}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% COMEÇA DOCUMENTO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\title{Exercícios de sintaxe e simbolização\\
+  (várias fontes)\\
+  \ \\
+--- respostas de exercícios selecionados ---}
+\author{Abrantes Araújo Silva Filho}
+\date{2018-03}
+\maketitle
+\tableofcontents
+%\newpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{O que é este documento?} 
+\label{o_que_e}
+%\thispagestyle{plain}
+
+Este documento contém as minhas respostas aos exercícios e problemas a respeito da sintaxe e
+simbolização se sentenças da linguagem formal SL (Sentential Logic), presentes em três fontes:
+
+\begin{itemize}
+\item \emph{The Logic Book}, de Merrie Bergmann, James Moor e Jack Nelson (\ordinal{6}{a}
+  edição);
+\item \emph{Introdução à Lógica Matemática}, de Rogério Miguel Coelho (\ordinal{1}{a}
+  edição);
+\item \emph{Logic I (MIT 24.241)}, curso de lógica do MIT, disponível em
+  \url{https://ocw.mit.edu/courses/linguistics-and-philosophy/24-241-logic-i-fall-2009/}
+\end{itemize}
+
+ATENÇÃO: não garanto que tudo aqui está correto, pelo contrário, algumas respostas expressam
+minha visão particular e podem estar em desacordo com
+a ``resposta padrão'' dos autores do livro ou do professor da disciplina. Também
+não garanto que todos os exercícios e problemas do capítulo ou livro estarão resolvidos aqui.
+De qualquer modo, caso pretenda
+utilizar este documento como base para seu próprio estudo, tenha em mente o seguinte:
+
+\begin{quote}
+  \emph{Este documento é fornecido ``no estado em que se encontra'', sem garantias de qualquer
+    natureza, expressas ou implícitas. Em nenhuma hipótese o autor poderá ser responsabilizado
+    por qualquer problema, dano, prejuízo material ou imaterial decorrente do uso deste
+    conteúdo.}
+\end{quote}
+
+Este documento (em formato PDF), o original em \LaTeX\ e outros materiais
+adicionais (se necessário) estão disponíveis no seguinte
+repositório GitHub: \url{https://github.com/abrantesasf/matematica} (procure pelo
+diretório ``logic'').
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Exercícios do \emph{The Logic Book}, capítulo 2}
+\label{tlb-2}
+%\thispagestyle{plain}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Seção 2.1E}
+\label{tlb-2-21e}
+
+\paragraph{1.a)} Não é válida, pois o conectivo $\wedge$ é binário, exigindo que seja
+utilizado entre dois componentes (entre 2 conjuntos).
+
+\paragraph{1.b)} É válida pois informalmente podemos omitir os parênteses externos.
+
+\paragraph{1.c)} É uma negação válida.
+
+\paragraph{1.d)} Não é válida, pois a negação não é conectivo entre dois componentes.
+
+\paragraph{1.e)} É válida.
+
+\paragraph{1.f)} Não é válida pois \textbf{P} e \textbf{Q} são metavariáveis utilizadas
+para falar sobre expressões da linguagem SL, não para uso direto como uma expressão
+da linguagem SL.
+
+\paragraph{1.g)} É válida, podemos usar colchetes no lugar dos parênteses para
+facilitar o entendimento.
+
+\paragraph{1.h)} É válida, podemos usar conjunção com negação.
+
+\paragraph{1.i)} Não é válida, pois falta fechar um parêntese antes do colchete
+de fechamento.
+
+\paragraph{2.a)} Condição material.
+
+\paragraph{2.b)} Disjunção.
+
+\paragraph{2.c)} Bicondição material.
+
+\paragraph{2.d)} Condição material.
+
+\paragraph{2.e)} Condição material.
+
+\paragraph{2.f)} Bicondição material.
+
+\paragraph{2.g)} Conjunção.
+
+\paragraph{2.h)} Negação.
+
+\paragraph{2.i)} Condição material.
+
+\paragraph{2.j)} Conjunção.
+
+\paragraph{2.k)} Negação.
+
+\paragraph{2.l)} Condição material.
+
+\paragraph{2.m)} Disjunção
+
+\paragraph{2.n)} Condição material.
+
+\paragraph{3.a)} Conectivo principal: $\wedge$; componentes: $\sim A, A, H$
+
+\paragraph{3.c)} Conectivo principal: $\vee$; componentes: $\sim (S \wedge G)$, $B$,
+$(S \wedge G)$, $S$, $G$
+
+\paragraph{3.e)} Conectivo principal: $\supset$; componentes: $(C \equiv K)$, $[\sim H \supset (M \wedge N)]$,
+$C$, $K$, $\sim H$, $H$, $(M \supset N)$, $M$, $N$
+
+\paragraph{4.a)} Não pode ocorrer imediatamente antes do conector $\sim$, e não pode aparecer
+imediatamente depois de uma sentença ``A''.
+
+\paragraph{4.c)} Pode ocorrer imediatamente antes do conector $\sim$, e não pode aparecer
+imediatamente depois de uma sentença ``A''.
+
+\paragraph{4.e)} Igual o anterior.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Seção 2.2E}
+\label{tlb-2-22e}
+
+\paragraph{1.a)} Bob não é um corredor de maratona.
+
+\begin{quote}
+  \emph{Paráfrase}: ``\underline{Não é verdade que} Bob é um corredor de maratona.''
+
+  \emph{Chave de simbolização}: ``B: Bob é um corretor de maratona.''
+
+  \emph{Sentença simbólica}: $\sim B$
+\end{quote}
+
+\paragraph{1.b)} Alberto e Bob são jogadores.
+
+\begin{quote}
+  \emph{Paráfrase}: ``Alberto é jogador \underline{e} Bob é jogador.''
+
+  \emph{Chave de simbolização}: ``A: Alberto é jogador; B: Bob é jogador.''
+
+  \emph{Sentença simbólica}: $A \wedge B$
+\end{quote}
+
+\paragraph{1.c)} Se Carol é corredora, ela também é uma maratonista.
+
+\begin{quote}
+  \emph{Paráfrase}: ``\underline{Se} Carol é corredora \underline{então} Carol é maratonista.''
+
+  \emph{Chave de simbolização}: ``C: Carol é corredora; M: Carol é maratonista.''
+
+  \emph{Sentença simbólica}: $C \rightarrow M$
+\end{quote}
+
+\paragraph{1.d)} Alguns corredores são maratonistas.
+
+\begin{quote}
+  \emph{Paráfrase}: ``\underline{Não é verdade que} todos os corredores são maratonistas.''
+
+  \emph{Chave de simbolização}: ``C: Todos os corredores são maratonistas.''
+
+  \emph{Sentença simbólica}: $\sim C$
+\end{quote}
+
+\paragraph{1.e)} Carol correrá a maratona de Boston se, e apenas se, Alberto correr também.
+
+\begin{quote}
+  \emph{Paráfrase}: ``Carol correrá a maratona de Boston \underline{se, e apenas se,} Alberto também correr
+  na maratona de Boston.''
+
+  \emph{Chave de simbolização}: ``C: Carol correrá a maratona de Boston; A: Alberto correrá a maratona de Boston.''
+
+  \emph{Sentença simbólica}: $C \Leftrightarrow A$
+\end{quote}
+
+\paragraph{1.f)} Nem todos os corredores são maratonistas.
+
+\begin{quote}
+  \emph{Paráfrase}: ``\underline{Não é verdade que} todos os corredores são maratonistas.''
+
+  \emph{Chave de simbolização}: ``M: todos os corredores são maratonistas.''
+
+  \emph{Sentença simbólica}: $\sim M$
+\end{quote}
+
+\paragraph{1.g)} Carol ou Alberto correrão na maratona de Boston.
+
+\begin{quote}
+  \emph{Paráfrase}: ``Carol correrá na maratona de Boston \underline{ou} Alberto correrá na maratona de Boston.''
+
+  \emph{Chave de simbolização}: ``C: Carol correrá na maratona de Boston; A: Alberto correrá na maratona de Boston.''
+
+  \emph{Sentença simbólica}: $C \vee A$
+\end{quote}
+
+\paragraph{1.h)} Se Carol correr na maratona de Boston, então Alberto também correrá.
+
+\begin{quote}
+  \emph{Paráfrase}: ``\underline{Se} Carol correr na maratona de Boston \underline{então} Alberto também correrá na maratona de Boston.''
+
+  \emph{Chave de simbolização}: ``C: Carol correrá na maratona de Boston; A: Alberto correrá na maratona de Boston.''
+
+  \emph{Sentença simbólica}: $C \rightarrow A$
+\end{quote}
+
+\paragraph{2.a)} Se Felipe tirar férias nas Bermudas, Clara tambem irá.
+
+\begin{quote}
+  \emph{Paráfrase}: ``\underline{Se} Felipe tirar férias nas Bermudas \underline{então} Clara também irá tirar férias nas Bermudas.''
+
+  \emph{Chave de simbolização}: ``F: Felipe irá tirar férias nas Bermudas; C: Clara irá tirar férias nas Bermudas.''
+
+  \emph{Sentença simbólica}: $F \rightarrow C$
+\end{quote}
+
+\paragraph{2.b)} Verônica irá tirar férias nas Bermudas apenas se Clara o fizer.
+
+\begin{quote}
+  \emph{Paráfrase}: ``\underline{Se} Verônica tirar férias nas Bermudas \underline{então} Clara irá tirar férias nas Bermudas.''
+
+  \emph{Chave de simbolização}: ``V: Verônica irá tirar férias nas Bermudas; C: Clara irá tirar férias nas Bermudas.''
+
+  \emph{Sentença simbólica}: $V \rightarrow C$
+\end{quote}
+
+\paragraph{2.c)} Verônica irá tirar férias nas Bermudas se Felipe for.
+
+\begin{quote}
+  \emph{Paráfrase}: ``\underline{Se} Felipe for tirar férias nas Bermudas \underline{então} Verônica irá tirar férias nas Bermudas.''
+
+  \emph{Chave de simbolização}: ``F: Felipe irá tirar férias nas Bermudas; V: Verônica irá tirar férias nas Bermudas.''
+
+  \emph{Sentença simbólica}: $F \rightarrow V$
+\end{quote}
+
+\paragraph{2.d)} Clara ou Roberto irão para as Bermudas nas férias.
+
+\begin{quote}
+  \emph{Paráfrase}: ``Clara irá para as Bermudas nas férias \underline{ou} Roberto irá para as Bermudas nas férias.''
+
+  \emph{Chave de simbolização}: ``C: Clara irá para as Bermudas nas férias; R: Roberto irá para as Bermudas nas férias.''
+
+  \emph{Sentença simbólica}: $C \vee R$
+\end{quote}
+
+\paragraph{2.e)} Verônica irá para as férias nas Bermudas, desde que Clara vá.
+
+\begin{quote}
+  \emph{Paráfrase}: ``\underline{Se} Clara for para as Bermundas nas férias \underline{então} Verônica irá para as Bermudas nas férias.''
+
+  \emph{Chave de simbolização}: ``C: Clara irá para as Bermudas nas férias; V: Verônica irá para as Bermudas nas férias.''
+
+  \emph{Sentença simbólica}: $C \rightarrow V$
+\end{quote}
+
+\paragraph{2.f)} Roberto não irá para as Bermudas nas férias.
+
+\begin{quote}
+  \emph{Paráfrase}: ``\underline{Não é verdade que} Roberto irá para as Bermudas nas férias.''
+
+  \emph{Chave de simbolização}: ``R: Roberto irá para as Bermudas nas férias.''
+
+  \emph{Sentença simbólica}: $\sim R$
+\end{quote}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Exercícios do \emph{Introdução à Lógica Matemática}, capítulo 2}
+\label{ilm-2}
+%\thispagestyle{plain}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Seção 1.6}
+\label{ilm-1-16}
+
+\paragraph{1.a)} 
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\newpage
+%\section{Problemas}
+%\label{problemas}
+%\thispagestyle{plain}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Problema 2.1}
+%\label{problema_2_1}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Produz as referências bibliográficas
+%% Configura título das referências bibliográficas:
+%\newpage
+%\renewcommand{\refname}{Referências bibliográficas}
+%% Ativa arquivo com as referências bibliográficas:
+%\bibliography{evandro}
+%% Adiciona entrada na toc:
+%\addcontentsline{toc}{section}{Referências bibliográficas}
+%% Estilo da página
+%\thispagestyle{headings}
+%\index{referencias bibliograficas@Referências bibliográficas}
+
+
+% Termina o documento
+\end{document}             
