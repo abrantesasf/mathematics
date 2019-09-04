@@ -1,0 +1,91 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modelo para artigo
+%
+% Por: Abrantes Araújo Silva Filho
+%      abrantesasf@gmail.com
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Classe do documento
+\RequirePackage{ifpdf}
+\ifpdf
+  \documentclass[pdftex, brazil, 12pt, twoside]{article}
+\else
+  \documentclass[brazil, 12pt, twoside]{article}
+\fi
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Preâmbulo com todas as outras outras chamadas para todos os outros packages
+%%% e o que mais for necessário
+\input{utils/preambulo.tex}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ajuste do layout, espaçamento de linhas e etc.:
+\geometry{a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm}
+\onehalfspacing
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Configurações para as propriedades do PDF:
+\hypersetup{
+      pdftitle={PS01: Previsão do tempo},
+      pdfauthor={Abrantes Araújo Silva Filho},
+      pdfsubject={Álgebra linear},
+      pdfkeywords={cadeias de Markov},
+      pdfinfo={
+        CreationDate={}, % Ex.: D:AAAAMMDDHH24MISS
+        ModDate={}       % Ex.: D:AAAAMMDDHH24MISS
+      }}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Compilação condicional de capítulos
+%\includeonly{}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Começa o documento
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Front matter
+\title{\ingles{Problem Set 1}\\%
+{\Large --- previsão do tempo com álgebra linear ---}}
+\author{Abrantes Araújo Silva Filho}
+\date{2019-08-30}
+\maketitle
+
+%\renewcommand{\abstractname}{novo título do abstract}
+\abstract{Este \ingles{Problem Set} foi criado para familiarizar os alunos da
+disciplina de álgebra linear com
+o GNU Octave e apresentar uma aplicação prática da álgebra linear: a previsão
+do tempo através de Cadeias de Markov.}
+
+\tableofcontents
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Main matter
+\input{main/introducao}
+\input{main/instalacao}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Apêndices
+%\appendix
+%\include{apend/placeholder}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Back matter
+\bibliography{utils/biblioteca}
+
+\printindex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Termina o documento
+\end{document}

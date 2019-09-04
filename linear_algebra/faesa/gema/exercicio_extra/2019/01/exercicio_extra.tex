@@ -95,9 +95,10 @@
     \hypersetup{
       % Informações variáveis em cada documento (MUDE AQUI!):
       pdftitle={Atividade de Recuperação da Aprendizagem},
-      pdfauthor={Prof.\ Rober Marconi},
-      pdfsubject={Matrizes},
-      pdfkeywords={matrizes, conceitos, operações, determinantes, inversa},
+      pdfauthor={Abrantes Araújo Silva Filho},
+      pdfsubject={Matrizes, Determinantes, Sistemas de Equações Lineares},
+      pdfkeywords={matrizes, conceitos, operações, determinantes,
+        inversa, sistema de equações lineares},
       pdfinfo={
         CreationDate={}, % Ex.: D:AAAAMMDDHH24MISS
         ModDate={}       % Ex.: D:AAAAMMDDHH24MISS
@@ -326,6 +327,68 @@ Abril/2019}}
 
 \newpage
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makebox[15cm]{Nome:\enspace\hrulefill}
+
+\vspace{0.5cm}
+
+\makebox[15cm]{Curso:\enspace\hrulefill}
+
+\fullwidth{\section{Instruções importantes}}
+
+Esta \emph{Atividade de Recuperação da Aprendizagem} consiste de
+86 questões, das quais 13 são obrigatórias (as outras questões
+são opcionais). O enunciado de cada questão indica o tipo (obrigatória ou
+opcional). Obviamente as questões opcionais são importantes para o
+correto e completo entendimento da matéria, portanto é indicado que o
+aluno também as resolva.
+Algumas regras devem ser observadas:
+
+\vspace{0.5cm}
+
+\begin{enumerate}
+  \item A atividade só poderá ser realizada durante os horários da
+        monitoria;
+  \item O monitor não dará respostas, mas explicará a matéria e
+        esclarecerá dúvidas tantas vezes quanto necessário;
+  \item As respostas serão escritas em folhas de papel almaço,
+        disponibilizadas pelo monitor. Não se esqueça de escrever seu
+        nome nas folhas;
+  \item As questões de verdadeiro ou falso (V ou F) e/ou questões
+        objetivas podem ser resolvidas na própria folha de
+        questões. Questões discursivas devem ser resolvidas nas folhas de
+        papel almaço;
+  \item Ao final de cada monitoria o monitor recolherá as questões e
+        as folhas de papel almaço com as respostas. Na próxima
+        monitoria as questões e as folhas serão devolvidas para que os
+        alunos continuem a resolução;
+  \item O Prof. Rober estabelecerá o prazo para o término da
+        atividade;
+  \item A atividade \emph{não é obrigatória}, cabe a cada aluno
+        decidir se deseja fazer. Entretanto, caso o aluno opte por
+        realizar a atividade, pelo menos as questões obrigatórias
+        devem ser feitas;
+  \item As questões obrigatórias são as de número: 12, 14, 15, 45, 46,
+        72, 73, 74, 75, 83, 84, 85 e 86;
+  \item É permitido a consulta de qualquer material bibliográfico,
+        impresso ou online, e também é permitido o uso de calculadoras
+        (desde que o desenvolvimento de todas as contas esteja
+        descrito);
+  \item DICA: inicie pelas questões obrigatórias e, caso tenha
+        dificuldade, faça as questões opcionais referentes aos
+        conteúdos que você não está dominando bem. Isso lhe
+        proporcionará revisar e aprender os conteúdos necessários;
+  \item Essa atividade servirá para recuperar, além da aprendizagem,
+        uma parte da nota da primeira avaliação. As regras para isso
+        ainda serão definidas pelo Prof. Rober. Observação: recuperar
+        a nota é a conseqüência, o objetivo é recuperar a aprendizagem!
+\end{enumerate}
+
+
+\newpage
 \begin{questions}
 \setlength\linefillthickness{0.2pt}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -339,13 +402,13 @@ Abril/2019}}
 %\fi
 
 \question
-De forma geral, o que é uma matriz?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) De forma geral, o que é uma matriz?
+\begin{solution}
   É um quadro retangular de números dispostos em linhas e colunas.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Indique se a sentença é verdadeira (V) ou falsa (F):
+(OPCIONAL) Indique se a sentença é verdadeira (V) ou falsa (F):
 \begin{parts}
   \part \vf[F] Em geral, as matrizes são identificadas por letras minúsculas
   \part \vf[F] As matrizes só podem ser delimitadas por parênteses ou colchetes
@@ -356,39 +419,45 @@ Indique se a sentença é verdadeira (V) ou falsa (F):
 \end{parts}
 
 \question
-O que é a \emph{ordem} (ou \emph{tipo}) de uma matriz? Como a \emph{ordem} é
+(OPCIONAL) O que é a \emph{ordem} (ou \emph{tipo}) de uma matriz? Como a \emph{ordem} é
 representada?
-\begin{solutionorlines}[0.75in]
+\begin{solution}
   A \emph{ordem} de uma matriz indica a quantidade de linhas e colunas que a matriz
   tem. É representada por $m \times n$, onde $m$ indica a quantidade de \emph{linhas}
   e $n$ indica a quantidade de \emph{colunas}.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Qual a ordem da matriz
+(OPCIONAL) Qual a ordem da matriz
 $A = \begin{pmatrix}
 a & b & c\\
-d & e & f\end{pmatrix}$? E o tipo da matriz
+d & e & f\end{pmatrix}$?
+\begin{solution}
+  A matriz A é da ordem $2 \times 3$, e a matriz B é da ordem $3 \times 5$.
+\end{solution}
+
+\question
+(OPCIONAL) Qual o tipo da matriz
 $B = \begin{pmatrix}
   1 & -3 & 0 & 7 & 2\\
   2 & -2 & 4 & 5 & \sqrt{3}\\
   3 & -1 & 6 & 3 & 9
 \end{pmatrix}$?
-\begin{solutionorlines}[0.50in]
-  A matriz A é da ordem $2 \times 3$, e a matriz B é da ordem $3 \times 5$.
-\end{solutionorlines}
+\begin{solution}
+  A matriz B é da ordem (tipo) $3 \times 5$.
+\end{solution}
 
 \question
-O que é uma matriz \emph{quadrada} de ordem $n$?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) O que é uma matriz \emph{quadrada} de ordem $n$?
+\begin{solution}
   É uma matriz na qual o número de linhas é igual ao número de colunas, ou seja,
   tem a ordem $m \times n,\ m = n$.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Em uma matriz quadrada A de ordem $n$, podemos afirmar que sua \emph{diagonal
+(OPCIONAL) Em uma matriz quadrada A de ordem $n$, podemos afirmar que sua \emph{diagonal
   principal} é formada pelos elementos $a_{11}, a_{22}, a_{33}, \cdots, a_{nn}$? Por quê?
-\begin{solutionorlines}[0.75in]
+\begin{solution}
   Sim, pois se a matriz é quadrada sua diagonal principal será formada por todos os
   elementos nos quais $m = n$, ou seja, $a_{11}, a_{22}, a_{33}, \cdots, a_{nn}$.
 
@@ -399,10 +468,10 @@ Em uma matriz quadrada A de ordem $n$, podemos afirmar que sua \emph{diagonal
    b_{21} & \color{red} b_{22} & b_{23}\\
    b_{31} & b_{32} & \color{red} b_{33}
   \end{pmatrix}$ 
-\end{solutionorlines}
+\end{solution}
 
 \question
-Indique se a sentença é verdadeira (V) ou falsa (F):
+(OPCIONAL) Indique se a sentença é verdadeira (V) ou falsa (F):
 \begin{parts}
   \part \vf[F] Matrizes que não são quadradas, não têm diagonal principal
   \part \vf[F] Matrizes que não são quadradas, não têm diagonal secundária
@@ -425,24 +494,24 @@ Indique se a sentença é verdadeira (V) ou falsa (F):
 \end{parts}
 
 \question
-A representação da seguinte matriz está correta? Por quê?
+(OPCIONAL) A representação da seguinte matriz está correta? Por quê?
 
 $A = \begin{Vmatrix}
   -1 & 7 & 2\\
   0 & 5 & -5\end{Vmatrix}_{3 \times 2}$
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   Não, pois a matriz não é do tipo $3 \times 2$, e sim do tipo
   $2 \times 3$.
-\end{solutionorlines}
+\end{solution}
 
 \question
-O que significa dizer que uma determinada matriz tem 2 elementos nulos?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) O que significa dizer que uma determinada matriz tem 2 elementos nulos?
+\begin{solution}
   Que 2 de seus elementos são $0$.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Uma matriz $A$ pode ser representada pela notação $A = (a_{ij})_{m \times n}$
+(OPCIONAL) Uma matriz $A$ pode ser representada pela notação $A = (a_{ij})_{m \times n}$
 onde $a_{ij}$ ou $[A]_{ij}$ é o elemento na linha $i$ e coluna $j$ dessa
 matriz. Em relação a essa forma de notação, marque a resposta correta:
 \begin{checkboxes}
@@ -458,7 +527,7 @@ matriz. Em relação a essa forma de notação, marque a resposta correta:
 \end{checkboxes}
 
 \question
-Chama-se \emph{traço} de uma matriz quadrada a soma dos elementos da
+\textbf{(OBRIGATÓRIA)} Chama-se \emph{traço} de uma matriz quadrada a soma dos elementos da
 diagonal principal. Determine o traço de cada uma das matrizes:\\%
 $A = \begin{pmatrix}
   1 & 2\\
@@ -471,12 +540,6 @@ $B = \begin{pmatrix}
   -1 & 0 & -1\\
 \end{pmatrix}$
 
-%\ifprintanswers
-%\newpage
-%\else
-%\newpage
-%\fi
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -484,7 +547,7 @@ $B = \begin{pmatrix}
 \fullwidth{\section{Matrizes: construção a partir de regras}}
 
 \question
-Sabendo-se que uma matriz qualquer $A$ de ordem $m \times n$ tem a forma
+(OPCIONAL) Sabendo-se que uma matriz qualquer $A$ de ordem $m \times n$ tem a forma
 genérica
 
 $A = \begin{pmatrix}
@@ -504,7 +567,7 @@ $b_{ij} =
     \end{cases}
 $
 %\end{equation}
-\begin{solutionorbox}[1.0in]
+\begin{solution}
 $B = \begin{pmatrix}
    2    & 2    & 3    & 4\\
    1/2  & 4    & 6    & 8\\
@@ -512,13 +575,13 @@ $B = \begin{pmatrix}
    1/4  & 2/4  & 3/4  & 8\\
    1/5  & 2/5  & 3/5  & 4/5\\
 \end{pmatrix}$
-\end{solutionorbox}
+\end{solution}
 
 \question
-Escreva a matriz $C = (c_{ij})_{4 \times 1}$, onde $c_{ij} = i^2 + j$.
+\textbf{(OBRIGATÓRIA)} Escreva a matriz $C = (c_{ij})_{4 \times 1}$, onde $c_{ij} = i^2 + j$.
 
 \question
-Escreva a matriz $A = (a_{ij})_{2 \times 3}$, onde:
+\textbf{(OBRIGATÓRIA)} Escreva a matriz $A = (a_{ij})_{2 \times 3}$, onde:
 $a_{ij} =
     \begin{cases}
       2i + j & \text{se}\ i \ge j\\
@@ -533,7 +596,7 @@ $
 \fullwidth{\section{Matrizes especiais}}
     
 \question
-Já vimos e estudamos 12 (doze) tipos de matrizes especiais, ou seja, aquelas matrizes
+(OPCIONAL) Já vimos e estudamos 12 (doze) tipos de matrizes especiais, ou seja, aquelas matrizes
 que apresentam alguma particularidade que as diferenciam de outras matrizes genéricas.
 Liste todas as matrizes especiais:
 \ifprintanswers
@@ -572,37 +635,37 @@ Liste todas as matrizes especiais:
 \fi
 
 \question
-O que é uma \emph{matriz nula}? Que letra geralmente é utilizada para representar tal matriz?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) O que é uma \emph{matriz nula}? Que letra geralmente é utilizada para representar tal matriz?
+\begin{solution}
   É uma matriz na qual todos os seus elementos são nulos, ou seja, são zeros. É geralmente
   representada pela letra $O$. Por exemplo, uma matriz $O_{2 \times 3}$ é a matriz nula
   de ordem $2 \times 3$.
-\end{solutionorlines}
+\end{solution}
 
 \question
-A matriz nula $O = (0)$ é uma matriz quadrada, uma matriz linha ou uma matriz coluna?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) A matriz nula $O = (0)$ é uma matriz quadrada, uma matriz linha ou uma matriz coluna?
+\begin{solution}
   Essa matriz pode ser considerada tudo isso ao mesmo tempo pois sua ordem é $1 \times 1$
   (e portanto é quadrada), tem apenas 1 linha (e portanto é uma matriz linha) e tem apenas
   1 coluna (e portanto é uma matriz coluna).
-\end{solutionorlines}
+\end{solution}
 
 \question
-O que é uma \emph{matriz diagonal}?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) O que é uma \emph{matriz diagonal}?
+\begin{solution}
   É uma matriz \emph{quadrada} na qual todos os elementos que \emph{não estão}
   na diagonal principal são nulos.
-\end{solutionorlines}
+\end{solution}
 
 \question
-O que é uma \emph{matriz triangular}?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) O que é uma \emph{matriz triangular}?
+\begin{solution}
   É uma matriz \emph{quadrada} na qual todos os elementos que \emph{estão acima}
   OU que \emph{estão abaixo} da diagonal principal são nulos.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Indique se a sentença é verdadeira (V) ou falsa (F):
+(OPCIONAL) Indique se a sentença é verdadeira (V) ou falsa (F):
 \begin{parts}
   \part \vf[F] Em situações especiais, como na multiplicação de matrizes,
   uma matriz nula pode conter um elemento com o valor 1
@@ -618,16 +681,16 @@ Indique se a sentença é verdadeira (V) ou falsa (F):
 \end{parts}
 
 \question
-O que é uma \emph{matriz identidade}? Que letra geralmente é utilizada para representar
+(OPCIONAL) O que é uma \emph{matriz identidade}? Que letra geralmente é utilizada para representar
 tal matriz?
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   É uma matriz diagonal na qual todos os elementos da \emph{diagonal principal}
   são unitários, ou seja, são o valor 1. É geralmente representada pela letra $I$.
-\end{solutionorlines}
+\end{solution}
 
 \question
-O que é uma \emph{matriz transposta}? Como é representada?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) O que é uma \emph{matriz transposta}? Como é representada?
+\begin{solution}
   É aquela na qual as linhas de uma matriz passam a ser as colunas da outra, e é
   representada pela letra ``t'' sobrescrita, por exemplo: $A^t$ é a matriz
   transposta de $A$.
@@ -635,10 +698,10 @@ O que é uma \emph{matriz transposta}? Como é representada?
   Mais especificamente, a transposta de uma matriz $A$ de ordem $m \times n$, é a
   matriz $A^t$ de ordem $n \times m$ tal que as linhas da matriz $A$ passam a er
   as colunas ma matriz $A^t$.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Indique se a sentença é verdadeira (V) ou falsa (F):
+(OPCIONAL) Indique se a sentença é verdadeira (V) ou falsa (F):
 \begin{parts}
   \part \vf[F] Uma matriz nula $O$ de ordem 1 pode ser uma matriz identidade
   \part \vf[F] Uma matriz identidade não precisa ser quadrada
@@ -659,36 +722,36 @@ Indique se a sentença é verdadeira (V) ou falsa (F):
 \end{parts}
 
 \question
-O que é uma \emph{matriz oposta}? Como é representada?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) O que é uma \emph{matriz oposta}? Como é representada?
+\begin{solution}
   É uma matriz que foi multiplicada por $-1$, ou seja, teve todos os seus
   elementos multiplicados por $-1$. É representada por um menos unário no
   nome da matriz, por exemplo, a matriz $-C$ é a oposta da matriz $C$.
-\end{solutionorlines}
+\end{solution}
 
 \question
-O que é uma \emph{matriz simétrica}?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) O que é uma \emph{matriz simétrica}?
+\begin{solution}
   É uma matriz que é idêntica à sua transposta, ou seja, uma matriz $B$
   é simétrica se $B = B^t$.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Uma matriz de ordem $m \times n$ com $m \ne n$ pode ser simétrica? Por quê?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) Uma matriz de ordem $m \times n$ com $m \ne n$ pode ser simétrica? Por quê?
+\begin{solution}
   Não, pois a ordem da transposta não seria igual à ordem da matriz original e
   isso indica que a matriz original não é idêntica à sua transposta.
-\end{solutionorlines}
+\end{solution}
 
 \question
-O que é uma \emph{matriz anti-simétrica}?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) O que é uma \emph{matriz anti-simétrica}?
+\begin{solution}
   É uma matriz que é idêntica à oposta de sua transposta, ou seja, uma matriz $B$
   é anti-simétrica se $B = -(B^t)$.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
+(OPCIONAL) Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
 
 \hspace{5cm}$B = \begin{pmatrix}
   0 & 0 & 0\\
@@ -704,7 +767,7 @@ Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
 \end{checkboxes}
 
 \question
-Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
+(OPCIONAL) Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
 
 \hspace{5cm}$D = \begin{pmatrix}
   7
@@ -717,7 +780,7 @@ Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
 \end{checkboxes}
 
 \question
-Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
+(OPCIONAL) Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
 
 \hspace{5cm}$E = \begin{pmatrix}
   1 & 0 & 0\\
@@ -733,7 +796,7 @@ Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
 \end{checkboxes}
 
 \question
-Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
+(OPCIONAL) Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
 
 \hspace{5cm}$F = \begin{pmatrix}
   0 & 0 & 1\\
@@ -749,7 +812,7 @@ Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
 \end{checkboxes}
 
 \question
-Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
+(OPCIONAL) Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
 
 \hspace{5cm}$G = \begin{pmatrix}
   0 & -2 & 0\\
@@ -765,7 +828,7 @@ Marque a(s) alternativa(s) que corresponde(m) à seguinte matriz:
 \end{checkboxes}
 
 \question
-Indique se a sentença é verdadeira (V) ou falsa (F):
+(OPCIONAL) Indique se a sentença é verdadeira (V) ou falsa (F):
 \begin{parts}
   \part \vf[V] Existe uma matriz nula, quadrada, linha, coluna, diagonal, simétrica e anti-simétrica
   \part \vf[F] Existe uma matriz nula, diagonal e triangular
@@ -783,47 +846,47 @@ Indique se a sentença é verdadeira (V) ou falsa (F):
 \fullwidth{\section{Operações com matrizes}}
 
 \question
-Quais as 2 condições necessárias para afirmarmos que uma matriz $A$ é igual a uma matriz $B$?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) Quais as 2 condições necessárias para afirmarmos que uma matriz $A$ é igual a uma matriz $B$?
+\begin{solution}
   \begin{itemize}
   \vspace{-0.5cm}
   \item As matrizes $A$ e $B$ devem ter a mesma ordem
   \item Cada elemento $a_{ij}$ da matriz $A$ deve ser idêntico ao elemento
     $b_{ij}$ correspondente da matriz $B$
   \end{itemize}
-\end{solutionorlines}
+\end{solution}
 
 \question
-É possível somar ou diminuir matrizes de ordens diferentes? Por quê?
-\begin{solutionorlines}[0.25in]
+(OPCIONAL) É possível somar ou diminuir matrizes de ordens diferentes? Por quê?
+\begin{solution}
   Não, pois a soma ou a diminuição de matrizes é feita somando-se seus
   elementos correspondentes. Se as matrizes são de ordem diferentes, não
   haverá correspondência para todos os elementos e a soma ou subtração
   não pode ser feita.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Se $A = (a_{ij})_{m \times n}$ e $B = (b_{ij})_{m \times n}$ são matrizes
+(OPCIONAL) Se $A = (a_{ij})_{m \times n}$ e $B = (b_{ij})_{m \times n}$ são matrizes
 da mesma ordem, então é verdade que $C = (c_{ij})_{m \times n}$ tal que
 $c_{ij} = a_{ij} + b_{ij}$\ ?
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   Sim, o enunciado simplesmente está descrevendo a operação de somas de matri-zes
   de mesma ordem, onde cada elemento de uma matriz deve ser somado ao elemento
   correspondente (mesmo $ij$) da outra matriz.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Se $C = (c_{ij})_{m \times n}$ e $D = (d_{ij})_{m \times n}$ são matrizes
+(OPCIONAL) Se $C = (c_{ij})_{m \times n}$ e $D = (d_{ij})_{m \times n}$ são matrizes
 da mesma ordem, então é verdade que $E = (e_{ij})_{m \times n}$ tal que
 $e_{ij} = c_{ij} - d_{ij}$\ ?
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   Sim, o enunciado simplesmente está descrevendo a operação de subtração de matrizes
   de mesma ordem, onde cada elemento de uma matriz deve ser subtraído do elemento
   correspondente (mesmo $ij$) da outra matriz.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Indique se a sentença é verdadeira (V) ou falsa (F):
+(OPCIONAL) Indique se a sentença é verdadeira (V) ou falsa (F):
 \begin{parts}
   \part \vf[V] A adição de matrizes é comutativa: $A + B = B + A$
   \part \vf[F] A adição de matrizes não é associativa: $A + (B + C) \ne (A + B) + C$
@@ -834,14 +897,14 @@ Indique se a sentença é verdadeira (V) ou falsa (F):
 \end{parts}
 
 \question
-Como é feita a multiplicação de um valor escalar por uma matriz, por exemplo: seja $\alpha$ um
+(OPCIONAL) Como é feita a multiplicação de um valor escalar por uma matriz, por exemplo: seja $\alpha$ um
 número real qualquer, e $B$ uma matriz qualquer de ordem $m \times n$, como é feita a multiplicação $\alpha \times B$\ ?
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   Basta multiplicar cada elemento da matriz pelo escalar.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Se $A$ e $B$ são matrizes de mesma ordem e $\alpha$ e $\beta$ são escalares, assinale
+(OPCIONAL) Se $A$ e $B$ são matrizes de mesma ordem e $\alpha$ e $\beta$ são escalares, assinale
 a(s) propriedades(s) correta(s):
 \begin{checkboxes}
   \choice Distributiva: $A(\alpha + \beta) = A \alpha \beta$
@@ -853,9 +916,9 @@ a(s) propriedades(s) correta(s):
 \end{checkboxes}
 
 \question
-Sejam $A$ e $B$ matrizes quadradas de mesma ordem. Para realizar a multiplicação entre elas,
+(OPCIONAL) Sejam $A$ e $B$ matrizes quadradas de mesma ordem. Para realizar a multiplicação entre elas,
 basta que cada elemento $a_{ij}$ seja multiplicado pelo elemento correspondente $b_{ij}$\ ?
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   Não, pois a multiplicação de matrizes \emph{não é feita} apenas com a multiplicação
   dos elementos correspondentes em cada matriz. É um processo mais complexo onde é feita a
   multiplicação de cada linha de uma matriz, por todas as colunas da outra matriz, elemento a
@@ -884,18 +947,23 @@ basta que cada elemento $a_{ij}$ seja multiplicado pelo elemento correspondente 
     ({\color{green}a_{21}}{\color{orange}b_{11}} + {\color{green}a_{22}}{\color{orange}b_{21}}) & ({\color{green}a_{21}}{\color{purple}b_{12}} + {\color{green}a_{22}}{\color{purple}b_{22}}) & ({\color{green}a_{21}}{\color{darkgray}b_{13}} + {\color{green}a_{22}}{\color{darkgray}b_{23}})\\
     ({\color{blue}a_{31}}{\color{orange}b_{11}} + {\color{blue}a_{32}}{\color{orange}b_{21}}) & ({\color{blue}a_{31}}{\color{purple}b_{12}} + {\color{blue}a_{32}}{\color{purple}b_{22}}) & ({\color{blue}a_{31}}{\color{darkgray}b_{13}} + {\color{blue}a_{32}}{\color{darkgray}b_{23}})
 \end{pmatrix}$
-\end{solutionorlines}
+\end{solution}
 
 \question
-As matrizes $A = (a_{ij})_{5 \times 3}$ e $B = (b_{ij})_{5 \times 3}$ podem ser multiplicadas?
+(OPCIONAL) As matrizes $A = (a_{ij})_{5 \times 3}$ e $B = (b_{ij})_{5 \times 3}$ podem ser multiplicadas?
 Por quê?
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   Não, pois para que duas matrizes possam ser multiplicadas, o número de colunas da primeira
   tem que ser igual ao número de linhas da segunda.
-\end{solutionorlines}
+\end{solution}
+
+\ifprintanswers
+\else
+\newpage
+\fi
 
 \question
-Assinale a(s) alternativa(s) correta(s):
+(OPCIONAL) Assinale a(s) alternativa(s) correta(s):
 \begin{checkboxes}
   \choice A multiplicação de matrizes é comutativa: $AB = BA$
   \CorrectChoice Multiplicar as matrizes $A = (a_{ij})_{50 \times 33}$ e $B = (b_{ij})_{33 \times 1}$
@@ -911,7 +979,7 @@ Assinale a(s) alternativa(s) correta(s):
 \end{checkboxes}
 
 \question
-Data a matriz
+\textbf{(OBRIGATÓRIA)} Data a matriz
 $A = \begin{pmatrix}
   1 & 2\\
   -1 & -4\\
@@ -922,7 +990,7 @@ $A = \begin{pmatrix}
 \end{itemize}
 
 \question
-Dadas as matrizes $A = (a_{ij})_{6 \times 4}$, tal que $a_{ij} = i - j$, $B = (b_{ij})_{4 \times 5}$,
+\textbf{(OBRIGATÓRIA)} Dadas as matrizes $A = (a_{ij})_{6 \times 4}$, tal que $a_{ij} = i - j$, $B = (b_{ij})_{4 \times 5}$,
 tal que $b_{ij} = j - i$, e $C = AB$, determine o elemento $c_{42}$.
 
 
@@ -932,25 +1000,20 @@ tal que $b_{ij} = j - i$, e $C = AB$, determine o elemento $c_{42}$.
 \fullwidth{\section{Determinantes: conceitos}}
 
 \question
-O que é o \emph{determinante} de uma matriz?
-\begin{solutionorlines}[0.75in]
+(OPCIONAL) O que é o \emph{determinante} de uma matriz?
+\begin{solution}
   É um \emph{número real} que está associado a qualquer matriz \emph{quadrada}
   de qualquer ordem.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Para que serve o cálculo do determinante de uma matriz?
-\begin{solutionorlines}[0.75in]
+(OPCIONAL) Para que serve o cálculo do determinante de uma matriz?
+\begin{solution}
   adsfasdfasfd
-\end{solutionorlines}
-
-\ifprintanswers
-\else
-\newpage
-\fi
+\end{solution}
 
 \question
-Indique se a sentença é verdadeira (V) ou falsa (F):
+(OPCIONAL) Indique se a sentença é verdadeira (V) ou falsa (F):
 \begin{parts}
   \part \vf[F] Nem toda matriz quadrada tem determinante.
   \part \vf[F] As matrizes nulas de ordem $n$ terão determinante igual ao número
@@ -963,13 +1026,13 @@ Indique se a sentença é verdadeira (V) ou falsa (F):
 \end{parts}
 
 \question
-Seja a matriz
+(OPCIONAL) Seja a matriz
 $J = \begin{pmatrix}
   a & b\\
   c & d\\
 \end{pmatrix}$, de ordem $2$, onde $a$, $b$, $c$ e $d$ representam números reais. Como podemos
 calcular o det$(B)$?
-\begin{solutionorlines}[0.75in]
+\begin{solution}
   O determinante de matrizes de ordem $2$ é dado multiplicação dos elementos da
   \emph{diagonal principal}, subtraído da multiplicação dos elementos da
   \emph{diagonal secundária}. Assim:
@@ -977,10 +1040,15 @@ calcular o det$(B)$?
   a & b\\
   c & d\\
 \end{vmatrix} = ad - bc$
-\end{solutionorlines}
+\end{solution}
+
+\ifprintanswers
+\else
+\newpage
+\fi
 
 \question
-Sobre a \emph{Regra de Sarrus}, indique se as sentenças abaixo
+(OPCIONAL) Sobre a \emph{Regra de Sarrus}, indique se as sentenças abaixo
 são verdadeiras (V) ou falsas (F):
 \begin{parts}
   \part \vf[V] O determinante da matriz identidade de ordem $3$ é igual a $1$.
@@ -992,38 +1060,38 @@ são verdadeiras (V) ou falsas (F):
 \end{parts}
 
 \question
-Para calcular o determinante de uma matriz quadrada de qualquer ordem, podemos
+(OPCIONAL) Para calcular o determinante de uma matriz quadrada de qualquer ordem, podemos
 utilizar o \emph{Teorema de Laplace}, que obtém o determinante através do cálculo
 do \emph{\textbf{menor complementar}} e do \emph{\textbf{cofator}} de cada elemento
 da matriz. Explique o que é o \emph{\textbf{menor complementar}} e o
 \emph{\textbf{cofator}}.
-\begin{solutionorlines}[1.00in]
+\begin{solution}
   Se $A$ é uma matriz quadrada, o \emph{\textbf{menor complementar}} do elemento $a_{ij}$
   é asdfasdfasdf
-\end{solutionorlines}
+\end{solution}
 
 \question
-Qual o determinante da matriz identidade de ordem 4?
-\begin{solutionorlines}[0.25in]
+(OPCIONAL) Qual o determinante da matriz identidade de ordem 4?
+\begin{solution}
   xxxx
-\end{solutionorlines}
+\end{solution}
 
 \question
-O que é o Teorema de Laplace? O que ele diz?
-\begin{solutionorlines}[0.75in]
+(OPCIONAL) O que é o Teorema de Laplace? O que ele diz?
+\begin{solution}
   XXXXXX
-\end{solutionorlines}
+\end{solution}
 
 \question
-Por que devemos escolher uma linha (ou  uma coluna) com o maior número
+(OPCIONAL) Por que devemos escolher uma linha (ou  uma coluna) com o maior número
 de elementos 0 (zero) no cálculo do determinante pelo método de
 Laplace?
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   XXXXXX
-\end{solutionorlines}
+\end{solution}
 
 \question
-Existem 4 situações nas quais podemos afirmar, com certeza, que o
+(OPCIONAL) Existem 4 situações nas quais podemos afirmar, com certeza, que o
 determinante de uma matriz é 0 (zero). Quais são essas situações
 (propriedades)?
 \ifprintanswers
@@ -1047,83 +1115,83 @@ determinante de uma matriz é 0 (zero). Quais são essas situações
 \fi
 
 \question
-O que ocorre com o determinante de uma matriz cada vez que permutamos
+(OPCIONAL) O que ocorre com o determinante de uma matriz cada vez que permutamos
 (trocamos de lugar) duas linhas (ou colunas)?
-\begin{solutionorlines}[0.25in]
+\begin{solutionorlines}
   Obtemos outra matriz cujo determinante é o oposto do determinante da
   matriz original.
 \end{solutionorlines}
 
 \question
-É correto dizer que quando multiplicamos todos os elementos de uma
+(OPCIONAL) É correto dizer que quando multiplicamos todos os elementos de uma
 única linha (ou uma única coluna) de uma matriz $A$ por um número real $k$
 qualquer, obtém-se uma matiz $B$ cujo determinante é igual ao
 determinante da matriz $A$ multiplicado por $k$, ou seja, $det(B) = k
 \times det(A)$? Sim ou não? Se sim, demonstre que a propriedade é
 verdadeira em uma matriz quadrada de ordem 2 qualquer. Se não, vá para
 a próxima questão.
-\begin{solutionorbox}[1.0in]
+\begin{solution}
   XXXXXXX
-\end{solutionorbox}
+\end{solution}
 
 \question
-Se multiplicarmos todos os elementos de uma matriz $C$ quadrada qualquer
+(OPCIONAL) Se multiplicarmos todos os elementos de uma matriz $C$ quadrada qualquer
 de ordem $n$ por um escalar $k$, o que podemos dizer do determinante
 $det(kC)$?
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   $det(kC) = k^n \times det(C)$
-\end{solutionorlines}
+\end{solution}
 
 \question
-Um aluno afirmou que o determinante de uma matriz transposta $A^t$ é o
+(OPCIONAL) Um aluno afirmou que o determinante de uma matriz transposta $A^t$ é o
 inverso do determinante de matriz $A$, ou seja, ele afirmou que
 $\displaystyle det(A^t) = \frac{1}{det(A)}$. A justificativa que o aluno deu foi a
 seguinte: ``já que a matriz transposta é uma espécie de inversão de
 linhas por colunas, então o determinante da matriz transposta também
 será uma espécie de inverso do determinante da matriz original''. Você
 concorda com esse aluno? Por quê?
-\begin{solutionorlines}[0.75in]
+\begin{solution}
   XXXXXXXXXXX
-\end{solutionorlines}
+\end{solution}
 
 \question
-Como calcular o determinante de uma matriz triangular qualquer?
-\begin{solutionorlines}[0.75in]
+(OPCIONAL) Como calcular o determinante de uma matriz triangular qualquer?
+\begin{solution}
   O determinante de uma matriz triangular é igual ao produto dos
   elementos da diagonal principal.
-\end{solutionorlines}
+\end{solution}
 
 \question
-O que é o Teorema de Jacobi?
-\begin{solutionorlines}[0.75in]
+(OPCIONAL) O que é o Teorema de Jacobi?
+\begin{solution}
   Quando se soma aos elementos de uma linha (ou coluna) da matriz $A$,
   os elementos de outra linha (ou coluna) multiplicada por uma
   constante, obtém-se uma matriz $B$ cujo determinante é igual ao da
   matriz $A$.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Podemos afirmar que o determinante do produto de duas matrizes, $A$ e
+(OPCIONAL) Podemos afirmar que o determinante do produto de duas matrizes, $A$ e
 $B$, é igual ao produto dos determinantes das matrizes individuais, ou
 seja, podemos afirmar que $det(AB) = det(A) \times det(B)$?
-\begin{solutionorlines}[0.25in]
+\begin{solution}
   Sim, esse é o Teorema de Binet.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Existe uma propriedade dos determinantes que diz que $\displaystyle det(A^{-1}) =
+(OPCIONAL) Existe uma propriedade dos determinantes que diz: $\displaystyle det(A^{-1}) =
 \frac{1}{det(A)}$. O que isso quer dizer?
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   O determinante da inversa de uma matriz, é igual ao inverso do
   determinante da matriz original.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Para que serve a Regra de Chió?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) Para que serve a Regra de Chió?
+\begin{solution}
   O determinante da inversa de uma matriz, é igual ao inverso do
   determinante da matriz original.
-\end{solutionorlines}
+\end{solution}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1132,32 +1200,32 @@ Para que serve a Regra de Chió?
 \fullwidth{\section{Determinantes: cálculo}}
 
 \question
-Seja a matriz $A = [-2]$, de ordem 1. Calcule o det$(A)$, ou seja, o determinante
+(OPCIONAL) Seja a matriz $A = [-2]$, de ordem 1. Calcule o det$(A)$, ou seja, o determinante
 dessa matriz.
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   O determinante de uma matriz quadrada de ordem 1 é o próprio elemento da matriz.
   Assim, det$(A) = -2$.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Seja a matriz $B = \begin{pmatrix}
+(OPCIONAL) Seja a matriz $B = \begin{pmatrix}
   2 & 0 & 1\\
  -1 & 0 & 4\\
 \end{pmatrix}$. Calcule o det$(B)$.
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   A matriz $B$ tem ordem $2 \times 3$ e, portanto, não é uma matriz quadrada.
   Não é possível calcular seu determinante.
-\end{solutionorlines}
+\end{solution}
 
 \question
-Se
+(OPCIONAL) Se
 $\begin{vmatrix}
   1 & x\\
   5 & 7\\
 \end{vmatrix} = 2$, qual é o valor de $x$?
 
 \question
-A \emph{Regra de Sarrus} é utilizada para calcular o determinantes de matrizes
+(OPCIONAL) A \emph{Regra de Sarrus} é utilizada para calcular o determinantes de matrizes
 quadradas de ordem $3$. Data a matriz genérica abaixo, calcule seu
 determinante aplicando a Regra de Sarrus:\\%
 $G = \begin{pmatrix}
@@ -1167,7 +1235,7 @@ $G = \begin{pmatrix}
 \end{pmatrix}$
 
 \question
-Calcule o determinante da matriz
+(OPCIONAL) Calcule o determinante da matriz
 $F = \begin{pmatrix}
    2 &  3 &  1\\
   -1 & -4 & -1\\
@@ -1175,20 +1243,15 @@ $F = \begin{pmatrix}
 \end{pmatrix}$:
 
 \question
-Se
+(OPCIONAL) Se
 $\begin{vmatrix}
   1 & 0 & -2\\
   2 & y &  1\\
  -1 & 3 & 7
 \end{vmatrix} = 10$, qual é o valor de $y$?
 
-\ifprintanswers
-\else
-\newpage
-\fi
-
 \question
-(FEI-SP) As faces de um cubo foram numeradas de 1 a 6; depois, em cada face, foi
+\textbf{(OBRIGATÓRIA)} (FEI-SP) As faces de um cubo foram numeradas de 1 a 6; depois, em cada face, foi
 registrada uma matriz de ordem 2, com elementos definidos por
 $a_{ij} =
     \begin{cases}
@@ -1199,7 +1262,7 @@ $, onde $f$ é o valor associado à face correspondente. Qual o valor do determi
 da matriz registrada na face $5$?
 
 \question
-Seja $S = (s_{ij})$ a matriz de ordem $3$ em que
+\textbf{(OBRIGATÓRIA)} Seja $S = (s_{ij})$ a matriz de ordem $3$ em que
 $s_{ij} =
 \begin{cases}
   0     & \text{se}\ i < j\\
@@ -1209,7 +1272,7 @@ $s_{ij} =
 $. Calcule o determinante de S.
 
 \question
-(FUVEST-SP) Calcule
+\textbf{(OBRIGATÓRIA)} (FUVEST-SP) Calcule
 $\begin{vmatrix}
   1 & 1 & 1 & 1\\
   1 & 2 & 2 & 2\\
@@ -1218,7 +1281,7 @@ $\begin{vmatrix}
 \end{vmatrix}$
 
 \question
-Calcule os determinantes usando Chio e Laplace:
+\textbf{(OBRIGATÓRIA)} Calcule os determinantes usando Chio e Laplace:
 \begin{itemize}
 \item[a.]
 $\begin{vmatrix}
@@ -1243,16 +1306,16 @@ $\begin{vmatrix}
 \fullwidth{\section{Matriz inversa: conceitos}}
 
 \question
-O que é uma \emph{matriz inversa}? Como é representada?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) O que é uma \emph{matriz inversa}? Como é representada?
+\begin{solution}
   Uma matriz \emph{quadrada} $B$, da mesma ordem da matriz quadrada $A$, é dita inversa
   se $AB = BA = I_n$ (onde $I_n$ é a matriz identidade de ordem $n$).
 
   A representação é dada por: $B = A^{-1}$ ($B$ é a matriz inversa de $A$).
-\end{solutionorlines}
+\end{solution}
 
 \question
-Indique se a sentença é verdadeira (V) ou falsa (F):
+(OPCIONAL) Indique se a sentença é verdadeira (V) ou falsa (F):
 \begin{parts}
   \part \vf[F] Se $B = A^{-1}$, então $\displaystyle B = \frac{1}{A}$
   \part \vf[V] Se $AB = BA = I_n$, então $B = A^{-1}$
@@ -1264,28 +1327,28 @@ Indique se a sentença é verdadeira (V) ou falsa (F):
 \end{parts}
 
 \question
-Por que é importante calcular uma matriz inversa?
-\begin{solutionorlines}[0.75in]
+(OPCIONAL) Por que é importante calcular uma matriz inversa?
+\begin{solution}
   XXXXXXXXXXXXxx
-\end{solutionorlines}
-
+\end{solution}
 
 \question
-É correto dizer que toda matriz quadrada possui inversa?
-\begin{solutionorlines}[0.50in]
+(OPCIONAL) É correto dizer que toda matriz quadrada possui inversa?
+Por quê?
+\begin{solution}
   Não. Uma matriz quadrada qualquer só possuirá inversa se seu
   determinante for diferente de 0 (zero).
-\end{solutionorlines}
+\end{solution}
 
 \question
-Para o cálculo da inversa de uma matriz quadrada $A$ qualquer é
+(OPCIONAL) Para o cálculo da inversa de uma matriz quadrada $A$ qualquer é
 necessário encontrarmos a \emph{adjunta} de $A$, simbolizada por
 $adj(A)$, pois a matriz inversa
 é dada pela equação $\displaystyle A^{-1} = \frac{1}{det(A)} \times adj(A)$. O
 que é a \emph{ajunta} de uma matriz?
-\begin{solutionorlines}[0.50in]
+\begin{solution}
   É a transposta da matriz de cofatores.
-\end{solutionorlines}
+\end{solution}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1294,18 +1357,70 @@ que é a \emph{ajunta} de uma matriz?
 \fullwidth{\section{Matriz inversa: cálculo}}
 
 \question
-Decida se a matriz $F = \begin{pmatrix}
+(OPCIONAL) Decida se a matriz $F = \begin{pmatrix}
   2 & 5 & 5\\
   -1 & -1 & 0\\
   2 & 4 & 3
 \end{pmatrix}$ é inversível e, se for, calcule sua inversa.
 
 \question
-Decida se a matriz $H = \begin{pmatrix}
+(OPCIONAL) Decida se a matriz $H = \begin{pmatrix}
   2 & 0 & 0\\
   8 & 1 & 0\\
   -5 & 3 & 6
 \end{pmatrix}$ é inversível e, se for, calcule sua inversa.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fullwidth{\section{Sistemas de Equações Lineares}}
+
+\question
+\textbf{(OBRIGATÓRIA)} Resolva o sistema utiliando Gauss:
+$\begin{cases}
+  x + y + 2z = -1\\
+  4x + y + 4z = -2\\
+  2x - y - 2z = -4
+\end{cases}$
+
+\question
+\textbf{(OBRIGATÓRIA)} Resolva o sistema utilizando Gauss-Jordan:
+$\begin{cases}
+  x + y + z + t = 0\\
+  2x - y + t = 1\\
+  y + z - 2t = 0\\
+  4y + 3z = 7
+\end{cases}$
+
+\question
+\textbf{(OBRIGATÓRIA)} Resolva o sistema pela Regra de Cramer:
+$\begin{cases}
+  x + 2y - z = -1\\
+  2x + y + z = 4\\
+  x - y + 5z = 5
+\end{cases}$
+
+\question
+\textbf{(OBRIGATÓRIA)} (UFU-MG) Um sitiante utiliza milho, farelo de trigo e alfafa para
+alimentar seus porcos. O número de unidades de cada tipo de ingrediente
+nutricional básico encontrado num quilo de cada alimento é dado na
+tabela abaixo, juntamente com as necessidades diárias de cada porco:
+
+\begin{table}[h]
+\centering
+\begin{tabular}{@{}lccc@{}}
+\toprule
+\textbf{Ingredientes}    & \multicolumn{1}{l}{\textbf{Carboidratos}} & \multicolumn{1}{l}{\textbf{Proteínas}} & \multicolumn{1}{l}{\textbf{Vitaminas}} \\ \midrule
+Quilo de milho           & 40                                        & 30                                     & 10                                     \\
+Quilo de farelo de trigo & 20                                        & 40                                     & 20                                     \\
+Quilo de alfafa          & 20                                        & 40                                     & 40                                     \\
+Necessidade diária       & 110                                       & 120                                    & 70                                     \\ \bottomrule
+\end{tabular}
+\end{table}
+
+Determine quantos quilos de milho, farelo de trigo e alfafa cada porco deve
+consumir por dia para satisfazer suas necessidades de nutrientes.
 
 
 
