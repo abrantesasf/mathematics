@@ -7,3 +7,9 @@
 *.exc.tex
 *.fc.tex
 *.sol.tex
+*.bbl
+*.blg
+*.glo
+*.idx
+*.ist
+*.ntn
