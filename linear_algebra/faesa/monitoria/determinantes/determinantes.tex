@@ -159,6 +159,43 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   definido.
 \end{frame}
 
+%%% Aplicações
+\begin{frame}[t]
+  \frametitle{Importância dos determinantes}
+  \begin{itemize}
+    \item Resolução de sistemas de equações lineares
+      \only<2>{
+      $$A = \begin{cases}
+        x_1 + x_2 + 2x_3 = -1\\
+       4x_1 + x_2 + 4x_3 = -2\\
+       2x_1 - x_2 - 2x_3 = -4\end{cases}$$}
+    \item Cálculo de matrizes inversas
+      \only<3>{
+        $$A = \begin{pmatrix}
+        5 & 0 & 1\\
+        1 & 3 & 4\\
+        2 & -3 & -2\end{pmatrix} \implies A^{-1} = \begin{pmatrix}
+                                            2/7 & -1/7 & -1/7\\
+                                            10/21 & -4/7 & -19/21\\
+                                            -3/7 & 5/7 & 5/7\end{pmatrix}$$}
+    \item Cálculo de áreas
+      \only<4>{
+      \begin{figure}[H]
+        \begin{center}
+          \fbox{\includegraphics[scale=0.11]{imagens/area.png}}\\
+          \footnotesize{Fonte:~Jitse Niesen\\ \tiny{(\url{https://en.wikipedia.org/wiki/File:Area\_parallellogram\_as\_determinant.svg})}}
+        \end{center}
+      \end{figure}}
+    \item Cálculo de volumes
+      \only<5>{
+      \begin{figure}[H]
+        \begin{center}
+          \fbox{\includegraphics[scale=0.13]{imagens/volume.png}}\\
+          \footnotesize{Fonte:~Claudio Rocchini\\ \tiny{(\url{https://en.wikipedia.org/wiki/File:Determinant\_parallelepiped.svg})}}
+        \end{center}
+      \end{figure}}
+  \end{itemize}
+\end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Seção: Métodos de cálculo
@@ -353,20 +390,23 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   \textbf{A cada vez que permutamos} duas linhas (ou duas colunas), o novo
   determinante é o oposto do determinante original (ou seja: o valor absoluto é
   o mesmo, mas \textbf{o sinal é trocado}):
+  \only<1->{
   $$A = \begin{pmatrix}
     1 & 2 & 1\\
     2 & 0 & -2\\
-    -1 & 3 & 0\end{pmatrix} \implies det(A) = 16$$
+    -1 & 3 & 0\end{pmatrix} \implies det(A) = 16$$}
 
+  \only<2->{
   $$B = \begin{pmatrix}
     2 & 0 & -2\\
     1 & 2 & 1\\
-    -1 & 3 & 0\end{pmatrix} \implies det(B) = -det(A) = -16$$
+    -1 & 3 & 0\end{pmatrix} \implies det(B) = -det(A) = -16$$}
 
+  \only<3->{
   $$C = \begin{pmatrix}
     0 & 2 & -2\\
     2 & 1 & 1\\
-    3 & -1 & 0\end{pmatrix} \implies det(C) = -det(B) = -(-16) = 16$$
+    3 & -1 & 0\end{pmatrix} \implies det(C) = -det(B) = -(-16) = 16$$}
 \end{frame}
 
 %%% Multiplicação escalar de 1 linha ou 1 coluna
@@ -375,17 +415,19 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   Se multiplicarmos uma \textbf{única} linha (ou coluna) de uma matriz $A$ por
   um número escalar real $k$, o determinante da matriz $B$ resultante é igual ao
   determinante de $A$ multiplicado por $k$: $det(B) = k \times det(A)$:
+  \only<1->{
   $$A = \begin{pmatrix}
     1 & 3 & 5\\
     6 & 1 & -2\\
-    2 & 4 & -4\end{pmatrix} \implies det(A) = 174$$
+    2 & 4 & -4\end{pmatrix} \implies det(A) = 174$$}
 
+  \only<2->{
   \begin{equation*}\begin{split}B = \begin{pmatrix}
     1 & 3 & -10\\
     6 & 1 & 4\\
     2 & 4 & 8\end{pmatrix} \implies det(B) &= -2 \times det(A)\\
                                            &= -2 \times 174\\
-                                           &= -348\end{split}\end{equation*}
+                                           &= -348\end{split}\end{equation*}}
 \end{frame}
 
 %%% Multiplicação escalar de todas as linhas
@@ -395,17 +437,19 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   colunas) de uma matriz $A$ por um número escalar real $k$, o determinante da
   matriz $B$ resultante é igual ao determinante de $A$ multiplicado por $k$ elevado
   à ordem da matriz: $det(B) = k^n \times det(A)$:
+  \only<1->{
   \begin{equation*}A = \begin{pmatrix}
     1 & 3 & 5\\
     6 & 1 & -2\\
-    2 & 4 & -4\end{pmatrix} \implies det(A) = 174\end{equation*}
+    2 & 4 & -4\end{pmatrix} \implies det(A) = 174\end{equation*}}
 
+  \only<2->{
   \begin{equation*}\begin{split}B = \begin{pmatrix}
     -2 & -6 & -10\\
     -12 & -2 & 4\\
     -4 & -8 & 8\end{pmatrix} \implies det(B) &= (-2)^3 \times det(A)\\
                                              &= -8 \times 174\\
-                                             &= -1392\end{split}\end{equation*}
+                                             &= -1392\end{split}\end{equation*}}
 \end{frame}
 
 %%% Determinante da transposta
@@ -413,15 +457,17 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   \frametitle{Determinante de uma matriz transposta}
   O determinante de uma matriz transposta $A^t$ é igual ao determinante da
   matriz original $A$ (não transposta):
+  \only<1->{
   $$A = \begin{pmatrix}
     1 & 3 & 5\\
     6 & 1 & -2\\
-    2 & 4 & -4\end{pmatrix} \implies det(A) = 174$$
+    2 & 4 & -4\end{pmatrix} \implies det(A) = 174$$}
 
+  \only<2->{
   $$A^t = \begin{pmatrix}
     1 & 6 & 2\\
     3 & 1 & 4\\
-    5 & -2 & -4\end{pmatrix} \implies det(A^t) = det(A) = 174$$
+    5 & -2 & -4\end{pmatrix} \implies det(A^t) = det(A) = 174$$}
 \end{frame}
 
 %%% Determinante de matriz triangular/diagonal
@@ -442,6 +488,7 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   \frametitle{Teorema de Binet}
   O determinante do produto de duas matrizes é igual ao produto do determinante
   de cada matriz: $det(AB) = det(A) \times det(B)$:
+  \only<1->{
   $$A = \begin{pmatrix}
     3 & 1 & 4\\
     1 & 7 & -2\\
@@ -450,37 +497,40 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   $$B = \begin{pmatrix}
     5 & 0 & 1\\
     1 & 3 & 4\\
-    2 & -3 & -2\end{pmatrix} \implies det(B) = 21$$
+    2 & -3 & -2\end{pmatrix} \implies det(B) = 21$$}
 
+  \only<2->{
   \begin{equation*}\begin{split}AB = \begin{pmatrix}
     24 & -9 & -1\\
     8 & 27 & 33\\
     19 & -18 & -12\end{pmatrix} \implies det(AB) &= det(A) \times det(B)\\
                                                  &= 30 \times 21\\
-                                                 &= 630\end{split}\end{equation*}
+                                                 &= 630\end{split}\end{equation*}}
 \end{frame}
 
 %%% Teorema de Jacobi
 \begin{frame}[t]
   \frametitle{Teorema de Jacobi}
   Se $B$ for a matriz que resulta quando um múltiplo de uma linha (ou coluna) de
-  uma matriz $A$ é somado a uma outra linha (ou coluna) de $A$, então
+  uma matriz $A$ é somado a uma \emph{outra} linha (ou coluna) de $A$, então
   $det(B) = det(A)$:
+  \only<1->{
   $$A = \begin{pmatrix}
     3 & 1 & 4\\
     1 & 7 & -2\\
-    2 & -1 & 5\end{pmatrix} \implies det(A) = 30$$
+    2 & -1 & 5\end{pmatrix} \implies det(A) = 30$$}
 
+  \only<2->{
   $$B = \begin{pmatrix}
     5 & 15 & 0\\
     1 & 7 & -2\\
-    2 & -1 & 5\end{pmatrix} \implies det(B) = det(A) = 30$$
+    2 & -1 & 5\end{pmatrix} \implies det(B) = det(A) = 30$$}
 
-
+  \only<3->{
   $$C = \begin{pmatrix}
     3 & 1 & -2\\
     1 & 7 & -4\\
-    2 & -1 & 1\end{pmatrix} \implies det(C) = det(A) = 30$$
+    2 & -1 & 1\end{pmatrix} \implies det(C) = det(A) = 30$$}
 \end{frame}
 
 %%% Determinante de matriz inversa
@@ -489,16 +539,18 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   O determinante de uma matriz inversa $A^{-1}$ é igual ao inverso
   multiplicativo (recíproco) do determinante da matriz $A$ original, ou seja,
   $det(A^{-1}) = \cfrac{1}{det(A)}$:
+  \only<1->{
   $$A = \begin{pmatrix}
     5 & 0 & 1\\
     1 & 3 & 4\\
-    2 & -3 & -2\end{pmatrix} \implies det(A) = 21$$
+    2 & -3 & -2\end{pmatrix} \implies det(A) = 21$$}
 
+  \only<2->{
   \begin{equation*}\begin{split}A^{-1} = \begin{pmatrix}
     2/7 & -1/7 & -1/7\\
     10/21 & -4/7 & -19/21\\
     -3/7 & 5/7 & 5/7\end{pmatrix} \implies det(A^{-1}) &= \cfrac{1}{det(A)}\\ 
-                                                       &= \cfrac{1}{21}\end{split}\end{equation*}
+                                                       &= \cfrac{1}{21}\end{split}\end{equation*}}
 \end{frame}
 
 %%% Determinante da soma
@@ -508,6 +560,22 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
     Em geral o determinante de uma soma de matrizes \textbf{não é} igual à soma
     dos determinantes, ou seja: $$det(A + B) \ne det(A) + det(B)$$
   \end{alertblock}
+  \only<1->{
+  $$A = \begin{pmatrix}
+    2 & -3\\
+    4 & 8\end{pmatrix} \implies det(A) = 28$$
+
+  $$B = \begin{pmatrix}
+    5 & 9\\
+    -3 & 4\end{pmatrix} \implies det(B) = 47$$}
+
+  \only<2->{
+  $$A+B = \begin{pmatrix}
+    7 & 6\\
+    1 & 12\end{pmatrix} \implies det(A+B) = 78$$}
+
+  \only<3->{
+  $$\therefore\ det(A+B) \ne det(A) + det(B)$$}
 \end{frame}
 
 
@@ -521,8 +589,8 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   Calcula o determinante ``rebaixando'' a ordem da matriz:
   \begin{block}{Regra de Chió}
     \begin{enumerate}
-      \item Se o elemento $a_{11}$ da matriz não for unitário, utiliza-se alguma
-        propriedade para transformá-lo em 1
+      \item Se o elemento $a_{11}$ da matriz não for unitário, use as
+        propriedades dos determinantes para transformá-lo em 1
       \item Elimina-se a primeira linha e a primeira coluna da matriz,
         rebaixando-se assim sua ordem
       \item De cada elemento $a_{ij}$ na matriz rebaixada resultante,
