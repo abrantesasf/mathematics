@@ -10,12 +10,13 @@
 \RequirePackage{ifpdf}
 \ifpdf
   \pdfminorversion=7
-  \documentclass[pdftex, brazil]{beamer}
+  \documentclass[pdftex, brazil, aspectratio=169]{beamer}
 \else
-  \documentclass[brazil]{beamer}
+  \documentclass[brazil, aspectratio=169]{beamer}
 \fi
 \setbeamertemplate{navigation symbols}{}
 \usetheme{Magister}
+\usefonttheme[onlymath]{serif}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -51,7 +52,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Dados da Capa:
-\title{Determinantes}
+\title{\textbf{Determinantes}}
 \subtitle{}
 \author{\textbf{Abrantes Araújo Silva Filho}}
 \institute[\textbf{Magister --- plataforma para educação online}]{
@@ -143,7 +144,8 @@ a_{11} & a_{12}\\
 a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   \vspace{1cm}
   \begin{itemize}
-    \item det($A$)
+    \item $\det(A)$
+    \vspace{0.5cm}
     \item $\begin{vmatrix}
       a_{11} & a_{12}\\
       a_{21} & a_{22}\\
@@ -190,10 +192,13 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
       \only<5>{
       \begin{figure}[H]
         \begin{center}
-          \fbox{\includegraphics[scale=0.13]{imagens/volume.png}}\\
+          \fbox{\includegraphics[scale=0.12]{imagens/volume.png}}\\
           \footnotesize{Fonte:~Claudio Rocchini\\ \tiny{(\url{https://en.wikipedia.org/wiki/File:Determinant\_parallelepiped.svg})}}
         \end{center}
       \end{figure}}
+    \item Cálculo de \ingles{eigenvalues} (autovalores)
+      \only<6>{$$\det(A-\gamma I) = 0$$}
+    \item \ldots
   \end{itemize}
 \end{frame}
 
@@ -394,19 +399,19 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   $$A = \begin{pmatrix}
     1 & 2 & 1\\
     2 & 0 & -2\\
-    -1 & 3 & 0\end{pmatrix} \implies det(A) = 16$$}
+    -1 & 3 & 0\end{pmatrix} \implies \det(A) = 16$$}
 
   \only<2->{
   $$B = \begin{pmatrix}
     2 & 0 & -2\\
     1 & 2 & 1\\
-    -1 & 3 & 0\end{pmatrix} \implies det(B) = -det(A) = -16$$}
+    -1 & 3 & 0\end{pmatrix} \implies \det(B) = -\det(A) = -16$$}
 
   \only<3->{
   $$C = \begin{pmatrix}
     0 & 2 & -2\\
     2 & 1 & 1\\
-    3 & -1 & 0\end{pmatrix} \implies det(C) = -det(B) = -(-16) = 16$$}
+    3 & -1 & 0\end{pmatrix} \implies \det(C) = -\det(B) = -(-16) = 16$$}
 \end{frame}
 
 %%% Multiplicação escalar de 1 linha ou 1 coluna
@@ -414,18 +419,18 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   \frametitle{Escalar $\times$ uma ÚNICA linha (ou coluna)}
   Se multiplicarmos uma \textbf{única} linha (ou coluna) de uma matriz $A$ por
   um número escalar real $k$, o determinante da matriz $B$ resultante é igual ao
-  determinante de $A$ multiplicado por $k$: $det(B) = k \times det(A)$:
+  determinante de $A$ multiplicado por $k$: $\det(B) = k \times \det(A)$:
   \only<1->{
   $$A = \begin{pmatrix}
     1 & 3 & 5\\
     6 & 1 & -2\\
-    2 & 4 & -4\end{pmatrix} \implies det(A) = 174$$}
+    2 & 4 & -4\end{pmatrix} \implies \det(A) = 174$$}
 
   \only<2->{
   \begin{equation*}\begin{split}B = \begin{pmatrix}
     1 & 3 & -10\\
     6 & 1 & 4\\
-    2 & 4 & 8\end{pmatrix} \implies det(B) &= -2 \times det(A)\\
+    2 & 4 & 8\end{pmatrix} \implies \det(B) &= -2 \times \det(A)\\
                                            &= -2 \times 174\\
                                            &= -348\end{split}\end{equation*}}
 \end{frame}
@@ -436,18 +441,18 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   Se multiplicarmos \textbf{todas} as linhas (e, por conseqüência, todas as
   colunas) de uma matriz $A$ por um número escalar real $k$, o determinante da
   matriz $B$ resultante é igual ao determinante de $A$ multiplicado por $k$ elevado
-  à ordem da matriz: $det(B) = k^n \times det(A)$:
+  à ordem da matriz: $\det(B) = k^n \times \det(A)$:
   \only<1->{
   \begin{equation*}A = \begin{pmatrix}
     1 & 3 & 5\\
     6 & 1 & -2\\
-    2 & 4 & -4\end{pmatrix} \implies det(A) = 174\end{equation*}}
+    2 & 4 & -4\end{pmatrix} \implies \det(A) = 174\end{equation*}}
 
   \only<2->{
   \begin{equation*}\begin{split}B = \begin{pmatrix}
     -2 & -6 & -10\\
     -12 & -2 & 4\\
-    -4 & -8 & 8\end{pmatrix} \implies det(B) &= (-2)^3 \times det(A)\\
+    -4 & -8 & 8\end{pmatrix} \implies \det(B) &= (-2)^3 \times \det(A)\\
                                              &= -8 \times 174\\
                                              &= -1392\end{split}\end{equation*}}
 \end{frame}
@@ -461,13 +466,13 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   $$A = \begin{pmatrix}
     1 & 3 & 5\\
     6 & 1 & -2\\
-    2 & 4 & -4\end{pmatrix} \implies det(A) = 174$$}
+    2 & 4 & -4\end{pmatrix} \implies \det(A) = 174$$}
 
   \only<2->{
   $$A^t = \begin{pmatrix}
     1 & 6 & 2\\
     3 & 1 & 4\\
-    5 & -2 & -4\end{pmatrix} \implies det(A^t) = det(A) = 174$$}
+    5 & -2 & -4\end{pmatrix} \implies \det(A^t) = \det(A) = 174$$}
 \end{frame}
 
 %%% Determinante de matriz triangular/diagonal
@@ -479,7 +484,7 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
     2 & 346 & \pi & \sqrt[5]{3}\\
     0 & 9 & -500 & 2^{-189}\\
     0 & 0 & -1 & 432\\
-    0 & 0 & 0 & -4\end{pmatrix} \implies det(A) &= 2 \cdot 9 \cdot (-1) \cdot (-4)\\
+    0 & 0 & 0 & -4\end{pmatrix} \implies \det(A) &= 2 \cdot 9 \cdot (-1) \cdot (-4)\\
                                                &=72\end{split}\end{equation*}
 \end{frame}
 
@@ -487,25 +492,24 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
 \begin{frame}[t]
   \frametitle{Teorema de Binet}
   O determinante do produto de duas matrizes é igual ao produto do determinante
-  de cada matriz: $det(AB) = det(A) \times det(B)$:
+  de cada matriz: $\det(AB) = \det(A) \times \det(B)$:
   \only<1->{
   $$A = \begin{pmatrix}
     3 & 1 & 4\\
     1 & 7 & -2\\
-    2 & -1 & 5\end{pmatrix} \implies det(A) = 30$$
+    2 & -1 & 5\end{pmatrix} \implies \det(A) = 30$$
 
   $$B = \begin{pmatrix}
     5 & 0 & 1\\
     1 & 3 & 4\\
-    2 & -3 & -2\end{pmatrix} \implies det(B) = 21$$}
+    2 & -3 & -2\end{pmatrix} \implies \det(B) = 21$$}
 
   \only<2->{
   \begin{equation*}\begin{split}AB = \begin{pmatrix}
     24 & -9 & -1\\
     8 & 27 & 33\\
-    19 & -18 & -12\end{pmatrix} \implies det(AB) &= det(A) \times det(B)\\
-                                                 &= 30 \times 21\\
-                                                 &= 630\end{split}\end{equation*}}
+    19 & -18 & -12\end{pmatrix} \implies \det(AB) &= \det(A) \times \det(B)\\
+                                                 &= 30 \times 21 = 630\end{split}\end{equation*}}
 \end{frame}
 
 %%% Teorema de Jacobi
@@ -513,24 +517,24 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   \frametitle{Teorema de Jacobi}
   Se $B$ for a matriz que resulta quando um múltiplo de uma linha (ou coluna) de
   uma matriz $A$ é somado a uma \emph{outra} linha (ou coluna) de $A$, então
-  $det(B) = det(A)$:
+  $\det(B) = \det(A)$:
   \only<1->{
   $$A = \begin{pmatrix}
     3 & 1 & 4\\
     1 & 7 & -2\\
-    2 & -1 & 5\end{pmatrix} \implies det(A) = 30$$}
+    2 & -1 & 5\end{pmatrix} \implies \det(A) = 30$$}
 
   \only<2->{
   $$B = \begin{pmatrix}
     5 & 15 & 0\\
     1 & 7 & -2\\
-    2 & -1 & 5\end{pmatrix} \implies det(B) = det(A) = 30$$}
+    2 & -1 & 5\end{pmatrix} \implies \det(B) = \det(A) = 30$$}
 
   \only<3->{
   $$C = \begin{pmatrix}
     3 & 1 & -2\\
     1 & 7 & -4\\
-    2 & -1 & 1\end{pmatrix} \implies det(C) = det(A) = 30$$}
+    2 & -1 & 1\end{pmatrix} \implies \det(C) = \det(A) = 30$$}
 \end{frame}
 
 %%% Determinante de matriz inversa
@@ -538,19 +542,19 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   \frametitle{Determinante de matriz inversa}
   O determinante de uma matriz inversa $A^{-1}$ é igual ao inverso
   multiplicativo (recíproco) do determinante da matriz $A$ original, ou seja,
-  $det(A^{-1}) = \cfrac{1}{det(A)}$:
+  $\det(A^{-1}) = \cfrac{1}{\det(A)}$:
   \only<1->{
   $$A = \begin{pmatrix}
     5 & 0 & 1\\
     1 & 3 & 4\\
-    2 & -3 & -2\end{pmatrix} \implies det(A) = 21$$}
+    2 & -3 & -2\end{pmatrix} \implies \det(A) = 21$$}
 
   \only<2->{
   \begin{equation*}\begin{split}A^{-1} = \begin{pmatrix}
     2/7 & -1/7 & -1/7\\
     10/21 & -4/7 & -19/21\\
-    -3/7 & 5/7 & 5/7\end{pmatrix} \implies det(A^{-1}) &= \cfrac{1}{det(A)}\\ 
-                                                       &= \cfrac{1}{21}\end{split}\end{equation*}}
+    -3/7 & 5/7 & 5/7\end{pmatrix} \implies \det(A^{-1}) &= \cfrac{1}{\det(A)}\\ 
+                                                        &= \cfrac{1}{21}\end{split}\end{equation*}}
 \end{frame}
 
 %%% Determinante da soma
@@ -558,29 +562,26 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
   \frametitle{Determinante da soma de matrizes}
   \begin{alertblock}{Cuidado!}
     Em geral o determinante de uma soma de matrizes \textbf{não é} igual à soma
-    dos determinantes, ou seja: $$det(A + B) \ne det(A) + det(B)$$
+    dos determinantes, ou seja: $$\det(A + B) \ne \det(A) + \det(B)$$
   \end{alertblock}
   \only<1->{
   $$A = \begin{pmatrix}
     2 & -3\\
-    4 & 8\end{pmatrix} \implies det(A) = 28$$
+    4 & 8\end{pmatrix} \implies \det(A) = 28$$
 
   $$B = \begin{pmatrix}
     5 & 9\\
-    -3 & 4\end{pmatrix} \implies det(B) = 47$$}
+    -3 & 4\end{pmatrix} \implies \det(B) = 47$$}
 
   \only<2->{
   $$A+B = \begin{pmatrix}
     7 & 6\\
-    1 & 12\end{pmatrix} \implies det(A+B) = 78$$}
-
-  \only<3->{
-  $$\therefore\ det(A+B) \ne det(A) + det(B)$$}
+    1 & 12\end{pmatrix} \implies \det(A+B) = 78$$}
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Seção: propriedades
+%%% Seção: Chió
 \section{Regra de Chió}
 
 %%% Regra de Chió: definição
@@ -602,7 +603,7 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
     3 & 2 & -1 & 4\\
     1 & -2 & 4 & 0\\
     2 & 7 & 5 & 1\\
-    -1 & 2 & 6 & -4\end{pmatrix} \implies det(A) = $ ?
+    -1 & 2 & 6 & -4\end{pmatrix} \implies \det(A) = $ ?
 \end{frame}
 
 %%% Regra de Chió: exemplo
