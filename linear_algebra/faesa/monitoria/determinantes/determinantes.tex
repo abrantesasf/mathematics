@@ -136,12 +136,20 @@
   \textbf{funções que associam um número real a uma matriz quadrada}.
 \end{frame}
 
+%%% Domínio das funções determinante
+\begin{frame}[t]
+  \frametitle{Domínio das funções determinante}
+  Os determinantes são definidos para \emph{\textbf{matrizes quadradas}}, ou
+  seja, matrizes $n \times n$. Matrizes não quadradas não têm determinante
+  definido.
+\end{frame}
+
 %%% Representação de determinantes:
 \begin{frame}[t]
   \frametitle{Como representar um determinante?}
   Seja a matriz $A = \begin{pmatrix}
 a_{11} & a_{12}\\
-a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
+a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
   \vspace{1cm}
   \begin{itemize}
     \item $\det(A)$
@@ -151,14 +159,6 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
       a_{21} & a_{22}\\
       \end{vmatrix}$
   \end{itemize}
-\end{frame}
-
-%%% Domínio das funções determinante
-\begin{frame}[t]
-  \frametitle{Domínio das funções determinante}
-  Os determinantes são definidos para \emph{\textbf{matrizes quadradas}}, ou
-  seja, matrizes $n \times n$. Matrizes não quadradas não têm determinante
-  definido.
 \end{frame}
 
 %%% Aplicações
@@ -180,8 +180,10 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
                                             2/7 & -1/7 & -1/7\\
                                             10/21 & -4/7 & -19/21\\
                                             -3/7 & 5/7 & 5/7\end{pmatrix}$$}
+    \item Cálculo de \ingles{eigenvalues} (autovalores)
+      \only<4>{$$\det(A-\lambda I) = 0$$}
     \item Cálculo de áreas
-      \only<4>{
+      \only<5>{
       \begin{figure}[H]
         \begin{center}
           \fbox{\includegraphics[scale=0.11]{imagens/area.png}}\\
@@ -189,15 +191,13 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
         \end{center}
       \end{figure}}
     \item Cálculo de volumes
-      \only<5>{
+      \only<6>{
       \begin{figure}[H]
         \begin{center}
           \fbox{\includegraphics[scale=0.12]{imagens/volume.png}}\\
           \footnotesize{Fonte:~Claudio Rocchini\\ \tiny{(\url{https://en.wikipedia.org/wiki/File:Determinant\_parallelepiped.svg})}}
         \end{center}
       \end{figure}}
-    \item Cálculo de \ingles{eigenvalues} (autovalores)
-      \only<6>{$$\det(A-\gamma I) = 0$$}
     \item \ldots
   \end{itemize}
 \end{frame}
@@ -335,6 +335,22 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
 %%% Seção: propriedades
 \section{Propriedades dos determinantes}
 
+%%% Lista de propriedades
+\begin{frame}[t]
+  \frametitle{Propriedades dos determinantes}
+  \begin{enumerate}
+    \item Situações em que o determinante é zero
+    \item Permutações de linhas ou colunas
+    \item Multiplicação da matriz por um escalar
+    \item Matriz transposta
+    \item Matrizes triangulares e diagonais
+    \item Teorema de Binet: determinante de um produto de matrizes
+    \item Teorema de Jacobi: soma de linhas ou colunas
+    \item Matriz inversa
+    \item Soma de matrizes
+  \end{enumerate}
+\end{frame}
+
 %%% det = 0
 \begin{frame}[t]
   \frametitle{Determinante igual a zero}
@@ -374,8 +390,8 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
           1 & 3 & 3\\
           4 & 12 & 9\\
           2 & 6 & 7\end{pmatrix}$$}
-      \item Linhas (ou colunas) que são \textbf{combinações lineares} de outras
-        duas linhas (ou colunas)
+      \item Linhas (ou colunas) que são \textbf{combinações lineares} de \emph{outras
+        duas} linhas (ou colunas)
         \only<5>{
         $$A = \begin{pmatrix}
           1 & -2 & 5\\
@@ -384,8 +400,8 @@ a_{21} & a_{22}\end{pmatrix}$. O seu determinante é representado por:
         \quad\quad
         B = \begin{pmatrix}
           1 & 3 & 4\\
-          4 & 12 & 16\\
-          2 & 6 & 8\end{pmatrix}$$}
+          3 & 12 & 15\\
+          2 & 3 & 5\end{pmatrix}$$}
     \end{enumerate}
 \end{frame}
 
