@@ -353,7 +353,7 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
 
 %%% det = 0
 \begin{frame}[t]
-  \frametitle{Determinante igual a zero}
+  \frametitle{1) Determinante igual a zero}
   As seguintes situações resultam em determinante igual a zero, não importando
   o tamanho da matriz quadrada:
     \begin{enumerate}
@@ -407,7 +407,7 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
 
 %%% Permutação de linhas ou colunas
 \begin{frame}[t]
-  \frametitle{Permutações de linhas ou colunas}
+  \frametitle{2) Permutações de linhas ou colunas}
   \textbf{A cada vez que permutamos} duas linhas (ou duas colunas), o novo
   determinante é o oposto do determinante original (ou seja: o valor absoluto é
   o mesmo, mas \textbf{o sinal é trocado}):
@@ -430,52 +430,61 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
     3 & -1 & 0\end{pmatrix} \implies \det(C) = -\det(B) = -(-16) = 16$$}
 \end{frame}
 
-%%% Multiplicação escalar de 1 linha ou 1 coluna
+%%% Multiplicação escalar da matriz
 \begin{frame}[t]
-  \frametitle{Escalar $\times$ uma ÚNICA linha (ou coluna)}
-  Se multiplicarmos uma \textbf{única} linha (ou coluna) de uma matriz $A$ por
-  um número escalar real $k$, o determinante da matriz $B$ resultante é igual ao
-  determinante de $A$ multiplicado por $k$: $\det(B) = k \times \det(A)$:
-  \only<1->{
+  \frametitle{3) Escalar $\times$ matriz}
+  Se multiplicarmos uma ou mais linhas (ou então, uma ou mais colunas) de uma
+  matriz $A$ por um número escalar real $k$, o determinante da matriz $B$
+  resultante será igual ao determinante de $A$ multiplicado por $k^w$, onde $w$ 
+  é o número de linhas (ou colunas) multiplicadas pelo escalar:
+  $\det(B) = k^w \times \det(A)$:
+
+  \only<1,2>{Exemplo: multiplicação de \emph{uma única coluna} por $-2$:
   $$A = \begin{pmatrix}
     1 & 3 & 5\\
     6 & 1 & -2\\
     2 & 4 & -4\end{pmatrix} \implies \det(A) = 174$$}
 
-  \only<2->{
+  \only<2>{
   \begin{equation*}\begin{split}B = \begin{pmatrix}
     1 & 3 & -10\\
     6 & 1 & 4\\
-    2 & 4 & 8\end{pmatrix} \implies \det(B) &= -2 \times \det(A)\\
-                                           &= -2 \times 174\\
+    2 & 4 & 8\end{pmatrix} \implies \det(B) &= k^w \times \det(A)\\
+                                           &= (-2)^1 \times 174\\
                                            &= -348\end{split}\end{equation*}}
-\end{frame}
 
-%%% Multiplicação escalar de todas as linhas
-\begin{frame}[t]
-  \frametitle{Escalar $\times$ TODAS as linhas}
-  Se multiplicarmos \textbf{todas} as linhas (e, por conseqüência, todas as
-  colunas) de uma matriz $A$ por um número escalar real $k$, o determinante da
-  matriz $B$ resultante é igual ao determinante de $A$ multiplicado por $k$ elevado
-  à ordem da matriz: $\det(B) = k^n \times \det(A)$:
-  \only<1->{
-  \begin{equation*}A = \begin{pmatrix}
+  \only<3,4>{Exemplo: multiplicação de \emph{duas colunas} por $-2$:
+  $$A = \begin{pmatrix}
     1 & 3 & 5\\
     6 & 1 & -2\\
-    2 & 4 & -4\end{pmatrix} \implies \det(A) = 174\end{equation*}}
+    2 & 4 & -4\end{pmatrix} \implies \det(A) = 174$$}
 
-  \only<2->{
+  \only<4>{
+  \begin{equation*}\begin{split}B = \begin{pmatrix}
+    1 & -6 & -10\\
+    6 & -2 & 4\\
+    2 & -8 & 8\end{pmatrix} \implies \det(B) &= k^w \times \det(A)\\
+                                           &= (-2)^2 \times 174\\
+                                           &= 696\end{split}\end{equation*}}
+
+  \only<5,6>{Exemplo: multiplicação de \emph{três colunas} por $-2$:
+  $$A = \begin{pmatrix}
+    1 & 3 & 5\\
+    6 & 1 & -2\\
+    2 & 4 & -4\end{pmatrix} \implies \det(A) = 174$$}
+
+  \only<6>{
   \begin{equation*}\begin{split}B = \begin{pmatrix}
     -2 & -6 & -10\\
     -12 & -2 & 4\\
-    -4 & -8 & 8\end{pmatrix} \implies \det(B) &= (-2)^3 \times \det(A)\\
-                                             &= -8 \times 174\\
-                                             &= -1392\end{split}\end{equation*}}
+    -4 & -8 & 8\end{pmatrix} \implies \det(B) &= k^w \times \det(A)\\
+                                           &= (-2)^3 \times 174\\
+                                           &= -1392\end{split}\end{equation*}}
 \end{frame}
 
 %%% Determinante da transposta
 \begin{frame}[t]
-  \frametitle{Determinante de uma matriz transposta}
+  \frametitle{4) Determinante de uma matriz transposta}
   O determinante de uma matriz transposta $A^t$ é igual ao determinante da
   matriz original $A$ (não transposta):
   \only<1->{
@@ -493,7 +502,7 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
 
 %%% Determinante de matriz triangular/diagonal
 \begin{frame}[t]
-  \frametitle{Determinante de matriz triangular/diagonal}
+  \frametitle{5) Determinante de matriz triangular/diagonal}
   O determinante de uma matriz triangular (superior ou inferior) ou de uma
   matriz diagonal, é igual ao produto dos elementos de sua diagonal principal:
   \begin{equation*}\begin{split}A = \begin{pmatrix}
@@ -506,7 +515,7 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
 
 %%% Teorema de Binet
 \begin{frame}[t]
-  \frametitle{Teorema de Binet}
+  \frametitle{6) Teorema de Binet}
   O determinante do produto de duas matrizes é igual ao produto do determinante
   de cada matriz: $\det(AB) = \det(A) \times \det(B)$:
   \only<1->{
@@ -530,7 +539,7 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
 
 %%% Teorema de Jacobi
 \begin{frame}[t]
-  \frametitle{Teorema de Jacobi}
+  \frametitle{7) Teorema de Jacobi}
   Se $B$ for a matriz que resulta quando um múltiplo de uma linha (ou coluna) de
   uma matriz $A$ é somado a uma \emph{outra} linha (ou coluna) de $A$, então
   $\det(B) = \det(A)$:
@@ -555,7 +564,7 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
 
 %%% Determinante de matriz inversa
 \begin{frame}[t]
-  \frametitle{Determinante de matriz inversa}
+  \frametitle{8) Determinante de matriz inversa}
   O determinante de uma matriz inversa $A^{-1}$ é igual ao inverso
   multiplicativo (recíproco) do determinante da matriz $A$ original, ou seja,
   $\det(A^{-1}) = \cfrac{1}{\det(A)}$:
@@ -575,7 +584,7 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
 
 %%% Determinante da soma
 \begin{frame}[t]
-  \frametitle{Determinante da soma de matrizes}
+  \frametitle{9) Determinante da soma de matrizes}
   \begin{alertblock}{Cuidado!}
     Em geral o determinante de uma soma de matrizes \textbf{não é} igual à soma
     dos determinantes, ou seja: $$\det(A + B) \ne \det(A) + \det(B)$$
