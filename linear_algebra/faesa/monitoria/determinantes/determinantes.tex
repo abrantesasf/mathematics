@@ -173,13 +173,13 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
        2x_1 - x_2 - 2x_3 = -4\end{cases}$$}
     \item Cálculo de matrizes inversas
       \only<3>{
-        $$A = \begin{pmatrix}
+        $$A = \begin{pmatrix*}[r]
         5 & 0 & 1\\
         1 & 3 & 4\\
-        2 & -3 & -2\end{pmatrix} \implies A^{-1} = \begin{pmatrix}
+        2 & -3 & -2\end{pmatrix*} \implies A^{-1} = \begin{pmatrix*}[r]
                                             2/7 & -1/7 & -1/7\\
                                             10/21 & -4/7 & -19/21\\
-                                            -3/7 & 5/7 & 5/7\end{pmatrix}$$}
+                                            -3/7 & 5/7 & 5/7\end{pmatrix*}$$}
     \item Cálculo de \ingles{eigenvalues} (autovalores)
       \only<4>{$$\det(A-\lambda I) = 0$$}
     \item Cálculo de áreas
@@ -230,9 +230,9 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
       a_{21} & a_{22}\end{vmatrix} = a_{11}a_{22} - a_{12}a_{21}$
     \end{center}
   \end{block}
-  $\begin{vmatrix}
+  $\begin{vmatrix*}[r]
     \sin{(\theta)} & \cos{(\theta)}\\
-    -\cos{(\theta)} & \sin{(\theta)}\end{vmatrix} =$
+    -\cos{(\theta)} & \sin{(\theta)}\end{vmatrix*} =$
 \end{frame}
 
 %%% Determinantes 3x3
@@ -247,17 +247,30 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
       \item Determinante = $(\text{resultado em } 2) - (\text{resultado em } 3)$
     \end{enumerate}
   \end{block}
-  $\begin{vmatrix}
+  $\begin{vmatrix*}[r]
     3 & 2 & -1\\
     1 & -2 & 4\\
-    2 & 7 & 5\end{vmatrix}$
+    2 & 7 & 5\end{vmatrix*}$
 \end{frame}
 
 %%% Determinantes 4x4: regra
 \begin{frame}[t]
   \frametitle{Determinante de matrizes 4x4: Laplace}
-  \begin{block}{Determinante de matriz 4x4}
-    Calculamos o determinante pelo \textbf{método de Laplace}:
+  \only<1>{
+  \begin{block}{Teorema de Laplace}
+  O determinante de uma matriz pode ser calculado pelo \emph{produto} dos
+  \textbf{elementos} de \emph{uma} linha (ou coluna) e seus respectivos
+  \textbf{cofatores} (estes, por sua vez, são obtidos a partir dos \textbf{menores
+  complementares} dos elementos).
+  \end{block}
+  $\begin{vmatrix*}[r]
+    3 & 2 & -1 & 0\\
+    1 & -2 & 4 & 3\\
+    2 & 0 & 3 & 0\\
+    -1 & 7 & 5 & 3\end{vmatrix*} =$ ?
+  }
+  \only<2>{
+  \begin{block}{Método de Laplace}
     \begin{enumerate}
       \item Escolha uma linha ou coluna da matriz com o maior número de
         elementos nulos
@@ -267,11 +280,12 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
         onde $n$ é o número de elementos não nulos na linha ou coluna escolhida
     \end{enumerate}
   \end{block}
-  $\begin{vmatrix}
+  $\begin{vmatrix*}[r]
     3 & 2 & -1 & 0\\
     1 & -2 & 4 & 3\\
     2 & 0 & 3 & 0\\
-    -1 & 7 & 5 & 3\end{vmatrix} =$ ?
+    -1 & 7 & 5 & 3\end{vmatrix*} =$ ?
+  }
 \end{frame}
 
 %%% Determinantes 4x4: menor complementar
@@ -282,11 +296,11 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
     $M_{ij}$ e corresponde ao determinante da matriz resultante ao eliminarmos 
     a linha $i$ e a coluna $j$ correspondentes ao elemento $a_{ij}$ escolhido.
   \end{block}
-  $\begin{vmatrix}
+  $\begin{vmatrix*}[r]
     3 & 2 & -1 & 0\\
     1 & -2 & 4 & 3\\
     2 & 0 & 3 & 0\\
-    -1 & 7 & 5 & 3\end{vmatrix} =$ ?
+    -1 & 7 & 5 & 3\end{vmatrix*} =$ ?
 \end{frame}
 
 %%% Determinantes 4x4: cofator
@@ -299,11 +313,11 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
     $C_{ij} = (-1)^{i+j} \times M_{ij}$
   \end{center}
   \end{block}
-  $\begin{vmatrix}
+  $\begin{vmatrix*}[r]
     3 & 2 & -1 & 0\\
     1 & -2 & 4 & 3\\
     2 & 0 & 3 & 0\\
-    -1 & 7 & 5 & 3\end{vmatrix} =$ ?
+    -1 & 7 & 5 & 3\end{vmatrix*} =$ ?
 \end{frame}
 
 %%% Determinantes 4x4: finalizando
@@ -313,21 +327,21 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
     Determinante = $\displaystyle \sum_{k=1}^n (\text{elemento}_k \times \text{cofator}_k)$,
         onde $n$ é o número de elementos não nulos na linha ou coluna escolhida
   \end{block}
-  $\begin{vmatrix}
+  $\begin{vmatrix*}[r]
     3 & 2 & -1 & 0\\
     1 & -2 & 4 & 3\\
     2 & 0 & 3 & 0\\
-    -1 & 7 & 5 & 3\end{vmatrix} =$ ?
+    -1 & 7 & 5 & 3\end{vmatrix*} =$ ?
 \end{frame}
 
 %%% Determinantes 4x4: exemplo completo
 \begin{frame}[t]
   \frametitle{Determinante de matrizes 4x4: Laplace}
-  $\begin{vmatrix}
+  $\begin{vmatrix*}[r]
     5 & 4 & 1 & 2\\
     -1 & -4 & 2 & 0\\
     3 & 1 & 4 & 0\\
-    6 & 1 & 2 & 3\end{vmatrix} =$
+    6 & 1 & 2 & 3\end{vmatrix*} =$
 \end{frame}
 
 
@@ -412,22 +426,22 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
   determinante é o oposto do determinante original (ou seja: o valor absoluto é
   o mesmo, mas \textbf{o sinal é trocado}):
   \only<1->{
-  $$A = \begin{pmatrix}
+  $$A = \begin{pmatrix*}[r]
     1 & 2 & 1\\
     2 & 0 & -2\\
-    -1 & 3 & 0\end{pmatrix} \implies \det(A) = 16$$}
+    -1 & 3 & 0\end{pmatrix*} \implies \det(A) = 16$$}
 
   \only<2->{
-  $$B = \begin{pmatrix}
+  $$B = \begin{pmatrix*}[r]
     2 & 0 & -2\\
     1 & 2 & 1\\
-    -1 & 3 & 0\end{pmatrix} \implies \det(B) = -\det(A) = -16$$}
+    -1 & 3 & 0\end{pmatrix*} \implies \det(B) = -\det(A) = -16$$}
 
   \only<3->{
-  $$C = \begin{pmatrix}
+  $$C = \begin{pmatrix*}[r]
     0 & 2 & -2\\
     2 & 1 & 1\\
-    3 & -1 & 0\end{pmatrix} \implies \det(C) = -\det(B) = -(-16) = 16$$}
+    3 & -1 & 0\end{pmatrix*} \implies \det(C) = -\det(B) = -(-16) = 16$$}
 \end{frame}
 
 %%% Multiplicação escalar da matriz
@@ -440,44 +454,44 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
   $\det(B) = k^w \times \det(A)$:
 
   \only<1,2>{Exemplo: multiplicação de \emph{uma única coluna} por $-2$:
-  $$A = \begin{pmatrix}
+  $$A = \begin{pmatrix*}[r]
     1 & 3 & 5\\
     6 & 1 & -2\\
-    2 & 4 & -4\end{pmatrix} \implies \det(A) = 174$$}
+    2 & 4 & -4\end{pmatrix*} \implies \det(A) = 174$$}
 
   \only<2>{
-  \begin{equation*}\begin{split}B = \begin{pmatrix}
+  \begin{equation*}\begin{split}B = \begin{pmatrix*}[r]
     1 & 3 & -10\\
     6 & 1 & 4\\
-    2 & 4 & 8\end{pmatrix} \implies \det(B) &= k^w \times \det(A)\\
+    2 & 4 & 8\end{pmatrix*} \implies \det(B) &= k^w \times \det(A)\\
                                            &= (-2)^1 \times 174\\
                                            &= -348\end{split}\end{equation*}}
 
   \only<3,4>{Exemplo: multiplicação de \emph{duas colunas} por $-2$:
-  $$A = \begin{pmatrix}
+  $$A = \begin{pmatrix*}[r]
     1 & 3 & 5\\
     6 & 1 & -2\\
-    2 & 4 & -4\end{pmatrix} \implies \det(A) = 174$$}
+    2 & 4 & -4\end{pmatrix*} \implies \det(A) = 174$$}
 
   \only<4>{
-  \begin{equation*}\begin{split}B = \begin{pmatrix}
+  \begin{equation*}\begin{split}B = \begin{pmatrix*}[r]
     1 & -6 & -10\\
     6 & -2 & 4\\
-    2 & -8 & 8\end{pmatrix} \implies \det(B) &= k^w \times \det(A)\\
+    2 & -8 & 8\end{pmatrix*} \implies \det(B) &= k^w \times \det(A)\\
                                            &= (-2)^2 \times 174\\
                                            &= 696\end{split}\end{equation*}}
 
   \only<5,6>{Exemplo: multiplicação de \emph{três colunas} por $-2$:
-  $$A = \begin{pmatrix}
+  $$A = \begin{pmatrix*}[r]
     1 & 3 & 5\\
     6 & 1 & -2\\
-    2 & 4 & -4\end{pmatrix} \implies \det(A) = 174$$}
+    2 & 4 & -4\end{pmatrix*} \implies \det(A) = 174$$}
 
   \only<6>{
-  \begin{equation*}\begin{split}B = \begin{pmatrix}
+  \begin{equation*}\begin{split}B = \begin{pmatrix*}[r]
     -2 & -6 & -10\\
     -12 & -2 & 4\\
-    -4 & -8 & 8\end{pmatrix} \implies \det(B) &= k^w \times \det(A)\\
+    -4 & -8 & 8\end{pmatrix*} \implies \det(B) &= k^w \times \det(A)\\
                                            &= (-2)^3 \times 174\\
                                            &= -1392\end{split}\end{equation*}}
 \end{frame}
@@ -488,16 +502,16 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
   O determinante de uma matriz transposta $A^t$ é igual ao determinante da
   matriz original $A$ (não transposta):
   \only<1->{
-  $$A = \begin{pmatrix}
+  $$A = \begin{pmatrix*}[r]
     1 & 3 & 5\\
     6 & 1 & -2\\
-    2 & 4 & -4\end{pmatrix} \implies \det(A) = 174$$}
+    2 & 4 & -4\end{pmatrix*} \implies \det(A) = 174$$}
 
   \only<2->{
-  $$A^t = \begin{pmatrix}
+  $$A^t = \begin{pmatrix*}[r]
     1 & 6 & 2\\
     3 & 1 & 4\\
-    5 & -2 & -4\end{pmatrix} \implies \det(A^t) = \det(A) = 174$$}
+    5 & -2 & -4\end{pmatrix*} \implies \det(A^t) = \det(A) = 174$$}
 \end{frame}
 
 %%% Determinante de matriz triangular/diagonal
@@ -505,11 +519,11 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
   \frametitle{5) Determinante de matriz triangular/diagonal}
   O determinante de uma matriz triangular (superior ou inferior) ou de uma
   matriz diagonal, é igual ao produto dos elementos de sua diagonal principal:
-  \begin{equation*}\begin{split}A = \begin{pmatrix}
+  \begin{equation*}\begin{split}A = \begin{pmatrix*}[r]
     2 & 346 & \pi & \sqrt[5]{3}\\
     0 & 9 & -500 & 2^{-189}\\
     0 & 0 & -1 & 432\\
-    0 & 0 & 0 & -4\end{pmatrix} \implies \det(A) &= 2 \cdot 9 \cdot (-1) \cdot (-4)\\
+    0 & 0 & 0 & -4\end{pmatrix*} \implies \det(A) &= 2 \cdot 9 \cdot (-1) \cdot (-4)\\
                                                &=72\end{split}\end{equation*}
 \end{frame}
 
@@ -519,21 +533,21 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
   O determinante do produto de duas matrizes é igual ao produto do determinante
   de cada matriz: $\det(AB) = \det(A) \times \det(B)$:
   \only<1->{
-  $$A = \begin{pmatrix}
+  $$A = \begin{pmatrix*}[r]
     3 & 1 & 4\\
     1 & 7 & -2\\
-    2 & -1 & 5\end{pmatrix} \implies \det(A) = 30$$
+    2 & -1 & 5\end{pmatrix*} \implies \det(A) = 30$$
 
-  $$B = \begin{pmatrix}
+  $$B = \begin{pmatrix*}[r]
     5 & 0 & 1\\
     1 & 3 & 4\\
-    2 & -3 & -2\end{pmatrix} \implies \det(B) = 21$$}
+    2 & -3 & -2\end{pmatrix*} \implies \det(B) = 21$$}
 
   \only<2->{
-  \begin{equation*}\begin{split}AB = \begin{pmatrix}
+  \begin{equation*}\begin{split}AB = \begin{pmatrix*}[r]
     24 & -9 & -1\\
     8 & 27 & 33\\
-    19 & -18 & -12\end{pmatrix} \implies \det(AB) &= \det(A) \times \det(B)\\
+    19 & -18 & -12\end{pmatrix*} \implies \det(AB) &= \det(A) \times \det(B)\\
                                                  &= 30 \times 21 = 630\end{split}\end{equation*}}
 \end{frame}
 
@@ -544,22 +558,22 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
   uma matriz $A$ é somado a uma \emph{outra} linha (ou coluna) de $A$, então
   $\det(B) = \det(A)$:
   \only<1->{
-  $$A = \begin{pmatrix}
+  $$A = \begin{pmatrix*}[r]
     3 & 1 & 4\\
     1 & 7 & -2\\
-    2 & -1 & 5\end{pmatrix} \implies \det(A) = 30$$}
+    2 & -1 & 5\end{pmatrix*} \implies \det(A) = 30$$}
 
   \only<2->{
-  $$B = \begin{pmatrix}
+  $$B = \begin{pmatrix*}[r]
     5 & 15 & 0\\
     1 & 7 & -2\\
-    2 & -1 & 5\end{pmatrix} \implies \det(B) = \det(A) = 30$$}
+    2 & -1 & 5\end{pmatrix*} \implies \det(B) = \det(A) = 30$$}
 
   \only<3->{
-  $$C = \begin{pmatrix}
+  $$C = \begin{pmatrix*}[r]
     3 & 1 & -2\\
     1 & 7 & -4\\
-    2 & -1 & 1\end{pmatrix} \implies \det(C) = \det(A) = 30$$}
+    2 & -1 & 1\end{pmatrix*} \implies \det(C) = \det(A) = 30$$}
 \end{frame}
 
 %%% Determinante de matriz inversa
@@ -569,16 +583,16 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
   multiplicativo (recíproco) do determinante da matriz $A$ original, ou seja,
   $\det(A^{-1}) = \cfrac{1}{\det(A)}$:
   \only<1->{
-  $$A = \begin{pmatrix}
+  $$A = \begin{pmatrix*}[r]
     5 & 0 & 1\\
     1 & 3 & 4\\
-    2 & -3 & -2\end{pmatrix} \implies \det(A) = 21$$}
+    2 & -3 & -2\end{pmatrix*} \implies \det(A) = 21$$}
 
   \only<2->{
-  \begin{equation*}\begin{split}A^{-1} = \begin{pmatrix}
+  \begin{equation*}\begin{split}A^{-1} = \begin{pmatrix*}[r]
     2/7 & -1/7 & -1/7\\
     10/21 & -4/7 & -19/21\\
-    -3/7 & 5/7 & 5/7\end{pmatrix} \implies \det(A^{-1}) &= \cfrac{1}{\det(A)}\\ 
+    -3/7 & 5/7 & 5/7\end{pmatrix*} \implies \det(A^{-1}) &= \cfrac{1}{\det(A)}\\ 
                                                         &= \cfrac{1}{21}\end{split}\end{equation*}}
 \end{frame}
 
@@ -590,18 +604,18 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
     dos determinantes, ou seja: $$\det(A + B) \ne \det(A) + \det(B)$$
   \end{alertblock}
   \only<1->{
-  $$A = \begin{pmatrix}
+  $$A = \begin{pmatrix*}[r]
     2 & -3\\
-    4 & 8\end{pmatrix} \implies \det(A) = 28$$
+    4 & 8\end{pmatrix*} \implies \det(A) = 28$$
 
-  $$B = \begin{pmatrix}
+  $$B = \begin{pmatrix*}[r]
     5 & 9\\
-    -3 & 4\end{pmatrix} \implies \det(B) = 47$$}
+    -3 & 4\end{pmatrix*} \implies \det(B) = 47$$}
 
   \only<2->{
-  $$A+B = \begin{pmatrix}
+  $$A+B = \begin{pmatrix*}[r]
     7 & 6\\
-    1 & 12\end{pmatrix} \implies \det(A+B) = 78$$}
+    1 & 12\end{pmatrix*} \implies \det(A+B) = 78$$}
 \end{frame}
 
 
@@ -624,21 +638,21 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
       \item A matriz obtida tem o mesmo determinante que a matriz original
     \end{enumerate}
   \end{block}
-  $A = \begin{pmatrix}
+  $A = \begin{pmatrix*}[r]
     3 & 2 & -1 & 4\\
     1 & -2 & 4 & 0\\
     2 & 7 & 5 & 1\\
-    -1 & 2 & 6 & -4\end{pmatrix} \implies \det(A) = $ ?
+    -1 & 2 & 6 & -4\end{pmatrix*} \implies \det(A) = $ ?
 \end{frame}
 
 %%% Regra de Chió: exemplo
 \begin{frame}[t]
   \frametitle{Regra de Chió}
-  $A = \begin{pmatrix}
+  $A = \begin{pmatrix*}[r]
     3 & 2 & -1 & 4\\
     1 & -2 & 4 & 0\\
     2 & 7 & 5 & 1\\
-    -1 & 2 & 6 & -4\end{pmatrix}$
+    -1 & 2 & 6 & -4\end{pmatrix*}$
 \end{frame}
 
 
