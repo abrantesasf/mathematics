@@ -253,15 +253,21 @@ a_{21} & a_{22}\end{pmatrix}$. Seu determinante é representado por:
     2 & 7 & 5\end{vmatrix*}$
 \end{frame}
 
-%%% Determinantes 4x4: regra
+%%% Determinantes 4x4: teorema e método
 \begin{frame}[t]
   \frametitle{Determinante de matrizes 4x4: Laplace}
   \only<1>{
   \begin{block}{Teorema de Laplace}
-  O determinante de uma matriz pode ser calculado pelo \emph{produto} dos
-  \textbf{elementos} de \emph{uma} linha (ou coluna) e seus respectivos
-  \textbf{cofatores} (estes, por sua vez, são obtidos a partir dos \textbf{menores
-  complementares} dos elementos).
+  O determinante de uma matriz pode ser calculado pelo \emph{somatório} do 
+  \emph{produto} dos \textbf{elementos} de \emph{uma única} linha (ou coluna)
+  e seus respectivos \textbf{cofatores} (estes, por sua vez, são obtidos a 
+  partir dos \textbf{menores complementares} dos elementos).
+  %\begin{center}
+    \begin{equation*}\begin{split}
+    \text{Escolhendo a linha } i' \implies \det(A) &= \sum_{j=1}^{n} (a_{i'j} \times C_{i'j})\\
+    \text{Escolhendo a coluna } j' \implies \det(A) &= \sum_{i=1}^{n} (a_{ij'} \times C_{ij'})
+    \end{split}\end{equation*}
+  %\end{center}
   \end{block}
   $\begin{vmatrix*}[r]
     3 & 2 & -1 & 0\\
