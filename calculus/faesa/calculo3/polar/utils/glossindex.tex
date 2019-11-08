@@ -1,0 +1,32 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Por: Abrantes Araújo Silva Filho
+%      abrantesasf@gmail.com
+% URL: https://github.com/abrantesasf/latex
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Pacote para índice remissivo
+\makeatletter
+\@ifclassloaded{beamer}{}
+{
+  \usepackage{makeidx}
+  \makeindex
+}
+\makeatother
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Pacote para glossário
+\makeatletter
+\@ifclassloaded{beamer}{}
+{
+  \usepackage[toc]{glossaries}
+  \newglossary[nlg]{notation}{not}{ntn}{Notação}
+  \newglossaryentry{not:set}{
+  type = notation,
+  name = {$\mathbb{N}$},
+  description = conjunto dos números naturais,
+  sort = {N}}
+  \makeglossaries
+}
+\makeatother
