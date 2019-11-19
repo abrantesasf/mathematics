@@ -30,10 +30,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Configurações para as propriedades do PDF:
 \hypersetup{
-      pdftitle={TÍTULO DO ARTIGO},
+      pdftitle={Integrais duplas em coordenadas polares},
       pdfauthor={Abrantes Araújo Silva Filho},
-      pdfsubject={ASSUNTO},
-      pdfkeywords={KEYWORDS},
+      pdfsubject={Integrais múltiplas},
+      pdfkeywords={cálculo integral, integrais duplas, sistema de
+        coordenadas polares},
       pdfinfo={
         CreationDate={}, % Ex.: D:AAAAMMDDHH24MISS
         ModDate={}       % Ex.: D:AAAAMMDDHH24MISS
@@ -46,32 +47,52 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Comandos específicos para este artigo
+% Define o diferencial "d"
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand*\Diff[1]{\mathop{}\!\mathrm{d^#1}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Começa o documento
 \begin{document}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Front matter
-\title{TÍTULO}
-\author{Abrantes Araújo Silva Filho}
-\date{DATA}
+\title{Integrais duplas em coordenadas polares}
+\author{Grupo 1}
+\date{2019-11-08}
 \maketitle
 
 %\renewcommand{\abstractname}{novo título do abstract}
-\abstract{RESUMO}
+\abstract{Trabalho acadêmico sobre integrais duplas em coordenadas
+  polares, apresentado na disciplina de \emph{Cálculo III} sob orientação do
+  prof. Kennedy Scopel Gomes, como requisito parcial da terceira
+  avaliação semestral.
+
+  Aborda uma revisão rápida sobre o conceito de integrais e o cálculo
+  de áreas e volumes, discute quando o cálculo de volumes com
+  integrais duplas em coordenadas retangulares é difícil de ser
+  realizado, e apresenta uma solução através da utilização de
+  coordenadas polares.}
 
 \tableofcontents
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Main matter
-\input{main/placeholder}
+\input{main/revisao}
+\input{main/volumes_dificeis}
+\input{main/polar}
+\input{main/polar_areas}
+\input{main/polar_volumes}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Apêndices
-%\appendix
-%\include{apend/placeholder}
+\appendix
+\include{apend/anexos}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
