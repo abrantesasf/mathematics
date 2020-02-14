@@ -1,2 +1,2 @@
-# matematica
-Diversos tópicos e notas de estudo em matemática
+# Mathematics
+Diversos tópicos, notas de estudo e outras coisas sobre matemática.
